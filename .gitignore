@@ -17,3 +17,9 @@ node_modules/
 # Keep team-shared project instructions in source control
 !.github/copilot-instructions.md
 !.vscode/project.instructions.md
+
+# Excel files
+*.xls
+*.xlsx
+*.xlsm
+*.xlsb

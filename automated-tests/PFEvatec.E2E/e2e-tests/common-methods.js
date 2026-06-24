@@ -11,6 +11,16 @@
 
 const config = require("../configuration/config.json");
 const { test, expect, TestInfo } = require('@playwright/test');
+const runtimeProcess = /** @type {any} */ (globalThis).process;
+
+
+function getBaseUrl(defaultUrl) {
+   const override = runtimeProcess && runtimeProcess.env && runtimeProcess.env.PF_BASE_URL;
+   if (override && override.trim() !== '') {
+      return override.trim();
+   }
+   return defaultUrl;
+}
 
 
 /**
@@ -46,8 +56,9 @@ async function signInAsAuthorizedUser(page, userName) {
  * @param siteUrl 
  */
 async function navigateToHomePage(page, siteUrl) {
-   console.log("Navigating to home page for EF...");
-   await page.goto(siteUrl);
+   const baseUrl = getBaseUrl(siteUrl);
+   console.log("Navigating to home page for EF... " + baseUrl);
+   await page.goto(baseUrl);
    // add error check
 }
 
