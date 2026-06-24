@@ -1,0 +1,6 @@
+node_modules/
+/test-results/
+/playwright-report/
+/playwright/.cache/
+/PFEvatec.E2E/e2e-tests/pfEvatecE2E.code-workspace
+screenshot.png

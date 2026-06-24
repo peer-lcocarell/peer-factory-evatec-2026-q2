@@ -1,0 +1,17 @@
+{
+  "name": "peer-factory-evatec-2026-q2",
+  "version": "1.0.0",
+  "description": "PFEvatec",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.61.0",
+    "@types/node": "^26.0.0"
+  }
+}
