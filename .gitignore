@@ -6,3 +6,14 @@ node_modules/
 /blob-report/
 /playwright/.cache/
 /playwright/.auth/
+
+# Personal Copilot workspace data
+.copilot/
+
+# Personal VS Code prompts/agents
+.vscode/*.prompt.md*
+.vscode/*.agent.md
+
+# Keep team-shared project instructions in source control
+!.github/copilot-instructions.md
+!.vscode/project.instructions.md
