@@ -1,160 +1,135 @@
 {
+    "settings": {
+        "workbench.colorTheme": "Dark Modern",
+        "editor.fontSize": 12,
+        "editor.fontFamily": "JetBrains Mono, Cascadia Code, Consolas, monospace",
+        "editor.fontLigatures": true,
+        "editor.lineHeight": 18,
+
+        "editor.minimap.enabled": false,
+        "editor.scrollBeyondLastLine": false,
+        "editor.smoothScrolling": true,
+
+        "editor.bracketPairColorization.enabled": true,
+        "editor.guides.bracketPairs": true,
+        "editor.guides.bracketPairsHorizontal": true,
+        "editor.guides.highlightActiveBracketPair": true,
+        "editor.guides.indentation": true,
+        "editor.guides.highlightActiveIndentation": true,
+
+        "editor.matchBrackets": "always",
+        "editor.stickyScroll.enabled": true,
+        "editor.semanticHighlighting.enabled": true,
+
+        "editor.cursorBlinking": "phase",
+        "editor.cursorSmoothCaretAnimation": "on",
+        "editor.renderWhitespace": "boundary",
+        "editor.renderLineHighlight": "all",
+
+        "editor.inlayHints.enabled": "on",
+        "editor.linkedEditing": true,
+        "editor.codeLens": true,
+
+        "workbench.tree.renderIndentGuides": "always",
+        "workbench.list.smoothScrolling": true,
+
+        "terminal.integrated.fontFamily": "JetBrains Mono",
+        "terminal.integrated.fontSize": 12,
+        "terminal.integrated.cursorStyle": "line",
+        "terminal.integrated.cursorBlinking": true,
+
+        "workbench.colorCustomizations": {
+            "editor.background": "#282C34",
+            "editor.foreground": "#ABB2BF",
+
+            "sideBar.background": "#21252B",
+            "sideBar.foreground": "#ABB2BF",
+            "sideBarSectionHeader.background": "#21252B",
+            "sideBarSectionHeader.foreground": "#C8CCD4",
+
+            "activityBar.background": "#1E2228",
+            "activityBar.foreground": "#ABB2BF",
+            "activityBar.activeBorder": "#61AFEF",
+
+            "titleBar.activeBackground": "#1E2228",
+            "titleBar.activeForeground": "#ABB2BF",
+
+            "panel.background": "#21252B",
+            "panel.border": "#282C34",
+
+            "statusBar.background": "#1E2228",
+            "statusBar.foreground": "#ABB2BF",
+
+            "terminal.background": "#282C34",
+            "terminal.foreground": "#ABB2BF",
+
+            "editorGroupHeader.tabsBackground": "#21252B",
+
+            "tab.activeBackground": "#282C34",
+            "tab.activeForeground": "#FFFFFF",
+            "tab.inactiveBackground": "#21252B",
+            "tab.inactiveForeground": "#7F848E",
+
+            "editor.lineHighlightBackground": "#2F343D",
+
+            "editor.selectionBackground": "#3E4451",
+            "editor.selectionHighlightBackground": "#4B5263",
+
+            "list.hoverBackground": "#2C313A",
+            "list.activeSelectionBackground": "#2C313A",
+            "list.inactiveSelectionBackground": "#282C34",
+
+            "editorCursor.foreground": "#61AFEF",
+
+            "editorIndentGuide.background1": "#3B4048",
+            "editorIndentGuide.activeBackground1": "#61AFEF",
+
+            "editorBracketHighlight.foreground1": "#E06C75",
+            "editorBracketHighlight.foreground2": "#98C379",
+            "editorBracketHighlight.foreground3": "#61AFEF",
+            "editorBracketHighlight.foreground4": "#E5C07B",
+            "editorBracketHighlight.foreground5": "#C678DD",
+            "editorBracketHighlight.foreground6": "#56B6C2",
+
+            "editorBracketPairGuide.activeBackground1": "#E06C75",
+            "editorBracketPairGuide.activeBackground2": "#98C379",
+            "editorBracketPairGuide.activeBackground3": "#61AFEF",
+            "editorBracketPairGuide.activeBackground4": "#E5C07B",
+            "editorBracketPairGuide.activeBackground5": "#C678DD",
+            "editorBracketPairGuide.activeBackground6": "#56B6C2",
+
+            "terminal.ansiBlack": "#282C34",
+            "terminal.ansiBrightBlack": "#5C6370",
+
+            "terminal.ansiRed": "#E06C75",
+            "terminal.ansiBrightRed": "#F28B94",
+
+            "terminal.ansiGreen": "#98C379",
+            "terminal.ansiBrightGreen": "#B5D99C",
+
+            "terminal.ansiYellow": "#E5C07B",
+            "terminal.ansiBrightYellow": "#FFD68A",
+
+            "terminal.ansiBlue": "#61AFEF",
+            "terminal.ansiBrightBlue": "#7FC1FF",
+
+            "terminal.ansiMagenta": "#C678DD",
+            "terminal.ansiBrightMagenta": "#D796F2",
+
+            "terminal.ansiCyan": "#56B6C2",
+            "terminal.ansiBrightCyan": "#7FDDEB",
+
+            "terminal.ansiWhite": "#ABB2BF",
+            "terminal.ansiBrightWhite": "#FFFFFF",
+
+            "gitDecoration.addedResourceForeground": "#98C379",
+            "gitDecoration.modifiedResourceForeground": "#61AFEF",
+            "gitDecoration.deletedResourceForeground": "#E06C75"
+        }
+    },
     "folders": [
         {
             "path": "."
         }
-    ],
-    "settings": {
-        "workbench.colorTheme": "Dark Modern",
-
-        "editor.fontSize": 12,
-        "editor.fontFamily": "JetBrains Mono, Cascadia Code, Consolas, monospace",
-        "editor.lineHeight": 18,
-        "editor.fontLigatures": false,
-        "editor.letterSpacing": -0.2,
-
-        "window.zoomLevel": -2,
-        "window.titleBarStyle": "custom",
-
-        "editor.minimap.enabled": false,
-        "editor.scrollBeyondLastLine": false,
-        "editor.stickyScroll.enabled": true,
-        "editor.guides.bracketPairs": true,
-        "editor.bracketPairColorization.enabled": true,
-        "editor.renderWhitespace": "selection",
-        "editor.cursorBlinking": "smooth",
-        "editor.cursorSmoothCaretAnimation": "on",
-        "editor.cursorWidth": 2,
-        "editor.codeLens": false,
-        "editor.semanticHighlighting.enabled": true,
-
-        "editor.padding.top": 2,
-        "editor.padding.bottom": 2,
-
-        "breadcrumbs.enabled": true,
-
-        "explorer.compactFolders": true,
-
-        "workbench.editor.enablePreview": false,
-        "workbench.editor.labelFormat": "short",
-        "workbench.tree.indent": 12,
-
-        "markdown.preview.fontSize": 11,
-        "markdown.preview.lineHeight": 1.4,
-        "markdown.preview.scrollPreviewWithEditor": true,
-        "markdown.preview.markEditorSelection": true,
-        "markdown.styles": [
-            ".vscode/markdown-preview.css"
-        ],
-
-        "git.decorations.enabled": true,
-
-        "terminal.integrated.defaultProfile.windows": "PowerShell",
-
-        "terminal.integrated.profiles.windows": {
-            "PowerShell": {
-                "source": "PowerShell",
-                "icon": "terminal-powershell",
-                "color": "terminal.ansiBlue",
-                "overrideName": true
-            },
-            "Command Prompt": {
-                "path": [
-                    "${env:windir}\\Sysnative\\cmd.exe",
-                    "${env:windir}\\System32\\cmd.exe"
-                ],
-                "icon": "terminal-cmd",
-                "color": "terminal.ansiGreen",
-                "overrideName": true
-            },
-            "Git Bash": {
-                "path": "C:\\Program Files\\Git\\bin\\bash.exe",
-                "icon": "github",
-                "color": "terminal.ansiMagenta",
-                "overrideName": true
-            },
-            "WSL": {
-                "path": "wsl.exe",
-                "icon": "vm",
-                "color": "terminal.ansiYellow",
-                "overrideName": true
-            },
-            "QA Shell": {
-                "source": "PowerShell",
-                "icon": "beaker",
-                "color": "terminal.ansiCyan",
-                "overrideName": "QA Shell"
-            }
-        },
-
-        "terminal.integrated.tabs.enabled": true,
-        "terminal.integrated.tabs.location": "right",
-        "terminal.integrated.tabs.hideCondition": "never",
-
-        "terminal.integrated.fontFamily": "Cascadia Code, Consolas, 'Courier New', monospace",
-        "terminal.integrated.fontSize": 12,
-        "terminal.integrated.lineHeight": 1.0,
-
-        "terminal.integrated.cursorStyle": "block",
-        "terminal.integrated.cursorBlinking": true,
-        "terminal.integrated.scrollback": 10000,
-        "terminal.integrated.gpuAcceleration": "on",
-
-        "terminal.integrated.env.windows": {
-            "NODE_ENV": "development"
-        },
-
-        "workbench.colorCustomizations": {
-            "editor.background": "#252526",
-            "editor.foreground": "#D4D4D4",
-
-            "sideBar.background": "#2A2D2E",
-            "activityBar.background": "#2A2D2E",
-            "panel.background": "#2A2D2E",
-            "terminal.background": "#252526",
-
-            "titleBar.activeBackground": "#2A2D2E",
-            "editorGroupHeader.tabsBackground": "#2A2D2E",
-
-            "tab.activeBackground": "#323436",
-            "tab.inactiveBackground": "#2A2D2E",
-            "tab.activeForeground": "#FFFFFF",
-            "tab.inactiveForeground": "#A6A6A6",
-
-            "statusBar.background": "#2F4F73",
-            "statusBar.foreground": "#FFFFFF",
-
-            "editor.lineHighlightBackground": "#2D3033",
-            "editor.lineHighlightBorder": "#2D3033",
-
-            "editor.selectionBackground": "#21428399",
-            "list.activeSelectionBackground": "#214283",
-
-            "editorCursor.foreground": "#AEAFAD",
-
-            "editorIndentGuide.background1": "#333537",
-            "editorIndentGuide.activeBackground1": "#4B6EAF",
-
-            "editor.findMatchBackground": "#515C6A",
-            "editor.findMatchHighlightBackground": "#3A3D41",
-
-            "editorHoverWidget.background": "#2D2F30",
-            "editorHoverWidget.border": "#45494A",
-
-            "terminal.foreground": "#A9B7C6",
-
-            "terminal.ansiBlack": "#252526",
-            "terminal.ansiRed": "#CC7832",
-            "terminal.ansiGreen": "#6A8759",
-            "terminal.ansiYellow": "#FFC66D",
-            "terminal.ansiBlue": "#6897BB",
-            "terminal.ansiMagenta": "#9876AA",
-            "terminal.ansiCyan": "#629755",
-            "terminal.ansiWhite": "#A9B7C6",
-
-            "gitDecoration.addedResourceForeground": "#81C784",
-            "gitDecoration.modifiedResourceForeground": "#64B5F6",
-            "gitDecoration.deletedResourceForeground": "#E57373"
-        }
-    }
+    ]
 }
