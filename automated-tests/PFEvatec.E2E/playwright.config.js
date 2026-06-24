@@ -1,12 +1,9 @@
 // @ts-check
 const { defineConfig, devices } = require('@playwright/test');
 
-const config = require("C:/pfEvatecE2E/PFEvatec.E2E/configuration/config.json");
-
-
-export default defineConfig({
-  globalTimeout: 60 * 60 * 1000,
-})
+const config = require('./configuration/config.json');
+const runtimeProcess = /** @type {any} */ (globalThis).process;
+const isCI = !!(runtimeProcess && runtimeProcess.env && runtimeProcess.env.CI);
 
 
 /**
@@ -28,43 +25,29 @@ const outputDir = `./test-results/${date}`;
 
 
 module.exports = defineConfig({
+  globalTimeout: 60 * 60 * 1000,
 
   metadata: {
     product: 'Evatec Factory Web Application',
     env: config.environmentTesting,
     type: 'Regression',
     url: config.testingUrl,
-    userName: config.userName,
+    userName: config.userNameQA3,
     viewPort: 'width: 1920, height: 1049'
   },
 
   outputDir: outputDir,
-
-  use: {
-
-    // Emulates the user locale.
-    locale: 'de-DE',
-    
-    // Emulates the user timezone.
-    timezoneId: 'Europe/Zurich',
-
-    // Viewport used for all pages in the context.
-    viewport: { width: 1920, height: 1049 },
-    
-    // Grants specified permissions to the browser context.
-    permissions: ['notifications']
-  },
 
 
   testDir: './e2e-tests',
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
-  forbidOnly: !!process.env.CI,
+  forbidOnly: isCI,
   /* Retry on CI only */
-  retries: process.env.CI ? 2 : 0,
+  retries: isCI ? 2 : 0,
   /* Opt out of parallel tests on CI. */
-  workers: process.env.CI ? 1 : undefined,
+  workers: isCI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
  // reporter: 'html',
 
@@ -105,11 +88,23 @@ module.exports = defineConfig({
 
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
+    // Emulates the user locale.
+    locale: 'de-DE',
+
+    // Emulates the user timezone.
+    timezoneId: 'Europe/Zurich',
+
+    // Viewport used for all pages in the context.
+    viewport: { width: 1920, height: 1049 },
+
+    // Grants specified permissions to the browser context.
+    permissions: ['notifications'],
+
     /* Base URL to use in actions like `await page.goto('/')`. */
     // baseURL: 'http://127.0.0.1:3000',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: 'on-first-retry',
+    trace: 'on-first-retry'
   },
 
   /* Configure projects for major browsers */
