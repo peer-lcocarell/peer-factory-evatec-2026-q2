@@ -1,0 +1,555 @@
+ID	Work Item Type	Title	Assigned To	Original Estimate	Sales Budget PG	Remaining Work	Completed Work
+71416	Task	Test Hardware & Logbook buttons (Tool Details)	Lev Cocarell <PEERGROUP\LCocarell>	0.125		0	0.25
+71419	Task	Test Maintain Module Selection in Hardware & Logbook (Tool Module Details)	Lev Cocarell <PEERGROUP\LCocarell>	0.125		0	0.25
+71422	Task	Test Hardware Configuration in substrate sub-stage history (Module Sub-Stage History)	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.25
+71413	Task	Test Hardware & Logbook buttons (Tool Overview)	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.25
+73547	Task	Test Add system module type to tool type	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.25
+171336	Task	Test Wafer Icons (LP)	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.5
+174582	Task	Test SECS/GEM Tool Details (R6.5 Update)	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.25
+174993	Task	Test Ticket #16182 - Update wafer icons	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.5
+179820	Task	Test - Info text for Box Name	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.25
+181785	Task	Test 'from' information in question/comment support email	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.25
+182333	Task	Test Ticket #17310 - Change File Tool Manager Title	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.5
+184424	Task	Test - Change default box owner to user creating the box	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.5
+184440	Task	Test - remove Evatec logo from printed label	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.25
+185011	Task	Test - File upload dialog improvements	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.25
+192080	Task	Test - Tool Configuration / Module Config Help Text - R7.1 Updates	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.5
+196070	Task	Test - Label not included in EDP Requests	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	
+196073	Task	Test - Today's day in calendar hard to identify	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	
+196783	Task	Test - Targets: Measure Targets: make Delta TL a mandatory input	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.5
+197735	Task	Test - Create and/or Edit Tool (Tools) - Update for R7.2	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.25
+198089	Task	Test - Create and/or Edit Tools - Manual Tool Update R7.2	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.25
+203285	Task	Test - New Box - Updates related to Ticket #18509 for R8.0 - Work Orders	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.5
+203288	Task	Test - Edit Box (Boxes) - Updates related to Ticket #18509 for R8.0	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.5
+206779	Task	Test - Ticket #20099 - Tool HW Config: Create hyperlink to target details	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.25
+208551	Task	Test Ticket #20425 - Wafer ID Reader: make wafer ID editable (if not verified ?)	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.5
+213945	Task	Test - Ticket #21170 - Reduce space between different groups of action buttons	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.5
+215464	Task	Test - Hide alert icon in header if no active alerts	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.5
+216740	Task	Test - Collection Merge - Keep EDL Label	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.25
+217042	Task	Test - Ticket #21534 - Collection Merge: Remove duplicate tags	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.5
+218621	Task	Test - Retry AP Analysis Request (View Automatic Analysis Requests) - Updates for R8.2 	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.5
+218633	Task	Test - Ticket #19868 - Pre-select Variable Units - use variable unit as default when multiple available	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.25
+218657	Task	Test - Ticket #21368 - Hardware exchange for Roles with mandatory serial no.	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.25
+218858	Task	Test - Edit Substrate Collection (Substrate Collections) - Update R8.2	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.5
+218859	Task	Test - View Substrate Collection (Substrate Collections) - Update for R8.2	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.5
+218978	Task	Test - Retry ODP Analysis Request (View On Demand (ODP) Analysis Requests) - Updates for R8.2	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.25
+218993	Task	Test - Ticket #18509 - Make Recent 'Work Orders' available for both creator of the box and owner of the box	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.25
+217034	Task	Test - Ticket #20750 - Info tooltips for Collection	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.25
+217038	Task	Test - Ticket #21178 - Show Parameters with units in Dialog	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.25
+219649	Task	Test Cancel Import (Import Hardware Configuration)	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.25
+220246	Task	Test - View Substrate Collection (Substrate Collections) - Updates for R9.0	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.5
+220380	Task	Test - Create and/or Edit Tool (Tools) - Update for R9.0	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.25
+223099	Task	Test - View Project (Projects) - Updates for R9.1 - Copy Link to Entity Change	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.25
+223100	Task	Test - Display Analysis Results (Substrate Analysis) - Updates for R9.1 - Copy Link to Entity Change	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.25
+223111	Task	Test - Edit Substrate Collection (Substrate Collections) - Updates for R9.1 - Copy Link to Entity Change	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.25
+223112	Task	Test - Hardware Configuration (Hardware Configurations)_- Updates for R9.1 - Copy Link to Entity Change	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.25
+223113	Task	Test - Logbook (Logbook) - Updates for R9.1 - Copy Link to Entity Change	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.25
+223115	Task	Test - Substrate History (Substrate History) - Updates for R9.1 - Copy Link to Entity Change	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.25
+223117	Task	Test - Tool Details (Tool Details) - Updates for R9.1 - Copy Link to Entity Change	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.25
+223118	Task	Test - Tool History (Tool History) - Updates for R9.1  - Copy Link to Entity Change	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.25
+223119	Task	Test - View Box (Boxes) - Updates for R9.1 - Copy Link to Entity	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.25
+223120	Task	Test - View Substrate Collection (Substrate Collections) - Updates for R9.1  - Copy Link to Entity Process 	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.25
+223121	Task	Test - View Targets (Targets) - Updates for R9.1 - Copy Link to Entity	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.25
+223301	Task	Test - Create Substrate Collection (Substrate Collections) - Updates for R9.1 - View and Edit Mode	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.25
+223304	Task	Test - Edit Substrate Collection (Substrate Collections) - View and Edit Updates for R9.1	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.25
+223305	Task	Test - Merge Substrate Collections (Substrate Collections) - Updates for R9.1 - View and Edit Mode	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.25
+223307	Task	Test - Recent Collection List (Substrate Collections) - Updates for R9.1	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.25
+223309	Task	Test - Remove Substrate Collection (Substrate Collections) - Updates for R9.1 - View and Edit Mode	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.25
+223312	Task	Test - View Substrate Collection - Updates for View & Edit Mode - Updates for R9.1	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.25
+221457	Task	Test - Ticket #22408 - Substrate History: GUI update when moving to next substrate	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.25
+223043	Task	Test - Ticket #22231 - Number format in Leak Rate plot	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.5
+223045	Task	Test - Ticket #22677 - Collection: Change some wording	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.25
+223048	Task	Test - Ticket #22680 - All major GUIs: Show name of the entity in blue header row	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.25
+223051	Task	Test - Ticket #21600 - Link to "Tool Configuration" from Tool (Details) GUI	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.5
+220907	Task	Test - Cancel Parameter Set Changes (Parameter Selection) - Updates for R9.0	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.25
+223354	Task	Test - Add to Collection (Browse Substrates) - Updates for R9.1 - View and Edit Mode	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.25
+223572	Task	Test - Edit Project - Collection Contributors - Updates for R9.1	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.5
+223573	Task	Test - Edit Substrate Collection - Collection Contributors - Updates for R9.1	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.5
+223588	Task	Test - Ignore Unknown Substrate (Tool History)	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.25
+224177	Task	Test - Remove ODP Analysis Request (View On Demand (ODP) Analysis Requests) - Updates for R9.1	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.5
+224479	Task	Test - View Collection History ODP Entry from Link (Substrate Collection History)	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.5
+224772	Task	Test - New Target Type - Updates for R9.1	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.25
+226783	Task	Test - Change Module Label (Hardware Configuration) - Updates for R9.2	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.25
+228167	Task	Test - Hardware Configuration (Tool Hardware Configuration) R9.2 Update	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.25
+231578	Task	Test Compare Hardware Configuration (Tool Hardware Configuration)	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	
+231579	Task	Test Compare Abstract Hardware Configuration (Hardware Configuration for Abstract Module)	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	
+231940	Task	Test - Modules (Modules) - R10.0	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	
+231942	Task	Test - Module Summary (Modules) - R10.0	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	
+231944	Task	Test - View Module (Modules) - R10	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	
+231945	Task	Test - Remove Module (Modules) - R10.0	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	
+231946	Task	Test - Module History (View Module) - R10.0	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	
+231947	Task	Test - Module Logbook - R10.0	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	
+231948	Task	Test - Edit Module (Modules) - R10.0	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	
+231949	Task	Test - Retire Module (Modules) - R10.0	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	
+231951	Task	Test - Hardware Configuration for Real Module (Module Hardware Configuration) - R10.0	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	
+272865	Task	QA - Test - Ticket #23423 - collapse all in hardware list	Lev Cocarell <PEERGROUP\LCocarell>	0.25		0	0.5
+231952	Task	Test - Copy Module Hardware Configuration (Module Hardware Configuration) - R10.0	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	
+234150	Task	Test - Ticket #24074 - Target "current location" as editable field.	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.75
+261811	Task	QA - Test - Module positions only once in Tool View	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+231580	Task	Test Find Matching for Abstract Hardware Configuration (Hardware Configuration for Abstract Module)	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	
+231582	Task	Test Compare Hardware Configurations (Compare Hardware Configuration)	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	
+231584	Task	Test Export Hardware Configuration Comparison (Compare Hardware Configuration)	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	
+231490	Task	Test Create Abstract Module (Create Module)	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	
+231924	Task	Test - Ticket #24023 - Time resolution of stored of process data	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.75
+227851	Task	Test - Ticket #22251 - Hardware Exchange: comments &amp; attached documents	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	1
+231480	Task	Test Export Abstract Hardware Configuration (Hardware Configuration for Abstract Module)	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	
+225462	Task	QA - R9.2 - Test Plan / Template for Tools Required	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	
+224195	Task	Test - Return to Source (Track Out)  - Updates for R9.1	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	1.5
+226712	Task	Test - Create Tool Type (Tool Types) - Updates for R9.2	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.75
+220904	Task	Test - Remove Parameter Set (Parameter Selection) - Updates for R9.0	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+224174	Task	Test - ODP Analysis Progress (Perform ODP Analysis) - Updates for R9.1	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	1.25
+226723	Task	Test - Remove Module (Modules) - R9.2	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	1.5
+226725	Task	Test - Retire Module (Modules) - R9.2	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	1.5
+226732	Task	Test - Add associations (Learned Associations) - Updates for R9.2	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+226744	Task	Test - Hardware Configuration for Real Module (Module Hardware Configuration) - Updates for R9.2	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+226746	Task	Test - Import Hardware Configuration (Tool Hardware Configuration) - Updates for R9.2	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	1
+226752	Task	Test - Remove Module Type (Module Types) - Updates for R9.2	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.75
+226754	Task	Test - Retire Target (Targets) - Updates for R9.2	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+226756	Task	Test - Save Role Changes (Hardware Configuration) - Updates for R9.2	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+226758	Task	Test - Tool Logbook (Logbook) - Updates for R9.2	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	1
+223534	Task	Test - Save Automatic Stage Matching Updates (Substrate Collections) - Updates for R9.1  - View and Edit Mode	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	1
+220918	Task	Test - Parameter Set   Edit Mode (Parameter Selection) - Update for R9.0	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.75
+221368	Task	Test - Edit Additional Information for BOM Changes (Import Hardware Configuration)	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+223053	Task	Test - Ticket #20535 - pop-up window offline target installation instruction change - updates for R9.1	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0.2	0.5
+219672	Task	Test - Ticket #21270 - Don't render files if they get analyzed?	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.75
+220893	Task	Test - Save Parameter Set (Parameter Selection)	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+223342	Task	Test - Delete uploaded sub-stage files (Sub-Stage History Features)	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	1.25
+219686	Task	Test - New Target Type from BPS (New Target Type) - Change Automatic Input from BPS Name - Updates for R9.1	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+220238	Task	Test - Create Substrate Collection (Substrate Collections) - Update for R9.0	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	1.25
+220241	Task	Test - Edit Substrate Collection (Substrate Collections) - Updates for R9.0	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.75
+219653	Task	Test Recent Project List (Projects)	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+219654	Task	Test Save BOM Import (Import Hardware Configuration)	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	1
+219657	Task	Test View Project (Projects)	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+217040	Task	Test - Ticket #21177 - Order of data columns in collection	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.75
+219639	Task	Test Remove Project (Projects)	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+219637	Task	Test Reset BOM Import (Import Hardware Configuration)	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+219642	Task	Test Manage documents for projects (Create Project)	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+219645	Task	Test Import Hardware Configuration (Hardware Configuration)	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.75
+217032	Task	Test - Ticket #20630 - Warning message when defining an empty custom box	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.75
+212814	Task	Test - Ticket #20992 - Rephrase Tool Status	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+208549	Task	Test - Parameter selection: improve layout	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	1.25
+208552	Task	Test - Ticket #20459 - Export button hardware list	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+206978	Task	Test - Ticket #19954 - Too many balls	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+205701	Task	Test - Select Hardware Components in Hardware Kit (Hardware Kits) - Updates for R8.0	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	1
+206629	Task	Test - View or upload documents for Substrate Collection	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	1
+206632	Task	Test - View Substrate Collection (Updates for R8.0)	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.75
+205685	Task	Test - Order categories in a Logbook Configuration (Logbook Configuration) - Updates for R8.0	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.75
+205687	Task	Test - Order roles in a Logbook Configuration (Logbook Configuration) - Updates for R8.0	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.75
+205691	Task	Test - Remove Category from Logbook (Logbook Configuration) - Updates for R8.0	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+205693	Task	Test - Remove Hardware Kit (Hardware Kits) - Updates for R8.0	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+205696	Task	Test - Remove Role from Logbook (Logbook Configuration) - Updates for R8.0	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	1.25
+203306	Task	Test - View Module Types and Logbook Configuration (Module Types) - Updates for R8.0	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+203310	Task	Test - Remove Module Type (Module Types) - Updates for R8.0	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+203243	Task	Test - View Box (Boxes) - Update for R8.0	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+205582	Task	Test - Ticket #20101 - Remove links in dialog boxes	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+205589	Task	Test - Ticket #20096 - Display HW Names (not only BPS #) in substrate history hardware section	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	1.5
+205592	Task	Test - Ticket #20093 - Dataset Sorting	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	
+205610	Task	Test - Tool Details (Tool Details) - Update for R8.0	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+205613	Task	Test - View Tool (Tools) - Update R8.0	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+205650	Task	Test - Add Hardware Kit (Hardware Kits) - Updates for R8.0	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.75
+205671	Task	Test - Copy Logbook Configuration (Logbook Configuration) - Updates for R8.0	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	1
+205673	Task	Test - Edit category name in Logbook Configuration (Logbook Configuration) - Updates for R8.0	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+205676	Task	Test - Edit Hardware Kit (Hardware Kits) - Updates for R8.0	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+205677	Task	Test - Hardware Kits (Manage Hardware) - Updates for R8.0	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+197775	Task	Test - 'Track Out'	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+203221	Task	Test - Collection: Parameter column headers	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+203224	Task	Test - Collection: Filter	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+203226	Task	Test - Collection: Grid column sizing	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+196784	Task	Test - SECS/GEM Tool History (Tool History) - Update for R8.0	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+196785	Task	Test - Targets: "Old" targets with unknown TL history enable input of Delta TL for 1st meas.	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	1
+197173	Task	Test - Substrate history grid header contains units and should not be capitalized	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+197179	Task	Test - Support EDP transition to database query for raw data	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+197183	Task	Test - Targets: simplify New Target workflow (only NEW &amp; USED targets with unknown TL history)	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	
+186523	Task	Test - Column "Storage bin" in box list	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+187196	Task	Write/Test - Additional attribute buCD from auftragT	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+187415	Task	Write/Test - Allow Box Transfer with Different Sized Boxes	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.75
+191868	Task	Manual Tool - Test new/edit/copy/view	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	
+193661	Task	Test - Store results of AP Analysis - Repeated EDP data with coordinates (R7.1 Updates)	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+193695	Task	Test - Automatic Sign Out (R7.1 Update)	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	1.5
+193621	Task	Test - Analysis (Updates for R7.1)	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	
+194888	Task	Test - New Target Type (Target Types) - R7.1 Updates	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+196028	Task	Test - 'Information Stage History' - Manual Tool Update for R7.2	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	
+196031	Task	Test - 'Manage Custom predefined types' - Manual Tool Update for R7.2	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	1
+196033	Task	Test - 'Remove Tool' - Manual Tool Update for R7.2	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+196038	Task	Test - 'Return to Source' - Manual Tool Update for R7.2	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+196041	Task	Test - 'Tools' - Manual Tool Update for R7.2	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+196048	Task	Test - 'Track Out' - Manual Tool Update for R7.2	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	
+184835	Task	Test - Remove 'active' default filter from hardware component lists	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+184435	Task	Test - Target selection list with serial number	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+182541	Task	Test - Remove 'use as dummy' form box REMOVE and change icon	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	1.5
+182339	Task	Test - FTM show detected files so that user knows nothing is wrong	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	1.5
+182504	Task	Test - Full-Text search for collections	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+182515	Task	Test - New User dialog should also show Position	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+182320	Task	Test - Allow logbook for all tools even if there is no hardware configuration	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	1
+182326	Task	Test - FTM for FSM - make sure user has feedback that auxiliary files is required	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	1.5
+179773	Task	Test - Box Edit: Individual Substrate Removal	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	1
+179777	Task	Test - EDP to provide the substrate side when creating a new substage and/or measurement set	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+179778	Task	Test - Change design for 'hover tip'	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+175255	Task	Test Ticket #16649 - Teamviewer-ID attribute connect button for tools	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+175260	Task	Test Make substrate history aware of AP requests	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	1.5
+174583	Task	Test Track In (R6.5 Update)	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+174585	Task	Test Configure File Tool Manager (R6.5 Update)	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+174979	Task	Test Ticket #16665 - Logbook comments should have file-attach option	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	1.5
+174984	Task	Test Ticket #16505 - Analyze Substrates: Filtered function selection based on available substrate data	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	1
+174321	Task	Test Ticket #16048 - Sort list of parameters	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+174322	Task	Test Ticket #15456 - Allow FOUP track in when 'ready to undock' and do not display 'Unknown' for FOUP/Cassette ID before carrier ID read	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	2
+174396	Task	Test Ticket #16092 - Change flow for 'save' and 'back' on Box/Target Edit screen	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	1.5
+174580	Task	Test Tools (Update R6.5)	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+174581	Task	Test Remove Tool (R.6)	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+174314	Task	Test Track Out of File Tool (Track Out)	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	2
+171378	Task	Test Only do AP for unknown substrates on reconcile	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	2
+173019	Task	Test List of Process Parameters is jumbled in Collection "Select Parameters"	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+82221	Task	Test Update 'toggle buttons' to be named buttons and fix # stage filter	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+82819	Task	Test Show EDP Version	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+83387	Task	Test Substrate collections redesign part 2	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	2
+83618	Task	Test Dialogue About Slow Connection Time	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	1
+169739	Task	Test Re-order target overview table	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	1
+169741	Task	Test Targets: "Storage Location" vs. "Current Location"	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	1
+169860	Task	Test New Product Name "Evatec Fabric"	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	1
+171328	Task	Test change information on target sticker	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+171334	Task	Test No Auto-Edit for Boxes & Targets	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	2
+73492	Task	Test Remove Target (Targets)	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.75
+73448	Task	Test Remove Module Type (Module Types)	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	1.5
+73455	Task	Test Print Target Label (Targets)	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+73467	Task	Test View Target (Targets)	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	1
+73470	Task	Test View Module Types and Logbook Configuration (Module Types)	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+80034	Task	Test Update to role type to include 'predefined type'	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+80535	Task	Test 'initial material weight' updates for R5 extension	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+80625	Task	Test 'Edit Substrate Collection' - 'R5 Extension' updates	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+80628	Task	Test 'Create Substrate Collection' - 'R5 Extension' updates	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+80631	Task	Test 'Remove Substrate Collection' - 'R5 Extension' updates	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+81149	Task	Test Edit Hardware Kit (Hardware Kits)	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+81150	Task	Test View target documents (View Target)	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	1.25
+81154	Task	Test View and manage target documents (Edit Target)	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	1
+81156	Task	Test Add Hardware Kit (Hardware Kits)	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	1
+81157	Task	Test Remove Hardware Kit (Hardware Kits)	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	2
+81160	Task	Test View and upload documents for new target (New Target)	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	1
+81588	Task	Test Overwrite stored AP Results (EDP Results)	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	1.5
+73446	Task	Test Display imported hardware components (Hardware Components)	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.75
+71390	Task	Test Links to substrate history (Substrate History)	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	1
+69590	Task	Test Remove Parameter Set (Parameter Selection)	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.25
+69593	Task	Test Export Substrate Collection (Substrate Collections)	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+69601	Task	Test Remove Parameters from List (Parameter Selection)	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+69664	Task	Test Retry Failed ODP Analysis Request (View On Demand (ODP) Analysis Requests)	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+70173	Task	Test View and manage all ODP Analysis Requests (View On Demand (ODP) Analysis Requests)	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	1.5
+68768	Task	Test Cancel ODP Analysis Request (View On Demand (ODP) Analysis Requests)	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+68770	Task	Test Remove AP Analysis Request (View Automatic Analysis Requests)	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	1.5
+68975	Task	Test Query ODP Analysis Types (Substrate Analysis)	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	0.5
+68977	Task	Test Remove ODP Analysis Request (View On Demand (ODP) Analysis Requests)	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	1.25
+69585	Task	Test Remove Substrate Collection (Substrate Collections)	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	1
+69586	Task	Test Export Substrates (Browse Substrates)	Lev Cocarell <PEERGROUP\LCocarell>	0.5		0	2
+69591	Task	Test Perform ODP Analysis (Substrate Analysis)	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	4
+69588	Task	Test Selecting ODP Analysis Type (Perform ODP Analysis)	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	1.75
+69589	Task	Test Preparing substrate selection for ODP Analysis (Perform ODP Analysis)	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	1
+81152	Task	Test Display Hardware Kit (Hardware Configuration)	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	1
+75374	Task	Test Edit BPS hardware component (Hardware Components)	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	1
+77375	Task	Test Save Logbook Configuration (Module Types)	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	1
+73466	Task	Test Send BPS import failure notifications (BPS Information)	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	0.75
+73463	Task	Test Add Role to Logbook Configuration (Logbook Configuration)	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	1.5
+73457	Task	Test Add Module Type (Module Types)	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	1
+73451	Task	Test Select rewind version (Rewind Hardware Configuration)	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	3
+73488	Task	Test Remove Category from Logbook (Logbook Configuration)	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	0.5
+73490	Task	Test Save Hardware Component Changes (Hardware Configuration)	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	0.5
+73473	Task	Test Remove Role from Logbook (Logbook Configuration)	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	0.5
+73474	Task	Test Add Category to Logbook Configuration (Logbook Configuration)	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	1.5
+73478	Task	Test Logbook Configuration (Module Types)	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	0.75
+73482	Task	Test Pre-selecting module in Hardware Configuration (Hardware Configuration)	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	0.5
+73485	Task	Test Edit Module Type (Module Types)	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	1
+73486	Task	Test Target flagged as requiring measurement (View Target)	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	1
+171332	Task	Test separate user rights for NEW & REMOVE for Boxes & Targets	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	1
+82890	Task	Test Include sub-stages in analysis request (EDP Results)	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	1
+175249	Task	Test Ticket #16650 - Links between substrates and boxes	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	2
+182330	Task	Test - Better handling for load ports in Offline SECS/GEM tools	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	1
+184438	Task	Test - Tag colors in Collections	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	0.5
+196050	Task	Test - 'Track Out of File or Manual Tool' - Manual Tool Update for R7.2	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	0.75
+196046	Task	Test - 'Track In to File or Manual Tool' - Manual Tool Update for R7.2	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	0.75
+194892	Task	Test - Edit Target (Targets) - R7.1 Updates	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	0.75
+193629	Task	Test - Store results of AP Analysis -  New state for EDP response containing errors (R7.2 Update)	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	0.25
+194092	Task	Test - 'Creating New Tool' Target Life Count Direction update for R7.1 	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	1
+194494	Task	Test - Measure Target (Targets) (R7.1 Updates)	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	0.75
+194496	Task	Test - New Target (Targets) (R7.1 Updates)	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	0.75
+194497	Task	Test - Target Usage (View Target) (R7.1 Updates)	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	0.75
+83386	Task	Test Update Button Names (Back vs Cancel)	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	2
+192099	Task	Test - Delete Measurement Set in Substrate History (R7.1 Update)	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	2.5
+193617	Task	Test - Include raw EDP data in analysis request (EDP Results) - R7.4 Updates	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	1
+193618	Task	Test - Analysis results in Sub-Stage History (R7.3 Update) 	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	0.5
+197171	Task	Test - Ticket #19002 - Targets: make Delta TL editable also for exchanged targets	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	1
+196068	Task	Test - Ticket #18915 - Substrate export: split location into box # and box slot # in excel export	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	0.75
+202137	Task	Test - Ticket #19649 - Upload files to deleted substrate	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	1.75
+197177	Task	Test - Optionally regenerate analysis request on retry	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	0.75
+205648	Task	Test - Add Category to Logbook Configuration (Logbook Configuration) - Updates for R8.0	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	1
+218822	Task	Test - Hardware Configuration (Hardware Configuration) - Update for R8.2	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	1.25
+218827	Task	Test - Add Role to Logbook Configuration (Logbook Configuration) - Update for R8.2	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	1.25
+219646	Task	Test Edit Project (Projects)	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	1.5
+212863	Task	Test - Ticket #18615 - Make 'default filter with own user name' optional	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	1
+219641	Task	Test Search for BOM (Import Hardware Configuration)	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	1
+219638	Task	Test Display BOM (Import Hardware Configuration)	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	1
+219671	Task	Test - Ticket #21297 - Parameter sets: add to no set	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	0.75
+219650	Task	Test Manage boxes for projects (Create Project)	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	1
+219651	Task	Test Assign BOM Item to Role (Import Hardware Configuration)	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	2.25
+220245	Task	Test - Substrate Collections (Substrate Collections) - Updates for R9.0	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	0.75
+226748	Task	Test - Learned Associations (Manage Hardware) - Updates for R9.2	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	1
+226734	Task	Test - Change Target – Selection (Step 2) (Change Target) - Updates for R9.2	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	1
+226736	Task	Test - Change Tool Type Module Behaviour (Edit Tool Type) - Updates for R9.2	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	1.5
+226738	Task	Test - Copy Module Hardware Configuration (Module Hardware Configuration) - Updates for R9.2	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	1
+226729	Task	Test - View Module (Modules) - R9.2	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	1.5
+226718	Task	Test - Module Summary (Modules) - Updates for R9.2	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	1
+224179	Task	Test - Save Automatic Stage Matching Updates (Substrate Collections) - Collection History with ODP Results - Updates for R9.1	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	1
+224164	Task	Test - Collection History Comment Entry (Substrate Collection History)	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	1.5
+224165	Task	Test - Collection History Entry Reply (Substrate Collection History)	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	1.25
+224167	Task	Test - Collection History ODP Entry (Substrate Collection History)	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	1
+224169	Task	Test - Display Analysis Results (Substrate Analysis) - Updates for R9.1	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	1
+228729	Task	Write - Test - Ticket #22945 - Wrong Loadport Status	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	1
+272868	Task	QA - Test - Ticket #24059 - Automatic ECL Box Reminder	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	2.5
+272852	Task	QA - Test - Ticket #23360 - Sorting predefined type values	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	2
+282831	Task	QA - Test - Ticket #34444 - Possibility to attach documents to target types	Lev Cocarell <PEERGROUP\LCocarell>	0.75		0	2
+272871	Task	QA - Test - Ticket #32097 - Project (Work Order) upload from Excel	Lev Cocarell <PEERGROUP\LCocarell>	1		0	4
+265533	Task	QA - Test - Load BOM from Excel	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1.5
+265534	Task	QA - Test - Import Hardware Components from "Excel"	Lev Cocarell <PEERGROUP\LCocarell>	1		0	4
+228730	Task	Test - Ticket #17286 - Substrate not updated to Processed when process was aborted and manual invention	Lev Cocarell <PEERGROUP\LCocarell>	1		0	2
+231482	Task	Test Select a Wildcard (Hardware Configuration for Abstract Module)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	
+231483	Task	Test Select Role Values (Hardware Configuration for Abstract Module)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	
+231487	Task	Test Modify Roles with Multiple Values (Hardware Configuration for Abstract Module)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	
+229001	Task	Test - Ticket #23361 - Labeling process substages	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1.75
+231485	Task	Test Select Hardware Components (Hardware Configuration for Abstract Module)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	
+224171	Task	Test - Display ODP Analysis Results (Display Analysis Results)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1.5
+226714	Task	Test - Edit Module (Modules) - R9.2	Lev Cocarell <PEERGROUP\LCocarell>	1		0	2
+226717	Task	Test - Module History (View Module) - R9.2	Lev Cocarell <PEERGROUP\LCocarell>	1		0	2.25
+226720	Task	Test - Modules (Modules) - R9.2	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1.25
+226739	Task	Test - Create and/or Edit Modules for SECS/GEM Tool (Create and/or Edit Tool) - Updates for R9.2	Lev Cocarell <PEERGROUP\LCocarell>	1		0	2
+226742	Task	Test - Hardware Configuration for Module (Module Hardware Configuration) - Updates for R9.2	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1.25
+219656	Task	Test Maintain predefined types from work orders (Work Orders)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1.25
+219647	Task	Test Manage related projects (Create Project)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1
+219648	Task	Test Display imported work orders - new columns	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1.5
+220901	Task	Test - Add Parameter to Parameter Set (Parameter Selection) - Updates for R9.0	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1.25
+223090	Task	Test - Metrology or non-SECS/GEM Process Stage History (Substrate History) (updates for R9.1)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1.25
+223628	Task	Test - Add Collection History Entry on Edit (Edit Substrate Collection)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1.25
+211911	Task	Test - Ticket #20516 - Hardware Config Date only shows date of last modification	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1.5
+214597	Task	TEST - UPDATES POST RELEASE  FOR - Ticket #20759 - Hardware: Missing Modules & Date Selection for entire Tool	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1
+205689	Task	Test - Remove association (Learned Associations)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1.25
+205681	Task	Test - Logbook Configuration (Manage Hardware) - Updates for R8.0	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1
+211464	Task	Test - Ticket #20089 - Typecode-based Display Names for Substages	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1.25
+205653	Task	Test - Add Role to Logbook Configuration (Logbook Configuration) - Updates for R8.0	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1
+205642	Task	Test - FOUP Slot Map Integrity Issues (Track In for SECS/GEM Tool with FOUP Load Port) - Updates for R8.0	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1.5
+205645	Task	Test - Track In FOUP for SECS/GEM Tool Load Port (Track In for SECS/GEM Tool with FOUP Load Port) - Updates for R8.0	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1
+205611	Task	Test - View or upload documents for tool (Create and/or Edit Tool) - Updates for R8.0	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1.25
+203274	Task	Test - Display Analysis Results (Substrate Analysis) - Updates for R8.0	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1
+203276	Task	Test - View Analysis Error Details (Analysis) - R8.0	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1.5
+203278	Task	Test - View Automatic Analysis Requests (Analysis) - R8.0	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1.5
+203281	Task	Test - View On Demand (ODP) Analysis Requests (Analysis) - Updates for R8.0	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1.5
+203314	Task	Test - Module Types (Module Types) - Updates for R8.0	Lev Cocarell <PEERGROUP\LCocarell>	1		0	2
+203492	Task	Test - Select Stage(s) for ODP (Perform ODP Analysis) updates for R8.0	Lev Cocarell <PEERGROUP\LCocarell>	1		0	0.5
+203307	Task	Test - Save Module Types (Module Types) - Updates for R8.0	Lev Cocarell <PEERGROUP\LCocarell>	1		0	
+203301	Task	Test - Create Module Type (Module Types) - Updates for R8.0	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1
+203303	Task	Test - Edit Module Type (Module Types) - Updates for R8.0	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1
+203240	Task	Test - Edit Box (Boxes) - Updates related to Ticket #18957 for R8.0	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1
+202142	Task	Test - Ticket #19642 - Clearly communicate pending slot-map verification	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1
+196072	Task	Test - Ticket #18615 - Default filter with own user name	Lev Cocarell <PEERGROUP\LCocarell>	1		0	0.5
+192097	Task	Test - Display-Names, Values, and Descriptions in Predefined Types (Updates for R7.1)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1
+196063	Task	Test - Manual Tool History	Lev Cocarell <PEERGROUP\LCocarell>	1		0	0.5
+196066	Task	Test - Manual Tool Sub-Stage History	Lev Cocarell <PEERGROUP\LCocarell>	1		0	3
+193412	Task	Test - Add a Stage to a Substrate (Stage History Features) - R7.1 Updates	Lev Cocarell <PEERGROUP\LCocarell>	1		0	4
+193567	Task	Test - Upload File for Multple Substrates (File tool upload usability enhancements)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	3.5
+186522	Task	Test - Attach additional data to Substrates - R7.1 Updates	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1.5
+192078	Task	Test - Upload File for Substrate (File tool upload usability enhancements for R7.1)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	4
+193656	Task	Test - Edit Predefined Types and Values (R7.1 Updates)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1
+196054	Task	Test - Define columns for Manual data item table (Create and/or Edit Tool)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	2
+196055	Task	Test - Manual Tool Details (Tool Details)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1
+184182	Task	Test - EDP v3.0.0 Integration	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1.5
+182510	Task	Test - Suggest Tags when editing tags for collections and substrates	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1.5
+182331	Task	Test - Ability to set configuration settings in EF	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1.5
+175742	Task	Test In application email form	Lev Cocarell <PEERGROUP\LCocarell>	1		0	2.5
+175744	Task	Test Report an Issue	Lev Cocarell <PEERGROUP\LCocarell>	1		0	3.5
+179762	Task	Test - Multiple measurement sets in Substrate History	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1
+83362	Task	Test Substrate History Redesign	Lev Cocarell <PEERGROUP\LCocarell>	1		0	4
+169710	Task	Test Change Target Improvements	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1.5
+169721	Task	Test Data collection only zeros on CLN2 Alpha and CLN3 Alpha	Lev Cocarell <PEERGROUP\LCocarell>	1		0	2
+169735	Task	Test Make Target Type information editable	Lev Cocarell <PEERGROUP\LCocarell>	1		0	2.5
+169737	Task	Test Rename some Target Type variables	Lev Cocarell <PEERGROUP\LCocarell>	1		0	3
+171335	Task	Test new layout for LPs in Tool Overview	Lev Cocarell <PEERGROUP\LCocarell>	1		0	3.5
+174291	Task	Test Track In to File Tool (Track In)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1
+174307	Task	Test Upload File for Substrate (Data Collection)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	3.5
+174310	Task	Test File Tool Details (Tool Details)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1.5
+174312	Task	Test Upload File for Multiple Substrates (Data Collection)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	3.5
+174316	Task	Test Create and/or Edit File Tool	Lev Cocarell <PEERGROUP\LCocarell>	1		0	2.5
+174318	Task	Test Return to Source (Track Out)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1.75
+171338	Task	Test FOUP tracking improvements	Lev Cocarell <PEERGROUP\LCocarell>	1		0	2
+174331	Task	Test Ticket #15684 - Issues with "Select Measurements Table" in Analysis Wizard	Lev Cocarell <PEERGROUP\LCocarell>	1		0	2
+73487	Task	Test Module Types (Module Types)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1.5
+73483	Task	Test Hardware Configuration (Hardware Configuration)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1.5
+73479	Task	Test Change Hardware Component (Hardware Configuration)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	8
+73480	Task	Test Save Module Types (Module Types)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	2
+73491	Task	Test Copy Logbook Configuration (Logbook Configuration)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1
+73476	Task	Test Cancel Hardware Configuration (Hardware Configuration)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	0.5
+73453	Task	Test Configure BPS notifications (BPS Information)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1
+73469	Task	Test Select Module in Hardware Configuration (Hardware Configuration)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1.5
+80021	Task	Test Manage 'Logbook Role Type' predefined types	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1.5
+80038	Task	Test Logbook updates for role value changes	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1
+80045	Task	Test Updates to substrate collections	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1
+80050	Task	Test View Parameter Values in Substrate Collection (Substrate Collections)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1
+81155	Task	Test Hardware Kits (Hardware Kits)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	4.5
+81590	Task	Test Trigger additional AP from AP results (EDP Results)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	0
+81180	Task	Test Export Target (Targets)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	3
+77374	Task	Test Change Target – Selection (Step 1) (Change Target)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1
+81159	Task	Test Save Hardware Kits (Hardware Kits)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1.25
+69592	Task	Test Display Analysis Results (Substrate Analysis)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1.5
+70174	Task	Test Matched stage/sub-stage history (Substrate History for Matched Stages)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	2
+69602	Task	Test Configure email settings for EDP Failure Notifications (EDP Configuration)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1.5
+69594	Task	Test Retry Failed AP Analysis Request (View Automatic Analysis Requests)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	2
+71396	Task	Test Manual Stage Matching Alignment (Stage Matching)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1
+70338	Task	Test Last Process Time (Boxes)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	4.5
+71389	Task	Test Manual Stage Matching Naming (Stage Matching)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1
+70176	Task	Test Stage Naming (Stage Matching)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1
+70177	Task	Test Merge Substrate Collections (Substrate Collections)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1
+73445	Task	Test Import hardware components from BPS (Hardware Components)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	4
+68778	Task	Test Browse Substrates (Substrate Browsing)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	4.5
+68779	Task	Test see deposited materials in SECS/GEM Tool History (Tool History)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	2
+68776	Task	Test Notify users of AP Analysis Issues (Automatic Processing (AP) Analysis)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1.5
+68772	Task	Test Process Stage History (REQUREMENT: Substrate History)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1.5
+68773	Task	Test Metrology Tool Sub-Stage History (REQUREMENT: Substrate History)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1.5
+68774	Task	Test Store results of AP Analysis (Automatic Processing (AP) Analysis)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1
+68763	Task	Test queue AP for SECS/GEM tool (Data Collection)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1
+68764	Task	Test Module Sub-Stage History (REQUREMENT: Substrate History)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1.5
+68765	Task	Test Introduce Stage History (REQUREMENT: Substrate History)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	1
+68766	Task	Test queue AP for File tool (Data Collection)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	0.5
+68767	Task	Test Metrology Stage History (REQUREMENT: Substrate History)	Lev Cocarell <PEERGROUP\LCocarell>	1		0	2
+81153	Task	Test Store SECS/GEM Tool Alarms (SECS/GEM Tool Data)	Lev Cocarell <PEERGROUP\LCocarell>	1.25		0	2.25
+73468	Task	Test Undo Hardware Component Change(s) (Hardware Configuration)	Lev Cocarell <PEERGROUP\LCocarell>	1.25		0	1
+73454	Task	Test Edit Hardware Change in Logbook (Logbook)	Lev Cocarell <PEERGROUP\LCocarell>	1.25		0	1.5
+196026	Task	Test - 'Create and/or Edit Tools' - Manual Tool Update for R7.2	Lev Cocarell <PEERGROUP\LCocarell>	1.25		0	1.5
+202124	Task	Test - Ticket #18612 - Select Hardware Change	Lev Cocarell <PEERGROUP\LCocarell>	1.25		0	2
+215621	Task	Test - Log EQP values on connection to facilitate full rewind and correlation in substrate history / collections	Lev Cocarell <PEERGROUP\LCocarell>	1.25		0	1.25
+219640	Task	Test Manage collections for projects (Create Project)	Lev Cocarell <PEERGROUP\LCocarell>	1.25		0	2
+226763	Task	Test - Add Sub-modules to Module Type (Sub-modules) - Updates for R9.2	Lev Cocarell <PEERGROUP\LCocarell>	1.25		0	1.5
+226773	Task	Test - Edit/Remove Sub-modules for a Module Type (Sub-modules) - Updates for R9.2	Lev Cocarell <PEERGROUP\LCocarell>	1.25		0	1.5
+226750	Task	Test - Module Logbook (Logbook) - Updates for R9.2	Lev Cocarell <PEERGROUP\LCocarell>	1.5		0	2.25
+226710	Task	Test - Create Real Module (Create Module) - R9.2	Lev Cocarell <PEERGROUP\LCocarell>	1.5		0	1.75
+231486	Task	Test Select Target Types (Hardware Configuration for Abstract Module)	Lev Cocarell <PEERGROUP\LCocarell>	1.5		0	
+231583	Task	Test Select Version for HWC (Compare Hardware Configuration)	Lev Cocarell <PEERGROUP\LCocarell>	1.5		0	
+228954	Task	Test - Ticket #20260 - Target List columns change and remaining thickness	Lev Cocarell <PEERGROUP\LCocarell>	1.5		0	2.25
+228957	Task	Test - Ticket #22248 - Hardware config export improvements	Lev Cocarell <PEERGROUP\LCocarell>	1.5		0	3.5
+228705	Task	Test - Ticket #22906 - CLN tools - new module names	Lev Cocarell <PEERGROUP\LCocarell>	1.5		0	1.5
+265843	Task	QA - Test - Ticket #28558 - Overall Target Usage on Target list	Lev Cocarell <PEERGROUP\LCocarell>	1.5		0	1.5
+261812	Task	QA - Test - Manual data input of Work Orders	Lev Cocarell <PEERGROUP\LCocarell>	1.5		0	1.5
+261806	Task	QA - Test - Manual tool - edit data	Lev Cocarell <PEERGROUP\LCocarell>	1.5		0	4
+281741	Task	QA - Test - Ticket #34217 - Replace BPS # with Article #	Lev Cocarell <PEERGROUP\LCocarell>	1.5	1	0	8
+219643	Task	Test Import from BOM (Import Hardware Configuration)	Lev Cocarell <PEERGROUP\LCocarell>	1.5		0	2.5
+219652	Task	Test Projects (Projects)	Lev Cocarell <PEERGROUP\LCocarell>	1.5		0	2
+215627	Task	Test  - CR1.7: Include EQPs in collection parameter selection	Lev Cocarell <PEERGROUP\LCocarell>	1.5		0	2
+212822	Task	Test - Ticket #21014 - Action buttons in "Edit" mode	Lev Cocarell <PEERGROUP\LCocarell>	1.5		0	3
+211908	Task	Test - Update sub-stage to have 1:1 with typecode instead of measurement set	Lev Cocarell <PEERGROUP\LCocarell>	1.5		0	2.5
+205683	Task	Test - Manage Hardware (Manage Hardware) - Updates for R8.0	Lev Cocarell <PEERGROUP\LCocarell>	1.5		0	1.5
+203258	Task	Test - Collect recipe for substrate (Data Collection) - Updates for R8.1	Lev Cocarell <PEERGROUP\LCocarell>	1.5		0	1.75
+203261	Task	Test - Module Sub-Stage History (Substrate History) - Updates for R8.1	Lev Cocarell <PEERGROUP\LCocarell>	1.5		0	2.25
+203264	Task	Test - Parameter Availability (Parameter Selection) - Updates for R8.1	Lev Cocarell <PEERGROUP\LCocarell>	1.5		0	1.75
+205647	Task	Test - Add associations (Learned Associations)	Lev Cocarell <PEERGROUP\LCocarell>	1.5		0	1.75
+202140	Task	Test - Ticket #18943 - xrr and xrrmap mixed up in same substage	Lev Cocarell <PEERGROUP\LCocarell>	1.5		0	2
+185184	Task	Test Automatic sign out on inactivity	Lev Cocarell <PEERGROUP\LCocarell>	1.5		0	2
+193410	Task	Test - Upload files to sub-stage (Sub-Stage History Features) - R7.1 Updates	Lev Cocarell <PEERGROUP\LCocarell>	1.5		0	1.5
+192094	Task	Test - Export raw data for sub-stage	Lev Cocarell <PEERGROUP\LCocarell>	1.5		0	2
+171326	Task	Test Target/ Target Type Updates	Lev Cocarell <PEERGROUP\LCocarell>	1.5		0	3.5
+179765	Task	Test - Allow users to view tool history & configuration for removed tools	Lev Cocarell <PEERGROUP\LCocarell>	1.5		0	2.5
+175263	Task	Test Improve URLS	Lev Cocarell <PEERGROUP\LCocarell>	1.5		0	5
+179781	Task	Test - API changes item sorting and number format	Lev Cocarell <PEERGROUP\LCocarell>	1.5		0	2.5
+182512	Task	Test - Unblock target ("requires measurement") if needed	Lev Cocarell <PEERGROUP\LCocarell>	1.5		0	1.5
+182517	Task	Test - Change Target for Offline Tool (Hardware Configuration - R7.1 Updates)	Lev Cocarell <PEERGROUP\LCocarell>	1.5		0	4.5
+182508	Task	Test - Comments and Tags for Substrates	Lev Cocarell <PEERGROUP\LCocarell>	1.5		0	2
+184436	Task	Test - Add tracking for reconcile, display reconcile information in substrate history and allow 'undo reconcile'	Lev Cocarell <PEERGROUP\LCocarell>	1.5		0	1.5
+73459	Task	Test Logbook (Logbook)	Lev Cocarell <PEERGROUP\LCocarell>	1.5		0	3
+81151	Task	Test Identify DCP Type (Create and/or Edit Tool)	Lev Cocarell <PEERGROUP\LCocarell>	1.5		0	3.75
+81589	Task	Test Request ODP Analysis (Perform ODP Analysis)	Lev Cocarell <PEERGROUP\LCocarell>	1.5		0	1.5
+80052	Task	Test Add to Collection (Browse Substrates)	Lev Cocarell <PEERGROUP\LCocarell>	1.5		0	2
+80056	Task	Test Parameter Availability (Parameter Selection)	Lev Cocarell <PEERGROUP\LCocarell>	1.5		0	1.5
+81147	Task	Test Store SECS/GEM Tool E10 States (SECS/GEM Tool Data)	Lev Cocarell <PEERGROUP\LCocarell>	1.5		0	2.5
+81148	Task	Test Change Hardware Components Independent of Kit (Hardware Configuration)	Lev Cocarell <PEERGROUP\LCocarell>	1.5		0	4.5
+80047	Task	Test Manage Substrates in Collection (Create Substrate Collection)	Lev Cocarell <PEERGROUP\LCocarell>	1.5		0	2
+68769	Task	Test View On Demand (ODP) Analysis Requests (Analysis)	Lev Cocarell <PEERGROUP\LCocarell>	1.5		0	1.5
+68775	Task	Test Perform AP Analysis (Automatic Processing (AP) Analysis)	Lev Cocarell <PEERGROUP\LCocarell>	1.5		0	1.5
+68777	Task	Test View Automatic Analysis Requests (Analysis)	Lev Cocarell <PEERGROUP\LCocarell>	1.5		0	3
+68771	Task	Test Substrate Stage Summary (Browse Substrates)	Lev Cocarell <PEERGROUP\LCocarell>	1.5		0	5
+69587	Task	Test ODP Analysis Progress (Perform ODP Analysis)	Lev Cocarell <PEERGROUP\LCocarell>	1.5		0	1
+68978	Task	Test Configure the connection settings for EDP Server (EDP Configuration)	Lev Cocarell <PEERGROUP\LCocarell>	1.5		0	1.5
+69604	Task	Test Add Parameters to List (Parameter Selection)	Lev Cocarell <PEERGROUP\LCocarell>	1.5		0	1
+69605	Task	Test Add Parameter Set to List (Parameter Selection)	Lev Cocarell <PEERGROUP\LCocarell>	1.5		0	0.5
+69596	Task	Test Add Parameter to Parameter Set (Parameter Selection)	Lev Cocarell <PEERGROUP\LCocarell>	1.5		0	0.5
+69597	Task	Test Create Parameter Set (Parameter Selection)	Lev Cocarell <PEERGROUP\LCocarell>	1.5		0	0.5
+196060	Task	Test - Input Table Data	Lev Cocarell <PEERGROUP\LCocarell>	1.75		0	2
+228728	Task	Test - Ticket #22945 - Wrong Loadport Status	Lev Cocarell <PEERGROUP\LCocarell>	1.75		0	2
+231484	Task	Test Hardware Configuration for Abstract Module (Module Hardware Configuration)	Lev Cocarell <PEERGROUP\LCocarell>	1.75		0	
+228959	Task	Test - Ticket #20384 - Detect & auto retry requests that EDP hasn't completed	Lev Cocarell <PEERGROUP\LCocarell>	2		0	2
+228979	Task	Test - Ticket #23372 - Do we take progress-update messages into account for timeouts?	Lev Cocarell <PEERGROUP\LCocarell>	2		0	2
+231488	Task	Test Rewind Abstract Hardware Configuration (Hardware Configuration for Abstract Module)	Lev Cocarell <PEERGROUP\LCocarell>	2		0	
+231489	Task	Test Import to Abstract Hardware Configuration (Hardware Configuration for Abstract Module)	Lev Cocarell <PEERGROUP\LCocarell>	2		0	
+231585	Task	Test Find Matching Hardware Configurations (Tool Hardware Configuration)	Lev Cocarell <PEERGROUP\LCocarell>	2		0	
+231581	Task	Test Select Hardware Configurations for Comparison (Compare Hardware Configuration)	Lev Cocarell <PEERGROUP\LCocarell>	2		0	
+226708	Task	Test - Create Module (Modules)  - R9.2	Lev Cocarell <PEERGROUP\LCocarell>	2		0	2.25
+224180	Task	Test - Substrate Collection History (Substrate Collections)	Lev Cocarell <PEERGROUP\LCocarell>	2		0	2
+281747	Task	QA - Test - Ticket #34214 - All/Active switch	Lev Cocarell <PEERGROUP\LCocarell>	2	3	0	3
+205640	Task	Test - Automatic Track In FOUP for SECS/GEM Tool Load Port (Track In for SECS/GEM Tool with FOUP Load Port)	Lev Cocarell <PEERGROUP\LCocarell>	2		0	2
+205679	Task	Test - Learned Associations (Manage Hardware) - Updates for R8.0	Lev Cocarell <PEERGROUP\LCocarell>	2		0	2.5
+205697	Task	Test - Save Managed Hardware (Manage Hardware)	Lev Cocarell <PEERGROUP\LCocarell>	2		0	2
+211913	Task	Test - Ticket #20759 - Hardware: Missing Modules & Date Selection for entire Tool	Lev Cocarell <PEERGROUP\LCocarell>	2		0	4.25
+197176	Task	Test - Remove Target Measurement (Targets)	Lev Cocarell <PEERGROUP\LCocarell>	2		0	4
+202129	Task	Test - Ticket #19419 - Maintain filter and page selection & consistent behavior when going BACK	Lev Cocarell <PEERGROUP\LCocarell>	2		0	3
+202144	Task	QA - R7.4 - Smoke Test New EDP Implementation	Lev Cocarell <PEERGROUP\LCocarell>	2		0	2
+196058	Task	Test - Input Data	Lev Cocarell <PEERGROUP\LCocarell>	2		0	2.5
+196004	Task	QA - R7.8.0 - Smoke Test for PFSC 1.5 and .NET 6 Upgrade	Lev Cocarell <PEERGROUP\LCocarell>	2		0	
+184439	Task	Test - Filter files sent to EDP	Lev Cocarell <PEERGROUP\LCocarell>	2		0	4
+70175	Task	Test Matched stage substrate history (Substrate History for Matched Stages)	Lev Cocarell <PEERGROUP\LCocarell>	2		0	3
+69600	Task	Test Substrate Collections (Substrate Browsing)	Lev Cocarell <PEERGROUP\LCocarell>	2		0	1.5
+68976	Task	Test Substrate History (Substrate History)	Lev Cocarell <PEERGROUP\LCocarell>	2		0	3
+80029	Task	Test Change Role Value (Hardware Configuration)	Lev Cocarell <PEERGROUP\LCocarell>	2		0	3.5
+81146	Task	Test Change Hardware Kit (Hardware Configuration)	Lev Cocarell <PEERGROUP\LCocarell>	2		0	7.5
+81158	Task	Test Select Hardware Components in Hardware Kit (Hardware Kits)	Lev Cocarell <PEERGROUP\LCocarell>	2		0	5
+73460	Task	Test Measure Target (Targets)	Lev Cocarell <PEERGROUP\LCocarell>	2		0	4
+73464	Task	Test Targets (Targets)	Lev Cocarell <PEERGROUP\LCocarell>	2		0	3
+73489	Task	Test New Target Defined Manually (New Target)	Lev Cocarell <PEERGROUP\LCocarell>	2.25		0	5.75
+219644	Task	Test Create Project (Projects)	Lev Cocarell <PEERGROUP\LCocarell>	2.25		0	2.75
+212859	Task	Test - Ticket #21012 - Improve "Mark as Dummy" workflow	Lev Cocarell <PEERGROUP\LCocarell>	2.5		0	3.25
+202145	Task	Test - Ticket #18246 - Delete Existing Analysis Data on Retry	Lev Cocarell <PEERGROUP\LCocarell>	2.5		0	3
+69603	Task	Test Create Substrate Collection (Substrate Collections)	Lev Cocarell <PEERGROUP\LCocarell>	3		0	3
+69598	Task	Test Edit / View Substrate Collection (Substrate Collections)	Lev Cocarell <PEERGROUP\LCocarell>	3		0	2.5
+282833	Task	QA - Test - Ticket #34211 - Multiple selection for filters	Lev Cocarell <PEERGROUP\LCocarell>	3		0	4
+249572	Task	QA - R10.0.4 - Regression / Smoke Test	Lev Cocarell <PEERGROUP\LCocarell>	3		0	4
+261799	Task	QA - Test - Ticket #28140 - Display of chuck number for BPME tools	Lev Cocarell <PEERGROUP\LCocarell>	3		0	2
+233472	Task	QA - R10 - Scope Change - Regression/Smoke Test	Lev Cocarell <PEERGROUP\LCocarell>	3		0	4
+230895	Task	QA - R10 - Regression/Smoke Test	Lev Cocarell <PEERGROUP\LCocarell>	3		0	
+81591	Task	Test Select Stage(s) for ODP (Perform ODP Analysis)	Lev Cocarell <PEERGROUP\LCocarell>	3.5		0	5.25
+81587	Task	Test Select Option(s) for ODP (Perform ODP Analysis)	Lev Cocarell <PEERGROUP\LCocarell>	3.5		0	7
+77373	Task	Test New Target from BPS (New Target)	Lev Cocarell <PEERGROUP\LCocarell>	3.5		0	6.75
+73465	Task	Test Rewind Hardware Configuration (Hardware Configuration)	Lev Cocarell <PEERGROUP\LCocarell>	4		0	8.5
+73461	Task	Test New Target (Targets)	Lev Cocarell <PEERGROUP\LCocarell>	4		0	6.5
+73447	Task	Test Edit Target (Targets)	Lev Cocarell <PEERGROUP\LCocarell>	4		0	5.5
+202143	Task	QA - R7.4 - Regression Test	Lev Cocarell <PEERGROUP\LCocarell>	4		0	4
+228694	Task	QA - R9.3 - Regression/Smoke Test	Lev Cocarell <PEERGROUP\LCocarell>	4		0	6
+261803	Task	QA - Test - Create / Manage Modules for File Tools	Lev Cocarell <PEERGROUP\LCocarell>	4		0	5
+265531	Task	QA - Test - Setup sandbox to test creation of  support email via graph API (OAuth)	Lev Cocarell <PEERGROUP\LCocarell>	4		0	
+212121	Task	Test - Ticket #18546 - Tracking of manual wafer transfers	Lev Cocarell <PEERGROUP\LCocarell>	4		0	
+207811	Task	'PF': Reorganize the test data on QA4 VM	Lev Cocarell <PEERGROUP\LCocarell>	4		0	
+220404	Task	Test - Ticket #22203 - Handling substrates in buffers 	Lev Cocarell <PEERGROUP\LCocarell>	4		0	5.5
+219676	Task	Test - Ticket #20427 - Tool history: new features for process & metrology tools	Lev Cocarell <PEERGROUP\LCocarell>	4		0	5
+73472	Task	Test Target Usage (View Target)	Lev Cocarell <PEERGROUP\LCocarell>	4.5			5.75
+73475	Task	Test Change Target (Hardware Configuration)	Lev Cocarell <PEERGROUP\LCocarell>	4.5		0	7.5
+211906	Task	Test - Integration of EVATEC Batch Tools (e.g. BPM, BAK, LLS, …)	Lev Cocarell <PEERGROUP\LCocarell>	5		0	5.5
+228708	Task	Test - Ticket #20237 (+20442) - Displaying tool alarms in history	Lev Cocarell <PEERGROUP\LCocarell>	6		0	
+69599	Task	Test Automatic Stage Matching (Stage Matching)	Lev Cocarell <PEERGROUP\LCocarell>	6.5		0	12
+69595	Task	Test Manual Stage Matching (Stage Matching)	Lev Cocarell <PEERGROUP\LCocarell>	7		0	5.5
+203204	Task	QA - R8.0 - Smoke Test/Regression	Lev Cocarell <PEERGROUP\LCocarell>	7		0	7.75
+273911	Task	QA - Test - Ticket #29725 - Store files/manual data against modules	Lev Cocarell <PEERGROUP\LCocarell>	7		0	9
+228706	Task	QA Test - Ticket #22904 - Modify Tracking data	Lev Cocarell <PEERGROUP\LCocarell>	8		0	
+228707	Task	Test - Ticket #22560 - Make delete/set-primary options available in history screen	Lev Cocarell <PEERGROUP\LCocarell>	8		0	
+70331	Task	QA R4 - Test Planning	Lev Cocarell <PEERGROUP\LCocarell>	8		0	15
+65030	Task	QA R3 - Test Planning	Lev Cocarell <PEERGROUP\LCocarell>	8		0	7
+37222	Task	QA R1 - Test - Core	Lev Cocarell <PEERGROUP\LCocarell>	8		0	4.5
+39580	Task	QA R2  - Test Planning	Lev Cocarell <PEERGROUP\LCocarell>	8		0	8
+73555	Task	QA R5 - Test Planning	Lev Cocarell <PEERGROUP\LCocarell>	8		0	12.75
+200159	Task	EF: Create proposal /research End-To-End test scenarios	Lev Cocarell <PEERGROUP\LCocarell>	10		0	13
+36529	Task	QA R1 - Test Case Planning	Lev Cocarell <PEERGROUP\LCocarell>	12		0	20
+37226	Task	QA R1 - Test - User Management (Lev)	Lev Cocarell <PEERGROUP\LCocarell>	16		0	10.5
+179459	Task	QA R6.6 - Test	Lev Cocarell <PEERGROUP\LCocarell>	16		0	13
+37224	Task	QA R1 - Test - DB\BPS (Lev)	Lev Cocarell <PEERGROUP\LCocarell>	20		0	13
+220491	Task	EF E2E Test - Development - Initial Development / Set Up	Lev Cocarell <PEERGROUP\LCocarell>	24		0	26
+37223	Task	QA R1 - Test - Transfer Substrates (Lev)	Lev Cocarell <PEERGROUP\LCocarell>	33		0	33
+36531	Task	QA R1 - Test - Box and Substrates	Lev Cocarell <PEERGROUP\LCocarell>	37		0	36
+65087	Task	QA R3 - Test	Lev Cocarell <PEERGROUP\LCocarell>	78		0	142
+44773	Task	QA R2 - Test	Lev Cocarell <PEERGROUP\LCocarell>	91		0	74
