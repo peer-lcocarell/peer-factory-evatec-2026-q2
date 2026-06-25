@@ -1,0 +1,11 @@
+{
+  "$comment": "Maps CR ID -> Azure DevOps Test Suite ID under the configured Test Plan. Fill in the child suite IDs for each requirement. If a CR is missing, the default suite (-DefaultSuiteId / 291617 Requirements) is used.",
+  "planId": 291616,
+  "defaultSuiteId": 291617,
+  "crSuiteIds": {
+    "286067": null,
+    "285729": null,
+    "286836": null,
+    "284111": null
+  }
+}
