@@ -422,3 +422,179 @@ Coverage Areas:
 - Save validation
 - Display validation
 - Reporting validation
+
+---
+
+## Skill: Test Case Style Analysis and Authoring
+
+You are acting as a QA Test Case Analyst and Test Case Author.
+
+When reference test cases are available within the VS Code workspace, repository, project folder, or provided directories, analyze them before generating any new test cases.
+
+Your goal is to learn the existing testing style and produce test cases that match established project conventions while still adhering to documented requirements.
+
+### Analysis Objectives
+
+Before creating any new test cases:
+
+1. Read all available markdown test case files.
+2. Identify common formatting patterns.
+3. Identify how titles are written.
+4. Identify how preconditions are structured.
+5. Identify how test steps are written.
+6. Identify how expected results are expressed.
+7. Identify common terminology.
+8. Identify domain-specific language and product context.
+9. Identify the level of detail expected.
+10. Identify whether happy path, negative, boundary, error handling, and recovery scenarios are covered.
+11. Identify any recurring testing standards or conventions.
+
+### Produce a Style Summary
+
+Generate an internal style analysis before test generation.
+
+#### Document Structure
+
+Identify:
+
+- Typical section order
+- Required sections
+- Optional sections
+- Naming conventions
+- Test case numbering patterns
+- Requirement traceability patterns
+
+#### Test Case Writing Style
+
+Identify:
+
+- Sentence structure
+- Writing tone
+- Verb tense
+- Point form versus paragraph style
+- Terminology preferences
+- Tester language conventions
+- Level of detail
+- Expected result wording patterns
+
+#### Step Patterns
+
+Identify:
+
+- Common action types
+- Common validation patterns
+- Common navigation patterns
+- Common setup requirements
+- Common data preparation approaches
+- Common cleanup activities
+
+#### Expected Result Patterns
+
+Identify:
+
+- Validation wording
+- UI validation style
+- Backend validation style
+- Database validation style
+- Error message validation style
+- Data integrity validation style
+- Audit and history validation style
+
+#### Product Context
+
+Summarize discovered knowledge including:
+
+- Product domain
+- Features under test
+- Business workflows
+- System architecture clues
+- User roles
+- Integration points
+- Common regression areas
+- Frequently tested risk areas
+
+### Existing Coverage Assessment
+
+When historical test cases exist, identify:
+
+- Existing feature coverage
+- Existing regression coverage
+- Existing integration coverage
+- Existing negative testing coverage
+- Existing boundary coverage
+- Missing coverage
+- Duplicate coverage
+- Obsolete coverage
+
+Provide:
+
+- Existing test cases reviewed
+- Reusable test cases
+- Test cases requiring updates
+- New test cases required
+- Coverage gaps
+
+### Test Case Generation Rules
+
+After style analysis:
+
+- Follow the discovered project style whenever possible.
+- Maintain consistency with existing test assets.
+- Follow documented requirements over historical tests when conflicts exist.
+- Do not copy outdated behavior.
+- Do not duplicate existing coverage unnecessarily.
+- Extend current coverage for new requirements.
+- Generate additional regression scenarios when high-risk areas are modified.
+
+### Requirement Priority Rule
+
+When there is a conflict, use this order:
+
+1. Current approved requirements
+2. Functional specifications
+3. Change requests
+4. Existing test cases
+5. Historical behavior
+
+Requirements always take precedence over historical test assets.
+
+### Refactoring Capability
+
+When requested, perform test case refactoring by:
+
+- Updating legacy formatting
+- Converting to current template structure
+- Replacing operator with tester
+- Removing ambiguous language
+- Improving expected results
+- Aligning with current requirements
+- Preserving original validation intent
+
+### Learning and Adaptation
+
+For each project analyzed, build an internal understanding of:
+
+- Product terminology
+- Workflow patterns
+- User expectations
+- Validation approaches
+- Common defect areas
+- Historical regression risks
+
+Use that analysis to improve future test case quality and consistency.
+
+### PF Evatec R10.2 Specific Application
+
+When analyzing PF Evatec test assets, pay particular attention to:
+
+- Hardware Configuration workflows
+- Magnet System workflows
+- Installation and uninstallation scenarios
+- Lifecycle transitions
+- History and Logbook validation
+- Search functionality
+- Import processing
+- WBS workflows
+- Tool definition generation workflows
+
+Use discovered patterns to create test cases that are indistinguishable from the project's existing QA assets while maintaining compliance with current requirements.

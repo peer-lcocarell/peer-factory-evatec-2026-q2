@@ -38,7 +38,7 @@ function Get-AdoAuthHeader {
     )
 
     if ([string]::IsNullOrWhiteSpace($Pat)) {
-        throw "Azure DevOps PAT not found. Set `$env:AZURE_DEVOPS_PAT before running."
+        return $null
     }
 
     $bytes  = [System.Text.Encoding]::ASCII.GetBytes(":$Pat")
@@ -54,7 +54,8 @@ function Invoke-AdoRest {
         [Parameter(Mandatory)] [string]$Uri,
         [object]$Body,
         [string]$ContentType = 'application/json',
-        [hashtable]$Headers
+        [hashtable]$Headers,
+        [switch]$UseDefaultCredentials
     )
 
     if (-not $Headers) { $Headers = Get-AdoAuthHeader }
@@ -62,9 +63,16 @@ function Invoke-AdoRest {
     $params = @{
         Method      = $Method
         Uri         = $Uri
-        Headers     = $Headers
         ContentType = $ContentType
         ErrorAction = 'Stop'
+    }
+
+    if ($Headers) {
+        $params.Headers = $Headers
+    }
+    else {
+        # Support on-prem ADO Server integrated authentication when PAT is not provided.
+        $params.UseDefaultCredentials = $true
     }
 
     if ($PSBoundParameters.ContainsKey('Body') -and $null -ne $Body) {
