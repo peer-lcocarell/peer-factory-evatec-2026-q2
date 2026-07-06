@@ -1,3 +1,14 @@
+html,
+body,
+.markdown-body,
+.vscode-body,
+.vscode-light,
+.vscode-dark,
+.vscode-high-contrast {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
 a {
     text-decoration: none;
     color: #464feb;

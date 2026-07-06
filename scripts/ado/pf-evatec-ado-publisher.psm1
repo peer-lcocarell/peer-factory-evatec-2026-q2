@@ -239,17 +239,32 @@ function ConvertTo-HtmlParagraphs {
 function ConvertTo-AdoStepsXml {
     [CmdletBinding()]
     param(
-        [Parameter(Mandatory)] [object[]]$Steps
+        [Parameter(Mandatory)] [object[]]$Steps,
+        [string[]]$Preconditions
     )
+
+    $effectiveSteps = New-Object System.Collections.Generic.List[object]
+
+    if ($Preconditions -and $Preconditions.Count -gt 0) {
+        $effectiveSteps.Add([pscustomobject]@{
+            Number   = '0'
+            Action   = 'Verify preconditions.'
+            Expected = ''
+        }) | Out-Null
+    }
+
+    foreach ($s in $Steps) {
+        $effectiveSteps.Add($s) | Out-Null
+    }
 
     $doc  = New-Object System.Xml.XmlDocument
     $root = $doc.CreateElement('steps')
     $root.SetAttribute('id', '0')
-    $root.SetAttribute('last', [string]($Steps.Count + 1))
+    $root.SetAttribute('last', [string]($effectiveSteps.Count + 1))
     [void]$doc.AppendChild($root)
 
     $stepId = 2
-    foreach ($s in $Steps) {
+    foreach ($s in $effectiveSteps) {
         $step = $doc.CreateElement('step')
         $step.SetAttribute('id', [string]$stepId)
         $step.SetAttribute('type', 'ActionStep')
@@ -289,16 +304,6 @@ function ConvertTo-DescriptionHtml {
         [void]$sb.Append('</p>')
     }
 
-    if ($Preconditions -and $Preconditions.Count -gt 0) {
-        [void]$sb.Append('<p><b>Preconditions:</b></p><ul>')
-        foreach ($p in $Preconditions) {
-            [void]$sb.Append('<li>')
-            [void]$sb.Append([System.Net.WebUtility]::HtmlEncode($p))
-            [void]$sb.Append('</li>')
-        }
-        [void]$sb.Append('</ul>')
-    }
-
     if ($ExpectedOutcome) {
         [void]$sb.Append('<p><b>Expected Outcome:</b> ')
         [void]$sb.Append([System.Net.WebUtility]::HtmlEncode($ExpectedOutcome))
@@ -306,6 +311,22 @@ function ConvertTo-DescriptionHtml {
     }
 
     return $sb.ToString()
+}
+
+function ConvertTo-PreconditionsText {
+    param(
+        [string[]]$Preconditions
+    )
+
+    if (-not $Preconditions -or $Preconditions.Count -eq 0) {
+        return ''
+    }
+
+    $items = $Preconditions | ForEach-Object {
+        "<li>$([System.Net.WebUtility]::HtmlEncode($_))</li>"
+    }
+
+    return "<ul>`r`n$($items -join "`r`n")`r`n</ul>"
 }
 
 # ---------------------------------------------------------------------------
@@ -349,16 +370,18 @@ function New-AdoTestCase {
         [string]$ApiVersion = $script:DefaultApiVersion
     )
 
-    $stepsXml   = ConvertTo-AdoStepsXml -Steps $TestCase.Steps
+    $stepsXml   = ConvertTo-AdoStepsXml -Steps $TestCase.Steps -Preconditions $TestCase.Preconditions
     $descHtml   = ConvertTo-DescriptionHtml `
                     -Requirement     $TestCase.Requirement `
                     -Preconditions   $TestCase.Preconditions `
                     -ExpectedOutcome $TestCase.ExpectedOutcome
+    $preconditionsText = ConvertTo-PreconditionsText -Preconditions $TestCase.Preconditions
 
     $ops = New-Object System.Collections.Generic.List[object]
     $ops.Add(@{ op = 'add'; path = '/fields/System.Title';                  value = $TestCase.Title })
     $ops.Add(@{ op = 'add'; path = '/fields/System.Description';            value = $descHtml })
     $ops.Add(@{ op = 'add'; path = '/fields/Microsoft.VSTS.TCM.Steps';      value = $stepsXml })
+    $ops.Add(@{ op = 'add'; path = '/fields/Custom.PreconditionsPG';         value = $preconditionsText })
     if ($AreaPath)      { $ops.Add(@{ op = 'add'; path = '/fields/System.AreaPath';      value = $AreaPath }) }
     if ($IterationPath) { $ops.Add(@{ op = 'add'; path = '/fields/System.IterationPath'; value = $IterationPath }) }
 
@@ -378,16 +401,18 @@ function Update-AdoTestCase {
         [string]$ApiVersion = $script:DefaultApiVersion
     )
 
-    $stepsXml = ConvertTo-AdoStepsXml -Steps $TestCase.Steps
+    $stepsXml = ConvertTo-AdoStepsXml -Steps $TestCase.Steps -Preconditions $TestCase.Preconditions
     $descHtml = ConvertTo-DescriptionHtml `
                     -Requirement     $TestCase.Requirement `
                     -Preconditions   $TestCase.Preconditions `
                     -ExpectedOutcome $TestCase.ExpectedOutcome
+    $preconditionsText = ConvertTo-PreconditionsText -Preconditions $TestCase.Preconditions
 
     $ops = New-Object System.Collections.Generic.List[object]
     $ops.Add(@{ op = 'add'; path = '/fields/System.Title';                  value = $TestCase.Title })
     $ops.Add(@{ op = 'add'; path = '/fields/System.Description';            value = $descHtml })
     $ops.Add(@{ op = 'add'; path = '/fields/Microsoft.VSTS.TCM.Steps';      value = $stepsXml })
+    $ops.Add(@{ op = 'add'; path = '/fields/Custom.PreconditionsPG';         value = $preconditionsText })
     if ($AreaPath)      { $ops.Add(@{ op = 'add'; path = '/fields/System.AreaPath';      value = $AreaPath }) }
     if ($IterationPath) { $ops.Add(@{ op = 'add'; path = '/fields/System.IterationPath'; value = $IterationPath }) }
 
@@ -523,8 +548,24 @@ function Publish-AdoTestCaseFromMarkdown {
         $status = 'Created'
     }
 
-    $null = Add-AdoTestCaseToSuite -PlanId $PlanId -SuiteId $SuiteId -TestCaseId $id `
-        -OrgUrl $OrgUrl -Project $Project -ApiVersion $ApiVersion
+    try {
+        $null = Add-AdoTestCaseToSuite -PlanId $PlanId -SuiteId $SuiteId -TestCaseId $id `
+            -OrgUrl $OrgUrl -Project $Project -ApiVersion $ApiVersion
+    }
+    catch {
+        $statusCode = $null
+        if ($_.Exception.Response -and $_.Exception.Response.StatusCode) {
+            $statusCode = [int]$_.Exception.Response.StatusCode
+        }
+
+        # Re-publishing an existing case can return 400/409 when the suite relation already exists.
+        if ($statusCode -in 400, 409) {
+            Write-Verbose "Test Case $id is already associated with Plan $PlanId / Suite $SuiteId. Continuing."
+        }
+        else {
+            throw
+        }
+    }
 
     [pscustomobject]@{
         SourcePath = $tc.SourcePath
@@ -539,7 +580,7 @@ function Publish-AdoTestCaseFromMarkdown {
 
 Export-ModuleMember -Function `
     Get-AdoAuthHeader, Invoke-AdoRest, `
-    ConvertFrom-TestCaseMarkdown, ConvertTo-AdoStepsXml, ConvertTo-DescriptionHtml, `
+    ConvertFrom-TestCaseMarkdown, ConvertTo-AdoStepsXml, ConvertTo-DescriptionHtml, ConvertTo-PreconditionsText, `
     Find-AdoTestCaseByTitle, New-AdoTestCase, Update-AdoTestCase, Add-AdoTestCaseToSuite, `
     Get-SuiteMap, Resolve-SuiteIdForCr, `
     Publish-AdoTestCaseFromMarkdown
