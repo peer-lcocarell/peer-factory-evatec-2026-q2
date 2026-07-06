@@ -1,0 +1,612 @@
+﻿<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>R10.2 QA Bug Trend Analysis Dashboard</title>
+  <link rel='stylesheet' href='skyrunner-qa-report.css'>
+</head>
+<body>
+  <a class='skip-link' href='#main'>Skip to main content</a>
+
+  <nav class='report-nav'>
+    <a href='#release'>Release Info</a>
+    <a href='#summary'>Executive Dashboard</a>
+    <a href='#severity'>Severity</a>
+    <a href='#priority'>Priority</a>
+    <a href='#categories'>Category Distribution</a>
+    <a href='#modules'>Module Distribution</a>
+    <a href='#root-causes'>Root Causes</a>
+    <a href='#risk'>Risk Areas</a>
+    <a href='#recommendations'>Recommendations</a>
+  </nav>
+
+  <main id='main' class='report-main'>
+    <header class='page-header'>
+      <div class='report-title'>QA Bug Trend Analysis Dashboard</div>
+      <h1>R10.2 Defect Trend Report</h1>
+      <div class='meta'>Generated on 2026-07-06 16:34:45 from docs/qa-documents/pf-evatec-phase-2/10-bug-audit/r10.2-bug-trend-analysis.json</div>
+    </header>
+
+    <section id='release' class='panel'>
+      <h2>Release Information</h2>
+      <div class='info-grid'>
+        <div class='info-item'><div class='k'>Project</div><div class='v'>PEER Factory Evatec Phase 2 - R10.2</div></div>
+        <div class='info-item'><div class='k'>Version</div><div class='v'>R10.2</div></div>
+        <div class='info-item'><div class='k'>Date</div><div class='v'>2026-07-06</div></div>
+      </div>
+    </section>
+
+    <section id='summary' class='panel'>
+      <h2>Executive Dashboard</h2>
+      <div class='cards'>
+        <div class='card'><div class='num'>1949</div><div class='lbl'>Total Bugs</div></div>
+        <div class='card fail'><div class='num'>18</div><div class='lbl'>Critical Bugs</div></div>
+        <div class='card warn'><div class='num'>390</div><div class='lbl'>High Bugs</div></div>
+        <div class='card'><div class='num'>Other</div><div class='lbl'>Top Category</div></div>
+        <div class='card'><div class='num'>Hardware Configuration</div><div class='lbl'>Top Module</div></div>
+        <div class='card'><div class='num'>Hardware Configuration</div><div class='lbl'>Highest Risk Area</div></div>
+        <div class='card highlight'><div class='num'>High</div><div class='lbl'>Release Risk Level</div></div>
+      </div>
+    </section>
+
+    <section id='severity' class='panel'>
+      <h2>Severity Distribution</h2>
+      <table>
+        <thead><tr><th>Severity</th><th>Count</th><th>Share</th></tr></thead>
+        <tbody>
+          <tr><td>Critical</td><td>18</td><td>0.92%</td></tr>
+          <tr><td>High</td><td>390</td><td>20.01%</td></tr>
+          <tr><td>Medium</td><td>1004</td><td>51.51%</td></tr>
+          <tr><td>Low</td><td>537</td><td>27.55%</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id='priority' class='panel'>
+      <h2>Priority Distribution</h2>
+      <table>
+        <thead><tr><th>Priority</th><th>Count</th><th>Share</th></tr></thead>
+        <tbody>
+          <tr><td>P1</td><td>235</td><td>12.06%</td></tr>
+          <tr><td>P2</td><td>837</td><td>42.95%</td></tr>
+          <tr><td>P3</td><td>604</td><td>30.99%</td></tr>
+          <tr><td>P4</td><td>273</td><td>14.01%</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id='categories' class='panel'>
+      <h2>Category Distribution</h2>
+      <table>
+        <thead><tr><th>Category</th><th>Count</th><th>Share</th></tr></thead>
+        <tbody>
+          <tr>
+  <td>Other</td>
+  <td>573</td>
+  <td>
+    <div class='inline-flex'>
+      <div class='bar-wrap'><div class='bar-fill' style='width: 29.4%'></div></div>
+      <span class='small'>29.4%</span>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td>UI</td>
+  <td>481</td>
+  <td>
+    <div class='inline-flex'>
+      <div class='bar-wrap'><div class='bar-fill' style='width: 24.68%'></div></div>
+      <span class='small'>24.68%</span>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td>Integration</td>
+  <td>190</td>
+  <td>
+    <div class='inline-flex'>
+      <div class='bar-wrap'><div class='bar-fill' style='width: 9.75%'></div></div>
+      <span class='small'>9.75%</span>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td>Workflow</td>
+  <td>154</td>
+  <td>
+    <div class='inline-flex'>
+      <div class='bar-wrap'><div class='bar-fill' style='width: 7.9%'></div></div>
+      <span class='small'>7.9%</span>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td>Validation</td>
+  <td>141</td>
+  <td>
+    <div class='inline-flex'>
+      <div class='bar-wrap'><div class='bar-fill' style='width: 7.23%'></div></div>
+      <span class='small'>7.23%</span>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td>Security</td>
+  <td>127</td>
+  <td>
+    <div class='inline-flex'>
+      <div class='bar-wrap'><div class='bar-fill' style='width: 6.52%'></div></div>
+      <span class='small'>6.52%</span>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td>Configuration</td>
+  <td>90</td>
+  <td>
+    <div class='inline-flex'>
+      <div class='bar-wrap'><div class='bar-fill' style='width: 4.62%'></div></div>
+      <span class='small'>4.62%</span>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td>Data Integrity</td>
+  <td>79</td>
+  <td>
+    <div class='inline-flex'>
+      <div class='bar-wrap'><div class='bar-fill' style='width: 4.05%'></div></div>
+      <span class='small'>4.05%</span>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td>Installer</td>
+  <td>55</td>
+  <td>
+    <div class='inline-flex'>
+      <div class='bar-wrap'><div class='bar-fill' style='width: 2.82%'></div></div>
+      <span class='small'>2.82%</span>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td>Database</td>
+  <td>22</td>
+  <td>
+    <div class='inline-flex'>
+      <div class='bar-wrap'><div class='bar-fill' style='width: 1.13%'></div></div>
+      <span class='small'>1.13%</span>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td>Performance</td>
+  <td>17</td>
+  <td>
+    <div class='inline-flex'>
+      <div class='bar-wrap'><div class='bar-fill' style='width: 0.87%'></div></div>
+      <span class='small'>0.87%</span>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td>Infrastructure</td>
+  <td>15</td>
+  <td>
+    <div class='inline-flex'>
+      <div class='bar-wrap'><div class='bar-fill' style='width: 0.77%'></div></div>
+      <span class='small'>0.77%</span>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td>API</td>
+  <td>5</td>
+  <td>
+    <div class='inline-flex'>
+      <div class='bar-wrap'><div class='bar-fill' style='width: 0.26%'></div></div>
+      <span class='small'>0.26%</span>
+    </div>
+  </td>
+</tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id='modules' class='panel'>
+      <h2>Module Distribution (Top 20)</h2>
+      <table>
+        <thead><tr><th>Module</th><th>Count</th><th>Share</th></tr></thead>
+        <tbody>
+          <tr>
+  <td>Hardware Configuration</td>
+  <td>34</td>
+  <td>
+    <div class='inline-flex'>
+      <div class='bar-wrap'><div class='bar-fill' style='width: 1.74%'></div></div>
+      <span class='small'>1.74%</span>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td>Substrate History</td>
+  <td>24</td>
+  <td>
+    <div class='inline-flex'>
+      <div class='bar-wrap'><div class='bar-fill' style='width: 1.23%'></div></div>
+      <span class='small'>1.23%</span>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td>New Box Defined Manually</td>
+  <td>24</td>
+  <td>
+    <div class='inline-flex'>
+      <div class='bar-wrap'><div class='bar-fill' style='width: 1.23%'></div></div>
+      <span class='small'>1.23%</span>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td>Analyze Substrates</td>
+  <td>24</td>
+  <td>
+    <div class='inline-flex'>
+      <div class='bar-wrap'><div class='bar-fill' style='width: 1.23%'></div></div>
+      <span class='small'>1.23%</span>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td>Modules</td>
+  <td>21</td>
+  <td>
+    <div class='inline-flex'>
+      <div class='bar-wrap'><div class='bar-fill' style='width: 1.08%'></div></div>
+      <span class='small'>1.08%</span>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td>FTM</td>
+  <td>20</td>
+  <td>
+    <div class='inline-flex'>
+      <div class='bar-wrap'><div class='bar-fill' style='width: 1.03%'></div></div>
+      <span class='small'>1.03%</span>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td>Tool Configuration</td>
+  <td>19</td>
+  <td>
+    <div class='inline-flex'>
+      <div class='bar-wrap'><div class='bar-fill' style='width: 0.97%'></div></div>
+      <span class='small'>0.97%</span>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td>SECS/GEM</td>
+  <td>19</td>
+  <td>
+    <div class='inline-flex'>
+      <div class='bar-wrap'><div class='bar-fill' style='width: 0.97%'></div></div>
+      <span class='small'>0.97%</span>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td>Boxes</td>
+  <td>19</td>
+  <td>
+    <div class='inline-flex'>
+      <div class='bar-wrap'><div class='bar-fill' style='width: 0.97%'></div></div>
+      <span class='small'>0.97%</span>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td>Substrates</td>
+  <td>16</td>
+  <td>
+    <div class='inline-flex'>
+      <div class='bar-wrap'><div class='bar-fill' style='width: 0.82%'></div></div>
+      <span class='small'>0.82%</span>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td>Track in</td>
+  <td>15</td>
+  <td>
+    <div class='inline-flex'>
+      <div class='bar-wrap'><div class='bar-fill' style='width: 0.77%'></div></div>
+      <span class='small'>0.77%</span>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td>Transfer Substrates</td>
+  <td>13</td>
+  <td>
+    <div class='inline-flex'>
+      <div class='bar-wrap'><div class='bar-fill' style='width: 0.67%'></div></div>
+      <span class='small'>0.67%</span>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td>Projects</td>
+  <td>12</td>
+  <td>
+    <div class='inline-flex'>
+      <div class='bar-wrap'><div class='bar-fill' style='width: 0.62%'></div></div>
+      <span class='small'>0.62%</span>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td>Hardware Kits</td>
+  <td>12</td>
+  <td>
+    <div class='inline-flex'>
+      <div class='bar-wrap'><div class='bar-fill' style='width: 0.62%'></div></div>
+      <span class='small'>0.62%</span>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td>Select Substrate Type</td>
+  <td>12</td>
+  <td>
+    <div class='inline-flex'>
+      <div class='bar-wrap'><div class='bar-fill' style='width: 0.62%'></div></div>
+      <span class='small'>0.62%</span>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td>BPS</td>
+  <td>11</td>
+  <td>
+    <div class='inline-flex'>
+      <div class='bar-wrap'><div class='bar-fill' style='width: 0.56%'></div></div>
+      <span class='small'>0.56%</span>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td>Module Types</td>
+  <td>11</td>
+  <td>
+    <div class='inline-flex'>
+      <div class='bar-wrap'><div class='bar-fill' style='width: 0.56%'></div></div>
+      <span class='small'>0.56%</span>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td>Edit Box</td>
+  <td>11</td>
+  <td>
+    <div class='inline-flex'>
+      <div class='bar-wrap'><div class='bar-fill' style='width: 0.56%'></div></div>
+      <span class='small'>0.56%</span>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td>Substrate Collections</td>
+  <td>11</td>
+  <td>
+    <div class='inline-flex'>
+      <div class='bar-wrap'><div class='bar-fill' style='width: 0.56%'></div></div>
+      <span class='small'>0.56%</span>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td>Analysis</td>
+  <td>10</td>
+  <td>
+    <div class='inline-flex'>
+      <div class='bar-wrap'><div class='bar-fill' style='width: 0.51%'></div></div>
+      <span class='small'>0.51%</span>
+    </div>
+  </td>
+</tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id='root-causes' class='panel'>
+      <h2>Root Cause Frequency</h2>
+      <table>
+        <thead><tr><th>Root Cause</th><th>Count</th><th>Share</th></tr></thead>
+        <tbody>
+          <tr>
+  <td>Product defect requiring investigation</td>
+  <td>784</td>
+  <td>
+    <div class='inline-flex'>
+      <div class='bar-wrap'><div class='bar-fill' style='width: 40.23%'></div></div>
+      <span class='small'>40.23%</span>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td>Data synchronization issue</td>
+  <td>257</td>
+  <td>
+    <div class='inline-flex'>
+      <div class='bar-wrap'><div class='bar-fill' style='width: 13.19%'></div></div>
+      <span class='small'>13.19%</span>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td>State management issue</td>
+  <td>234</td>
+  <td>
+    <div class='inline-flex'>
+      <div class='bar-wrap'><div class='bar-fill' style='width: 12.01%'></div></div>
+      <span class='small'>12.01%</span>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td>Possible configuration issue</td>
+  <td>224</td>
+  <td>
+    <div class='inline-flex'>
+      <div class='bar-wrap'><div class='bar-fill' style='width: 11.49%'></div></div>
+      <span class='small'>11.49%</span>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td>Dependency failure</td>
+  <td>156</td>
+  <td>
+    <div class='inline-flex'>
+      <div class='bar-wrap'><div class='bar-fill' style='width: 8%'></div></div>
+      <span class='small'>8%</span>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td>Validation logic defect</td>
+  <td>100</td>
+  <td>
+    <div class='inline-flex'>
+      <div class='bar-wrap'><div class='bar-fill' style='width: 5.13%'></div></div>
+      <span class='small'>5.13%</span>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td>UI rendering defect</td>
+  <td>87</td>
+  <td>
+    <div class='inline-flex'>
+      <div class='bar-wrap'><div class='bar-fill' style='width: 4.46%'></div></div>
+      <span class='small'>4.46%</span>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td>Possible communication failure</td>
+  <td>70</td>
+  <td>
+    <div class='inline-flex'>
+      <div class='bar-wrap'><div class='bar-fill' style='width: 3.59%'></div></div>
+      <span class='small'>3.59%</span>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td>Execution workflow failure</td>
+  <td>37</td>
+  <td>
+    <div class='inline-flex'>
+      <div class='bar-wrap'><div class='bar-fill' style='width: 1.9%'></div></div>
+      <span class='small'>1.9%</span>
+    </div>
+  </td>
+</tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id='risk' class='panel'>
+      <h2>Risk Concentration</h2>
+      <table>
+        <thead><tr><th>Area</th><th>Risk Level</th><th>Count</th></tr></thead>
+        <tbody>
+          <tr>
+  <td>Hardware Configuration</td>
+  <td><span class='badge badge-fail'>High</span></td>
+  <td>34</td>
+</tr>
+<tr>
+  <td>New Box Defined Manually</td>
+  <td><span class='badge badge-warn'>Medium</span></td>
+  <td>24</td>
+</tr>
+<tr>
+  <td>Substrate History</td>
+  <td><span class='badge badge-warn'>Medium</span></td>
+  <td>24</td>
+</tr>
+<tr>
+  <td>Analyze Substrates</td>
+  <td><span class='badge badge-warn'>Medium</span></td>
+  <td>24</td>
+</tr>
+<tr>
+  <td>SECS/GEM</td>
+  <td><span class='badge badge-warn'>Medium</span></td>
+  <td>19</td>
+</tr>
+<tr>
+  <td>Boxes</td>
+  <td><span class='badge badge-warn'>Medium</span></td>
+  <td>19</td>
+</tr>
+<tr>
+  <td>FTM</td>
+  <td><span class='badge badge-warn'>Medium</span></td>
+  <td>20</td>
+</tr>
+<tr>
+  <td>Tool Configuration</td>
+  <td><span class='badge badge-warn'>Medium</span></td>
+  <td>19</td>
+</tr>
+<tr>
+  <td>Modules</td>
+  <td><span class='badge badge-warn'>Medium</span></td>
+  <td>21</td>
+</tr>
+<tr>
+  <td>Transfer Substrates</td>
+  <td><span class='badge badge-warn'>Medium</span></td>
+  <td>13</td>
+</tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id='recommendations' class='panel'>
+      <h2>Recommendations</h2>
+      <h3>Immediate Actions</h3>
+      <ul>
+        <li>Triage and retest all Critical and High defects in Hardware Configuration before release sign-off.</li>
+<li>Execute focused regression on top category &#39;Other&#39; across affected modules.</li>
+<li>Add defect clustering review in daily triage for repeated failure signatures.</li>
+      </ul>
+      <h3>Near-Term Improvements</h3>
+      <ul>
+        <li>Strengthen automated validation and negative-path tests for recurring rule and state defects.</li>
+<li>Add module-level trend gates in release readiness review for areas exceeding medium risk.</li>
+<li>Standardize defect taxonomy tags to improve trend accuracy across releases.</li>
+      </ul>
+      <h3>Preventive Actions</h3>
+      <ul>
+        <li>Introduce pre-release risk scoring and stop-ship thresholds based on severity concentration.</li>
+<li>Expand regression suites for top recurring modules and root-cause buckets.</li>
+<li>Use post-release defect retrospectives to convert recurrent causes into checklist controls.</li>
+      </ul>
+    </section>
+
+    <footer class='page-footer'>
+      Generated by generate-bug-trend-html.ps1
+    </footer>
+  </main>
+</body>
+</html>

@@ -618,3 +618,39 @@ When analyzing PF Evatec test assets, pay particular attention to:
 - Tool definition generation workflows
 
 Use discovered patterns to create test cases that are indistinguishable from the project's existing QA assets while maintaining compliance with current requirements.
+
+---
+
+## Skill: QA Bug Trend Analysis Dashboard Generator
+
+When asked to analyze bugs for trends, release risk, defect concentration, or dashboard metrics:
+
+- Use only bug records provided in the Bug List for all calculations.
+- Treat project and release context as informational only.
+- Include release context only in the report header section.
+- Exclude project context from categories, severity, priority, modules, root causes, risk, and chart counts.
+
+Required workflow:
+
+1. Normalize defect terminology using evidence.
+2. Categorize each defect into one category from this set:
+    UI, Backend, API, Database, Configuration, Performance, Security, Integration, Infrastructure, Installer, Automation, Reporting, Workflow, Validation, Data Integrity, Other.
+3. Compute trend concentration by category, module/component, subsystem, environment, and build.
+4. Compute severity counts: Critical, High, Medium, Low.
+5. Compute priority counts: P1, P2, P3, P4.
+6. Infer root causes only when supported by defect evidence.
+7. Identify risk concentrations and regression hotspots.
+8. Produce immediate, near-term, and preventive recommendations.
+
+Output requirements:
+
+- Return valid JSON only when the user asks for machine-consumable output.
+- Ensure output is directly consumable by PowerShell and .NET report generators.
+- Provide chart-ready arrays for category, severity, priority, module, root cause, and risk concentration.
+
+Do not:
+
+- Count CRs, release notes, or objectives as defects.
+- Derive defect root causes from executive release context.
+- Include release metadata in defect statistics.
+- Introduce product assumptions without bug evidence.

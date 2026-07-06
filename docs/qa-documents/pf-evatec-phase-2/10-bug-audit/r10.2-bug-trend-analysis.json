@@ -1,0 +1,271 @@
+﻿{
+    "releaseInfo":  {
+                        "project":  "PEER Factory Evatec Phase 2 - R10.2",
+                        "version":  "R10.2",
+                        "date":  "2026-07-06"
+                    },
+    "summary":  {
+                    "totalBugs":  1949,
+                    "criticalBugs":  18,
+                    "highBugs":  390,
+                    "topCategory":  "Other",
+                    "topModule":  "Hardware Configuration",
+                    "highestRiskArea":  "Hardware Configuration",
+                    "releaseRisk":  "High"
+                },
+    "categories":  [
+                       {
+                           "name":  "Other",
+                           "count":  573
+                       },
+                       {
+                           "name":  "UI",
+                           "count":  481
+                       },
+                       {
+                           "name":  "Integration",
+                           "count":  190
+                       },
+                       {
+                           "name":  "Workflow",
+                           "count":  154
+                       },
+                       {
+                           "name":  "Validation",
+                           "count":  141
+                       },
+                       {
+                           "name":  "Security",
+                           "count":  127
+                       },
+                       {
+                           "name":  "Configuration",
+                           "count":  90
+                       },
+                       {
+                           "name":  "Data Integrity",
+                           "count":  79
+                       },
+                       {
+                           "name":  "Installer",
+                           "count":  55
+                       },
+                       {
+                           "name":  "Database",
+                           "count":  22
+                       },
+                       {
+                           "name":  "Performance",
+                           "count":  17
+                       },
+                       {
+                           "name":  "Infrastructure",
+                           "count":  15
+                       },
+                       {
+                           "name":  "API",
+                           "count":  5
+                       }
+                   ],
+    "severity":  {
+                     "critical":  18,
+                     "high":  390,
+                     "medium":  1004,
+                     "low":  537
+                 },
+    "priority":  {
+                     "p1":  235,
+                     "p2":  837,
+                     "p3":  604,
+                     "p4":  273
+                 },
+    "modules":  [
+                    {
+                        "name":  "Hardware Configuration",
+                        "count":  34
+                    },
+                    {
+                        "name":  "Substrate History",
+                        "count":  24
+                    },
+                    {
+                        "name":  "New Box Defined Manually",
+                        "count":  24
+                    },
+                    {
+                        "name":  "Analyze Substrates",
+                        "count":  24
+                    },
+                    {
+                        "name":  "Modules",
+                        "count":  21
+                    },
+                    {
+                        "name":  "FTM",
+                        "count":  20
+                    },
+                    {
+                        "name":  "Tool Configuration",
+                        "count":  19
+                    },
+                    {
+                        "name":  "SECS/GEM",
+                        "count":  19
+                    },
+                    {
+                        "name":  "Boxes",
+                        "count":  19
+                    },
+                    {
+                        "name":  "Substrates",
+                        "count":  16
+                    },
+                    {
+                        "name":  "Track in",
+                        "count":  15
+                    },
+                    {
+                        "name":  "Transfer Substrates",
+                        "count":  13
+                    },
+                    {
+                        "name":  "Projects",
+                        "count":  12
+                    },
+                    {
+                        "name":  "Hardware Kits",
+                        "count":  12
+                    },
+                    {
+                        "name":  "Select Substrate Type",
+                        "count":  12
+                    },
+                    {
+                        "name":  "BPS",
+                        "count":  11
+                    },
+                    {
+                        "name":  "Module Types",
+                        "count":  11
+                    },
+                    {
+                        "name":  "Edit Box",
+                        "count":  11
+                    },
+                    {
+                        "name":  "Substrate Collections",
+                        "count":  11
+                    },
+                    {
+                        "name":  "Analysis",
+                        "count":  10
+                    }
+                ],
+    "rootCauses":  [
+                       {
+                           "cause":  "Product defect requiring investigation",
+                           "count":  784
+                       },
+                       {
+                           "cause":  "Data synchronization issue",
+                           "count":  257
+                       },
+                       {
+                           "cause":  "State management issue",
+                           "count":  234
+                       },
+                       {
+                           "cause":  "Possible configuration issue",
+                           "count":  224
+                       },
+                       {
+                           "cause":  "Dependency failure",
+                           "count":  156
+                       },
+                       {
+                           "cause":  "Validation logic defect",
+                           "count":  100
+                       },
+                       {
+                           "cause":  "UI rendering defect",
+                           "count":  87
+                       },
+                       {
+                           "cause":  "Possible communication failure",
+                           "count":  70
+                       },
+                       {
+                           "cause":  "Execution workflow failure",
+                           "count":  37
+                       }
+                   ],
+    "riskAreas":  [
+                      {
+                          "area":  "Hardware Configuration",
+                          "riskLevel":  "High",
+                          "count":  34
+                      },
+                      {
+                          "area":  "New Box Defined Manually",
+                          "riskLevel":  "Medium",
+                          "count":  24
+                      },
+                      {
+                          "area":  "Substrate History",
+                          "riskLevel":  "Medium",
+                          "count":  24
+                      },
+                      {
+                          "area":  "Analyze Substrates",
+                          "riskLevel":  "Medium",
+                          "count":  24
+                      },
+                      {
+                          "area":  "SECS/GEM",
+                          "riskLevel":  "Medium",
+                          "count":  19
+                      },
+                      {
+                          "area":  "Boxes",
+                          "riskLevel":  "Medium",
+                          "count":  19
+                      },
+                      {
+                          "area":  "FTM",
+                          "riskLevel":  "Medium",
+                          "count":  20
+                      },
+                      {
+                          "area":  "Tool Configuration",
+                          "riskLevel":  "Medium",
+                          "count":  19
+                      },
+                      {
+                          "area":  "Modules",
+                          "riskLevel":  "Medium",
+                          "count":  21
+                      },
+                      {
+                          "area":  "Transfer Substrates",
+                          "riskLevel":  "Medium",
+                          "count":  13
+                      }
+                  ],
+    "recommendations":  {
+                            "immediateActions":  [
+                                                     "Triage and retest all Critical and High defects in Hardware Configuration before release sign-off.",
+                                                     "Execute focused regression on top category \u0027Other\u0027 across affected modules.",
+                                                     "Add defect clustering review in daily triage for repeated failure signatures."
+                                                 ],
+                            "nearTermImprovements":  [
+                                                         "Strengthen automated validation and negative-path tests for recurring rule and state defects.",
+                                                         "Add module-level trend gates in release readiness review for areas exceeding medium risk.",
+                                                         "Standardize defect taxonomy tags to improve trend accuracy across releases."
+                                                     ],
+                            "preventiveActions":  [
+                                                      "Introduce pre-release risk scoring and stop-ship thresholds based on severity concentration.",
+                                                      "Expand regression suites for top recurring modules and root-cause buckets.",
+                                                      "Use post-release defect retrospectives to convert recurrent causes into checklist controls."
+                                                  ]
+                        }
+}

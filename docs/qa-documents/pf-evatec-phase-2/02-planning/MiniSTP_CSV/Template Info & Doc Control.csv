@@ -1,0 +1,21 @@
+Template Information:,
+,
+"This template is intended for small/simple projects/product releases (e.g., service packs). Use the following guidelines:
+
+-  QA effort is ~80 hours or less. If it is more, then you need permission from your project/product Manager to use the mini-STP.
+-  Only 1 QA resource. If 2 QA resources (but other criteria apply), then add a Resource column to the right of the Timekeeping column. If >2 then use full STP.
+-  There is no ""manage"" activity in the template because it is assumed it is small enough that it is not needed. It can be added if needed.
+-  Do not use this STP template if testing SEMI standard changes (product) or kicking off test automation initiatives.
+-  There is no ""task"" column because it is assumed that the Test task(s) will be linked to the Requirement/CR/Bug listed in each row.
+
+Basically, if you find that this template requires too much modification to outline your test strategy, then use the full STP.",
+,
+,
+Document Control Information:,
+,
+Template Version:,1.2
+Release Date:,"February 10, 2022"
+Document Owner:,Sylvia Ward
+Approvers:,Services Management Team
+Next Review Date:,"February 10, 2024"
+Expiration Date:,"May 10, 2024"

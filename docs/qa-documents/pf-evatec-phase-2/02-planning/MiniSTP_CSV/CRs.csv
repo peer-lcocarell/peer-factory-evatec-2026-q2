@@ -1,0 +1,68 @@
+Area Path,Iteration Path, ID,Title,QA Writing Est,QA Testing Est,Focus Priority (1-4),Comments,Link,,,,,,,,,
+PFEvatec\WF06 (Logbook)\Magnet Systems,Phase 2\R10\R10.2,286067,Ticket #35008 - Tracking of magnet systems in Evatec Fabric,3.00,12.00,1,"Impacts:
+- 32 requirements.
+QA Writing Approach:
+- Test case writing with assistance from Copilot for formatting to expedite. Happy path and unhappy path scenarios planned with edge cases and  targeted regression cases for the multiple impacted areas.
+QA Testing Approach:
+- Verify Magnet System Type and Magnet System functionality, document management, permissions, inspection tracking, overdue calculations, and filter behavior.
+- Validate lifecycle workflows: checkout, return, install, uninstall, replace, retire, and label/QR generation.
+- Validate Standard to Prototype workflows including variant numbering, lineage, Article Number uniqueness, and promotion to Standard preserving associations.
+- Verify Hardware Configuration integration including the new Magnet System role type and serial number enforcement.
+- Validate Magnet System History and Logbook synchronization across all lifecycle events.
+- Verify Export Hardware Configuration includes Magnet System details.
+- Validate database migrations, entity relationships, and conversion of existing Hardware Components to Magnet Systems.
+- Perform regression testing on impacted areas.
+Potential Issues:
+- Highest-risk area of the release with broad cross-module impact across Hardware Configuration, Logbook, History, and Export.
+- Prototype lifecycle, Article Number uniqueness, and Standard/Prototype promotion may cause defects in lineage, history, or association preservation.
+- Migration of existing Hardware Components and Magnet System ? Logbook synchronization carry the highest regression and data-integrity risk.",Change Request 286067: Ticket #35008 - Tracking of magnet systems in Evatec Fabric,,,,,,,,,
+PFEvatec\WF06 (Logbook)\HW Config,Phase 2\R10\R10.2,285729,Ticket #34951 - Search HW components,0.25,1.00,2,"Impacts:
+- 3 requirements.
+QA Writing Approach:
+- Test case writing with assistance from Copilot for formatting to expedite. Happy path and unhappy path scenarios planned with edge cases and regressions around modified requirements.
+QA Testing Approach:
+- Verify Search HW Components functionality across all impacted areas.
+- Execute positive, negative, partial-match, and no-result search scenarios.
+- Validate installed hardware components are returned correctly in search results.
+- Confirm consistent filtering, search results, and display behavior across all supported pages.
+Potential Issues:
+- Differences in page-level data loading, indexing, or caching could lead to inconsistent search behavior across the impacted areas.",Change Request 285729: Ticket #34951 - Search HW components,,,,,,,,,
+PFEvatec,Phase 2\R10\R10.2,286836,Ticket #34948 - Article import,0.50,1.50,3,"Impacts:
+- 2 requirements.
+QA Writing Approach:
+- Test cases will be created with Copilot assistance to expedite formatting and writing process, covering happy path, unhappy path, edge cases, and regression scenarios for impacted functionality.
+QA Testing Approach:
+- QA will verify custom import formats and mappings.
+- QA will validate hardware component imports using legacy and new file formats.
+- QA will confirm field mappings and numeric status values import correctly.
+- QA will verify partial imports do not incorrectly deactivate valid hardware components.
+- QA will perform regression testing on BOM Import, Work Order Import, and Hardware Component import workflows.
+Potential Issues:
+- Incorrect mappings may result in invalid imported data.
+- Import framework changes could affect existing import workflows.
+- Partial imports may incorrectly deactivate hardware components.
+- QA will validate import behavior and responsiveness for large import files.",Change Request 286836: Ticket #34948 - Article import,,,,,,,,,
+PFEvatec\WF02 (Box and Substrates)\Box Management,Phase 2\R10\R10.2,284111,Ticket #34682 - WBS Element for self-service boxes,0.25,3.00,4,"Impacts:
+- 2 requirements
+QA Writing Approach:
+- Test case writing with assistance from Copilot for formatting to expedite. Happy path, unhappy path scenarios planned with some edge cases and regressions around modified requirements. 
+QA Testing Approach:
+- Verify the WBS Element field across all impacted pages.
+- Create and edit self-service boxes with WBS Element values.
+- Confirm WBS Element values save correctly and persist after updates.
+- Validate consistent display of WBS Element values across all applicable pages.
+- Verify WBS Element values remain available and functional in related workflows.
+Potential Issues:
+- Differences in how each page loads or caches data could lead to inconsistent WBS Element behavior.
+
+",Change Request 284111: Ticket #34682 - WBS Element for self-service boxes,,,,,,,,,
+PFEvatec,Phase 2\R10\R10.2,290161,Ticket #35623 - Error: Use PDT to create the tool definition for new tool type,0.00,0.00,N/A,"Impacts:
+- 0 requirements.
+Note:
+- This item was logged as a CR because it introduces support for a new tool type rather than fixing an existing defect.
+- The change was delivered as a customer patch to unblock Hermann's tool setup activity.
+- Hermann validated the fix in his environment and closed the ticket.
+- No additional internal QA testing is planned.
+",Change Request 290161: Ticket #35623 - Error: Use PDT to create the tool definition for new tool type,,,,,,,,,
+,,,Ad Hoc Verification Time:,0.00,3.00,,Allocate ad hoc verification time for exploratory testing and validation of impacted workflows not explicitly covered by formal test cases.,,,,,,,,,,
+,,,Total Est Time:,11.25,35.00,,,,,,,,,,,,
