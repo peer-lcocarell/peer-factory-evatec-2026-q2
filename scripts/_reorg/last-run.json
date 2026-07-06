@@ -1,0 +1,485 @@
+﻿{
+    "Moves":  [
+                  {
+                      "Category":  "overview",
+                      "Source":  "docs/qa-documents/pf-evatec-phase-2/overview.md",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/00-project-overview/project-overview.md",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "overview",
+                      "Source":  "docs/qa-documents/pf-evatec-phase-2/domain-reference.md",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/00-project-overview/domain-reference.md",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "overview",
+                      "Source":  "docs/qa-documents/pf-evatec-phase-2/magnet-systems-kickoff-summary.md",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/00-project-overview/project-kickoff-summary.md",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "requirements",
+                      "Source":  "docs/qa-documents/pf-evatec-phase-2/additional-requirements-scope-changes-identified.md",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/01-requirements/additional-scope-changes.md",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "planning",
+                      "Source":  "docs/qa-documents/pf-evatec-phase-2/CR PLAN SO FAR.md",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/02-planning/change-request-plan.md",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "planning",
+                      "Source":  "docs/qa-documents/pf-evatec-phase-2/mini-stip-outline.md",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/02-planning/mini-stip-outline.md",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "testing/estimates",
+                      "Source":  "docs/qa-documents/pf-evatec-phase-2/planning/qa-test-estimates.csv",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/03-testing/estimates/qa-test-estimates.csv",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "testing/test-plans",
+                      "Source":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\resources\\mini-software-test-plans\\01-mini-stp-template.md",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/03-testing/test-plans/01-mini-stp-template.md",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "testing/test-plans",
+                      "Source":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\resources\\mini-software-test-plans\\02-pfevatec-r1-r6-5-test-plan.md",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/03-testing/test-plans/02-pfevatec-r1-r6-5-test-plan.md",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "testing/test-plans",
+                      "Source":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\resources\\mini-software-test-plans\\03-sttd-ww05-glp-mini-stp.md",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/03-testing/test-plans/03-sttd-ww05-glp-mini-stp.md",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "testing/test-plans",
+                      "Source":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\resources\\mini-software-test-plans\\04-evatec-factory-release-10-0-0-6-mini-stp.md",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/03-testing/test-plans/04-evatec-factory-release-10-0-0-6-mini-stp.md",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "testing/test-plans",
+                      "Source":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\resources\\mini-software-test-plans\\05-evatec-factory-release-10-0-0-8-mini-stp.md",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/03-testing/test-plans/05-evatec-factory-release-10-0-0-8-mini-stp.md",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "testing/test-plans",
+                      "Source":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\resources\\mini-software-test-plans\\06-evatec-factory-release-10-1-mini-stp.md",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/03-testing/test-plans/06-evatec-factory-release-10-1-mini-stp.md",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "testing/test-plans",
+                      "Source":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\resources\\mini-software-test-plans\\07-evatec-factory-release-10-2-mini-stp-test-plan.md",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/03-testing/test-plans/07-evatec-factory-release-10-2-mini-stp-test-plan.md",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "environment",
+                      "Source":  "docs/qa-documents/pf-evatec-phase-2/infrastructure-and-links.md",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/04-environment/infrastructure-and-links.md",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "environment",
+                      "Source":  "docs/qa-documents/pf-evatec-phase-2/qa-environment-setup.md",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/04-environment/qa-environment-setup.md",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "environment",
+                      "Source":  "docs/qa-documents/pf-evatec-phase-2/playwright-setup.md",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/04-environment/playwright-setup.md",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "operations",
+                      "Source":  "docs/qa-documents/pf-evatec-phase-2/pto-operations.md",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/05-operations/pto-operations.md",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "operations",
+                      "Source":  "docs/qa-documents/pf-evatec-phase-2/release-deployment.md",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/05-operations/release-deployment.md",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "automation",
+                      "Source":  "docs/qa-documents/pf-evatec-phase-2/test-plan-converter.md",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/06-automation/converters/test-plan-converter.md",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "references",
+                      "Source":  "docs/qa-documents/pf-evatec-phase-2/planning/PF-Evatec-R10.02-ADO-Publishing-Guide.md",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/07-references/ado-publishing-guide-r10.02.md",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "release/test-logs",
+                      "Source":  "docs/qa-documents/pf-evatec-phase-2/r10/r10-2/log/current-project-status.md",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/test-logs/current-project-status.md",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "release/documentation",
+                      "Source":  "docs/qa-documents/pf-evatec-phase-2/r10/r10-2/documentation/magnet-system-notes.md",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/release-documentation/magnet-system-notes.md",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "release/documentation",
+                      "Source":  "docs/qa-documents/pf-evatec-phase-2/r10/r10-2/documentation/r102-crs.md",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/release-documentation/r10.2-change-requests.md",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "release/documentation",
+                      "Source":  "docs/qa-documents/pf-evatec-phase-2/r10/r10-2/documentation/r102-requirements.md",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/release-documentation/r10.2-requirements.md",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "archive/duplicate",
+                      "Source":  "docs/qa-documents/pf-evatec-phase-2/r10/r10-2/documentation/magnet-systems-kickoff-summary.md",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/archive/review-required/magnet-systems-kickoff-summary--from-r10.2-documentation.md",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "release/change-requests",
+                      "Source":  "docs/qa-documents/pf-evatec-phase-2/r10/r10-2/crs/284111/cr-28411.md",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/284111/cr-284111.md",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "release/test-cases",
+                      "Source":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\r10\\r10-2\\crs\\284111\\28411-test-cases\\requirement-36297",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/284111/test-cases/requirement-36297",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "release/test-cases",
+                      "Source":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\r10\\r10-2\\crs\\284111\\28411-test-cases\\requirement-36298",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/284111/test-cases/requirement-36298",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "release/change-requests",
+                      "Source":  "docs/qa-documents/pf-evatec-phase-2/r10/r10-2/crs/285729/cr-285729.md",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/285729/cr-285729.md",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "release/test-cases",
+                      "Source":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\r10\\r10-2\\crs\\285729\\285729-test-cases\\requirement-226372",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/285729/test-cases/requirement-226372",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "release/test-cases",
+                      "Source":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\r10\\r10-2\\crs\\285729\\285729-test-cases\\requirement-287451",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/285729/test-cases/requirement-287451",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "release/test-cases",
+                      "Source":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\r10\\r10-2\\crs\\285729\\285729-test-cases\\requirement-36315",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/285729/test-cases/requirement-36315",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "release/change-requests",
+                      "Source":  "docs/qa-documents/pf-evatec-phase-2/r10/r10-2/crs/286067/cr-286067.md",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/286067/cr-286067.md",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "archive/placeholder",
+                      "Source":  "docs/qa-documents/pf-evatec-phase-2/r10/r10-2/crs/286067/286067-test-cases/requirement-Requirement ID",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/archive/review-required/286067--requirement-Requirement-ID--placeholder",
+                      "UsedGit":  false
+                  },
+                  {
+                      "Category":  "release/test-cases",
+                      "Source":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\r10\\r10-2\\crs\\286067\\286067-test-cases\\requirement-174279",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/286067/test-cases/requirement-174279",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "release/test-cases",
+                      "Source":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\r10\\r10-2\\crs\\286067\\286067-test-cases\\requirement-205378",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/286067/test-cases/requirement-205378",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "release/test-cases",
+                      "Source":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\r10\\r10-2\\crs\\286067\\286067-test-cases\\requirement-205379",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/286067/test-cases/requirement-205379",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "release/test-cases",
+                      "Source":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\r10\\r10-2\\crs\\286067\\286067-test-cases\\requirement-205380",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/286067/test-cases/requirement-205380",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "release/test-cases",
+                      "Source":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\r10\\r10-2\\crs\\286067\\286067-test-cases\\requirement-217766",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/286067/test-cases/requirement-217766",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "release/test-cases",
+                      "Source":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\r10\\r10-2\\crs\\286067\\286067-test-cases\\requirement-226384",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/286067/test-cases/requirement-226384",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "release/test-cases",
+                      "Source":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\r10\\r10-2\\crs\\286067\\286067-test-cases\\requirement-226385",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/286067/test-cases/requirement-226385",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "release/test-cases",
+                      "Source":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\r10\\r10-2\\crs\\286067\\286067-test-cases\\requirement-264374",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/286067/test-cases/requirement-264374",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "release/test-cases",
+                      "Source":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\r10\\r10-2\\crs\\286067\\286067-test-cases\\requirement-290756",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/286067/test-cases/requirement-290756",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "release/test-cases",
+                      "Source":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\r10\\r10-2\\crs\\286067\\286067-test-cases\\requirement-290757",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/286067/test-cases/requirement-290757",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "release/test-cases",
+                      "Source":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\r10\\r10-2\\crs\\286067\\286067-test-cases\\requirement-290758",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/286067/test-cases/requirement-290758",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "release/test-cases",
+                      "Source":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\r10\\r10-2\\crs\\286067\\286067-test-cases\\requirement-290759",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/286067/test-cases/requirement-290759",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "release/test-cases",
+                      "Source":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\r10\\r10-2\\crs\\286067\\286067-test-cases\\requirement-290760",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/286067/test-cases/requirement-290760",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "release/test-cases",
+                      "Source":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\r10\\r10-2\\crs\\286067\\286067-test-cases\\requirement-290761",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/286067/test-cases/requirement-290761",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "release/test-cases",
+                      "Source":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\r10\\r10-2\\crs\\286067\\286067-test-cases\\requirement-290762",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/286067/test-cases/requirement-290762",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "release/test-cases",
+                      "Source":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\r10\\r10-2\\crs\\286067\\286067-test-cases\\requirement-290763",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/286067/test-cases/requirement-290763",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "release/test-cases",
+                      "Source":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\r10\\r10-2\\crs\\286067\\286067-test-cases\\requirement-290764",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/286067/test-cases/requirement-290764",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "release/test-cases",
+                      "Source":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\r10\\r10-2\\crs\\286067\\286067-test-cases\\requirement-290765",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/286067/test-cases/requirement-290765",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "release/test-cases",
+                      "Source":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\r10\\r10-2\\crs\\286067\\286067-test-cases\\requirement-290766",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/286067/test-cases/requirement-290766",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "release/test-cases",
+                      "Source":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\r10\\r10-2\\crs\\286067\\286067-test-cases\\requirement-290767",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/286067/test-cases/requirement-290767",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "release/test-cases",
+                      "Source":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\r10\\r10-2\\crs\\286067\\286067-test-cases\\requirement-290768",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/286067/test-cases/requirement-290768",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "release/test-cases",
+                      "Source":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\r10\\r10-2\\crs\\286067\\286067-test-cases\\requirement-290769",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/286067/test-cases/requirement-290769",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "release/test-cases",
+                      "Source":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\r10\\r10-2\\crs\\286067\\286067-test-cases\\requirement-290770",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/286067/test-cases/requirement-290770",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "release/test-cases",
+                      "Source":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\r10\\r10-2\\crs\\286067\\286067-test-cases\\requirement-290771",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/286067/test-cases/requirement-290771",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "release/test-cases",
+                      "Source":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\r10\\r10-2\\crs\\286067\\286067-test-cases\\requirement-290772",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/286067/test-cases/requirement-290772",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "release/test-cases",
+                      "Source":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\r10\\r10-2\\crs\\286067\\286067-test-cases\\requirement-290773",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/286067/test-cases/requirement-290773",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "release/test-cases",
+                      "Source":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\r10\\r10-2\\crs\\286067\\286067-test-cases\\requirement-290775",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/286067/test-cases/requirement-290775",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "release/test-cases",
+                      "Source":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\r10\\r10-2\\crs\\286067\\286067-test-cases\\requirement-290776",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/286067/test-cases/requirement-290776",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "release/test-cases",
+                      "Source":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\r10\\r10-2\\crs\\286067\\286067-test-cases\\requirement-290777",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/286067/test-cases/requirement-290777",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "release/test-cases",
+                      "Source":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\r10\\r10-2\\crs\\286067\\286067-test-cases\\requirement-73354",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/286067/test-cases/requirement-73354",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "release/test-cases",
+                      "Source":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\r10\\r10-2\\crs\\286067\\286067-test-cases\\requirement-73375",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/286067/test-cases/requirement-73375",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "release/change-requests",
+                      "Source":  "docs/qa-documents/pf-evatec-phase-2/r10/r10-2/crs/286836/cr-286836.md",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/286836/cr-286836.md",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "release/test-cases",
+                      "Source":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\r10\\r10-2\\crs\\286836\\286836-test-cases\\requirement-264374",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/286836/test-cases/requirement-264374",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "release/test-cases",
+                      "Source":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\r10\\r10-2\\crs\\286836\\286836-test-cases\\requirement-272565",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/286836/test-cases/requirement-272565",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "release/test-cases",
+                      "Source":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\r10\\r10-2\\crs\\286836\\286836-test-cases\\requirement-287451",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/286836/test-cases/requirement-287451",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "release/test-cases",
+                      "Source":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\r10\\r10-2\\crs\\286836\\286836-test-cases\\requirement-75372",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/286836/test-cases/requirement-75372",
+                      "UsedGit":  true
+                  },
+                  {
+                      "Category":  "release/change-requests",
+                      "Source":  "docs/qa-documents/pf-evatec-phase-2/r10/r10-2/crs/290161/cr-290161.md",
+                      "Destination":  "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/290161/cr-290161.md",
+                      "UsedGit":  true
+                  }
+              ],
+    "Created":  [
+                    "docs/qa-documents/pf-evatec-phase-2/00-project-overview",
+                    "docs/qa-documents/pf-evatec-phase-2/01-requirements",
+                    "docs/qa-documents/pf-evatec-phase-2/02-planning",
+                    "docs/qa-documents/pf-evatec-phase-2/03-testing/estimates",
+                    "docs/qa-documents/pf-evatec-phase-2/03-testing/test-plans",
+                    "docs/qa-documents/pf-evatec-phase-2/03-testing/test-cases",
+                    "docs/qa-documents/pf-evatec-phase-2/03-testing/test-assets",
+                    "docs/qa-documents/pf-evatec-phase-2/04-environment",
+                    "docs/qa-documents/pf-evatec-phase-2/05-operations",
+                    "docs/qa-documents/pf-evatec-phase-2/06-automation/converters",
+                    "docs/qa-documents/pf-evatec-phase-2/06-automation/scripts",
+                    "docs/qa-documents/pf-evatec-phase-2/06-automation/tools",
+                    "docs/qa-documents/pf-evatec-phase-2/07-references/source-files",
+                    "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests",
+                    "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/release-documentation",
+                    "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/test-logs",
+                    "docs/qa-documents/pf-evatec-phase-2/09-templates",
+                    "docs/qa-documents/pf-evatec-phase-2/archive/review-required",
+                    "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/284111",
+                    "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/284111/test-cases",
+                    "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/285729",
+                    "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/285729/test-cases",
+                    "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/286067",
+                    "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/286067/test-cases",
+                    "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/286836",
+                    "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/286836/test-cases",
+                    "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/290161"
+                ],
+    "Removed":  [
+                    "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\r10\\r10-2\\log",
+                    "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\r10\\r10-2\\documentation",
+                    "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\r10\\r10-2\\crs\\290161",
+                    "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\r10\\r10-2\\crs\\286836\\286836-test-cases",
+                    "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\r10\\r10-2\\crs\\286836",
+                    "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\r10\\r10-2\\crs\\286067\\286067-test-cases",
+                    "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\r10\\r10-2\\crs\\286067",
+                    "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\r10\\r10-2\\crs\\285729\\285729-test-cases",
+                    "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\r10\\r10-2\\crs\\285729",
+                    "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\r10\\r10-2\\crs\\284111\\28411-test-cases",
+                    "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\r10\\r10-2\\crs\\284111",
+                    "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\r10\\r10-2\\crs",
+                    "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\r10\\r10-2",
+                    "docs/qa-documents/pf-evatec-phase-2/r10",
+                    "docs/qa-documents/pf-evatec-phase-2/overview",
+                    "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\planning\\excel-files",
+                    "docs/qa-documents/pf-evatec-phase-2/planning",
+                    "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\resources\\mini-software-test-plans"
+                ]
+}

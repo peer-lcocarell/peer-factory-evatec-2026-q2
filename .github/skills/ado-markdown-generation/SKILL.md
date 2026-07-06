@@ -46,7 +46,7 @@ Default suite mappings for R10.2:
 Use the pattern:
 
 ```
-docs/pf-evatec-phase-2/r10/r10-2/crs/<CR>/<CR>-test-cases/
+docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/<CR>/test-cases/
 ```
 
 - Use an existing test case folder if present.
@@ -101,7 +101,7 @@ After files are created, provide the appropriate publish command.
 
 ```powershell
 .\scripts\ado\invoke-ado-suite-publish-from-folder.ps1 `
-  -FolderPath "docs/pf-evatec-phase-2/r10/r10-2/crs/<CR>/<CR>-test-cases" `
+  -FolderPath "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/<CR>/test-cases" `
   -TestPlanId 291616 `
   -SuiteId <SuiteId> `
   -OrgUrl "https://ops1.peergroup.com/DefaultCollection" `
@@ -112,7 +112,7 @@ After files are created, provide the appropriate publish command.
 
 ```powershell
 .\scripts\ado\invoke-ado-test-case-publish-from-markdown.ps1 `
-  -FilePath "docs/pf-evatec-phase-2/r10/r10-2/crs/<CR>/<CR>-test-cases/001-scenario-name.md" `
+  -FilePath "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/<CR>/test-cases/001-scenario-name.md" `
   -TestPlanId 291616 `
   -SuiteId <SuiteId> `
   -OrgUrl "https://ops1.peergroup.com/DefaultCollection" `

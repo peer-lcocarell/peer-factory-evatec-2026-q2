@@ -17,10 +17,10 @@ Enforce consistent CR-local file placement and ADO-friendly Markdown output for 
 ## File Placement
 
 - Base pattern:
-  - docs/pf-evatec-phase-2/r10/r10-2/crs/<CR>/<CR-test-case-folder>/
-- Use an existing test-case folder if present.
+  - docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/<CR>/test-cases/
+- Use the existing test-cases folder if present.
 - If missing, create:
-  - <CR>-test-cases
+  - test-cases
 - Do not place generated test cases outside the CR path.
 
 ## File Naming

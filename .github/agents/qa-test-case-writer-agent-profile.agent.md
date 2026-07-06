@@ -96,7 +96,7 @@ When multiple tasks are requested in one session, execute in the order listed ab
 When creating test case files:
 
 - Detect the CR from the request or current context.
-- Write files to: `docs/pf-evatec-phase-2/r10/r10-2/crs/<CR>/<CR>-test-cases/`
+- Write files to: `docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/<CR>/test-cases/`
 - Use sortable numeric prefixes: `001-scenario-name.md`
 - One file per test case.
 - Do not overwrite existing files without user confirmation.

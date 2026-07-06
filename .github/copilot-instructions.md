@@ -11,7 +11,7 @@ Primary goal:
 - Publish test cases into Azure DevOps Test Plans
 
 Key release area:
-- docs/pf-evatec-phase-2/r10/r10-2/
+- docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/
 
 Current Release:
 - R10.2
@@ -32,14 +32,34 @@ Highest QA risk:
 ## Repository Structure
 
 docs/
-    overview.md
-    pf-evatec-phase-2/
-        r10/
-            r10-2/
-                r102-crs.md
-
-resources/
-    mini-software-test-plans/
+    qa-documents/
+        pf-evatec-phase-2/
+            00-project-overview/
+            01-requirements/
+            02-planning/
+            03-testing/
+                estimates/
+                test-plans/
+                test-cases/
+                test-assets/
+            04-environment/
+            05-operations/
+            06-automation/
+                converters/
+                scripts/
+                tools/
+            07-references/
+                source-files/
+            08-releases/
+                r10/
+                    r10.2/
+                        change-requests/
+                        release-documentation/
+                        test-logs/
+            09-templates/
+            archive/
+                review-required/
+            reorganization-report.md
 
 testdata/
     Scenarios/

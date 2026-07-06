@@ -28,24 +28,27 @@ Recommended project structure:
 peer-factory-evatec-2026-q2
 |
 |-- docs
-|   |-- pf-evatec-phase-2
-|   |   `-- r10
-|   |       `-- r10-2
-|   |           |-- r102-crs.md
-|   |           |-- r102-requirements.md
-|   |           `-- crs
-|   |               |-- 284111
-|   |               |   |-- cr-284111.md
-|   |               |   `-- 284111-test-cases
-|   |               |       |-- TC001.md
-|   |               |       |-- TC002.md
-|   |               |       `-- TC003.md
-|   |               |-- 285729
-|   |               |   `-- 285729-test-cases
-|   |               |-- 286067
-|   |               |   `-- 286067-test-cases
-|   |               `-- 286836
-|   |                   `-- 286836-test-cases
+|   `-- qa-documents
+|       `-- pf-evatec-phase-2
+|           `-- 08-releases
+|               `-- r10
+|                   `-- r10.2
+|                       |-- release-documentation
+|                       |   |-- r10.2-change-requests.md
+|                       |   `-- r10.2-requirements.md
+|                       `-- change-requests
+|                           |-- 284111
+|                           |   |-- cr-284111.md
+|                           |   `-- test-cases
+|                           |       |-- TC001.md
+|                           |       |-- TC002.md
+|                           |       `-- TC003.md
+|                           |-- 285729
+|                           |   `-- test-cases
+|                           |-- 286067
+|                           |   `-- test-cases
+|                           `-- 286836
+|                               `-- test-cases
 |
 |-- scripts
 |   `-- ado
@@ -204,7 +207,7 @@ Run:
 
 ```powershell
 .\invoke-ado-test-case-publish-from-markdown.ps1 `
-    -TestCaseMarkdownPath "..\..\docs\pf-evatec-phase-2\r10\r10-2\crs\284111\284111-test-cases\TC001-Verify-WBS-Element-Creation.md"
+    -TestCaseMarkdownPath "..\..\docs\qa-documents\pf-evatec-phase-2\08-releases\r10\r10.2\change-requests\284111\test-cases\TC001-Verify-WBS-Element-Creation.md"
 ```
 
 ---
@@ -215,7 +218,7 @@ Example:
 
 ```powershell
 .\invoke-ado-suite-publish-from-folder.ps1 `
-    -ScenarioFolder "..\..\docs\pf-evatec-phase-2\r10\r10-2\crs\284111\284111-test-cases"
+    -ScenarioFolder "..\..\docs\qa-documents\pf-evatec-phase-2\08-releases\r10\r10.2\change-requests\284111\test-cases"
 ```
 
 ---
@@ -226,7 +229,7 @@ Always verify before publishing:
 
 ```powershell
 .\invoke-ado-suite-publish-from-folder.ps1 `
-    -ScenarioFolder "..\..\docs\pf-evatec-phase-2\r10\r10-2\crs\284111\284111-test-cases" `
+    -ScenarioFolder "..\..\docs\qa-documents\pf-evatec-phase-2\08-releases\r10\r10.2\change-requests\284111\test-cases" `
     -WhatIf
 ```
 
@@ -247,13 +250,13 @@ For each CR:
 
 Review CR documentation:
 
-docs/pf-evatec-phase-2/r10/r10-2/crs/<CR>
+docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/<CR>
 
 ### Step 2
 
 Create test cases in:
 
-<CR>-test-cases
+test-cases
 
 ### Step 3
 
@@ -346,7 +349,7 @@ Example:
                 "-File",
                 "scripts/ado/invoke-ado-suite-publish-from-folder.ps1",
                 "-ScenarioFolder",
-                "docs/pf-evatec-phase-2/r10/r10-2/crs/284111/284111-test-cases"
+                "docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/284111/test-cases"
             ]
         }
     ]

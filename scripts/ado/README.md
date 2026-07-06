@@ -86,7 +86,7 @@ The parser extracts:
 $env:AZURE_DEVOPS_PAT = '<pat>'
 
 ./scripts/ado/invoke-ado-test-case-publish-from-markdown.ps1 `
-    -Path ./docs/pf-evatec-phase-2/r10/r10-2/test-cases/286067/001-create-magnet.md
+    -Path ./docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/286067/test-cases/001-create-magnet.md
 ```
 
 Dry-run (no API writes):
@@ -99,7 +99,7 @@ Dry-run (no API writes):
 
 ```powershell
 ./scripts/ado/invoke-ado-suite-publish-from-folder.ps1 `
-    -Path ./docs/pf-evatec-phase-2/r10/r10-2/test-cases/286067 `
+    -Path ./docs/qa-documents/pf-evatec-phase-2/08-releases/r10/r10.2/change-requests/286067/test-cases `
     -ContinueOnError
 ```
 
