@@ -1,121 +1,143 @@
----
-mode: ask
-description: "Prompt for project-audit."
----
+# Agent - QA Project Audit
 
-<!-- #
- * Copyright(C) The PEER Group Inc., 2026.
- * This software contains confidential and trade secret information
- * belonging to The PEER Group Inc. All Rights Reserved.
- * No part of this software may be reproduced or transmitted in any form
- * or by any means, electronic, mechanical, photocopying, recording or
- * otherwise, without the prior written consent of The PEER Group Inc.
-# -->
+## Metadata
+- **Difficulty**: Advanced
+- **Estimated Time**: 30min
+- **Prerequisites**: Software architecture review, dependency analysis, performance and maintainability fundamentals
+- **Tags**: #project-audit #architecture #optimization #technical-debt
+- **Last Updated**: 2026-07-07
+- **Version**: 1.0
 
-Act as a senior software architect, performance engineer, and codebase auditor.
+## Objective
+Audit a software project for redundancy, complexity, dependency bloat, and maintainability risks. Use this prompt when preparing an optimization roadmap with measurable impact and phased recommendations.
 
-Analyze the entire project and provide a detailed optimization review focused on reducing complexity, maintenance cost, and overall size.
+## Prompt Template
 
-Review the project for:
+```
+You are a Senior Project Audit Agent.
 
-1. Redundant Files
-    - Duplicate files
-    - Dead code
-    - Unused scripts
-    - Unused assets
-    - Old backups
-    - Deprecated modules
-    - Files that appear generated and should not be stored in source control
+Inputs:
+- [PROJECT_PATH_OR_ARTIFACTS]
+- [STACK_AND_BUILD_CONTEXT]
+- [PERFORMANCE_OR_MAINTAINABILITY_GOALS]
 
-2. Dependency Bloat
-    - Unused packages
-    - Duplicate libraries serving the same purpose
-    - Oversized dependencies with simpler alternatives
-    - Packages that could be replaced with native platform features
+Context:
+- [AUDIT_SCOPE]: [Full repo or selected modules]
+- [CONSTRAINTS]: [No breaking changes, timeline limits, team capacity]
 
-3. Architecture Review
-    - Areas that violate separation of concerns
-    - Overly coupled modules
-    - Circular dependencies
-    - Large files that should be split
-    - Small files that should be merged
-    - Opportunities for better abstraction
+Requirements:
+- Identify redundant files, unused code, and dependency bloat
+- Assess architecture concerns including coupling and boundary violations
+- Evaluate performance, build, and startup bottlenecks
+- Provide severity, affected location, and practical remediation for each finding
+- Estimate impact on complexity, build time, and maintainability
 
-4. Modularization Opportunities
-    - Shared functionality that should become reusable modules
-    - Repeated code patterns
-    - Candidate utility libraries
-    - Components that could be converted into plugins, services, or reusable packages
+Please provide:
+- Executive summary and detailed findings
+- Prioritized action plan with quick wins and major refactors
+- Estimated impact and idealized target structure
+```
 
-5. Performance & Build Optimization
-    - Slow build contributors
-    - Large assets
-    - Inefficient imports
-    - Bundle size issues
-    - Startup performance concerns
-    - Memory-heavy code paths
+## Customization Guide
 
-6. Project Structure
-    - Folder organization improvements
-    - Naming inconsistencies
-    - Files in incorrect locations
-    - Missing boundaries between layers
+### Placeholders Explained
+- **[PROJECT_PATH_OR_ARTIFACTS]**: Codebase path or audit artifacts.
+  - Example: `peer-factory-evatec-2026-q2`
+  - Tips: Include lockfiles and build config for dependency analysis.
 
-7. Maintainability
-    - Excessively complex functions
-    - High-risk areas of technical debt
-    - Over-engineered implementations
-    - Places where simpler solutions exist
+- **[PERFORMANCE_OR_MAINTAINABILITY_GOALS]**: Desired outcomes.
+  - Example: `Reduce build time by 20 percent and lower maintenance overhead`
+  - Tips: Use measurable goals where possible.
 
-For every issue found, provide:
+### Optional Parameters
+- **[CONSTRAINTS]**: Delivery and change limits.
+  - Use when recommendations must fit strict release windows.
 
-- Severity (Critical, High, Medium, Low)
-- File or folder impacted
-- Explanation of the problem
-- Recommended solution
-- Estimated reduction in maintenance effort, build size, dependency count, or complexity
+## Example Usage
 
-Then provide:
+### Scenario
+A team needs a focused repo audit before a release train to reduce risk and simplify maintenance.
 
-1. Quick Wins (can be completed in under 1 day)
-2. Medium Refactors (1-5 days)
-3. Major Architectural Improvements
-4. Estimated percentage reduction in:
-    - Project size
-    - Dependency count
-    - Build time
-    - Code complexity
-5. A proposed ideal folder structure
+### Filled Prompt
+```
+You are a Senior Project Audit Agent.
 
-Be aggressive about identifying unnecessary code, duplicate functionality, legacy artifacts, over-engineering, and opportunities to simplify the codebase while preserving functionality.
+Inputs:
+- [PROJECT_PATH_OR_ARTIFACTS]: peer-factory-evatec-2026-q2
+- [STACK_AND_BUILD_CONTEXT]: Node + Playwright + PowerShell automation
+- [PERFORMANCE_OR_MAINTAINABILITY_GOALS]: reduce script duplication and simplify folder structure
 
-Output the results as:
-- Executive Summary
-- Findings
-- Recommended Refactors
-- Priority Action Plan
-- Estimated Impact
+Context:
+- [AUDIT_SCOPE]: full repository
+- [CONSTRAINTS]: no breaking automation changes in current release branch
 
-Do not assume every file is necessary. Challenge the existence of each dependency, module, asset, service, and abstraction. Recommend deletion whenever functionality can be preserved with a simpler approach.
+Requirements:
+- Identify redundant files, unused code, and dependency bloat
+- Assess architecture concerns including coupling and boundary violations
+- Evaluate performance, build, and startup bottlenecks
+- Provide severity, affected location, and practical remediation for each finding
+- Estimate impact on complexity, build time, and maintainability
 
-## Goal
+Please provide:
+- Executive summary and detailed findings
+- Prioritized action plan with quick wins and major refactors
+- Estimated impact and idealized target structure
+```
 
-- Define the primary objective clearly.
+### Expected AI Response
+```
+Executive Summary:
+- 18 medium/high findings across scripts, docs, and test utilities
+- Duplicate publish workflows increase maintenance overhead
 
-## Input
-
-- [SOURCE_TEXT]
-- [TARGET_FILE]
-- [CONTEXT]
-- [TEST_PLAN_URL]
-- https://ops1.peergroup.com/DefaultCollection/Zendesk/_testPlans/execute?planId=286264&suiteId=286265
-
-## Constraints
-
-- Be explicit and deterministic.
-- Do not assume missing facts.
+Quick Wins:
+- Remove unused setup scripts
+- Merge duplicate utility helpers
+```
 
 ## Expected Output
 
-- Format: bullet list
-- Include actionable results
+The AI should provide:
+1. Severity-ranked findings with affected files and rationale.
+2. Action plan divided by effort horizon.
+3. Quantified impact estimates and target structure guidance.
+
+**Quality Indicators**:
+- [ ] Output is complete and addresses all requirements
+- [ ] Code/content follows best practices
+- [ ] Examples are included where appropriate
+- [ ] Edge cases are considered
+
+## Related Prompts
+
+- [Agent - QA Estimation and Planning](./pf-qa-estimation.agent.md) - Converts audit scope into effort planning.
+- [Agent - PowerShell Enterprise Refactoring](./pf-qa-powershell-enterprise-refactoring.agent.md) - Refactors high-impact scripts.
+- [Skill - Regression Analysis](../skills/regression-analysis/SKILL.md) - Estimates downstream testing impact.
+
+## Additional Resources
+
+- [Software Architecture Fundamentals](https://learn.microsoft.com/azure/architecture/) - Architecture design guidance.
+- [Node.js Diagnostic Reports](https://nodejs.org/api/report.html) - Runtime diagnostics reference.
+- [Technical Debt Overview](https://martinfowler.com/bliki/TechnicalDebt.html) - Debt classification concepts.
+
+## Tips for Best Results
+
+1. **Be Specific**: Provide scope boundaries and release constraints.
+2. **Iterate**: Run audit before and after major cleanup.
+3. **Validate**: Confirm each recommendation with concrete evidence.
+4. **Customize**: Align severity thresholds to your governance model.
+
+## Troubleshooting
+
+**Issue**: AI output is too generic
+- **Solution**: Provide more specific context in [AUDIT_SCOPE]
+
+**Issue**: Missing important details
+- **Solution**: Add additional requirements or constraints
+
+**Issue**: Output doesn't match expected format
+- **Solution**: Specify the exact format in the prompt template
+
+---
+
+**Note**: Always review and validate AI-generated content before using in production environments.
