@@ -248,8 +248,8 @@ Only actual markdown links (`[text](path)`) and code-block example paths that re
 | `scripts/ado/invoke-ado-suite-publish-from-folder.ps1` | Updated `.EXAMPLE` block path to new release/test-cases layout. |
 | `scripts/ado/invoke-ado-test-case-publish-from-markdown.ps1` | Updated `.EXAMPLE` block path to new release/test-cases layout. |
 | `.github/copilot-instructions.md` | Updated `Key release area` path and rewrote the full `Repository Structure` tree to match the new layout. |
-| `.github/agents/qa-test-case-writer-agent-profile.agent.md` | Updated the test-case write-target path. |
-| `.github/agents/qa-test-case-writer-agent-profile.prompt.md` | Updated the base pattern and folder name from `<CR>-test-cases` to `test-cases`. |
+| `.github/agents/pf-qa-test-case-writer-agent-profile.agent.md` | Updated the test-case write-target path. |
+| `.github/prompts/code-review/qa-test-case-writer-agent-profile.prompt.md` | Updated the base pattern and folder name from `<CR>-test-cases` to `test-cases`. |
 | `.github/skills/ado-markdown-generation/SKILL.md` | Updated 3 example command paths and 1 base-path pattern. |
 | `docs/qa-documents/pf-evatec-phase-2/07-references/ado-publishing-guide-r10.02.md` | Updated 5 in-doc example paths plus the recommended project-structure tree diagram. |
 

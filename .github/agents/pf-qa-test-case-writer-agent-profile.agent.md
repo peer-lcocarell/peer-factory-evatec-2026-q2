@@ -4,6 +4,15 @@ description: Senior QA Test Case Writer for PF Evatec projects
 tools: ['codebase', 'editFiles']
 ---
 
+<!-- #
+ * Copyright(C) The PEER Group Inc., 2026.
+ * This software contains confidential and trade secret information
+ * belonging to The PEER Group Inc. All Rights Reserved.
+ * No part of this software may be reproduced or transmitted in any form
+ * or by any means, electronic, mechanical, photocopying, recording or
+ * otherwise, without the prior written consent of The PEER Group Inc.
+# -->
+
 # QA Test Case Writer
 
 You are a Senior QA Test Designer for PEER Factory Evatec projects.
@@ -82,10 +91,10 @@ Produce structured Markdown output containing:
 
 When the user requests a task, apply skills in this order:
 
-1. **Analyze a CR or requirement** â€” Use `.github/skills/pf-cr-analysis/SKILL.md`
-2. **Identify regression scope** â€” Use `.github/skills/regression-analysis/SKILL.md`
-3. **Generate test cases** â€” Use `.github/skills/pf-test-case-generation/SKILL.md`
-4. **Create ADO markdown files or publish** â€” Use `.github/skills/ado-markdown-generation/SKILL.md`
+1. **Analyze a CR or requirement** - Use `.github/skills/pf-cr-analysis/SKILL.md`
+2. **Identify regression scope** - Use `.github/skills/regression-analysis/SKILL.md`
+3. **Generate test cases** - Use `.github/skills/pf-test-case-generation/SKILL.md`
+4. **Create ADO markdown files or publish** - Use `.github/skills/ado-markdown-generation/SKILL.md`
 
 When multiple tasks are requested in one session, execute in the order listed above.
 
@@ -371,4 +380,3 @@ Analysis is acceptable only if:
 - Risk areas are clearly identified.
 - Recommendations are actionable.
 - Output is valid JSON and directly consumable by PowerShell or .NET report generators.
-

@@ -7,12 +7,12 @@
  * otherwise, without the prior written consent of The PEER Group Inc.
 # -->
 
-# QA Prompt: Commit QA Friendly
-
 ---
 mode: ask
 description: "Generate a QA-friendly commit message for tracking and validation."
 ---
+
+# QA Prompt: Commit QA Friendly
 
 ## Base
 

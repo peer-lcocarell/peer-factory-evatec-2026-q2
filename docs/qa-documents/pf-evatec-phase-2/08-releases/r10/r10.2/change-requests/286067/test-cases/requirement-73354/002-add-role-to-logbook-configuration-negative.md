@@ -1,4 +1,4 @@
-# R10.2 Update for CR 286067 - Add Role to Logbook Configuration: Verify validation is displayed when no role is selected (Negative)
+# R10.2 Update for CR 286067 - Add Role to Logbook Configuration: Verify validation is displayed when no role is selected (Unhappy Path)
 
 ## Requirement
 CR: 286067

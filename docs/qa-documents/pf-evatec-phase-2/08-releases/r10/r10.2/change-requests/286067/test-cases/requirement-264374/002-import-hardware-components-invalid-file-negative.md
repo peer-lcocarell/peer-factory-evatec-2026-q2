@@ -1,4 +1,4 @@
-# R10.2 Update for CR 286067 - Import Hardware Components from File: Verify error message is displayed for an invalid import file (Negative)
+# R10.2 Update for CR 286067 - Import Hardware Components from File: Verify error message is displayed for an invalid import file (Unhappy Path)
 
 ## Requirement
 CR: 286067
