@@ -53,7 +53,10 @@ param(
     [string]$Project,
     [string]$ApiVersion,
     [string]$SuiteMapPath,
-    [switch]$ContinueOnError
+    [switch]$ContinueOnError,
+    # Pass -SkipValidation to allow publishing despite BLOCKER findings.
+    # All blockers are emitted as warnings instead of terminating errors.
+    [switch]$SkipValidation
 )
 
 $ErrorActionPreference = 'Stop'
@@ -77,7 +80,7 @@ $results = New-Object System.Collections.Generic.List[object]
 
 foreach ($file in $files) {
     $splat = @{ Path = $file.FullName }
-    foreach ($key in 'PlanId','SuiteId','AreaPath','IterationPath','OrgUrl','Project','ApiVersion','SuiteMapPath') {
+    foreach ($key in 'PlanId','SuiteId','AreaPath','IterationPath','OrgUrl','Project','ApiVersion','SuiteMapPath','SkipValidation') {
         if ($PSBoundParameters.ContainsKey($key)) { $splat[$key] = $PSBoundParameters[$key] }
     }
     if ($WhatIfPreference) { $splat.WhatIf = $true }

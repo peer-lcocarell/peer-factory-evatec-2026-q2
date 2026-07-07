@@ -8,15 +8,15 @@ Requirement: Add Role to Logbook Configuration (Logbook Configuration)
 
 ## Preconditions
 - User is signed in with `ManageHardware_View` and `ManageHardware_Edit` permissions.
-- Manage Hardware screen is accessible with existing logbook categories.
+- The 'Manage Hardware' screen is accessible with existing logbook categories.
 - At least one logbook category is available for editing.
 
 | Step | Action | Expected Result |
-|------|----------|----------------|
-| 1 | Open Manage Hardware and select a logbook category. | Category is opened for editing. |
-| 2 | Attempt to add a role without selecting a role name. | Role name selector remains empty. |
-| 3 | Attempt to save changes. | Save is blocked and required-field validation is displayed. |
-| 4 | Select a valid role and save again. | Validation clears and save succeeds. |
+|------|--------|-----------------|
+| 1 | Open 'Manage Hardware' and select a logbook category. | The category is opened for editing. |
+| 2 | Initiate adding a new role without selecting a role name. | The role name selector remains empty. No role name is selected. |
+| 3 | Attempt to save the changes. | Save is blocked. A required-field validation message is displayed on the role name field. |
+| 4 | Select a valid role name and save again. | Validation clears. Save completes. The role is added to the category. |
 
 ## Expected Outcome
-System prevents saving a logbook configuration role without a selected role name and displays clear validation.
+Saving a logbook configuration role without a selected role name is blocked. A required-field validation message is displayed. Selecting a valid role name and saving again completes without errors.

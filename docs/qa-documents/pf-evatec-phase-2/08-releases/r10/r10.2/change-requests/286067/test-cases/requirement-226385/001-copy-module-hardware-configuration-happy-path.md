@@ -8,15 +8,15 @@ Requirement: Copy Module Hardware Configuration (Module Hardware Configuration)
 
 ## Preconditions
 - User is signed in with `HardwareConfiguration_View` and `HardwareConfiguration_Edit` permissions.
-- Source module has a saved hardware configuration.
-- Compatible target module is available.
+- A source module has a saved hardware configuration including role assignments.
+- A compatible target module of the same type is available.
 
 | Step | Action | Expected Result |
-|------|----------|----------------|
-| 1 | Open the source module Hardware Configuration. | Configuration loads successfully. |
-| 2 | Trigger the Copy Configuration action and select the target module. | Copy dialog is displayed with target selection. |
-| 3 | Confirm the copy action. | Copy completes successfully. |
-| 4 | Open the target module Hardware Configuration. | Configuration reflects copied roles and hardware entries. |
+|------|--------|-----------------|
+| 1 | Open the source module 'Hardware Configuration' page. | Configuration loads with the existing role assignments. |
+| 2 | Trigger the 'Copy Configuration' action and select the compatible target module. | The copy dialog is displayed. The compatible target module is selectable. |
+| 3 | Confirm the copy action. | The copy completes without validation errors. |
+| 4 | Open the 'Hardware Configuration' page for the target module. | The target module configuration reflects the copied roles and hardware entries from the source module. |
 
 ## Expected Outcome
-Tester can copy a module's hardware configuration to another compatible module accurately.
+The hardware configuration from the source module is copied to the compatible target module. The target module configuration displays the same role structure as the source. The source module configuration is unchanged.

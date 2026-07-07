@@ -1,4 +1,4 @@
-# R10.2 Update for CR 286067 - Edit Magnet System Type: Verify tester can update magnet system type information (Happy Path)
+# R10.2 Update for CR 286067 - Edit Magnet System Type: Verify tester can update Magnet System Type information (Happy Path)
 
 ## Requirement
 CR: 286067
@@ -7,16 +7,16 @@ Requirement ID: 290760
 Requirement: Edit Magnet System Type (Magnet System Types)
 
 ## Preconditions
-- User is signed in with permission to edit Magnet System Types.
-- At least one editable Magnet System Type exists.
-- Magnet System Types list is accessible.
+- User is signed in with `MagnetSystemType_View` and `MagnetSystemType_Edit` permissions.
+- At least one editable Magnet System Type (Standard type) exists.
+- The 'Magnet System Types' list is accessible.
 
 | Step | Action | Expected Result |
-|------|----------|----------------|
-| 1 | Open an existing Magnet System Type in Edit mode. | Edit screen loads with current data. |
-| 2 | Update editable user-entered fields (for example Description, Application). | Changes are accepted. |
-| 3 | Save the changes. | Save succeeds without validation errors. |
-| 4 | Re-open the record. | Updated values are persisted. |
+|------|--------|-----------------|
+| 1 | Open an existing Magnet System Type in Edit mode. | The Edit screen loads with the current data populated. |
+| 2 | Update an editable field (for example Description or Applications). | The field accepts the new input. |
+| 3 | Save the changes. | Save completes without validation errors. |
+| 4 | Re-open the record. | The updated field values are persisted and displayed. ERP-sourced fields are unchanged. |
 
 ## Expected Outcome
-Tester can update a Magnet System Type's editable fields and changes are saved correctly.
+User-entered fields on a Magnet System Type can be edited and saved. Updated values persist on re-open. ERP-sourced read-only fields are not changed by the edit.

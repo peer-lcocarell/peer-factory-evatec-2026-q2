@@ -8,15 +8,15 @@ Requirement: Add associations (Learned Associations)
 
 ## Preconditions
 - User is signed in with `ManageHardware_View` and `ManageHardware_Edit` permissions.
-- Hardware components eligible for association exist.
-- Learned Associations screen is accessible.
+- Hardware Components eligible for association exist, including at least one Magnet System role candidate.
+- The 'Learned Associations' screen is accessible.
 
 | Step | Action | Expected Result |
-|------|----------|----------------|
-| 1 | Open Learned Associations and select a source hardware component. | Component is selected. |
-| 2 | Choose Add association action and select a target component. | Association draft is created. |
-| 3 | Save the new association. | Save succeeds without validation errors. |
-| 4 | Refresh the associations view. | New association is displayed for the source component. |
+|------|--------|-----------------|
+| 1 | Open 'Learned Associations' and select a source Hardware Component. | The component is selected and the existing associations are displayed. |
+| 2 | Trigger the 'Add Association' action and select a target component of Magnet System role scope (Standard Magnet System Types only). | The association draft is created. The target component is listed as a pending association. |
+| 3 | Save the new association. | Save completes without validation errors. |
+| 4 | Refresh the associations view. | The new association is displayed in the list for the source component. |
 
 ## Expected Outcome
-Tester can create a new hardware association and it persists in Learned Associations.
+A new hardware association is created and persists in 'Learned Associations'. The association scope for Magnet System role type is limited to Standard Magnet System Types.

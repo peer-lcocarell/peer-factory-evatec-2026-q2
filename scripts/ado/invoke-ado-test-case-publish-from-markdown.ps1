@@ -52,7 +52,9 @@ param(
     [string]$OrgUrl,
     [string]$Project,
     [string]$ApiVersion,
-    [string]$SuiteMapPath
+    [string]$SuiteMapPath,
+    # Pass -SkipValidation to allow publishing despite BLOCKER findings.
+    [switch]$SkipValidation
 )
 
 $ErrorActionPreference = 'Stop'
@@ -61,7 +63,7 @@ Set-StrictMode -Version Latest
 Import-Module (Join-Path $PSScriptRoot 'pf-evatec-ado-publisher.psm1') -Force
 
 $splat = @{ Path = $Path }
-foreach ($key in 'PlanId','SuiteId','AreaPath','IterationPath','OrgUrl','Project','ApiVersion','SuiteMapPath') {
+foreach ($key in 'PlanId','SuiteId','AreaPath','IterationPath','OrgUrl','Project','ApiVersion','SuiteMapPath','SkipValidation') {
     if ($PSBoundParameters.ContainsKey($key)) { $splat[$key] = $PSBoundParameters[$key] }
 }
 if ($WhatIfPreference) { $splat.WhatIf = $true }

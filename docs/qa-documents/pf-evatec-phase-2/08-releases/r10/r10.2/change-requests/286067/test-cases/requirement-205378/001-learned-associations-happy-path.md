@@ -8,15 +8,15 @@ Requirement: Learned Associations (Manage Hardware)
 
 ## Preconditions
 - User is signed in with `ManageHardware_View` permission.
-- At least one hardware component with existing learned associations exists.
-- Manage Hardware > Learned Associations screen is accessible.
+- At least one Hardware Component with existing learned associations exists.
+- The 'Manage Hardware' > 'Learned Associations' screen is accessible.
 
 | Step | Action | Expected Result |
-|------|----------|----------------|
-| 1 | Open Manage Hardware and navigate to Learned Associations. | Learned Associations screen loads successfully. |
-| 2 | Select a hardware component known to have learned associations. | Component is selected. |
-| 3 | View the associations panel/list. | Existing learned associations are displayed for the component. |
-| 4 | Verify association data fields. | Displayed data matches the component's known associations. |
+|------|--------|-----------------|
+| 1 | Open 'Manage Hardware' and navigate to 'Learned Associations'. | The 'Learned Associations' screen loads. |
+| 2 | Select a Hardware Component known to have learned associations. | The component is selected and the associations panel loads. |
+| 3 | Review the associations list. | Existing learned associations for the selected component are displayed in the list. |
+| 4 | Verify the association data fields. | Each displayed association shows the expected role type, component name, and association metadata matching the known associations. |
 
 ## Expected Outcome
-Learned associations for a selected hardware component are correctly displayed.
+Learned associations for the selected Hardware Component are displayed. Each association entry shows the correct role type and component data. The associations panel reflects the component's current known associations.

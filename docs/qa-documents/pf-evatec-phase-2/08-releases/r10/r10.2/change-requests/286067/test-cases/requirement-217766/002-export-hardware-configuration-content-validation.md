@@ -1,27 +1,24 @@
 # R10.2 Update for CR 286067 - Export Hardware Configuration: Verify exported file contains expected hardware configuration data (Validation)
 
 ## Requirement
-
-- CR: 286067
-- Ticket: 35008
-- Requirement ID: 217766
-- Requirement: Export Hardware Configuration (Tool Hardware Configuration)
+CR: 286067
+Ticket: 35008
+Requirement ID: 217766
+Requirement: Export Hardware Configuration (Tool Hardware Configuration)
 
 ## Preconditions
-
-- User is signed in with permissions to view and export Tool Hardware Configuration.
-- A tool with a known hardware configuration (including magnet system role if applicable) is available.
-- Approved reference data for comparison is available.
+- User is signed in with `HardwareConfiguration_View` permission.
+- A tool with a known hardware configuration (including a Magnet System role with a Standard type installed) is available.
+- Reference data values are known in advance for comparison.
 
 | Step | Action | Expected Result |
-|------|----------|----------------|
-| 1 | Open Tool Hardware Configuration for the target tool. | Configuration loads successfully. |
-| 2 | Export the hardware configuration. | Export completes successfully. |
-| 3 | Open the exported file and inspect fields. | File contains expected columns and sections. |
-| 4 | Cross-check exported values against tool configuration in UI. | Values match the on-screen hardware configuration. |
-| 5 | Verify magnet system export formatting for standard and prototype entries. | Standard format is `[Magnet System #] ([Magnet System Type Article #])`. Prototype format includes variant code in the same field. |
-| 6 | If rewind export is used, compare current and rewind values. | Export includes both current and rewind values where required. |
+|------|--------|-----------------|
+| 1 | Open the 'Hardware Configuration' page for the target tool. | Configuration loads. |
+| 2 | Export the hardware configuration. | Export completes. The export file is available for download. |
+| 3 | Open the exported file and inspect the column structure. | The file contains the expected columns and sections matching the configuration layout. |
+| 4 | Cross-check exported values against the on-screen hardware configuration. | Exported values for each role and component match the values displayed in the UI. |
+| 5 | Verify the Magnet System entry format for a Standard type. | The Standard Magnet System entry appears in the format `[Magnet System Number] ([Magnet System Type Article Number])`. |
+| 6 | If a Prototype Magnet System is installed, verify the Prototype entry format. | The Prototype entry includes the variant code in the format required by the specification. |
 
 ## Expected Outcome
-
-Exported hardware configuration content matches UI data and applies required magnet system and rewind formatting rules.
+The exported hardware configuration file contains all expected fields and columns. Values match the UI configuration data. Standard Magnet System entries use the format `[Magnet System Number] ([Magnet System Type Article Number])`. Prototype entries include the variant code.

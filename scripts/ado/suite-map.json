@@ -1,11 +1,15 @@
 {
-  "$comment": "Maps CR ID -> Azure DevOps Test Suite ID under the configured Test Plan. Fill in the child suite IDs for each requirement. If a CR is missing, the default suite (-DefaultSuiteId / 291617 Requirements) is used.",
+  "$comment": "Suite resolution order: requirementSuiteIds -> crSuiteIds -> defaultSuiteId. Add a requirement ID entry to route a single requirement to its own child suite.",
   "planId": 291616,
   "defaultSuiteId": 291617,
   "crSuiteIds": {
-    "286067": null,
+    "286067": 292253,
     "285729": null,
     "286836": null,
     "284111": null
+  },
+  "requirementSuiteIds": {
+    "73354": 292253,
+    "73375": 292254
   }
 }

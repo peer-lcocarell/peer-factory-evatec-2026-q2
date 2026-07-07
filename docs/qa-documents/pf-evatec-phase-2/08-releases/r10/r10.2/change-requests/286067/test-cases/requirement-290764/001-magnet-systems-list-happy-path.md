@@ -1,4 +1,4 @@
-# R10.2 Update for CR 286067 - Magnet Systems: Verify tester can view available magnet systems (Happy Path)
+# R10.2 Update for CR 286067 - Magnet Systems: Verify tester can view available Magnet Systems (Happy Path)
 
 ## Requirement
 CR: 286067
@@ -7,16 +7,16 @@ Requirement ID: 290764
 Requirement: Magnet Systems (Magnet Systems)
 
 ## Preconditions
-- User is signed in with permission to view Magnet Systems.
+- User is signed in with `MagnetSystem_View` permission.
 - At least one Magnet System record exists.
-- Magnet Systems page is accessible.
+- The 'Magnet Systems' page is accessible.
 
 | Step | Action | Expected Result |
-|------|----------|----------------|
-| 1 | Open the Magnet Systems page. | Page loads successfully. |
-| 2 | Review the list of Magnet Systems. | Records are displayed with expected columns. |
-| 3 | Verify status column values. | Displayed statuses match expected lifecycle values (In Stock / In Use / In Inspection / Retired). |
-| 4 | Apply a basic filter (for example by status). | List updates according to filter. |
+|------|--------|-----------------|
+| 1 | Open the 'Magnet Systems' page. | The page loads. Existing Magnet System records are displayed. |
+| 2 | Review the list of records. | Records are displayed with expected columns (Magnet System Number, Serial Number, Status, Magnet System Type, Location). |
+| 3 | Verify the Status column values. | Displayed statuses are one of the four valid lifecycle values: `In Stock`, `In Use`, `In Inspection`, or `Retired`. |
+| 4 | Apply a basic status filter (for example filter by `In Stock`). | The list updates to display only records with `In Stock` status. Records with other statuses are hidden. |
 
 ## Expected Outcome
-Tester can view available Magnet Systems with correct data and functional list behavior.
+The 'Magnet Systems' page loads and displays existing records with the correct lifecycle status values. Status filtering updates the displayed records to match the selected status. Only records matching the filter criteria are shown.

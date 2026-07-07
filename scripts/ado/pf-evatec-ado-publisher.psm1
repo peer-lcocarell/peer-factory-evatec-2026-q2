@@ -210,15 +210,90 @@ function ConvertFrom-TestCaseMarkdown {
     $combined = "$requirement`n$title"
     if ($combined -match '\b(\d{6})\b') { $crId = $Matches[1] }
 
+    # Requirement ID: look for explicit 'Requirement ID:' label in the Requirement section.
+    $requirementId = $null
+    foreach ($l in (Get-SectionLines 'Requirement')) {
+        if ($l -match 'Requirement\s*ID\s*:\s*(\d+)') {
+            $requirementId = $Matches[1].Trim()
+            break
+        }
+    }
+
+    # ---------------------------------------------------------------------------
+    # Tags: parse ## Tags section then auto-apply mandatory tags from content.
+    # ---------------------------------------------------------------------------
+    $parsedTags = [System.Collections.Generic.List[string]]::new()
+
+    foreach ($l in (Get-SectionLines 'Tags')) {
+        $l = $l.Trim()
+        if (-not $l) { continue }
+        ($l -split ',') | ForEach-Object {
+            $tag = ($_ -replace '^\s*[-*#]\s*', '').Trim()
+            if ($tag -and -not $parsedTags.Contains($tag)) {
+                $parsedTags.Add($tag) | Out-Null
+            }
+        }
+    }
+
+    # Auto-derive R10.2 from title prefix.
+    if ($title -match '^\s*R10\.2') {
+        if (-not $parsedTags.Contains('R10.2')) { $parsedTags.Add('R10.2') | Out-Null }
+    }
+
     [pscustomobject]@{
         SourcePath      = (Resolve-Path -LiteralPath $Path).Path
         Title           = $title
         CrId            = $crId
+        RequirementId   = $requirementId
         Requirement     = $requirement
         Preconditions   = $preconditions
         Steps           = $steps
         ExpectedOutcome = $expectedOutcome
+        Tags            = $parsedTags.ToArray()
     }
+}
+
+# ---------------------------------------------------------------------------
+# Publish readiness validation
+# ---------------------------------------------------------------------------
+
+function Test-AdoTestCasePublishReady {
+    <#
+    .SYNOPSIS
+        Validates a parsed test case against mandatory publish requirements.
+
+    .OUTPUTS
+        String array of blocker/warning messages. Empty array = ready.
+        BLOCKER entries prevent publication. WARNING entries are advisory.
+    #>
+    [CmdletBinding()]
+    [OutputType([string[]])]
+    param(
+        [Parameter(Mandatory)] [pscustomobject]$TestCase
+    )
+
+    $issues = [System.Collections.Generic.List[string]]::new()
+
+    # --- Mandatory tags ---
+    # R10.2 is the sole publish blocker — groups the test case by release.
+    if ($TestCase.Tags -notcontains 'R10.2') {
+        $issues.Add('[BLOCKER] Missing mandatory tag: R10.2') | Out-Null
+    }
+
+    # --- Structural requirements ---
+    if ([string]::IsNullOrWhiteSpace($TestCase.Title)) {
+        $issues.Add('[BLOCKER] Test case title is missing.') | Out-Null
+    }
+
+    if ([string]::IsNullOrWhiteSpace($TestCase.Requirement)) {
+        $issues.Add('[BLOCKER] Requirement traceability section is missing or empty.') | Out-Null
+    }
+
+    if (-not $TestCase.Steps -or $TestCase.Steps.Count -eq 0) {
+        $issues.Add('[BLOCKER] No test steps found.') | Out-Null
+    }
+
+    return $issues.ToArray()
 }
 
 # ---------------------------------------------------------------------------
@@ -384,6 +459,9 @@ function New-AdoTestCase {
     $ops.Add(@{ op = 'add'; path = '/fields/Custom.PreconditionsPG';         value = $preconditionsText })
     if ($AreaPath)      { $ops.Add(@{ op = 'add'; path = '/fields/System.AreaPath';      value = $AreaPath }) }
     if ($IterationPath) { $ops.Add(@{ op = 'add'; path = '/fields/System.IterationPath'; value = $IterationPath }) }
+    if ($TestCase.Tags -and $TestCase.Tags.Count -gt 0) {
+        $ops.Add(@{ op = 'add'; path = '/fields/System.Tags'; value = ($TestCase.Tags -join '; ') })
+    }
 
     $uri = "{0}/{1}/_apis/wit/workitems/`$Test Case?api-version={2}" -f $OrgUrl.TrimEnd('/'), $Project, $ApiVersion
     return Invoke-AdoRest -Method POST -Uri $uri -Body $ops -ContentType 'application/json-patch+json'
@@ -415,6 +493,9 @@ function Update-AdoTestCase {
     $ops.Add(@{ op = 'add'; path = '/fields/Custom.PreconditionsPG';         value = $preconditionsText })
     if ($AreaPath)      { $ops.Add(@{ op = 'add'; path = '/fields/System.AreaPath';      value = $AreaPath }) }
     if ($IterationPath) { $ops.Add(@{ op = 'add'; path = '/fields/System.IterationPath'; value = $IterationPath }) }
+    if ($TestCase.Tags -and $TestCase.Tags.Count -gt 0) {
+        $ops.Add(@{ op = 'add'; path = '/fields/System.Tags'; value = ($TestCase.Tags -join '; ') })
+    }
 
     $uri = "{0}/{1}/_apis/wit/workitems/{2}?api-version={3}" -f $OrgUrl.TrimEnd('/'), $Project, $Id, $ApiVersion
     return Invoke-AdoRest -Method PATCH -Uri $uri -Body $ops -ContentType 'application/json-patch+json'
@@ -468,10 +549,19 @@ function Get-SuiteMap {
     $planId         = if ($raw.PSObject.Properties.Name -contains 'planId'         -and $raw.planId)         { [int]$raw.planId }         else { $script:DefaultPlanId }
     $defaultSuiteId = if ($raw.PSObject.Properties.Name -contains 'defaultSuiteId' -and $raw.defaultSuiteId) { [int]$raw.defaultSuiteId } else { $script:DefaultSuiteId }
 
+    # requirementSuiteIds (optional section)
+    $reqMap = @{}
+    if ($raw.PSObject.Properties.Name -contains 'requirementSuiteIds' -and $raw.requirementSuiteIds) {
+        foreach ($prop in $raw.requirementSuiteIds.PSObject.Properties) {
+            $reqMap[$prop.Name] = $prop.Value
+        }
+    }
+
     [pscustomobject]@{
-        planId         = $planId
-        defaultSuiteId = $defaultSuiteId
-        crSuiteIds     = $map
+        planId             = $planId
+        defaultSuiteId     = $defaultSuiteId
+        crSuiteIds         = $map
+        requirementSuiteIds = $reqMap
     }
 }
 
@@ -489,6 +579,31 @@ function Resolve-SuiteIdForCr {
     return [int]$SuiteMap.defaultSuiteId
 }
 
+function Resolve-SuiteIdForRequirement {
+    <#
+    .SYNOPSIS
+        Resolves the target Suite ID for a test case.
+        Resolution order: requirementSuiteIds -> crSuiteIds -> defaultSuiteId.
+    #>
+    [CmdletBinding()]
+    param(
+        [string]$RequirementId,
+        [string]$CrId,
+        [pscustomobject]$SuiteMap = (Get-SuiteMap)
+    )
+
+    # 1. Requirement-level override
+    if ($RequirementId -and
+        $SuiteMap.PSObject.Properties.Name -contains 'requirementSuiteIds' -and
+        $SuiteMap.requirementSuiteIds.ContainsKey($RequirementId)) {
+        $value = $SuiteMap.requirementSuiteIds[$RequirementId]
+        if ($value) { return [int]$value }
+    }
+
+    # 2. CR-level fallback
+    return Resolve-SuiteIdForCr -CrId $CrId -SuiteMap $SuiteMap
+}
+
 # ---------------------------------------------------------------------------
 # High-level publish
 # ---------------------------------------------------------------------------
@@ -501,20 +616,46 @@ function Publish-AdoTestCaseFromMarkdown {
         [int]$SuiteId,
         [string]$AreaPath,
         [string]$IterationPath,
-        [string]$OrgUrl     = $script:DefaultOrgUrl,
-        [string]$Project    = $script:DefaultProject,
-        [string]$ApiVersion = $script:DefaultApiVersion,
-        [string]$SuiteMapPath
+        [string]$OrgUrl         = $script:DefaultOrgUrl,
+        [string]$Project        = $script:DefaultProject,
+        [string]$ApiVersion     = $script:DefaultApiVersion,
+        [string]$SuiteMapPath,
+        # When set, warnings are emitted but BLOCKER validation failures do not
+        # abort the publish. Use only for bulk re-publish of pre-validated suites.
+        [switch]$SkipValidation
     )
 
     $tc = ConvertFrom-TestCaseMarkdown -Path $Path
+
+    # ---------------------------------------------------------------------------
+    # Publish readiness gate
+    # ---------------------------------------------------------------------------
+    $validationIssues = Test-AdoTestCasePublishReady -TestCase $tc
+    if ($validationIssues) {
+        $blockers = $validationIssues | Where-Object { $_ -match '^\[BLOCKER\]' }
+        $warnings = $validationIssues | Where-Object { $_ -match '^\[WARNING\]' }
+
+        foreach ($w in $warnings) {
+            Write-Warning "$($tc.Title): $w"
+        }
+
+        if ($blockers) {
+            $msg = "Test case '$($tc.Title)' has publish blockers:`n" + ($blockers -join "`n")
+            if ($SkipValidation) {
+                Write-Warning $msg
+            }
+            else {
+                throw $msg
+            }
+        }
+    }
 
     if (-not $PlanId -or -not $SuiteId) {
         $mapArgs = @{}
         if ($SuiteMapPath) { $mapArgs.Path = $SuiteMapPath }
         $map = Get-SuiteMap @mapArgs
         if (-not $PlanId)  { $PlanId  = $map.planId }
-        if (-not $SuiteId) { $SuiteId = Resolve-SuiteIdForCr -CrId $tc.CrId -SuiteMap $map }
+        if (-not $SuiteId) { $SuiteId = Resolve-SuiteIdForRequirement -RequirementId $tc.RequirementId -CrId $tc.CrId -SuiteMap $map }
     }
 
     $existingId = Find-AdoTestCaseByTitle -Title $tc.Title -OrgUrl $OrgUrl -Project $Project -ApiVersion $ApiVersion
@@ -582,5 +723,6 @@ Export-ModuleMember -Function `
     Get-AdoAuthHeader, Invoke-AdoRest, `
     ConvertFrom-TestCaseMarkdown, ConvertTo-AdoStepsXml, ConvertTo-DescriptionHtml, ConvertTo-PreconditionsText, `
     Find-AdoTestCaseByTitle, New-AdoTestCase, Update-AdoTestCase, Add-AdoTestCaseToSuite, `
-    Get-SuiteMap, Resolve-SuiteIdForCr, `
+    Get-SuiteMap, Resolve-SuiteIdForCr, Resolve-SuiteIdForRequirement, `
+    Test-AdoTestCasePublishReady, `
     Publish-AdoTestCaseFromMarkdown

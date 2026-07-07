@@ -1,4 +1,4 @@
-# R10.2 Update for CR 286067 - Edit Magnet System: Verify tester can update magnet system attributes (Happy Path)
+# R10.2 Update for CR 286067 - Edit Magnet System: Verify tester can update Magnet System attributes (Happy Path)
 
 ## Requirement
 CR: 286067
@@ -7,16 +7,16 @@ Requirement ID: 290769
 Requirement: Edit Magnet System (Magnet Systems)
 
 ## Preconditions
-- User is signed in with permission to edit Magnet Systems.
-- At least one editable Magnet System exists.
-- Magnet Systems list is accessible.
+- User is signed in with `MagnetSystem_View` and `MagnetSystem_Edit` permissions.
+- At least one Magnet System in an editable state exists.
+- The 'Magnet Systems' list is accessible.
 
 | Step | Action | Expected Result |
-|------|----------|----------------|
-| 1 | Open an existing Magnet System in Edit mode. | Edit screen loads with current data. |
-| 2 | Update editable attributes (for example Comment, Last Inspection Date). | Fields accept valid input. |
-| 3 | Save the changes. | Save succeeds without validation errors. |
-| 4 | Re-open the record. | Updated values are persisted correctly. |
+|------|--------|-----------------|
+| 1 | Open an existing Magnet System in Edit mode. | The Edit screen loads with current data displayed. |
+| 2 | Update an editable attribute (for example Comment or Last Inspection Date). | The field accepts the new value. |
+| 3 | Save the changes. | Save completes without validation errors. |
+| 4 | Re-open the record. | The updated field values are displayed. The Serial Number and Magnet System Number remain unchanged. |
 
 ## Expected Outcome
-Tester can update editable Magnet System attributes and changes are saved accurately.
+User-entered editable fields on a Magnet System can be updated and saved. Updated values persist on re-open. Immutable fields (Serial Number, Magnet System Number) are not changed by the edit operation.
