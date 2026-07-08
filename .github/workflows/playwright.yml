@@ -1,4 +1,4 @@
-name: Playwright Tests
+name: .NET Playwright Tests
 on:
   push:
     branches: [ main, master ]
@@ -10,21 +10,32 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    - uses: actions/setup-node@v4
+
+    - uses: actions/setup-dotnet@v4
       with:
-        node-version: lts/*
-    - name: Install dependencies
-      working-directory: automated-tests/PFEvatec.E2E
-      run: npm ci
+        dotnet-version: 8.0.x
+
+    - name: Restore
+      working-directory: pf-evatec-e2e-automated-tests
+      run: dotnet restore
+
+    - name: Build
+      working-directory: pf-evatec-e2e-automated-tests
+      run: dotnet build --no-restore
+
     - name: Install Playwright Browsers
-      working-directory: automated-tests/PFEvatec.E2E
-      run: npx playwright install --with-deps
-    - name: Run Playwright tests
-      working-directory: automated-tests/PFEvatec.E2E
-      run: npx playwright test
+      working-directory: pf-evatec-e2e-automated-tests
+      run: pwsh bin/Debug/net8.0/playwright.ps1 install --with-deps
+
+    - name: Run .NET Playwright tests
+      working-directory: pf-evatec-e2e-automated-tests
+      run: dotnet test --no-build --logger "trx;LogFileName=test-results.trx"
+
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:
-        name: playwright-report
-        path: automated-tests/PFEvatec.E2E/test-results/
+        name: dotnet-playwright-test-results
+        path: |
+          pf-evatec-e2e-automated-tests/TestResults/
+          pf-evatec-e2e-automated-tests/**/artifacts/
         retention-days: 30
