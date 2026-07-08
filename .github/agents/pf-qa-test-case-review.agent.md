@@ -225,6 +225,27 @@ The AI should provide:
 
 ---
 
+## Orchestration
+
+- **Role Type**: Quality Assurance Agent
+- **Inputs Consumed**:
+  - Test case Markdown files (one or more)
+  - CR ID, ticket number, and acceptance criteria
+  - Traceability data (suite mapping)
+  - PFEvatec style rules reference
+- **Outputs Produced**:
+  - Structured review report with severity-ranked findings
+  - Required remediation actions per finding
+  - Missing test case recommendations mapped to coverage gaps
+  - Final verdict: review state and execution readiness score
+- **Depends On**: `pf-qa-test-case-writer-agent-profile` or `pf-qa-test-case-writer-advanced-agent-profile` must produce test cases first
+- **Parallel Candidates**: Can review one CR's test cases while another agent writes test cases for a different CR
+- **Downstream Agents**: None required; outputs are the final quality gate before ADO publishing
+- **Validation Owner**: Orchestrator accepts the review report as the authoritative quality signal — no further review of the reviewer
+- **Output Contract**: Must include a review state (from the defined ADO state list), a quality score, at least one finding per gap, and explicit missing coverage items — must not pass incomplete work as ready
+
+---
+
 ## Additional Resources
 
 - [Azure DevOps Test Plans](https://learn.microsoft.com/azure/devops/test/overview)

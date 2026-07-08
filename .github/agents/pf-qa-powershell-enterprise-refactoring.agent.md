@@ -111,6 +111,26 @@ The AI should provide:
 - [ ] Examples are included where appropriate
 - [ ] Edge cases are considered
 
+## Orchestration
+
+- **Role Type**: Analysis Agent + Synthesis Agent
+- **Inputs Consumed**:
+  - Script source content
+  - Runtime context (PowerShell version, execution environment)
+  - Functional expectations (must-preserve behavior)
+  - Security and compliance requirements
+- **Outputs Produced**:
+  - Issue analysis with prioritized remediation items
+  - Refactored script aligned to enterprise standards
+  - Validation checklist and risk follow-ups
+- **Depends On**: Optionally `pf-qa-project-audit` when high-impact scripts are identified via audit; otherwise can start immediately
+- **Parallel Candidates**: `pf-qa-test-case-writer-agent-profile` (script refactoring and test case writing are independent)
+- **Downstream Agents**: None required; outputs are self-contained deliverables
+- **Validation Owner**: Orchestrator validates that refactored script preserves stated functional expectations; no specialist review required
+- **Output Contract**: Must include findings with severity, a complete refactored script, and a validation checklist; must not alter behavior unless explicitly requested
+
+---
+
 ## Related Prompts
 
 - [Agent - QA Test Plan Markdown Converter](./pf-qa-test-plan-markdown-converter.agent.md) - Converts and structures QA plan assets.

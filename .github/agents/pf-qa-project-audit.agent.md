@@ -108,6 +108,26 @@ The AI should provide:
 - [ ] Examples are included where appropriate
 - [ ] Edge cases are considered
 
+## Orchestration
+
+- **Role Type**: Research Agent + Analysis Agent
+- **Inputs Consumed**:
+  - Project path or artifact set
+  - Stack and build context
+  - Performance or maintainability goals
+  - Scope and constraint boundaries
+- **Outputs Produced**:
+  - Severity-ranked findings with affected files
+  - Prioritized action plan (quick wins and major refactors)
+  - Impact estimates and recommended target structure
+- **Depends On**: None — can run at the start of any orchestration chain
+- **Parallel Candidates**: `pf-qa-estimation` (audit and estimation are independent and can run simultaneously)
+- **Downstream Agents**: `pf-qa-powershell-enterprise-refactoring` consumes high-impact script findings; `pf-qa-estimation` consumes audit scope for effort calibration
+- **Validation Owner**: Orchestrator validates completeness; findings must reference specific file paths, not generalizations
+- **Output Contract**: Must include an executive summary, at least one quick-win finding, severity labels (Critical/High/Medium/Low), and remediation guidance per finding
+
+---
+
 ## Related Prompts
 
 - [Agent - QA Estimation and Planning](./pf-qa-estimation.agent.md) - Converts audit scope into effort planning.

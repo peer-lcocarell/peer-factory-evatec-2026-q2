@@ -108,6 +108,25 @@ The AI should provide:
 - [ ] Examples are included where appropriate
 - [ ] Edge cases are considered
 
+## Orchestration
+
+- **Role Type**: Research Agent
+- **Inputs Consumed**:
+  - Source Excel workbooks or CSV files
+  - Conversion rules (naming conventions, section order)
+  - Output path for generated Markdown
+- **Outputs Produced**:
+  - Structured Markdown files per source workbook
+  - Conversion summary (sheets processed, skipped, integrity warnings)
+  - Data integrity and assumption notes
+- **Depends On**: None — source data is the only prerequisite
+- **Parallel Candidates**: `pf-qa-test-case-review` when reviewing previously converted files that are already in Markdown format
+- **Downstream Agents**: `pf-qa-test-case-review` validates converted test artifacts; `pf-qa-test-case-writer-agent-profile` fills coverage gaps identified during conversion
+- **Validation Owner**: Orchestrator verifies row counts and sheet coverage match the source workbook summary
+- **Output Contract**: Must produce one Markdown file per workbook, include a conversion summary, flag any skipped or ambiguous data explicitly — no invented values permitted
+
+---
+
 ## Related Prompts
 
 - [Skill - ADO Markdown Generation](../skills/ado-markdown-generation/SKILL.md) - Formats test cases for ADO publishing.

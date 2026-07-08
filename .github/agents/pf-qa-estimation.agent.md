@@ -114,6 +114,26 @@ The AI should provide:
 - [ ] Examples are included where appropriate
 - [ ] Edge cases are considered
 
+## Orchestration
+
+- **Role Type**: Planning Agent
+- **Inputs Consumed**:
+  - CR list and acceptance criteria
+  - Historical effort data (previous mini STPs, actuals)
+  - Scope and release context
+  - Team capacity and schedule constraints
+- **Outputs Produced**:
+  - QA effort estimate with category breakdown
+  - Risk and dependency analysis
+  - Confidence rating and planning recommendations
+- **Depends On**: None — can be the first task in any orchestration chain
+- **Parallel Candidates**: `pf-qa-project-audit` (audit and estimation are independent and can run simultaneously)
+- **Downstream Agents**: `pf-qa-test-case-writer-agent-profile`, `pf-qa-test-case-writer-advanced-agent-profile` (use scope bounds from this agent as input)
+- **Validation Owner**: Orchestrator verifies estimate completeness; no specialist review required unless output feeds a release plan
+- **Output Contract**: Must include effort totals by category, confidence level with rationale, and at least one stated assumption or risk
+
+---
+
 ## Related Prompts
 
 - [Agent - QA Project Audit](./pf-qa-project-audit.agent.md) - Reviews project complexity and optimization risks.

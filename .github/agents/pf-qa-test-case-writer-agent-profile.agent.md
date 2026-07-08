@@ -112,6 +112,26 @@ The AI should provide:
 - [ ] Examples are included where appropriate
 - [ ] Edge cases are considered
 
+## Orchestration
+
+- **Role Type**: Synthesis Agent
+- **Inputs Consumed**:
+  - CR ID and acceptance criteria
+  - Risk context and scope boundaries (optionally from `pf-qa-estimation`)
+  - Output location for generated files
+  - Release and suite mapping details
+- **Outputs Produced**:
+  - ADO-compatible Markdown test cases (one file per test case)
+  - Coverage summary by test category
+  - Open questions and assumptions list
+- **Depends On**: Optionally `pf-qa-estimation` for risk-scoped prioritization; otherwise can start immediately
+- **Parallel Candidates**: `pf-qa-powershell-enterprise-refactoring` (script and test work are independent)
+- **Downstream Agents**: `pf-qa-test-case-review` must validate all outputs before the orchestrator accepts them
+- **Validation Owner**: `pf-qa-test-case-review`
+- **Output Contract**: Each file must contain a title, requirement traceability, preconditions, step table, and expected outcome; no vague result language
+
+---
+
 ## Related Prompts
 
 - [Skill - PF Change Request QA Analysis](../skills/pf-cr-analysis/SKILL.md) - Prepares requirement-level analysis.
