@@ -10,13 +10,16 @@ Requirement: Import hardware components from file (Hardware Components)
 - User is signed in with permissions to import and view Hardware Components.
 - A valid import file is available in a supported format and mapping.
 - Hardware Components import page is accessible.
+- File contains at least one record expected to update linked Target Type and/or Magnet System Type metadata.
 
 | Step | Action | Expected Result |
 |------|----------|----------------|
 | 1 | Open Hardware Components import screen. | Import controls are visible and enabled. |
-| 2 | Select a valid import file and start import. | Import process starts without format errors. |
-| 3 | Wait for completion and review summary. | Summary shows successful processed records. |
-| 4 | Search for a sample of imported components. | Imported hardware components are available and correctly mapped. |
+| 2 | Select a valid import format and valid import file, then start import. | Import process starts without format or mapping errors. |
+| 3 | Wait for completion and review summary. | Summary shows successful processed records and expected add/update counts. |
+| 4 | Search for a sample of imported hardware components. | Imported hardware components are available and mapped fields are correct. |
+| 5 | Open one impacted linked Target Type and/or Magnet System Type record. | Name and status values reflect expected updates from imported ERP source data. |
+| 6 | Verify existing unrelated component records. | Unrelated records are unchanged by this import run. |
 
 ## Expected Outcome
-Valid file imports successfully, records are created/updated as expected, and mapped data is available for use.
+Valid file imports successfully, mapped hardware component data is persisted, and required linked Target Type or Magnet System Type name/status updates are applied correctly.

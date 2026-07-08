@@ -1,51 +1,261 @@
-﻿{
-    "$comment":  "Suite resolution order: requirementSuiteIds -\u003e crSuiteIds -\u003e defaultSuiteId. Add a requirement ID entry to route a single requirement to its own child suite.",
-    "planId":  291616,
-    "defaultSuiteId":  291617,
-    "crSuiteIds":  {
-                       "286067":  292253,
-                       "285729":  null,
-                       "286836":  null,
-                       "284111":  null
-                   },
-    "requirementSuiteIds":  {
-                                "73354":  292253,
-                                "73375":  292254,
-                                "36315":  292238,
-                                "226372":  292239,
-                                "287451":  292244,
-                                "75372":  292241,
-                                "264374":  292262,
-                                "272565":  292243,
-                                "36297":  292251,
-                                "36298":  292252,
-                                "174279":  292255,
-                                "205378":  292256,
-                                "205379":  292257,
-                                "205380":  292258,
-                                "217766":  292259,
-                                "226384":  292260,
-                                "226385":  292261,
-                                "290756":  292263,
-                                "290757":  292264,
-                                "290758":  292265,
-                                "290759":  292266,
-                                "290760":  292267,
-                                "290761":  292268,
-                                "290762":  292269,
-                                "290763":  292270,
-                                "290764":  292271,
-                                "290765":  292272,
-                                "290766":  292273,
-                                "290767":  292274,
-                                "290768":  292275,
-                                "290769":  292276,
-                                "290770":  292277,
-                                "290771":  292278,
-                                "290772":  292279,
-                                "290773":  292280,
-                                "290775":  292281,
-                                "290776":  292282,
-                                "290777":  292283
-                            }
+{
+    "URL":  {
+                "Title":  "Updated todo list",
+                "TestSuites":  [
+                                   {
+                                       "Name":  "CR 286067 parent suite",
+                                       "SuiteId":  292253,
+                                       "Url":  "https://ops1.peergroup.com/DefaultCollection/PFEvatec/_testPlans/define?planId=291616\u0026suiteId=292253"
+                                   },
+                                   {
+                                       "Name":  "CR 286836 parent suite",
+                                       "SuiteId":  292235,
+                                       "Url":  "https://ops1.peergroup.com/DefaultCollection/PFEvatec/_testPlans/define?planId=291616\u0026suiteId=292235"
+                                   },
+                                   {
+                                       "Name":  "Default Requirements suite",
+                                       "SuiteId":  291617,
+                                       "Url":  "https://ops1.peergroup.com/DefaultCollection/PFEvatec/_testPlans/define?planId=291616\u0026suiteId=291617"
+                                   },
+                                   {
+                                       "Name":  "Requirement 174279 suite",
+                                       "SuiteId":  292255,
+                                       "Url":  "https://ops1.peergroup.com/DefaultCollection/PFEvatec/_testPlans/define?planId=291616\u0026suiteId=292255"
+                                   },
+                                   {
+                                       "Name":  "Requirement 205378 suite",
+                                       "SuiteId":  292256,
+                                       "Url":  "https://ops1.peergroup.com/DefaultCollection/PFEvatec/_testPlans/define?planId=291616\u0026suiteId=292256"
+                                   },
+                                   {
+                                       "Name":  "Requirement 205379 suite",
+                                       "SuiteId":  292257,
+                                       "Url":  "https://ops1.peergroup.com/DefaultCollection/PFEvatec/_testPlans/define?planId=291616\u0026suiteId=292257"
+                                   },
+                                   {
+                                       "Name":  "Requirement 205380 suite",
+                                       "SuiteId":  292258,
+                                       "Url":  "https://ops1.peergroup.com/DefaultCollection/PFEvatec/_testPlans/define?planId=291616\u0026suiteId=292258"
+                                   },
+                                   {
+                                       "Name":  "Requirement 217766 suite",
+                                       "SuiteId":  292259,
+                                       "Url":  "https://ops1.peergroup.com/DefaultCollection/PFEvatec/_testPlans/define?planId=291616\u0026suiteId=292259"
+                                   },
+                                   {
+                                       "Name":  "Requirement 226372 suite",
+                                       "SuiteId":  292239,
+                                       "Url":  "https://ops1.peergroup.com/DefaultCollection/PFEvatec/_testPlans/define?planId=291616\u0026suiteId=292239"
+                                   },
+                                   {
+                                       "Name":  "Requirement 226384 suite",
+                                       "SuiteId":  292260,
+                                       "Url":  "https://ops1.peergroup.com/DefaultCollection/PFEvatec/_testPlans/define?planId=291616\u0026suiteId=292260"
+                                   },
+                                   {
+                                       "Name":  "Requirement 226385 suite",
+                                       "SuiteId":  292261,
+                                       "Url":  "https://ops1.peergroup.com/DefaultCollection/PFEvatec/_testPlans/define?planId=291616\u0026suiteId=292261"
+                                   },
+                                   {
+                                       "Name":  "Requirement 264374 suite",
+                                       "SuiteId":  292242,
+                                       "Url":  "https://ops1.peergroup.com/DefaultCollection/PFEvatec/_testPlans/define?planId=291616\u0026suiteId=292242"
+                                   },
+                                   {
+                                       "Name":  "Requirement 272565 suite",
+                                       "SuiteId":  292243,
+                                       "Url":  "https://ops1.peergroup.com/DefaultCollection/PFEvatec/_testPlans/define?planId=291616\u0026suiteId=292243"
+                                   },
+                                   {
+                                       "Name":  "Requirement 287451 suite",
+                                       "SuiteId":  292244,
+                                       "Url":  "https://ops1.peergroup.com/DefaultCollection/PFEvatec/_testPlans/define?planId=291616\u0026suiteId=292244"
+                                   },
+                                   {
+                                       "Name":  "Requirement 290756 suite",
+                                       "SuiteId":  292263,
+                                       "Url":  "https://ops1.peergroup.com/DefaultCollection/PFEvatec/_testPlans/define?planId=291616\u0026suiteId=292263"
+                                   },
+                                   {
+                                       "Name":  "Requirement 290757 suite",
+                                       "SuiteId":  292264,
+                                       "Url":  "https://ops1.peergroup.com/DefaultCollection/PFEvatec/_testPlans/define?planId=291616\u0026suiteId=292264"
+                                   },
+                                   {
+                                       "Name":  "Requirement 290758 suite",
+                                       "SuiteId":  292265,
+                                       "Url":  "https://ops1.peergroup.com/DefaultCollection/PFEvatec/_testPlans/define?planId=291616\u0026suiteId=292265"
+                                   },
+                                   {
+                                       "Name":  "Requirement 290759 suite",
+                                       "SuiteId":  292266,
+                                       "Url":  "https://ops1.peergroup.com/DefaultCollection/PFEvatec/_testPlans/define?planId=291616\u0026suiteId=292266"
+                                   },
+                                   {
+                                       "Name":  "Requirement 290760 suite",
+                                       "SuiteId":  292267,
+                                       "Url":  "https://ops1.peergroup.com/DefaultCollection/PFEvatec/_testPlans/define?planId=291616\u0026suiteId=292267"
+                                   },
+                                   {
+                                       "Name":  "Requirement 290761 suite",
+                                       "SuiteId":  292268,
+                                       "Url":  "https://ops1.peergroup.com/DefaultCollection/PFEvatec/_testPlans/define?planId=291616\u0026suiteId=292268"
+                                   },
+                                   {
+                                       "Name":  "Requirement 290762 suite",
+                                       "SuiteId":  292269,
+                                       "Url":  "https://ops1.peergroup.com/DefaultCollection/PFEvatec/_testPlans/define?planId=291616\u0026suiteId=292269"
+                                   },
+                                   {
+                                       "Name":  "Requirement 290763 suite",
+                                       "SuiteId":  292270,
+                                       "Url":  "https://ops1.peergroup.com/DefaultCollection/PFEvatec/_testPlans/define?planId=291616\u0026suiteId=292270"
+                                   },
+                                   {
+                                       "Name":  "Requirement 290764 suite",
+                                       "SuiteId":  292271,
+                                       "Url":  "https://ops1.peergroup.com/DefaultCollection/PFEvatec/_testPlans/define?planId=291616\u0026suiteId=292271"
+                                   },
+                                   {
+                                       "Name":  "Requirement 290765 suite",
+                                       "SuiteId":  292272,
+                                       "Url":  "https://ops1.peergroup.com/DefaultCollection/PFEvatec/_testPlans/define?planId=291616\u0026suiteId=292272"
+                                   },
+                                   {
+                                       "Name":  "Requirement 290766 suite",
+                                       "SuiteId":  292273,
+                                       "Url":  "https://ops1.peergroup.com/DefaultCollection/PFEvatec/_testPlans/define?planId=291616\u0026suiteId=292273"
+                                   },
+                                   {
+                                       "Name":  "Requirement 290767 suite",
+                                       "SuiteId":  292274,
+                                       "Url":  "https://ops1.peergroup.com/DefaultCollection/PFEvatec/_testPlans/define?planId=291616\u0026suiteId=292274"
+                                   },
+                                   {
+                                       "Name":  "Requirement 290768 suite",
+                                       "SuiteId":  292275,
+                                       "Url":  "https://ops1.peergroup.com/DefaultCollection/PFEvatec/_testPlans/define?planId=291616\u0026suiteId=292275"
+                                   },
+                                   {
+                                       "Name":  "Requirement 290769 suite",
+                                       "SuiteId":  292276,
+                                       "Url":  "https://ops1.peergroup.com/DefaultCollection/PFEvatec/_testPlans/define?planId=291616\u0026suiteId=292276"
+                                   },
+                                   {
+                                       "Name":  "Requirement 290770 suite",
+                                       "SuiteId":  292277,
+                                       "Url":  "https://ops1.peergroup.com/DefaultCollection/PFEvatec/_testPlans/define?planId=291616\u0026suiteId=292277"
+                                   },
+                                   {
+                                       "Name":  "Requirement 290771 suite",
+                                       "SuiteId":  292278,
+                                       "Url":  "https://ops1.peergroup.com/DefaultCollection/PFEvatec/_testPlans/define?planId=291616\u0026suiteId=292278"
+                                   },
+                                   {
+                                       "Name":  "Requirement 290772 suite",
+                                       "SuiteId":  292279,
+                                       "Url":  "https://ops1.peergroup.com/DefaultCollection/PFEvatec/_testPlans/define?planId=291616\u0026suiteId=292279"
+                                   },
+                                   {
+                                       "Name":  "Requirement 290773 suite",
+                                       "SuiteId":  292280,
+                                       "Url":  "https://ops1.peergroup.com/DefaultCollection/PFEvatec/_testPlans/define?planId=291616\u0026suiteId=292280"
+                                   },
+                                   {
+                                       "Name":  "Requirement 290775 suite",
+                                       "SuiteId":  292281,
+                                       "Url":  "https://ops1.peergroup.com/DefaultCollection/PFEvatec/_testPlans/define?planId=291616\u0026suiteId=292281"
+                                   },
+                                   {
+                                       "Name":  "Requirement 290776 suite",
+                                       "SuiteId":  292282,
+                                       "Url":  "https://ops1.peergroup.com/DefaultCollection/PFEvatec/_testPlans/define?planId=291616\u0026suiteId=292282"
+                                   },
+                                   {
+                                       "Name":  "Requirement 290777 suite",
+                                       "SuiteId":  292283,
+                                       "Url":  "https://ops1.peergroup.com/DefaultCollection/PFEvatec/_testPlans/define?planId=291616\u0026suiteId=292283"
+                                   },
+                                   {
+                                       "Name":  "Requirement 36297 suite",
+                                       "SuiteId":  292251,
+                                       "Url":  "https://ops1.peergroup.com/DefaultCollection/PFEvatec/_testPlans/define?planId=291616\u0026suiteId=292251"
+                                   },
+                                   {
+                                       "Name":  "Requirement 36298 suite",
+                                       "SuiteId":  292252,
+                                       "Url":  "https://ops1.peergroup.com/DefaultCollection/PFEvatec/_testPlans/define?planId=291616\u0026suiteId=292252"
+                                   },
+                                   {
+                                       "Name":  "Requirement 36315 suite",
+                                       "SuiteId":  292238,
+                                       "Url":  "https://ops1.peergroup.com/DefaultCollection/PFEvatec/_testPlans/define?planId=291616\u0026suiteId=292238"
+                                   },
+                                   {
+                                       "Name":  "Requirement 73354 suite",
+                                       "SuiteId":  292253,
+                                       "Url":  "https://ops1.peergroup.com/DefaultCollection/PFEvatec/_testPlans/define?planId=291616\u0026suiteId=292253"
+                                   },
+                                   {
+                                       "Name":  "Requirement 73375 suite",
+                                       "SuiteId":  292254,
+                                       "Url":  "https://ops1.peergroup.com/DefaultCollection/PFEvatec/_testPlans/define?planId=291616\u0026suiteId=292254"
+                                   },
+                                   {
+                                       "Name":  "Requirement 75372 suite",
+                                       "SuiteId":  292241,
+                                       "Url":  "https://ops1.peergroup.com/DefaultCollection/PFEvatec/_testPlans/define?planId=291616\u0026suiteId=292241"
+                                   }
+                               ],
+                "$comment":  "Suite resolution order: requirementSuiteIds -\u003e crSuiteIds -\u003e defaultSuiteId. Add a requirement ID entry to route a single requirement to its own child suite.",
+                "planId":  291616,
+                "defaultSuiteId":  291617,
+                "crSuiteIds":  {
+                                   "286067":  292253,
+                                   "285729":  null,
+                                   "286836":  292235,
+                                   "284111":  null
+                               },
+                "requirementSuiteIds":  {
+                                            "73354":  292253,
+                                            "73375":  292254,
+                                            "36315":  292238,
+                                            "226372":  292239,
+                                            "287451":  292244,
+                                            "75372":  292241,
+                                            "264374":  292242,
+                                            "272565":  292243,
+                                            "36297":  292251,
+                                            "36298":  292252,
+                                            "174279":  292255,
+                                            "205378":  292256,
+                                            "205379":  292257,
+                                            "205380":  292258,
+                                            "217766":  292259,
+                                            "226384":  292260,
+                                            "226385":  292261,
+                                            "290756":  292263,
+                                            "290757":  292264,
+                                            "290758":  292265,
+                                            "290759":  292266,
+                                            "290760":  292267,
+                                            "290761":  292268,
+                                            "290762":  292269,
+                                            "290763":  292270,
+                                            "290764":  292271,
+                                            "290765":  292272,
+                                            "290766":  292273,
+                                            "290767":  292274,
+                                            "290768":  292275,
+                                            "290769":  292276,
+                                            "290770":  292277,
+                                            "290771":  292278,
+                                            "290772":  292279,
+                                            "290773":  292280,
+                                            "290775":  292281,
+                                            "290776":  292282,
+                                            "290777":  292283
+                                        }
+            }
 }

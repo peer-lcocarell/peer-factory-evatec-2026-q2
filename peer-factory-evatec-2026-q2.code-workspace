@@ -11,12 +11,12 @@
         "window.commandCenter": false,
 
         "editor.fontFamily": "'Cascadia Code', Consolas, monospace",
-        "editor.fontSize": 12,
+        "editor.fontSize": 11,
         "editor.fontWeight": "500",
         "editor.lineHeight": 20,
 
         "terminal.integrated.fontFamily": "'Cascadia Code', Consolas, monospace",
-        "terminal.integrated.fontSize": 12,
+        "terminal.integrated.fontSize": 10,
 
         "editor.minimap.enabled": false,
         "editor.stickyScroll.enabled": true,

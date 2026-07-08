@@ -10,13 +10,15 @@ Requirement: Search for Installed Hardware Components
 - User is signed in with permissions to view/search installed hardware components.
 - Installed hardware component data exists.
 - Search page is accessible.
+- At least one known valid search criterion exists for recovery validation.
 
 | Step | Action | Expected Result |
 |------|----------|----------------|
 | 1 | Open installed hardware components search page. | Search page opens successfully. |
 | 2 | Enter invalid/non-matching search criteria and execute search. | Search executes without system error. |
 | 3 | Review result grid and messages. | No matching records are returned and no-results feedback is displayed. |
-| 4 | Clear criteria and search again with valid values. | Matching records can be returned normally. |
+| 4 | Verify page state after no-result search. | Search controls remain responsive and no UI/API error state is present. |
+| 5 | Clear criteria and search again with valid values. | Matching records can be returned normally. |
 
 ## Expected Outcome
-Invalid criteria returns no results with clear feedback and does not break normal search behavior.
+Invalid criteria returns no results with clear feedback, keeps search functionality stable, and allows normal valid searches immediately afterward.

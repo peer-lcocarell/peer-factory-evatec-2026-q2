@@ -10,6 +10,7 @@ Requirement: Import work orders from file (Work Orders)
 - User is signed in with permissions to import Work Orders and use downstream pages that consume Work Orders.
 - A valid import file is available.
 - At least one workflow that consumes Work Orders is accessible.
+- At least one imported work order is uniquely identifiable for search and reuse checks.
 
 | Step | Action | Expected Result |
 |------|----------|----------------|
@@ -17,6 +18,8 @@ Requirement: Import work orders from file (Work Orders)
 | 2 | Open a downstream screen that uses Work Orders (for example Box creation or related selection flow). | Work Order selector is available. |
 | 3 | Search/select one of the newly imported work orders. | Imported work order can be found and selected. |
 | 4 | Save/continue the consuming workflow. | Workflow accepts imported work order without errors. |
+| 5 | Re-open the same workflow record or page. | Previously selected imported work order remains persisted and displayed correctly. |
+| 6 | Repeat selection in a second consuming context (if available). | Imported work order is consistently available across consuming workflows. |
 
 ## Expected Outcome
-Imported work orders are available and usable in downstream processing workflows after import.
+Imported work orders are available, selectable, and persist correctly in downstream processing workflows immediately after import.

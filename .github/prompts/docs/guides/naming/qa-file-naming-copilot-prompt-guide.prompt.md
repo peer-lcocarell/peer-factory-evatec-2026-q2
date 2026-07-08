@@ -1,6 +1,6 @@
 ﻿---
 mode: ask
-description: "Prompt for qa-file-naming-copilot-prompt-guide."
+description: "Deterministic naming standard for prompts, agents, docs, and QA artifacts."
 ---
 
 <!-- #
@@ -12,10 +12,12 @@ description: "Prompt for qa-file-naming-copilot-prompt-guide."
  * otherwise, without the prior written consent of The PEER Group Inc.
 # -->
 
-# qa-file-naming-guidelines
+# qa-file-naming-copilot-prompt-guide
 
 ## Overview
-Provide a reusable GitHub Copilot prompt and naming standard for QA, automation, documentation, AI agents, prompts, and development artifacts. The goal is to create clear, consistent, scalable, and maintainable file naming conventions across repositories.
+Provide a deterministic naming standard for QA assets, prompt files, agent profiles, automation files, and documentation.
+
+The goal is to make names predictable, searchable, and stable over time.
 
 ## Objectives
 - Improve repository organization and discoverability
@@ -24,6 +26,54 @@ Provide a reusable GitHub Copilot prompt and naming standard for QA, automation,
 - Make file purpose immediately recognizable
 - Improve onboarding for new team members
 - Support long-term repository scalability
+
+## Canonical Pattern
+
+Use this ordered pattern when applicable:
+
+`domain-context-purpose[.qualifier].ext`
+
+Examples:
+
+```text
+qa-test-case-writer-agent-profile.prompt.md
+qa-prompt-formatting-structure-basics.prompt.md
+project-summary-high-level.prompt.md
+playwright-dotnet-qa-agent-profile.prompt.md
+```
+
+## Deterministic Prompt Naming Standard
+
+For prompt assets, use:
+
+`<domain>-<topic>-<intent>.prompt.md`
+
+Where:
+
+- `<domain>` is one of: `qa`, `ado`, `docs`, `playwright`, `automation`, `prompt`, `project`, `release`
+- `<topic>` is the feature or subject area
+- `<intent>` is the output type, such as `guide`, `template`, `profile`, `review`, `refactor`, `checklist`, `standards`
+
+Validation regex:
+
+```text
+^[a-z0-9]+(?:-[a-z0-9]+)*\.prompt\.md$
+```
+
+## Prompt File Suffix Rules
+
+- Use `.prompt.md` for reusable Copilot prompt files.
+- Use `.agent.md` only for agent mode definitions.
+- Use plain `.md` for non-prompt reference docs.
+- Do not mix prompt and document semantics in one file name.
+
+## Repository Alignment Rules
+
+- Keep all prompt files in lowercase kebab-case.
+- Keep naming vocabulary consistent across sibling folders.
+- Prefer existing terminology in this repository over new synonyms.
+- Avoid duplicate meaning such as `guide-rules-reference` in one name.
+- Keep maximum filename length under 80 characters when possible.
 
 ## File Naming Requirements
 
@@ -43,6 +93,23 @@ Use `kebab-case.md`:
 qa-test-case-writing-guide.md
 playwright-dotnet-agent-profile.md
 automation-release-workflow.md
+```
+
+#### Prompt Files
+Use `kebab-case.prompt.md`:
+
+```text
+qa-prompt-style-guide-master.prompt.md
+review-and-refactor.prompt.md
+qa-file-naming-copilot-prompt-guide.prompt.md
+```
+
+#### Agent Definition Files
+Use `kebab-case.agent.md`:
+
+```text
+pf-qa-test-case-review.agent.md
+pf-qa-orchestrator.agent.md
 ```
 
 #### Source Code Files
@@ -136,6 +203,22 @@ qa-regression-testing-guide.md
 playwright-best-practices.md
 automation-release-checklist.md
 ```
+
+## Terms to Standardize
+
+Prefer one canonical term per concept:
+
+- Use `guide` (not both `guide` and `manual` for same concept)
+- Use `profile` for role definitions
+- Use `template` for reusable fill-in structures
+- Use `standards` for normative rules
+- Use `review` for evaluation workflows
+
+Avoid inconsistent pairs across related files:
+
+- `test-case` vs `testcase`
+- `dotnet` vs `.net`
+- `copilot` vs `github-copilot`
 
 ## Industry Best Practices
 
@@ -235,6 +318,20 @@ Avoid:
 agent.md  qa-agent.md  playwright-agent.md  test-agent.md
 ```
 
+Recommended pattern:
+
+```text
+<domain>-<capability>-agent-profile.prompt.md
+```
+
+Examples:
+
+```text
+playwright-dotnet-qa-agent-profile.prompt.md
+qa-test-case-writer-agent-profile.prompt.md
+pf-qa-test-case-review.agent.md
+```
+
 ## Copilot Prompt
 
 ### Task
@@ -243,6 +340,8 @@ Refactor file names to improve clarity, consistency, and maintainability.
 ### Requirements
 - Use repository naming standards
 - Use kebab-case for Markdown documentation
+- Use `.prompt.md` for prompt files
+- Use `.agent.md` for agent mode files
 - Follow language-specific conventions for source code files
 - Make names unique and descriptive
 - Remove duplicate naming patterns
@@ -256,6 +355,8 @@ Refactor file names to improve clarity, consistency, and maintainability.
 - No generic names
 - No duplicate names
 - Names should be easy to understand
+- Prompt files must end with `.prompt.md`
+- Agent mode files must end with `.agent.md`
 
 ## Refactoring Process
 
@@ -271,6 +372,10 @@ Extract key descriptive keywords.
 
 ### Step 3
 Build a proposed filename using `domain-context-purpose` when applicable.
+
+If the file is a prompt, enforce `.prompt.md`.
+
+If the file is an agent definition, enforce `.agent.md`.
 
 ### Step 4
 Validate:
@@ -293,6 +398,22 @@ Provide a filename mapping:
 parser.md → qa-log-parser-specification.md
 cleanPromptGuide.md → qa-prompt-formatting-rules.md
 notes.md → automation-release-notes.md
+```
+
+Include a short reason for each rename:
+
+```text
+playwright-qa-agent.md → playwright-dotnet-qa-agent-profile.prompt.md
+Reason: Aligns with prompt suffix convention and clarifies scope (.NET QA agent profile).
+```
+
+## Current Prompt Folder Normalization Targets
+
+Apply the convention to known outliers:
+
+```text
+playwright-qa-agent.md → playwright-dotnet-qa-agent-profile.prompt.md
+universal-prompt-template-normalizer.md → universal-prompt-template-normalizer.prompt.md
 ```
 
 ## Quality Standards
