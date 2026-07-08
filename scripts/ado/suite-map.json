@@ -1,15 +1,51 @@
-{
-  "$comment": "Suite resolution order: requirementSuiteIds -> crSuiteIds -> defaultSuiteId. Add a requirement ID entry to route a single requirement to its own child suite.",
-  "planId": 291616,
-  "defaultSuiteId": 291617,
-  "crSuiteIds": {
-    "286067": 292253,
-    "285729": null,
-    "286836": null,
-    "284111": null
-  },
-  "requirementSuiteIds": {
-    "73354": 292253,
-    "73375": 292254
-  }
+﻿{
+    "$comment":  "Suite resolution order: requirementSuiteIds -\u003e crSuiteIds -\u003e defaultSuiteId. Add a requirement ID entry to route a single requirement to its own child suite.",
+    "planId":  291616,
+    "defaultSuiteId":  291617,
+    "crSuiteIds":  {
+                       "286067":  292253,
+                       "285729":  null,
+                       "286836":  null,
+                       "284111":  null
+                   },
+    "requirementSuiteIds":  {
+                                "73354":  292253,
+                                "73375":  292254,
+                                "36315":  292238,
+                                "226372":  292239,
+                                "287451":  292244,
+                                "75372":  292241,
+                                "264374":  292262,
+                                "272565":  292243,
+                                "36297":  292251,
+                                "36298":  292252,
+                                "174279":  292255,
+                                "205378":  292256,
+                                "205379":  292257,
+                                "205380":  292258,
+                                "217766":  292259,
+                                "226384":  292260,
+                                "226385":  292261,
+                                "290756":  292263,
+                                "290757":  292264,
+                                "290758":  292265,
+                                "290759":  292266,
+                                "290760":  292267,
+                                "290761":  292268,
+                                "290762":  292269,
+                                "290763":  292270,
+                                "290764":  292271,
+                                "290765":  292272,
+                                "290766":  292273,
+                                "290767":  292274,
+                                "290768":  292275,
+                                "290769":  292276,
+                                "290770":  292277,
+                                "290771":  292278,
+                                "290772":  292279,
+                                "290773":  292280,
+                                "290775":  292281,
+                                "290776":  292282,
+                                "290777":  292283
+                            }
 }

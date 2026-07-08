@@ -1,0 +1,51 @@
+﻿"SuiteId","SuiteName","ParentSuiteId","RequirementId"
+"291617","PF Evatec - R10.02 - 2026 Q2 - Test Plan",,
+"291619","Requirements","291617",
+"291621","Regression","291617",
+"291626","EF Regression - Minimal Smoke Test Suite","291621",
+"291678","Requirements impacted by CR 286067 - Ticket #35008 - Tracking of magnet systems in Evatec Fabric","291619",
+"292235","Requirements impacted by CR 286836 - Ticket #34948 - Article import","291619",
+"292236","Requirements impacted by CR 285729 - Ticket #34951 - Search HW components","291619",
+"292237","Requirements impacted by CR 284111 - Ticket #34682 - WBS Element for self-service boxes","291619",
+"292238","36315 : Tool Overview (Tool Overview)","292236","36315"
+"292239","226372 : Modules (Modules)","292236","226372"
+"292240","287451 : Search for Installed Hardware Components","292236","287451"
+"292241","75372 : Edit ERP hardware component (Hardware Components)","292235","75372"
+"292242","264374 : Import hardware components from file (Hardware Components)","292235","264374"
+"292243","272565 : Import work orders from file (Work Orders)","292235","272565"
+"292244","287451 : Search for Installed Hardware Components","292235","287451"
+"292251","36297 : Boxes (Boxes)","292237","36297"
+"292252","36298 : New Box (Boxes)","292237","36298"
+"292253","73354 : Add Role to Logbook Configuration (Logbook Configuration)","291678","73354"
+"292254","73375 : Remove Comment or Hardware Configuration Change from Logbook (Logbook)","291678","73375"
+"292255","174279 : New Target Type from ERP (New Target Type)","291678","174279"
+"292256","205378 : Learned Associations (Manage Hardware)","291678","205378"
+"292257","205379 : Add associations (Learned Associations)","291678","205379"
+"292258","205380 : Remove association (Learned Associations)","291678","205380"
+"292259","217766 : Export Hardware Configuration (Tool Hardware Configuration)","291678","217766"
+"292260","226384 : Hardware Configuration for Real Module (Module Hardware Configuration)","291678","226384"
+"292261","226385 : Copy Module Hardware Configuration (Module Hardware Configuration)","291678","226385"
+"292262","264374 : Import hardware components from file (Hardware Components)","291678","264374"
+"292263","290756 : Magnet System Types (Magnet System Types)","291678","290756"
+"292264","290757 : New Magnet System Type (Magnet System Types)","291678","290757"
+"292265","290758 : View and upload documents for new magnet system type (New Magnet System Type)","291678","290758"
+"292266","290759 : View Magnet System Type (Magnet System Types)","291678","290759"
+"292267","290760 : Edit Magnet System Type (Magnet System Types)","291678","290760"
+"292268","290761 : View and manage magnet system type documents (Edit Magnet System Type)","291678","290761"
+"292269","290762 : Magnet System Type History (Magnet System Types)","291678","290762"
+"292270","290763 : Define Magnet System Type as Standard (Magnet System Types)","291678","290763"
+"292271","290764 : Magnet Systems (Magnet Systems)","291678","290764"
+"292272","290765 : New Magnet System (Magnet Systems)","291678","290765"
+"292273","290766 : View and upload documents for new magnet system (New Magnet System)","291678","290766"
+"292274","290767 : View Magnet System (Magnet Systems)","291678","290767"
+"292275","290768 : View magnet system documents (View Magnet System)","291678","290768"
+"292276","290769 : Edit Magnet System (Magnet Systems)","291678","290769"
+"292277","290770 : View and manage magnet system documents (Edit Magnet System)","291678","290770"
+"292278","290771 : Magnet System History (Magnet Systems)","291678","290771"
+"292279","290772 : Retire Magnet System (Magnet Systems)","291678","290772"
+"292280","290773 : Modify Magnet System (Magnet Systems)","291678","290773"
+"292281","290775 : Return Magnet System (Magnet Systems)","291678","290775"
+"292282","290776 : Print Magnet System Label (Magnet Systems)","291678","290776"
+"292283","290777 : Change Magnet System (Tool Hardware Configuration)","291678","290777"
+"292285","EF Regression - E2E Automation Tests","291621",
+"292728","R10.2 Regression DRAFT - 2026 Test Cases","291621",
