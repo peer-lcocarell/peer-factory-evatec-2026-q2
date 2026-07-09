@@ -9,16 +9,31 @@
 # without the prior written consent of PEER Group Inc.
 # ------------------------------------------------------------------------------
 
-# Copyright(C) The PEER Group Inc., 2026.
-#
-# This software contains confidential and trade secret information
-# belonging to The PEER Group Inc. All Rights Reserved.
-#
-# No part of this software may be reproduced or transmitted in any form
-# or by any means, electronic, mechanical, photocopying, recording or
-# otherwise, without the prior written consent of The PEER Group Inc.
-#
-# Description: Clear out PFSC logs. Copilot used to assist with this.
+<#
+.SYNOPSIS
+    Clears all files and subdirectories from the PF log folder.
+
+.DESCRIPTION
+    Recursively removes all files and subdirectories from the specified log directory.
+    Supports WhatIf and Confirm for safe execution in automated pipelines.
+
+.PARAMETER TargetPath
+    Full path to the log directory to clear.
+    Default: C:\Users\Public\Documents\PEER Group\<FEED FACTORY>
+
+.PARAMETER PauseSeconds
+    Optional pause after cleanup. Default: 0 (no pause).
+
+.EXAMPLE
+    .\clear-logs.ps1 -TargetPath 'C:\Users\Public\Documents\PEER Group\PEER FACTORY'
+
+.EXAMPLE
+    .\clear-logs.ps1 -WhatIf
+
+.NOTES
+    Requires: Write access to the target log directory.
+    The placeholder path <FEED FACTORY> must be replaced with the actual product folder name.
+#>
 
 #requires -Version 5.1
 [CmdletBinding(SupportsShouldProcess = $true, ConfirmImpact = 'High')]

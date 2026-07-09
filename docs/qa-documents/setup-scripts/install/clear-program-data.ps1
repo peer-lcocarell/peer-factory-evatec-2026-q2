@@ -9,17 +9,31 @@
 # without the prior written consent of PEER Group Inc.
 # ------------------------------------------------------------------------------
 
-# Copyright(C) The PEER Group Inc., 2025.
-#
-# This software contains confidential and trade secret information
-# belonging to The PEER Group Inc. All Rights Reserved.
-#
-# No part of this software may be reproduced or transmitted in any form
-# or by any means, electronic, mechanical, photocopying, recording or
-# otherwise, without the prior written consent of The PEER Group Inc.
-#
-# Description: Update all configurations for PFSC and open Composer at the end to validate
-# changes. Copilot used to assist with this.
+<#
+.SYNOPSIS
+    Clears all files and subdirectories from the PF ProgramData configurations folder.
+
+.DESCRIPTION
+    Recursively removes all files and subdirectories from the specified ProgramData directory.
+    Supports WhatIf and Confirm for safe execution in automated pipelines.
+
+.PARAMETER TargetPath
+    Full path to the ProgramData configuration directory to clear.
+    Default: C:\ProgramData\PEER Group\<PEER FACTORY>\Configurations
+
+.PARAMETER PauseSeconds
+    Optional pause after cleanup. Default: 0 (no pause).
+
+.EXAMPLE
+    .\clear-program-data.ps1 -TargetPath 'C:\ProgramData\PEER Group\PEER FACTORY\Configurations'
+
+.EXAMPLE
+    .\clear-program-data.ps1 -WhatIf
+
+.NOTES
+    Requires: Write access to the target ProgramData directory.
+    The placeholder path <PEER FACTORY> must be replaced with the actual product folder name.
+#>
 
 #requires -Version 5.1
 [CmdletBinding(SupportsShouldProcess = $true, ConfirmImpact = 'High')]
