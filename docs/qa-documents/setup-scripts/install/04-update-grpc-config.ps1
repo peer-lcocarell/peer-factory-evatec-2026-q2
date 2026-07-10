@@ -18,7 +18,7 @@ param(
 
 	[Parameter()]
 	[ValidateNotNullOrEmpty()]
-	[string]$HostName = 'evatec2012r2qa4',
+	[string]$HostName = 'pf-wsc19-qa1',
 
 	[Parameter()]
 	[ValidateRange(1, 65535)]
@@ -48,14 +48,13 @@ function Write-Log {
 		[string]$Message
 	)
 
-	$color = switch ($Level) {
-		'Info' { 'Cyan' }
-		'Warning' { 'Yellow' }
-		'Error' { 'Red' }
-		'Success' { 'Green' }
+	$line = "[{0}] [{1}] {2}" -f (Get-Date -Format 'yyyy-MM-dd HH:mm:ss'), $Level.ToUpper(), $Message
+	switch ($Level) {
+		'Info'    { Write-Information $line -InformationAction Continue }
+		'Warning' { Write-Warning $line }
+		'Error'   { Write-Information $line -InformationAction Continue }
+		'Success' { Write-Information $line -InformationAction Continue }
 	}
-
-	Write-Host ("[{0}] [{1}] {2}" -f (Get-Date -Format 'yyyy-MM-dd HH:mm:ss'), $Level.ToUpper(), $Message) -ForegroundColor $color
 }
 
 try {
@@ -71,13 +70,17 @@ try {
 		throw 'No <port> node found in Server.Grpc.config.'
 	}
 
-	$oldHost = $portNode.host
-	$oldPort = $portNode.port
-	$oldCredentials = $portNode.credentials
+	if ($portNode.NodeType -ne [System.Xml.XmlNodeType]::Element) {
+		throw 'Resolved <port> node is not an XML element.'
+	}
 
-	$portNode.host = $HostName
-	$portNode.port = [string]$Port
-	$portNode.credentials = $Credentials
+	$oldHost = $portNode.GetAttribute('host')
+	$oldPort = $portNode.GetAttribute('port')
+	$oldCredentials = $portNode.GetAttribute('credentials')
+
+	$portNode.SetAttribute('host', $HostName)
+	$portNode.SetAttribute('port', [string]$Port)
+	$portNode.SetAttribute('credentials', $Credentials)
 
 	if ($PSCmdlet.ShouldProcess($ConfigPath, "Update port host='$HostName' port='$Port' credentials='$Credentials'")) {
 		$xml.Save($ConfigPath)

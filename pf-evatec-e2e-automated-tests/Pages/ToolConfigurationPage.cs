@@ -22,6 +22,7 @@ namespace PfEvatec.E2E.AutomatedTests.Pages;
 public sealed class ToolConfigurationPage
 {
     private readonly IPage _page;
+    private readonly ILocator _inlineFilter;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="ToolConfigurationPage" /> class.
@@ -32,6 +33,7 @@ public sealed class ToolConfigurationPage
     public ToolConfigurationPage(IPage page)
     {
         _page = page;
+        _inlineFilter = _page.Locator(".col-name > .datagrid-inline-filter > .clr-input").First;
     }
 
     /// <summary>
@@ -45,9 +47,9 @@ public sealed class ToolConfigurationPage
     /// </returns>
     public async Task FilterByToolNameAsync(string filterValue)
     {
-        var inlineFilter = _page.Locator(".col-name > .datagrid-inline-filter > .clr-input").First;
-        await inlineFilter.FillAsync(filterValue);
-        await inlineFilter.PressAsync("Enter");
+        await UiStability.SafeFillAsync(_inlineFilter, _page, filterValue);
+        await _inlineFilter.PressAsync("Enter");
+        await UiStability.WaitForBusyUiToClearAsync(_page);
     }
 
     /// <summary>
@@ -61,9 +63,52 @@ public sealed class ToolConfigurationPage
     /// </returns>
     public async Task OpenToolByIdAsync(string toolId)
     {
+        await UiStability.WaitForPageReadyAsync(_page);
         var toolLink = _page.GetByRole(AriaRole.Link, new() { Name = toolId }).First;
-        await Expect(toolLink).ToBeVisibleAsync();
-        await toolLink.ClickAsync();
+        await Expect(toolLink).ToBeVisibleAsync(new() { Timeout = 10_000 });
+        await UiStability.SafeClickAsync(toolLink, _page, $"Tool link '{toolId}'");
+        await UiStability.WaitForPageReadyAsync(_page);
+    }
+
+    /// <summary>
+    /// Ensures a required tool exists in the active environment.
+    /// </summary>
+    /// <param name="toolId">
+    /// A tool identifier that must exist.
+    /// </param>
+    /// <param name="toolLabel">
+    /// A friendly label for diagnostics.
+    /// </param>
+    /// <returns>
+    /// A task that represents the asynchronous validation.
+    /// </returns>
+    /// <exception cref="PlaywrightException">
+    /// The required tool is not found in the current environment.
+    /// </exception>
+    public async Task EnsureToolExistsAsync(string toolId, string toolLabel)
+    {
+        var found = await HasToolAsync(toolId);
+        if (!found)
+        {
+            throw new PlaywrightException($"Required {toolLabel} tool '{toolId}' was not found in the environment.");
+        }
+    }
+
+    /// <summary>
+    /// Checks whether a tool ID is present in the current tool-configuration grid.
+    /// </summary>
+    /// <param name="toolId">
+    /// A tool identifier to locate.
+    /// </param>
+    /// <returns>
+    /// True when a matching tool link is visible; otherwise false.
+    /// </returns>
+    public async Task<bool> HasToolAsync(string toolId)
+    {
+        await FilterByToolNameAsync(toolId);
+
+        var toolLink = _page.GetByRole(AriaRole.Link, new() { Name = toolId }).First;
+        return await toolLink.IsVisibleAsync();
     }
 
     /// <summary>
@@ -74,7 +119,9 @@ public sealed class ToolConfigurationPage
     /// </returns>
     public async Task ConnectAsync()
     {
-        await _page.GetByRole(AriaRole.Button, new() { Name = "Connect" }).ClickAsync();
+        var connectButton = _page.GetByRole(AriaRole.Button, new() { Name = "Connect" }).First;
+        await UiStability.SafeClickAsync(connectButton, _page, "Connect tool");
+        await UiStability.WaitForBusyUiToClearAsync(_page);
     }
 
     /// <summary>
@@ -106,5 +153,5 @@ public sealed class ToolConfigurationPage
     /// <returns>
     /// A task that represents the asynchronous navigation action.
     /// </returns>
-    public Task BackAsync() => _page.GetByRole(AriaRole.Button, new() { Name = "Back" }).ClickAsync();
+    public Task BackAsync() => UiStability.SafeClickAsync(_page.GetByRole(AriaRole.Button, new() { Name = "Back" }).First, _page, "Tool details Back");
 }

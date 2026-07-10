@@ -36,14 +36,13 @@ function Write-Log {
 		[string]$Message
 	)
 
-	$color = switch ($Level) {
-		'Info' { 'Cyan' }
-		'Warning' { 'Yellow' }
-		'Error' { 'Red' }
-		'Success' { 'Green' }
+	$line = "[{0}] [{1}] {2}" -f (Get-Date -Format 'yyyy-MM-dd HH:mm:ss'), $Level.ToUpper(), $Message
+	switch ($Level) {
+		'Info'    { Write-Information $line -InformationAction Continue }
+		'Warning' { Write-Warning $line }
+		'Error'   { Write-Error $line }
+		'Success' { Write-Information $line -InformationAction Continue }
 	}
-
-	Write-Host ("[{0}] [{1}] {2}" -f (Get-Date -Format 'yyyy-MM-dd HH:mm:ss'), $Level.ToUpper(), $Message) -ForegroundColor $color
 }
 
 try {
@@ -54,7 +53,7 @@ try {
 	}
 
 	$latestFolder = Get-ChildItem -Path $PeerGroupRoot -Directory -ErrorAction Stop |
-		Sort-Object -Property CreationTime -Descending |
+		Sort-Object -Property LastWriteTime -Descending |
 		Select-Object -First 1
 
 	if (-not $latestFolder) {
@@ -69,6 +68,7 @@ try {
 		Write-Log -Level Info -Message "Service '$serviceName' is already running."
 	} elseif ($PSCmdlet.ShouldProcess($serviceName, 'Start service')) {
 		Start-Service -Name $serviceName -ErrorAction Stop
+		$service.WaitForStatus([System.ServiceProcess.ServiceControllerStatus]::Running, [TimeSpan]::FromSeconds(30))
 		Write-Log -Level Success -Message "PEER Factory ECL Service $latestVersionNumber started."
 	} else {
 		Write-Log -Level Warning -Message 'Service start skipped by ShouldProcess (-WhatIf / -Confirm).'

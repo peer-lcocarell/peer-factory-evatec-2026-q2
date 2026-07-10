@@ -1,4 +1,4 @@
-# R10.2 Update for CR 286067 - Learned Associations: Verify no associations are displayed for a hardware component with no learned associations (Unhappy Path)
+# R10.2 Update for CR 286067 - Learned Associations: Verify no learned magnet system association is displayed when none exists (Unhappy Path)
 
 ## Requirement
 CR: 286067
@@ -8,15 +8,16 @@ Requirement: Learned Associations (Manage Hardware)
 
 ## Preconditions
 - User is signed in with `ManageHardware_View` permission.
-- At least one Hardware Component exists that has no learned associations recorded.
+- At least one role exists that has no learned magnet system association recorded.
 - The 'Manage Hardware' > 'Learned Associations' screen is accessible.
 
 | Step | Action | Expected Result |
 |------|--------|-----------------|
 | 1 | Open 'Manage Hardware' and navigate to 'Learned Associations'. | The 'Learned Associations' screen loads. |
-| 2 | Select a Hardware Component known to have no learned associations. | The component is selected and the associations panel loads. |
-| 3 | Review the associations list. | The associations list is empty. A message indicating no associations exist is displayed. |
-| 4 | Verify no association entries are present. | No role type, component name, or association metadata is displayed for this component. |
+| 2 | Select a role known to have no learned magnet system association. | The role is selected and the associations panel loads. |
+| 3 | Review the learned associations list. | No learned magnet system association entries are displayed and an empty-state message is shown. |
+| 4 | Verify no association entries are present for the selected role. | No magnet system type association metadata is displayed for the role. |
+| 5 | Refresh and reopen 'Learned Associations' for the same role. | The no-association state remains unchanged and no stale association is displayed. |
 
 ## Expected Outcome
-Selecting a Hardware Component with no learned associations displays an empty associations list with an appropriate empty-state message. No association data is fabricated or carried over from other components.
+Selecting a role with no learned magnet system association shows an empty learned-association state with no fabricated or carried-over association data, including after refresh and reopen.

@@ -15,7 +15,7 @@
 param(
   [Parameter()]
   [ValidateNotNullOrEmpty()]
-  [string]$Url = 'https://evatec2012r2qa4/home',
+  [string]$Url = "https://$($env:COMPUTERNAME)/home",
 
   [Parameter()]
   [ValidateRange(0, 300)]
@@ -37,18 +37,22 @@ function Write-Log {
     [string]$Message
   )
 
-  $color = switch ($Level) {
-    'Info' { 'Cyan' }
-    'Warning' { 'Yellow' }
-    'Error' { 'Red' }
-    'Success' { 'Green' }
+  $line = "[{0}] [{1}] {2}" -f (Get-Date -Format 'yyyy-MM-dd HH:mm:ss'), $Level.ToUpper(), $Message
+  switch ($Level) {
+    'Info' { Write-Information $line -InformationAction Continue }
+    'Warning' { Write-Warning $line }
+    'Error' { Write-Error $line }
+    'Success' { Write-Information $line -InformationAction Continue }
   }
-
-  Write-Host ("[{0}] [{1}] {2}" -f (Get-Date -Format 'yyyy-MM-dd HH:mm:ss'), $Level.ToUpper(), $Message) -ForegroundColor $color
 }
 
 try {
   Write-Log -Level Info -Message 'Starting PF application launch workflow...'
+
+  if (-not [Environment]::UserInteractive) {
+    Write-Log -Level Warning -Message 'Non-interactive session detected. Browser launch is skipped.'
+    return
+  }
 
   $null = [Uri]::new($Url)
 

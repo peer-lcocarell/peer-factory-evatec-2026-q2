@@ -53,20 +53,41 @@ public static class TestSettingsLoader
             throw new InvalidOperationException("Unable to deserialize test settings.");
         }
 
-        var envBaseUrl = Environment.GetEnvironmentVariable("PF_BASE_URL");
-        if (!string.IsNullOrWhiteSpace(envBaseUrl))
+        settings = new TestSettings
         {
-            settings = new TestSettings
-            {
-                BaseUrl = envBaseUrl.Trim(),
-                UserName = settings.UserName,
-                FoupToolId = settings.FoupToolId,
-                CassetteToolId = settings.CassetteToolId,
-                FileToolId = settings.FileToolId,
-                DefaultPassword = settings.DefaultPassword,
-            };
-        }
+            BaseUrl = GetOverride("PF_BASE_URL", settings.BaseUrl),
+            UserName = GetOverride("PF_USERNAME", settings.UserName),
+            FoupToolId = GetOverride("PF_FOUP_TOOL_ID", settings.FoupToolId),
+            CassetteToolId = GetOverride("PF_CASSETTE_TOOL_ID", settings.CassetteToolId),
+            FileToolId = GetOverride("PF_FILE_TOOL_ID", settings.FileToolId),
+            DefaultPassword = GetOverride("PF_DEFAULT_PASSWORD", settings.DefaultPassword),
+        };
+
+        ValidateRequired(settings);
 
         return settings;
+    }
+
+    private static string GetOverride(string envKey, string fallback)
+    {
+        var candidate = Environment.GetEnvironmentVariable(envKey);
+        return string.IsNullOrWhiteSpace(candidate) ? fallback : candidate.Trim();
+    }
+
+    private static void ValidateRequired(TestSettings settings)
+    {
+        var missing = new List<string>();
+
+        if (string.IsNullOrWhiteSpace(settings.BaseUrl)) { missing.Add(nameof(settings.BaseUrl)); }
+        if (string.IsNullOrWhiteSpace(settings.UserName)) { missing.Add(nameof(settings.UserName)); }
+        if (string.IsNullOrWhiteSpace(settings.DefaultPassword)) { missing.Add(nameof(settings.DefaultPassword)); }
+        if (string.IsNullOrWhiteSpace(settings.FoupToolId)) { missing.Add(nameof(settings.FoupToolId)); }
+        if (string.IsNullOrWhiteSpace(settings.CassetteToolId)) { missing.Add(nameof(settings.CassetteToolId)); }
+        if (string.IsNullOrWhiteSpace(settings.FileToolId)) { missing.Add(nameof(settings.FileToolId)); }
+
+        if (missing.Count > 0)
+        {
+            throw new InvalidOperationException($"Missing required test settings: {string.Join(", ", missing)}.");
+        }
     }
 }

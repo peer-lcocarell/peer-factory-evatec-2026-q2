@@ -45,14 +45,16 @@ public abstract class BaseUiTest : PageTest
     public async Task SetupAsync()
     {
         Settings = TestSettingsLoader.Load();
+        Page.SetDefaultTimeout(30_000);
 
-        await Page.GotoAsync(Settings.BaseUrl);
+        await Page.GotoAsync(Settings.BaseUrl, new() { WaitUntil = WaitUntilState.DOMContentLoaded });
+        await UiStability.WaitForPageReadyAsync(Page);
 
         var loginPage = new LoginPage(Page);
         await loginPage.SignInAsync(Settings.UserName, Settings.DefaultPassword);
 
         Shell = new ShellPage(Page);
-        await Expect(Shell.MainNavigation).ToBeVisibleAsync();
+        await Shell.EnsureReadyAsync();
     }
 
     /// <summary>
@@ -64,7 +66,51 @@ public abstract class BaseUiTest : PageTest
     [TearDown]
     public async Task TeardownAsync()
     {
-        await Shell.SignOutIfVisibleAsync();
+        if (TestContext.CurrentContext.Result.Outcome.Status != NUnit.Framework.Interfaces.TestStatus.Passed)
+        {
+            await AttachScreenshotAsync(Page, TestContext.CurrentContext, $"failure-{TestContext.CurrentContext.Test.Name}");
+        }
+
+        try
+        {
+            await Shell.SignOutIfVisibleAsync();
+        }
+        catch (Exception ex)
+        {
+            TestContext.WriteLine($"Teardown sign-out skipped due to transient UI state: {ex.Message}");
+        }
+    }
+
+    /// <summary>
+    /// Wraps a scenario with start/end evidence and standardized failure diagnostics.
+    /// </summary>
+    /// <param name="scenarioName">
+    /// A logical scenario identifier used in attachment names.
+    /// </param>
+    /// <param name="action">
+    /// A test workflow action to execute.
+    /// </param>
+    /// <returns>
+    /// A task that represents the asynchronous test wrapper.
+    /// </returns>
+    protected async Task RunScenarioAsync(string scenarioName, Func<Task> action)
+    {
+        await AttachScreenshotAsync(Page, TestContext.CurrentContext, $"start-{scenarioName}");
+
+        try
+        {
+            await action();
+            await AttachScreenshotAsync(Page, TestContext.CurrentContext, $"complete-{scenarioName}");
+        }
+        catch (Exception ex)
+        {
+            var classification = ClassifyFailure(ex);
+            TestContext.WriteLine($"Failure classification: {classification}");
+            TestContext.WriteLine($"Failure message: {ex.Message}");
+
+            await AttachScreenshotAsync(Page, TestContext.CurrentContext, $"error-{scenarioName}");
+            throw;
+        }
     }
 
     /// <summary>
@@ -85,7 +131,7 @@ public abstract class BaseUiTest : PageTest
     protected static async Task AttachScreenshotAsync(IPage page, TestContext context, string name)
     {
         var image = await page.ScreenshotAsync(new() { FullPage = true });
-        context.AddTestAttachment(await SaveArtifactAsync(name, image), name);
+        TestContext.AddTestAttachment(await SaveArtifactAsync(name, image), name);
     }
 
     private static async Task<string> SaveArtifactAsync(string name, byte[] bytes)
@@ -113,5 +159,46 @@ public abstract class BaseUiTest : PageTest
 
         var sanitized = new string(buffer);
         return string.IsNullOrWhiteSpace(sanitized) ? "artifact" : sanitized;
+    }
+
+    private static string ClassifyFailure(Exception ex)
+    {
+        var message = ex.ToString();
+
+        if (message.Contains("was not found in the environment", StringComparison.OrdinalIgnoreCase))
+        {
+            return "Missing test data";
+        }
+
+        if (message.Contains("intercepts pointer events", StringComparison.OrdinalIgnoreCase) || message.Contains("modal", StringComparison.OrdinalIgnoreCase))
+        {
+            return "Navigation issue";
+        }
+
+        if (message.Contains("Timeout", StringComparison.OrdinalIgnoreCase))
+        {
+            return "Synchronization issue";
+        }
+
+        if (message.Contains("Locator expected to be visible", StringComparison.OrdinalIgnoreCase)
+            || message.Contains("strict mode violation", StringComparison.OrdinalIgnoreCase))
+        {
+            return "Selector issue";
+        }
+
+        if (message.Contains("ERR_", StringComparison.OrdinalIgnoreCase)
+            || message.Contains("ECONN", StringComparison.OrdinalIgnoreCase)
+            || message.Contains("name or service not known", StringComparison.OrdinalIgnoreCase))
+        {
+            return "Environment issue";
+        }
+
+        if (message.Contains("500", StringComparison.OrdinalIgnoreCase)
+            || message.Contains("Internal Server Error", StringComparison.OrdinalIgnoreCase))
+        {
+            return "Application defect";
+        }
+
+        return "Test defect";
     }
 }

@@ -1,8 +1,8 @@
 {
-  "BaseUrl": "http://evatec2012r2qa4/",
-  "UserName": "qa3",
+  "BaseUrl": "http://pf-wsc19-qa1/home",
+  "UserName": "lcocarell",
   "FoupToolId": "PT2676",
   "CassetteToolId": "PT2672",
   "FileToolId": "MT2627",
-  "DefaultPassword": "qa-automation-placeholder"
+  "DefaultPassword": "qaautomationplaceholder"
 }

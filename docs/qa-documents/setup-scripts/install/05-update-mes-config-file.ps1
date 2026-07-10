@@ -29,17 +29,17 @@
     Default: C:\ProgramData\PEER Group\PEER FACTORY\Configurations\MES\Server\Components.config
 
 .PARAMETER ConnectionTimeoutMs
-    Connection timeout value in milliseconds. Default: 4000.
+    Connection timeout value in milliseconds. Default: 3500.
 
 .PARAMETER FileWatchFolder
-    UNC path for the file watch folder. Default: \\EVATEC2012R2QA4\Uploaded
+    UNC path for the file watch folder. Default: \\<ComputerName>\Uploaded
 
 .PARAMETER HostAddress
-    MES host address. Default: evatec2012r2qa4
+    MES host address. Default: pf-wsc19-qa1.
 
 .PARAMETER DataSource
     SQL Server data source for DatabaseConnection and BPSImportService components.
-    Default: EVATEC2012R2QA4\SQLEXPRESS2017
+    Default: PF-WSC19-QA1\SQLEXPRESS
 
 .PARAMETER PauseSeconds
     Optional pause after the update completes. Default: 3.
@@ -62,19 +62,19 @@ param(
 
     [Parameter()]
     [ValidateRange(1, 86400000)]
-    [int]$ConnectionTimeoutMs = 4000,
+    [int]$ConnectionTimeoutMs = 3500,
 
     [Parameter()]
     [ValidateNotNullOrEmpty()]
-    [string]$FileWatchFolder = '\\EVATEC2012R2QA4\Uploaded',
+    [string]$FileWatchFolder = '\\pf-wsc19-qa1\Uploaded',
 
     [Parameter()]
     [ValidateNotNullOrEmpty()]
-    [string]$HostAddress = 'evatec2012r2qa4',
+    [string]$HostAddress = 'pf-wsc19-qa1',
 
     [Parameter()]
     [ValidateNotNullOrEmpty()]
-    [string]$DataSource = 'EVATEC2012R2QA4\SQLEXPRESS2017',
+    [string]$DataSource = 'PF-WSC19-QA1\SQLEXPRESS',
 
     [Parameter()]
     [ValidateRange(0, 300)]
@@ -96,35 +96,50 @@ function Write-Log {
         [string]$Message
     )
 
-    $color = switch ($Level) {
-        'Info'    { 'Cyan' }
-        'Warning' { 'Yellow' }
-        'Error'   { 'Red' }
-        'Success' { 'Green' }
+    $line = "[{0}] [{1}] {2}" -f (Get-Date -Format 'yyyy-MM-dd HH:mm:ss'), $Level.ToUpper(), $Message
+    switch ($Level) {
+        'Info'    { Write-Information $line -InformationAction Continue }
+        'Warning' { Write-Warning $line }
+        'Error'   { Write-Information $line -InformationAction Continue }
+        'Success' { Write-Information $line -InformationAction Continue }
     }
-
-    Write-Host ("[{0}] [{1}] {2}" -f (Get-Date -Format 'yyyy-MM-dd HH:mm:ss'), $Level.ToUpper(), $Message) -ForegroundColor $color
 }
 
-function Set-XmlElementText {
+function Set-ComponentChildText {
     [CmdletBinding()]
     param(
         [Parameter(Mandatory)] [xml]$Xml,
-        [Parameter(Mandatory)] [ValidateNotNullOrEmpty()] [string]$XPath,
+        [Parameter(Mandatory)] [ValidateNotNullOrEmpty()] [string]$ComponentTypeFragment,
+        [Parameter(Mandatory)] [ValidateNotNullOrEmpty()] [string]$ChildElementName,
         [Parameter(Mandatory)] [string]$Value,
         [Parameter(Mandatory)] [string]$Label
     )
 
-    $node = $Xml.SelectSingleNode($XPath)
-    if (-not $node) {
-        Write-Log -Level Warning -Message "XPath not found, skipping: $XPath"
+    $xpath = "//AutomationComponent[contains(@Type,'$ComponentTypeFragment')]"
+    $componentNodes = $Xml.SelectNodes($xpath)
+
+    if (-not $componentNodes -or $componentNodes.Count -eq 0) {
+        Write-Log -Level Warning -Message "AutomationComponent not found for type fragment: $ComponentTypeFragment"
         return
     }
-    Write-Log -Level Info -Message "$Label : '$($node.InnerText)' -> '$Value'"
-    $node.InnerText = $Value
+
+    $index = 0
+    foreach ($componentNode in $componentNodes) {
+        $index++
+        $childNode = $componentNode.SelectSingleNode($ChildElementName)
+
+        if (-not $childNode) {
+            $childNode = $Xml.CreateElement($ChildElementName)
+            $null = $componentNode.AppendChild($childNode)
+            Write-Log -Level Info -Message "Created <$ChildElementName> for $ComponentTypeFragment (#$index)"
+        }
+
+        Write-Log -Level Info -Message "$Label (#$index) : '$($childNode.InnerText)' -> '$Value'"
+        $childNode.InnerText = $Value
+    }
 }
 
-function Set-XmlChildDataSource {
+function Set-ComponentDataSource {
     [CmdletBinding()]
     param(
         [Parameter(Mandatory)] [xml]$Xml,
@@ -133,21 +148,26 @@ function Set-XmlChildDataSource {
     )
 
     $xpath = "//AutomationComponent[contains(@Type,'$ComponentTypeFragment')]"
-    $componentNode = $Xml.SelectSingleNode($xpath)
-    if (-not $componentNode) {
+    $componentNodes = $Xml.SelectNodes($xpath)
+    if (-not $componentNodes -or $componentNodes.Count -eq 0) {
         Write-Log -Level Warning -Message "AutomationComponent not found for type fragment: $ComponentTypeFragment"
         return
     }
 
-    $dsNode = $componentNode.SelectSingleNode('DataSource')
-    if (-not $dsNode) {
-        $dsNode = $Xml.CreateElement('DataSource')
-        $null = $componentNode.PrependChild($dsNode)
-        Write-Log -Level Info -Message "Created <DataSource> element for: $ComponentTypeFragment"
-    } else {
-        Write-Log -Level Info -Message "Updating existing <DataSource> for: $ComponentTypeFragment"
+    $index = 0
+    foreach ($componentNode in $componentNodes) {
+        $index++
+        $dsNode = $componentNode.SelectSingleNode('DataSource')
+        if (-not $dsNode) {
+            $dsNode = $Xml.CreateElement('DataSource')
+            $null = $componentNode.PrependChild($dsNode)
+            Write-Log -Level Info -Message "Created <DataSource> for $ComponentTypeFragment (#$index)"
+        }
+        else {
+            Write-Log -Level Info -Message "Updating existing <DataSource> for $ComponentTypeFragment (#$index)"
+        }
+        $dsNode.InnerText = $Value
     }
-    $dsNode.InnerText = $Value
 }
 
 try {
@@ -159,11 +179,11 @@ try {
 
     [xml]$xml = Get-Content -Path $ConfigPath -Raw -ErrorAction Stop
 
-    Set-XmlElementText -Xml $xml -XPath '//ConnectionTimeout'  -Value ([string]$ConnectionTimeoutMs) -Label 'ConnectionTimeout'
-    Set-XmlElementText -Xml $xml -XPath '//FileWatchFolder'    -Value $FileWatchFolder              -Label 'FileWatchFolder'
-    Set-XmlElementText -Xml $xml -XPath '//HostAddress'        -Value $HostAddress                  -Label 'HostAddress'
-    Set-XmlChildDataSource -Xml $xml -ComponentTypeFragment 'DatabaseConnection' -Value $DataSource
-    Set-XmlChildDataSource -Xml $xml -ComponentTypeFragment 'BPSImportService'   -Value $DataSource
+    Set-ComponentChildText -Xml $xml -ComponentTypeFragment 'ToolConnectionManager' -ChildElementName 'ConnectionTimeout' -Value ([string]$ConnectionTimeoutMs) -Label 'ConnectionTimeout'
+    Set-ComponentChildText -Xml $xml -ComponentTypeFragment 'ToolConnectionManager' -ChildElementName 'FileWatchFolder'   -Value $FileWatchFolder              -Label 'FileWatchFolder'
+    Set-ComponentChildText -Xml $xml -ComponentTypeFragment 'ToolConnectionManager' -ChildElementName 'HostAddress'       -Value $HostAddress                  -Label 'HostAddress'
+    Set-ComponentDataSource -Xml $xml -ComponentTypeFragment 'DatabaseConnection' -Value $DataSource
+    Set-ComponentDataSource -Xml $xml -ComponentTypeFragment 'BPSImportService'   -Value $DataSource
 
     if ($PSCmdlet.ShouldProcess($ConfigPath, 'Save updated MES configuration')) {
         $xml.Save($ConfigPath)

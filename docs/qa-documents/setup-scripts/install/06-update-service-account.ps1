@@ -18,14 +18,17 @@ param(
 
 	[Parameter()]
 	[ValidateNotNullOrEmpty()]
-	[string]$AccountName = 'evatec\administrator',
+	[string]$AccountName = 'PEERGROUP\vstsbuild',
 
 	[Parameter()]
 	[ValidateRange(0, 300)]
 	[int]$PauseSeconds = 3,
 
 	[Parameter()]
-	[System.Security.SecureString]$SecurePassword
+	[System.Security.SecureString]$SecurePassword,
+
+	[Parameter()]
+	[switch]$AllowInteractivePrompt
 )
 
 Set-StrictMode -Version Latest
@@ -58,14 +61,11 @@ function Write-Log {
 	$line = "[$timestamp] [$($Level.ToUpper())] $Message"
 
 	switch ($Level) {
-		'Info'    { Write-Host $line -ForegroundColor Cyan }
-		'Warning' { Write-Host $line -ForegroundColor Yellow }
-		'Error'   { Write-Host $line -ForegroundColor Red }
-		'Success' { Write-Host $line -ForegroundColor Green }
-		'Debug'   {
-			Write-Host $line -ForegroundColor Gray
-			Write-Debug $Message
-		}
+		'Info'    { Write-Information $line -InformationAction Continue }
+		'Warning' { Write-Warning $line }
+		'Error'   { Write-Information $line -InformationAction Continue }
+		'Success' { Write-Information $line -InformationAction Continue }
+		'Debug'   { Write-Verbose $line }
 	}
 }
 
@@ -73,10 +73,10 @@ function Show-Banner {
 	[CmdletBinding()]
 	param()
 
-	Write-Host '===============================================' -ForegroundColor DarkCyan
-	Write-Host ' PF Evatec - Service Account Update Tool' -ForegroundColor White
-	Write-Host " Version: $ScriptVersion" -ForegroundColor White
-	Write-Host '===============================================' -ForegroundColor DarkCyan
+	Write-Information '===============================================' -InformationAction Continue
+	Write-Information ' PF Evatec - Service Account Update Tool' -InformationAction Continue
+	Write-Information " Version: $ScriptVersion" -InformationAction Continue
+	Write-Information '===============================================' -InformationAction Continue
 }
 
 function Show-ExecutionSummary {
@@ -87,15 +87,22 @@ function Show-ExecutionSummary {
 	)
 
 	$duration = (Get-Date) - $StartTime
-	Write-Host ''
-	Write-Host '============== Execution Summary ==============' -ForegroundColor DarkCyan
-	Write-Host ('Runtime : {0:hh\:mm\:ss}' -f $duration) -ForegroundColor White
-	Write-Host ('Info    : {0}' -f $script:Stats.Info) -ForegroundColor Cyan
-	Write-Host ('Warning : {0}' -f $script:Stats.Warning) -ForegroundColor Yellow
-	Write-Host ('Error   : {0}' -f $script:Stats.Error) -ForegroundColor Red
-	Write-Host ('Success : {0}' -f $script:Stats.Success) -ForegroundColor Green
-	Write-Host ('Debug   : {0}' -f $script:Stats.Debug) -ForegroundColor Gray
-	Write-Host '===============================================' -ForegroundColor DarkCyan
+	Write-Information '' -InformationAction Continue
+	Write-Information '============== Execution Summary ==============' -InformationAction Continue
+	Write-Information ('Runtime : {0:hh\:mm\:ss}' -f $duration) -InformationAction Continue
+	Write-Information ('Info    : {0}' -f $script:Stats.Info) -InformationAction Continue
+	Write-Information ('Warning : {0}' -f $script:Stats.Warning) -InformationAction Continue
+	Write-Information ('Error   : {0}' -f $script:Stats.Error) -InformationAction Continue
+	Write-Information ('Success : {0}' -f $script:Stats.Success) -InformationAction Continue
+	Write-Information ('Debug   : {0}' -f $script:Stats.Debug) -InformationAction Continue
+	Write-Information '===============================================' -InformationAction Continue
+}
+
+function Test-IsInteractiveSession {
+	[CmdletBinding()]
+	param()
+
+	return [Environment]::UserInteractive
 }
 
 function ConvertTo-PlainText {
@@ -125,10 +132,10 @@ function Get-TargetService {
 		[string]$NamePattern
 	)
 
-	$services = Get-CimInstance -ClassName Win32_Service -ErrorAction Stop |
-		Where-Object { $_.Name -like $NamePattern -or $_.DisplayName -like $NamePattern }
+	$services = @(Get-CimInstance -ClassName Win32_Service -ErrorAction Stop |
+		Where-Object { $_.Name -like $NamePattern -or $_.DisplayName -like $NamePattern })
 
-	if (-not $services) {
+	if ($services.Count -eq 0) {
 		throw "No service found matching pattern: $NamePattern"
 	}
 
@@ -182,6 +189,14 @@ try {
 	Write-Log -Level Info -Message 'Starting service-account update...'
 
 	if (-not $SecurePassword) {
+		if (-not $AllowInteractivePrompt) {
+			throw 'SecurePassword is required for unattended execution. Supply -SecurePassword, or explicitly opt in with -AllowInteractivePrompt.'
+		}
+
+		if (-not (Test-IsInteractiveSession)) {
+			throw 'Interactive prompting is unavailable in this session. Supply -SecurePassword for remote/non-interactive execution.'
+		}
+
 		Write-Log -Level Info -Message "No password parameter supplied. Prompting securely for account '$AccountName'."
 		$SecurePassword = Read-Host -AsSecureString -Prompt "Enter password for $AccountName"
 	}

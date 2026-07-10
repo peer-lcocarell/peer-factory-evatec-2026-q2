@@ -398,6 +398,87 @@ Separate:
 Avoid:
 
 - Marketing language
+
+---
+
+## Workspace Standard Audit Prompt
+
+Use the following default prompt structure for requirement-to-test-case audits unless the user provides a stricter variant.
+
+```text
+You are a Senior QA Auditor performing a requirements-to-test-case accuracy audit.
+
+Task:
+Review the provided requirements and test cases for correctness, completeness, and traceability.
+
+Audit Objectives:
+1. Verify whether each test case correctly maps to one or more requirements.
+2. Determine whether each requirement is fully covered, partially covered, or not covered.
+3. Identify gaps, ambiguities, contradictions, and missing negative/edge/error/recovery scenarios.
+4. Detect redundant or overlapping test cases.
+5. Propose concrete improvements to test case quality and coverage.
+
+Inputs:
+- Requirements: [Paste requirements here]
+- Test Cases: [Paste test cases here]
+- Optional Context (system/module, constraints, assumptions): [Paste context here]
+
+Rules:
+1. Do not invent requirements or expected behavior not present in the input.
+2. If requirement text is unclear, mark as [UNCERTAIN] and explain why.
+3. Prefer requirement IDs and test case IDs exactly as provided.
+4. Flag any test that is out of scope for the listed requirements.
+5. Keep feedback actionable and specific.
+
+Output Format:
+
+Section 1: Requirement Coverage Summary
+- Total requirements
+- Fully covered
+- Partially covered
+- Not covered
+- Duplicate/overlapping tests detected (count)
+
+Section 2: Test Case Audit Table
+Columns:
+- Test Case ID
+- Mapped Requirement ID(s)
+- Coverage Status (Full/Partial/None)
+- Accuracy Issues (mismatch, missing assertions, invalid assumptions)
+- Missing Scenarios (negative, edge, boundary, error, recovery)
+- Redundancy/Overlap
+- Improvement Suggestions
+- Priority (High/Medium/Low)
+
+Section 3: Requirement Gap Table
+Columns:
+- Requirement ID
+- Coverage Status (Full/Partial/None)
+- Missing Test Ideas
+- Recommended New Test Case(s)
+
+Section 4: Ambiguities and Risks
+- List all [UNCERTAIN] items
+- Explain impact on testing
+- Clarification questions for product/engineering
+
+Section 5: Final QA Verdict
+- Audit Decision: Pass / Needs Revision / Blocked
+- Release Risk: High / Medium / Low
+- Minimum fixes required before approval
+```
+
+### Ready-to-Use Audit Table Template
+
+```text
+| Test Case ID | Mapped Requirement ID(s) | Coverage Status | Accuracy Issues | Missing Scenarios | Redundancy/Overlap | Improvement Suggestions | Priority |
+|--------------|---------------------------|-----------------|-----------------|-------------------|--------------------|-------------------------|----------|
+|              |                           |                 |                 |                   |                    |                         |          |
+```
+
+### Optional Regulated Variant
+
+If requested, extend the output with entry criteria, exit criteria, objective evidence fields, reviewer sign-off, and approval gates.
 - Unsupported conclusions
 - Excessive speculation
 - Unnecessary technical complexity

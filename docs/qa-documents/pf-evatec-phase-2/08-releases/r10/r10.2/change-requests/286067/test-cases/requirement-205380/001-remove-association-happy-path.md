@@ -15,9 +15,10 @@ Requirement: Remove association (Learned Associations)
 |------|--------|-----------------|
 | 1 | Open 'Learned Associations' and select a source Hardware Component. | The component is selected and existing associations are displayed. |
 | 2 | Select an existing association from the list. | The 'Remove' action becomes available for the selected association. |
-| 3 | Trigger the Remove action and confirm. | The association is removed from the list. |
-| 4 | Refresh the associations view. | The removed association no longer appears. |
-| 5 | Navigate to the Hardware Configuration install candidate list for the relevant role. | The removed item is no longer presented as a previously installed candidate. |
+| 3 | Trigger the Remove action and confirm. | The association is removed from the list and save state is available. |
+| 4 | Save changes. | Save completes without validation errors. |
+| 5 | Refresh and reopen the associations view for the same source component. | The removed association no longer appears after refresh and reopen. |
+| 6 | Navigate to the Hardware Configuration install candidate list for the relevant role. | The removed item is no longer presented as a previously installed candidate. |
 
 ## Expected Outcome
-An existing learned association is removed and the removal persists on refresh. The removed component is no longer offered as a previously installed candidate in Hardware Configuration assignment dialogs.
+An existing learned association is removed, saved, and remains removed after refresh/reopen. The removed component is no longer offered as a previously installed candidate in Hardware Configuration assignment dialogs.

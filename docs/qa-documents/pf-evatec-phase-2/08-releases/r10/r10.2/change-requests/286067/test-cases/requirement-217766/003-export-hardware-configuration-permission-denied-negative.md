@@ -1,4 +1,4 @@
-# R10.2 Update for CR 286067 - Export Hardware Configuration: Attempt to export hardware configuration without the required permission (Negative)
+# R10.2 Update for CR 286067 - Export Hardware Configuration: Verify export from rewind configuration includes rewind-specific values
 
 ## Requirement
 CR: 286067
@@ -7,16 +7,16 @@ Requirement ID: 217766
 Requirement: Export Hardware Configuration (Tool Hardware Configuration)
 
 ## Preconditions
-- A user account exists that has `HardwareConfiguration_View` permission but NOT `HardwareConfiguration_Edit` permission.
-- A tool with a saved hardware configuration exists.
-- Assumption: Export requires `HardwareConfiguration_View` at minimum; confirm whether `HardwareConfiguration_Edit` is additionally required.
+- User is signed in with `HardwareConfiguration_View` permission.
+- A tool exists with historical hardware configuration snapshots that can be opened in rewind mode.
+- Rewind-selected date and current/latest date values are known for comparison.
 
 | Step | Action | Expected Result |
 |------|--------|-----------------|
-| 1 | Log in as a user with `HardwareConfiguration_View` but without `HardwareConfiguration_Edit` permission. | Login succeeds. |
-| 2 | Navigate to the 'Hardware Configuration' page for a tool with existing configuration. | The Hardware Configuration page loads. The configuration data is displayed in read-only mode. |
-| 3 | Locate the Export action. | The Export action is either visible but disabled, or not present in the interface. |
-| 4 | Attempt to trigger the Export action. | Export is not available or is rejected. An access-denied or disabled state message is displayed. No file is generated. |
+| 1 | Open the 'Hardware Configuration' rewind view for the target tool and select a historical configuration date. | Historical configuration values for the selected rewind date are displayed. |
+| 2 | Trigger Export from rewind view. | Export completes successfully and file is available for download. |
+| 3 | Open the exported file and inspect date/timestamp fields. | Rewind-related selected date and required timestamp fields are present and correspond to the rewind context. |
+| 4 | Compare rewind export values against latest export for the same tool. | Fields that differ between rewind and latest states (for example Article # or role value changes) reflect the rewind-selected configuration correctly. |
 
 ## Expected Outcome
-A user without the required permission for the Export action cannot generate a hardware configuration export file. The action is either not presented or disabled in the UI. No export file is produced.
+Hardware configuration can be exported from rewind view. The export contains rewind-specific date/timestamp context and data values that match the selected historical configuration.

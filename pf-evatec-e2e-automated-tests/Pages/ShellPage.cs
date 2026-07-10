@@ -51,8 +51,9 @@ public sealed class ShellPage
     public async Task OpenNavigationAsync(string linkText)
     {
         var link = _page.GetByRole(AriaRole.Link, new() { Name = linkText }).First;
-        await Expect(link).ToBeVisibleAsync();
-        await link.ClickAsync();
+        await UiStability.WaitForPageReadyAsync(_page);
+        await UiStability.SafeClickAsync(link, _page, $"Navigation link '{linkText}'");
+        await UiStability.WaitForPageReadyAsync(_page);
     }
 
     /// <summary>
@@ -63,11 +64,28 @@ public sealed class ShellPage
     /// </returns>
     public async Task SignOutIfVisibleAsync()
     {
-        var userEntry = _page.Locator("a").Filter(new() { HasTextString = "(Q3)" }).First;
+        var userEntry = _page.Locator("a").Filter(new() { HasTextString = "(" }).First;
         if (await userEntry.IsVisibleAsync())
         {
-            await userEntry.ClickAsync();
-            await _page.GetByRole(AriaRole.Button, new() { Name = "Sign Out" }).ClickAsync();
+            await UiStability.SafeClickAsync(userEntry, _page, "User menu");
+
+            var signOut = _page.GetByRole(AriaRole.Button, new() { Name = "Sign Out" }).First;
+            if (await signOut.IsVisibleAsync())
+            {
+                await UiStability.SafeClickAsync(signOut, _page, "Sign Out");
+            }
         }
+    }
+
+    /// <summary>
+    /// Ensures the shell and primary navigation are ready for interaction.
+    /// </summary>
+    /// <returns>
+    /// A task that represents the asynchronous readiness check.
+    /// </returns>
+    public async Task EnsureReadyAsync()
+    {
+        await UiStability.WaitForPageReadyAsync(_page);
+        await Expect(MainNavigation).ToBeVisibleAsync(new() { Timeout = 20_000 });
     }
 }

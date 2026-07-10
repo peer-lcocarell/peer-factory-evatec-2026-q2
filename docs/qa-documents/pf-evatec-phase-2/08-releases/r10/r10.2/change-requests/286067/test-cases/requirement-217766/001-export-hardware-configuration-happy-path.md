@@ -1,4 +1,4 @@
-# R10.2 Update for CR 286067 - Export Hardware Configuration: Verify hardware configuration can be exported successfully (Happy Path)
+# R10.2 Update for CR 286067 - Export Hardware Configuration: Verify export availability from latest configuration and pending-change restriction
 
 ## Requirement
 CR: 286067
@@ -14,9 +14,11 @@ Requirement: Export Hardware Configuration (Tool Hardware Configuration)
 | Step | Action | Expected Result |
 |------|--------|-----------------|
 | 1 | Open the 'Hardware Configuration' page for a tool with configured hardware. | The hardware configuration is displayed for the tool. |
-| 2 | Trigger the 'Export' action. | Export starts without validation errors. |
-| 3 | Wait for the export file to be generated. | The file is produced and a download link or notification is displayed. |
-| 4 | Confirm the exported file is downloadable. | The export file downloads and the downloaded file is non-empty. |
+| 2 | Verify the page is showing latest saved configuration with no pending changes. | Export action is available and enabled. |
+| 3 | Trigger the 'Export' action. | Export starts without validation errors. |
+| 4 | Wait for the export file to be generated and download it. | A file is produced, downloadable, and non-empty. |
+| 5 | Return to the same configuration and create an unsaved change. | The page enters pending-change state. |
+| 6 | Review Export action availability in pending-change state. | Export is unavailable, disabled, or blocked while pending changes exist. |
 
 ## Expected Outcome
-The hardware configuration export completes for the selected tool. The exported file is non-empty and is available for download.
+Hardware configuration export is available from latest saved state without pending changes and is blocked in pending-change state. Generated export files are downloadable and non-empty when export is allowed.

@@ -52,11 +52,64 @@ pwsh bin/Debug/net8.0/playwright.ps1 install
 dotnet test
 ```
 
+3. Generate TRX output and summarize suite health:
+
+```powershell
+dotnet test --logger "trx;LogFileName=run.trx"
+.\scripts\summarize-test-suite.ps1 -RunFile .\TestResults\run.trx
+```
+
+If your TRX file has a generated subfolder name, you can also run:
+
+```powershell
+.\scripts\summarize-test-suite.ps1
+```
+
+The summary includes:
+
+- High-level pass/fail/skipped counts.
+
+- Feature/file-level breakdown.
+
+- Recurring failure patterns.
+
+- Slowest tests in the selected run.
+
+- Flaky test candidates and run-over-run deltas when multiple TRX files exist.
+
 ## Configuration
 
 - Use Configuration/testsettings.json for default values.
 
-- Override base URL at runtime with environment variable PF_BASE_URL.
+- Override runtime settings with environment variables:
+
+	- PF_BASE_URL
+
+	- PF_USERNAME
+
+	- PF_DEFAULT_PASSWORD
+
+	- PF_FOUP_TOOL_ID
+
+	- PF_CASSETTE_TOOL_ID
+
+	- PF_FILE_TOOL_ID
+
+## Preflight Gate
+
+- The suite now includes a preflight test that validates:
+
+	- Environment is reachable and login succeeds.
+
+	- Core modules load.
+
+	- Required tool IDs exist in Tool Configuration.
+
+- Run preflight only:
+
+```powershell
+dotnet test --filter "Category=preflight"
+```
 
 ## Best-practice changes from legacy tests
 

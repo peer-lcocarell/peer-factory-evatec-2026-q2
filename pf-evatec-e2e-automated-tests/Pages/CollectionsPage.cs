@@ -12,6 +12,7 @@
 #endregion
 
 using Microsoft.Playwright;
+using System.Text.RegularExpressions;
 using static Microsoft.Playwright.Assertions;
 
 namespace PfEvatec.E2E.AutomatedTests.Pages;
@@ -45,29 +46,45 @@ public sealed class CollectionsPage
     /// </returns>
     public async Task CreateCollectionWithSubstratesAsync(string collectionName)
     {
-        await _page.GetByRole(AriaRole.Button, new() { Name = "New" }).ClickAsync();
+        await UiStability.WaitForPageReadyAsync(_page);
+        await UiStability.SafeClickAsync(_page.GetByRole(AriaRole.Button, new() { Name = "New" }).First, _page, "Collections New");
 
-        await _page.Locator("#clr-input-2").FillAsync(collectionName);
+        await UiStability.SafeFillAsync(_page.Locator("#clr-input-2"), _page, collectionName);
 
-        await _page.Locator("#clr-combobox-1-combobox").GetByRole(AriaRole.Button, new() { Name = "Show options" }).First.ClickAsync();
-        await _page.GetByRole(AriaRole.Option, new() { Name = "Lev Cocarell (LC)" }).ClickAsync();
-        await _page.Locator(".popover-overlay").ClickAsync();
+        await UiStability.SafeClickAsync(_page.Locator("#clr-combobox-1-combobox").GetByRole(AriaRole.Button, new() { Name = "Show options" }).First, _page, "Open collection owner options");
+        var ownerOption = _page.GetByRole(AriaRole.Option).First;
+        await Expect(ownerOption).ToBeVisibleAsync(new() { Timeout = 20_000 });
+        await UiStability.SafeClickAsync(ownerOption, _page, "Select collection owner");
+        if (await _page.Locator(".popover-overlay").First.IsVisibleAsync())
+        {
+            await UiStability.SafeClickAsync(_page.Locator(".popover-overlay").First, _page, "Close collection owner popover");
+        }
 
-        await _page.Locator("#clr-combobox-0-combobox").GetByRole(AriaRole.Button, new() { Name = "Show options" }).ClickAsync();
-        await _page.GetByRole(AriaRole.Option, new() { Name = "AUTOMATED" }).ClickAsync();
-        await _page.Locator(".popover-overlay").ClickAsync();
+        await UiStability.SafeClickAsync(_page.Locator("#clr-combobox-0-combobox").GetByRole(AriaRole.Button, new() { Name = "Show options" }).First, _page, "Open collection type options");
+        var collectionTypeOption = _page.GetByRole(AriaRole.Option, new() { Name = "AUTOMATED" }).First;
+        if (!await collectionTypeOption.IsVisibleAsync())
+        {
+            collectionTypeOption = _page.GetByRole(AriaRole.Option).First;
+        }
 
-        await _page.Locator("#clr-textarea-0").FillAsync("Collection created by Playwright .NET migration utility.");
+        await Expect(collectionTypeOption).ToBeVisibleAsync(new() { Timeout = 20_000 });
+        await UiStability.SafeClickAsync(collectionTypeOption, _page, "Select collection type AUTOMATED");
+        if (await _page.Locator(".popover-overlay").First.IsVisibleAsync())
+        {
+            await UiStability.SafeClickAsync(_page.Locator(".popover-overlay").First, _page, "Close collection type popover");
+        }
+
+        await UiStability.SafeFillAsync(_page.Locator("#clr-textarea-0"), _page, "Collection created by Playwright .NET migration utility.");
 
         // Select seed substrate rows in the add dialog.
-        await _page.GetByRole(AriaRole.Button, new() { Name = "Add" }).ClickAsync();
-        await _page.Locator("td:nth-child(2) > .datagrid-select > .clr-checkbox-wrapper > .clr-control-label").First.ClickAsync();
-        await _page.Locator("tr:nth-child(3) > .row-selector-col > .datagrid-select > .clr-checkbox-wrapper > .clr-control-label").First.ClickAsync();
-        await _page.GetByTitle("Add", new() { Exact = true }).ClickAsync();
+        await UiStability.SafeClickAsync(_page.GetByRole(AriaRole.Button, new() { Name = "Add" }).First, _page, "Open substrate add dialog");
+        await UiStability.SafeClickAsync(_page.Locator("td:nth-child(2) > .datagrid-select > .clr-checkbox-wrapper > .clr-control-label").First, _page, "Select first substrate row");
+        await UiStability.SafeClickAsync(_page.Locator("tr:nth-child(3) > .row-selector-col > .datagrid-select > .clr-checkbox-wrapper > .clr-control-label").First, _page, "Select second substrate row");
+        await UiStability.SafeClickAsync(_page.GetByTitle("Add", new() { Exact = true }).First, _page, "Confirm substrate add");
 
-        await _page.GetByTitle("Close").ClickAsync();
-        await _page.GetByRole(AriaRole.Button, new() { Name = "Save" }).First.ClickAsync();
-        await _page.GetByRole(AriaRole.Button, new() { Name = "Back" }).ClickAsync();
+        await UiStability.SafeClickAsync(_page.GetByTitle("Close").First, _page, "Close add substrate dialog");
+        await UiStability.SafeClickAsync(_page.GetByRole(AriaRole.Button, new() { Name = "Save" }).First, _page, "Save collection");
+        await UiStability.SafeClickAsync(_page.GetByRole(AriaRole.Button, new() { Name = "Back" }).First, _page, "Back to Collections overview");
 
         // Confirm that the workflow returned to the Collections overview.
         await Expect(_page).ToHaveURLAsync(new Regex("Collections", RegexOptions.IgnoreCase));

@@ -12,6 +12,7 @@
 #endregion
 
 using Microsoft.Playwright;
+using System.Text.RegularExpressions;
 using static Microsoft.Playwright.Assertions;
 
 namespace PfEvatec.E2E.AutomatedTests.Pages;
