@@ -1,4 +1,4 @@
-﻿# 286067 Copy Module Hardware Configuration - Real to Abstract Conversion Rules
+﻿# R10.2 Update for CR 286067 - Copy Module Hardware Configuration: Real to Abstract Conversion Rules
 
 ## Requirement
 CR: 286067
@@ -22,3 +22,4 @@ Requirement: Copy Module Hardware Configuration (Module Hardware Configuration)
 
 ## Expected Outcome
 Real to Abstract copy converts installed target and installed magnet system to type-based values and supports save.
+

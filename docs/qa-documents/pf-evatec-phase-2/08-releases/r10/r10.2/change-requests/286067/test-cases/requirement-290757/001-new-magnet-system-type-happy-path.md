@@ -1,23 +1,27 @@
-# R10.2 Update for CR 286067 - New Magnet System Type: Verify tester can create a new Magnet System Type with valid data (Happy Path)
+# R10.2 Update for CR 286067 - New Magnet System Type: Verify tester can create a new Magnet System Type with valid data
 
 ## Requirement
-CR: 286067
-Ticket: 35008
-Requirement ID: 290757
-Requirement: New Magnet System Type (Magnet System Types)
+- CR: 286067
+- Ticket: 35008
+- Requirement ID: 290757
+- Requirement: New Magnet System Type (Magnet System Types)
 
 ## Preconditions
-- User is signed in with `MagnetSystemType_View` and `MagnetSystemType_Edit` permissions.
-- At least one Hardware Component (ERP article) not yet assigned as a Target Type or Magnet System Type is available.
-- The 'Magnet System Types' page is accessible.
+- Tester is signed in with `MagnetSystemTypes_View` and `MagnetSystemTypes_Edit` security rights.
+- At least one Hardware Component (ERP article) that is not already assigned as a Target Type or Magnet System Type is available.
+- The Magnet System Types page is accessible.
 
 | Step | Action | Expected Result |
-|------|--------|-----------------|
-| 1 | Open the 'Magnet System Types' page and select 'New'. | The article selector dialog is displayed. Manual type entry is not available. Only ERP article selection is offered. |
-| 2 | Select a valid article number from Hardware Components. | The sourced fields (Article Number, Name, ERP Status, Successor) populate from ERP data and are read-only. |
-| 3 | Enter valid values for Source Type, FlexiCat Type, and Applications. Optionally enter a Description. | Fields accept input without validation errors. |
-| 4 | Save the new Magnet System Type. | Save completes without errors. The new record appears in the 'Magnet System Types' list. |
-| 5 | Open the Magnet System Type History view for the new record. | A creation history entry is present with the current user and timestamp. |
+|--------|--------|--------|
+| 1 | Open the Magnet System Types page and select New. | The article selector dialog is displayed. Manual Magnet System Type creation is not available. Only ERP article selection is available. |
+| 2 | Select a valid article number from Hardware Components. | The Article #, Name, ERP Status, and Successor fields are populated from ERP data and cannot be edited. |
+| 3 | Enter valid values for Source Type, FlexiCat Type, and Applications. Optionally enter a Description. | The values are accepted without validation errors. |
+| 4 | Save the new Magnet System Type. | Save completes without errors. The tester is redirected to the View Magnet System Type page for the newly created Magnet System Type. |
+| 5 | Open the Magnet System Type History view. | A single creation history entry is displayed with the current user and timestamp. |
 
 ## Expected Outcome
-A new Magnet System Type is created from a valid ERP article. ERP-sourced fields are read-only. Required fields (Source Type, FlexiCat Type, Applications) accept valid input. After save, the record appears in the list and a creation history entry is written.
+- A new Magnet System Type is created from a valid ERP Hardware Component.
+- ERP-derived fields remain read-only during creation.
+- Required fields (Source Type, FlexiCat Type, and Applications) accept valid input.
+- The tester is redirected to the View Magnet System Type page after saving.
+- A single creation history entry is created for the new Magnet System Type.

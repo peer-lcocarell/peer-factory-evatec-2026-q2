@@ -1,4 +1,4 @@
-﻿# 286067 Copy Module Hardware Configuration - Abstract to Real Validation and Security
+﻿# R10.2 Update for CR 286067 - Copy Module Hardware Configuration: Abstract to Real Validation and Security
 
 ## Requirement
 CR: 286067

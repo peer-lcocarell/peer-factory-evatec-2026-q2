@@ -1,22 +1,28 @@
-# R10.2 Update for CR 286067 - Import Hardware Components from File: Verify error message is displayed for an invalid import file (Unhappy Path)
+# R10.2 Update for CR 286067 - Import Hardware Components from File: Verify error message is displayed for an invalid import file
 
 ## Requirement
-CR: 286067
-Ticket: 35008
-Requirement ID: 264374
-Requirement: Import hardware components from file (Hardware Components)
+- CR: 286067
+- Ticket: 35008
+- Requirement ID: 264374
+- Requirement: Import Hardware Components from File
 
 ## Preconditions
-- User is signed in with `ManageHardware_View` and `ManageHardware_Edit` permissions.
-- An invalid file is available (unsupported format or malformed structure).
-- Existing Hardware Component data is present for regression comparison.
+- Tester is signed in with `ERP_View` and `ERP_Edit` security rights.
+- An invalid import file is available with an unsupported format or invalid structure.
+- Existing Hardware Component data is present for comparison.
+- Hardware Components Import page is accessible.
 
 | Step | Action | Expected Result |
-|------|--------|-----------------|
-| 1 | Open the 'Hardware Components' import screen. | Import controls are visible and enabled. |
-| 2 | Select the invalid file and start the import. | Import is rejected. No records are processed. |
-| 3 | Review the import error output. | A clear error message is displayed identifying the file as invalid (specifying the format error or structural issue). |
-| 4 | Navigate to Hardware Components and verify existing records. | Existing Hardware Component records are unchanged. No records were added, updated, or deleted. |
+|--------|--------|--------|
+| 1 | Navigate to the Hardware Components Import page. | The Hardware Components Import page is displayed. |
+| 2 | Select the invalid import file. | The file is selected for import. |
+| 3 | Start the import. | The import does not complete successfully. |
+| 4 | Review the displayed validation message. | An error message identifies the file as invalid and indicates the reason for the failure. |
+| 5 | Review any import summary information that is displayed. | No records are reported as added or updated. |
+| 6 | Navigate to Hardware Components and review existing records. | Existing Hardware Component records remain unchanged. No unintended additions, updates, or deletions are present. |
 
 ## Expected Outcome
-An invalid import file is rejected before processing. A clear error message identifies the file as invalid. Existing Hardware Component data is preserved.
+- Invalid import files are not imported.
+- A validation message is displayed describing the import failure.
+- Existing Hardware Component data is not modified.
+- No Hardware Components are added or updated from the invalid file.

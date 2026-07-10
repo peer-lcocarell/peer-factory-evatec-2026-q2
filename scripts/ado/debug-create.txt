@@ -1,0 +1,24 @@
+﻿
+
+id     : 293458
+rev    : 1
+fields : @{System.AreaPath=PFEvatec; System.TeamProject=PFEvatec; 
+         System.IterationPath=PFEvatec; System.WorkItemType=Test Case; 
+         System.State=Design; System.Reason=New; System.AssignedTo=; 
+         System.CreatedDate=2026-07-10T20:49:39.87Z; System.CreatedBy=; 
+         System.ChangedDate=2026-07-10T20:49:39.87Z; System.ChangedBy=; 
+         System.CommentCount=0; System.Title=DEBUG TEST - delete me; 
+         Microsoft.VSTS.Common.StateChangeDate=2026-07-10T20:49:39.87Z; 
+         Microsoft.VSTS.Common.ActivatedDate=2026-07-10T20:49:39.87Z; 
+         Microsoft.VSTS.Common.ActivatedBy=; Microsoft.VSTS.Common.Priority=2; 
+         Microsoft.VSTS.TCM.AutomationStatus=Not Automated; 
+         Custom.ReviewStatePG=Not Ready for Review; 
+         Custom.RequiresHardwarePG=No}
+_links : @{self=; workItemUpdates=; workItemRevisions=; workItemComments=; 
+         html=; workItemType=; fields=}
+url    : https://ops1.peergroup.com/DefaultCollection/25ecc7b4-ce9a-4597-b6d2-5
+         d1407258434/_apis/wit/workItems/293458
+
+OK: 
+
+

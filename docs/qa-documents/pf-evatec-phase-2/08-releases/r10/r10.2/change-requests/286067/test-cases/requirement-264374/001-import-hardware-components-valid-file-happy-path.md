@@ -1,22 +1,40 @@
-# R10.2 Update for CR 286067 - Import Hardware Components from File: Verify hardware components are imported from a valid file (Happy Path)
+# R10.2 Update for CR 286067 - Import Hardware Components from File: Verify hardware components are imported successfully using the default file format
 
 ## Requirement
-CR: 286067
-Ticket: 35008
-Requirement ID: 264374
-Requirement: Import hardware components from file (Hardware Components)
+- CR: 286067
+- Ticket: 35008
+- Requirement ID: 264374
+- Requirement: Import Hardware Components from File
 
 ## Preconditions
-- User is signed in with `ManageHardware_View` and `ManageHardware_Edit` permissions.
-- A valid import file is available, including Hardware Component records with Magnet System Type-related mappings.
-- The 'Hardware Components' import page is accessible.
+- Tester is signed in with `ERP_View` and `ERP_Edit` security rights.
+- A valid Report File import file is available.
+- The file contains:
+  - New hardware component records.
+  - Existing hardware component records for update.
+  - Records matching configured Product Group filters.
+  - ERP-derived Magnet System Type records.
+- Hardware Components Import page is accessible.
 
 | Step | Action | Expected Result |
-|------|--------|-----------------|
-| 1 | Open the 'Hardware Components' import screen. | Import controls are visible and enabled. |
-| 2 | Select a valid import file and start the import. | Import starts without format validation errors. |
-| 3 | Review the import completion summary. | The summary confirms successful import counts for added and updated records. |
-| 4 | Search for representative imported records in Hardware Components. | Records are available with correctly mapped Article Number, Name, and ERP Status fields. |
+|--------|--------|--------|
+| 1 | Navigate to the Hardware Components Import page. | The Hardware Components Import page is displayed. |
+| 2 | Review the selected file format. | The Report File format is selected by default. |
+| 3 | Select a valid import file. | The file is accepted for import. |
+| 4 | Start the import. | The import begins without validation errors. |
+| 5 | Wait for the import to complete. | The import completes successfully. |
+| 6 | Review the import summary. | The summary displays the number of records Added, Updated, and Skipped. |
+| 7 | Search for a newly added hardware component from the import file. | The hardware component is displayed. |
+| 8 | Review the imported field values. | Article #, Name, Name (English), Product Group, Manufacturer, ERP Status, and Successor values match the source file mappings. |
+| 9 | Search for an existing hardware component included in the import file. | The hardware component is displayed. |
+| 10 | Review the updated field values. | The updated values match the source file data. |
+| 11 | Review records from the import file that do not match configured Product Group filters. | Records that do not match configured Product Group filters are not imported. |
+| 12 | Review an ERP-derived Magnet System Type associated with an imported hardware component. | The Magnet System Type Name, Name (English), and Status values are updated based on the imported data. |
 
 ## Expected Outcome
-A valid import file imports without error. The import summary reports the number of records added and updated. Imported Hardware Component records are available in the system with correctly populated fields.
+- The Report File format is selected by default.
+- Hardware components are imported successfully.
+- Only records matching configured Product Group filters are imported.
+- Hardware component fields are mapped correctly from the source file.
+- ERP-derived Magnet System Types are updated with imported values.
+- The import summary displays accurate Added, Updated, and Skipped counts.
