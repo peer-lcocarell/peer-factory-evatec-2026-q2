@@ -16,7 +16,8 @@ Requirement: View Magnet System Type (Magnet System Types)
 | 1 | Open the 'Magnet System Types' list. | Existing records are displayed. |
 | 2 | Select an existing Magnet System Type. | The View action is available. |
 | 3 | Open the View page for the selected record. | The View screen loads with the detailed record information. |
-| 4 | Verify the displayed fields. | Article Number, Name, ERP Status, Source Type, FlexiCat Type, Applications, and Description fields display the saved values. |
+| 4 | Review the displayed record information. | All fields are displayed in a read-only format and the values match the data stored for the selected Magnet System Type.
+
 
 ## Expected Outcome
-The View page for a Magnet System Type loads and displays all stored field values. Displayed data matches the values saved when the record was created or last edited.
+The tester can open the View page for an existing Magnet System Type and review its details. All stored field values are displayed correctly and match the values saved when the record was created or last modified. The record information is presented without errors.
