@@ -21,11 +21,11 @@ $ErrorActionPreference = 'Stop'
 # Defaults (from .github/copilot-instructions.md)
 # ---------------------------------------------------------------------------
 
-$script:DefaultOrgUrl     = 'https://ops1.peergroup.com/DefaultCollection'
-$script:DefaultProject    = 'PFEvatec'
+$script:DefaultOrgUrl = 'https://ops1.peergroup.com/DefaultCollection'
+$script:DefaultProject = 'PFEvatec'
 $script:DefaultApiVersion = '7.1'
-$script:DefaultPlanId     = 291616
-$script:DefaultSuiteId    = 291617  # Requirements (parent)
+$script:DefaultPlanId = 291616
+$script:DefaultSuiteId = 291617  # Requirements (parent)
 
 # ---------------------------------------------------------------------------
 # Auth / HTTP
@@ -41,7 +41,7 @@ function Get-AdoAuthHeader {
         return $null
     }
 
-    $bytes  = [System.Text.Encoding]::ASCII.GetBytes(":$Pat")
+    $bytes = [System.Text.Encoding]::ASCII.GetBytes(":$Pat")
     $base64 = [Convert]::ToBase64String($bytes)
 
     return @{ Authorization = "Basic $base64" }
@@ -50,7 +50,7 @@ function Get-AdoAuthHeader {
 function Invoke-AdoRest {
     [CmdletBinding()]
     param(
-        [Parameter(Mandatory)] [ValidateSet('GET','POST','PATCH','PUT','DELETE')] [string]$Method,
+        [Parameter(Mandatory)] [ValidateSet('GET', 'POST', 'PATCH', 'PUT', 'DELETE')] [string]$Method,
         [Parameter(Mandatory)] [string]$Uri,
         [object]$Body,
         [string]$ContentType = 'application/json',
@@ -151,7 +151,7 @@ function ConvertFrom-TestCaseMarkdown {
 
     # Requirement (free text)
     $requirementLines = (Get-SectionLines 'Requirement') | Where-Object { $_ -and $_.Trim() }
-    $requirement      = ($requirementLines -join "`n").Trim()
+    $requirement = ($requirementLines -join "`n").Trim()
 
     # Preconditions (bullets)
     $preconditions = @()
@@ -169,7 +169,7 @@ function ConvertFrom-TestCaseMarkdown {
     for ($i = 0; $i -lt $lines.Count; $i++) {
         $l = $lines[$i]
         if (-not $inHeader -and $l -match '^\s*\|\s*Step\s*\|\s*Action\s*\|\s*Expected Result\s*\|\s*$') {
-            $inHeader     = $true
+            $inHeader = $true
             $sawSeparator = $false
             continue
         }
@@ -187,8 +187,8 @@ function ConvertFrom-TestCaseMarkdown {
             $cells = ($l -split '\|') | ForEach-Object { $_.Trim() }
             # leading and trailing splits are empty strings
             if ($cells.Count -lt 5) { continue }
-            $num      = $cells[1]
-            $action   = $cells[2] -replace '<br\s*/?>', "`n"
+            $num = $cells[1]
+            $action = $cells[2] -replace '<br\s*/?>', "`n"
             $expected = $cells[3] -replace '<br\s*/?>', "`n"
             $steps += [pscustomobject]@{
                 Number   = $num
@@ -203,7 +203,7 @@ function ConvertFrom-TestCaseMarkdown {
     }
 
     $expectedOutcomeLines = (Get-SectionLines 'Expected Outcome') | Where-Object { $_ -and $_.Trim() }
-    $expectedOutcome      = ($expectedOutcomeLines -join "`n").Trim()
+    $expectedOutcome = ($expectedOutcomeLines -join "`n").Trim()
 
     # CR ID: prefer Requirement section, fall back to first numeric token in title.
     $crId = $null
@@ -304,9 +304,9 @@ function ConvertTo-HtmlParagraphs {
     param([string]$Text)
     if ([string]::IsNullOrWhiteSpace($Text)) { return '' }
     $encoded = [System.Net.WebUtility]::HtmlEncode($Text)
-    $parts   = $encoded -split "(`r`n|`n)"
-    $html    = ($parts | Where-Object { $_ -and $_ -notmatch '^(`r`n|`n)$' } |
-                ForEach-Object { "<P>$_</P>" }) -join ''
+    $parts = $encoded -split "(`r`n|`n)"
+    $html = ($parts | Where-Object { $_ -and $_ -notmatch '^(`r`n|`n)$' } |
+        ForEach-Object { "<P>$_</P>" }) -join ''
     if (-not $html) { $html = "<P>$encoded</P>" }
     return "<DIV>$html</DIV>"
 }
@@ -322,17 +322,17 @@ function ConvertTo-AdoStepsXml {
 
     if ($Preconditions -and $Preconditions.Count -gt 0) {
         $effectiveSteps.Add([pscustomobject]@{
-            Number   = '0'
-            Action   = 'Verify preconditions.'
-            Expected = ''
-        }) | Out-Null
+                Number   = '0'
+                Action   = 'Verify preconditions.'
+                Expected = ''
+            }) | Out-Null
     }
 
     foreach ($s in $Steps) {
         $effectiveSteps.Add($s) | Out-Null
     }
 
-    $doc  = New-Object System.Xml.XmlDocument
+    $doc = New-Object System.Xml.XmlDocument
     $root = $doc.CreateElement('steps')
     $root.SetAttribute('id', '0')
     $root.SetAttribute('last', [string]($effectiveSteps.Count + 1))
@@ -412,17 +412,17 @@ function Find-AdoTestCaseByTitle {
     [CmdletBinding()]
     param(
         [Parameter(Mandatory)] [string]$Title,
-        [string]$OrgUrl     = $script:DefaultOrgUrl,
-        [string]$Project    = $script:DefaultProject,
+        [string]$OrgUrl = $script:DefaultOrgUrl,
+        [string]$Project = $script:DefaultProject,
         [string]$ApiVersion = $script:DefaultApiVersion
     )
 
     $escapedTitle = $Title.Replace("'", "''")
     $wiql = @{
         query = "SELECT [System.Id] FROM workitems " +
-                "WHERE [System.TeamProject] = '$Project' " +
-                "AND [System.WorkItemType] = 'Test Case' " +
-                "AND [System.Title] = '$escapedTitle'"
+        "WHERE [System.TeamProject] = '$Project' " +
+        "AND [System.WorkItemType] = 'Test Case' " +
+        "AND [System.Title] = '$escapedTitle'"
     }
 
     $uri = "{0}/{1}/_apis/wit/wiql?api-version={2}" -f $OrgUrl.TrimEnd('/'), $Project, $ApiVersion
@@ -440,24 +440,24 @@ function New-AdoTestCase {
         [Parameter(Mandatory)] [pscustomobject]$TestCase,
         [string]$AreaPath,
         [string]$IterationPath,
-        [string]$OrgUrl     = $script:DefaultOrgUrl,
-        [string]$Project    = $script:DefaultProject,
+        [string]$OrgUrl = $script:DefaultOrgUrl,
+        [string]$Project = $script:DefaultProject,
         [string]$ApiVersion = $script:DefaultApiVersion
     )
 
-    $stepsXml   = ConvertTo-AdoStepsXml -Steps $TestCase.Steps -Preconditions $TestCase.Preconditions
-    $descHtml   = ConvertTo-DescriptionHtml `
-                    -Requirement     $TestCase.Requirement `
-                    -Preconditions   $TestCase.Preconditions `
-                    -ExpectedOutcome $TestCase.ExpectedOutcome
+    $stepsXml = ConvertTo-AdoStepsXml -Steps $TestCase.Steps -Preconditions $TestCase.Preconditions
+    $descHtml = ConvertTo-DescriptionHtml `
+        -Requirement     $TestCase.Requirement `
+        -Preconditions   $TestCase.Preconditions `
+        -ExpectedOutcome $TestCase.ExpectedOutcome
     $preconditionsText = ConvertTo-PreconditionsText -Preconditions $TestCase.Preconditions
 
     $ops = New-Object System.Collections.Generic.List[object]
-    $ops.Add(@{ op = 'add'; path = '/fields/System.Title';                  value = $TestCase.Title })
-    $ops.Add(@{ op = 'add'; path = '/fields/System.Description';            value = $descHtml })
-    $ops.Add(@{ op = 'add'; path = '/fields/Microsoft.VSTS.TCM.Steps';      value = $stepsXml })
-    $ops.Add(@{ op = 'add'; path = '/fields/Custom.PreconditionsPG';         value = $preconditionsText })
-    if ($AreaPath)      { $ops.Add(@{ op = 'add'; path = '/fields/System.AreaPath';      value = $AreaPath }) }
+    $ops.Add(@{ op = 'add'; path = '/fields/System.Title'; value = $TestCase.Title })
+    $ops.Add(@{ op = 'add'; path = '/fields/System.Description'; value = $descHtml })
+    $ops.Add(@{ op = 'add'; path = '/fields/Microsoft.VSTS.TCM.Steps'; value = $stepsXml })
+    $ops.Add(@{ op = 'add'; path = '/fields/Custom.PreconditionsPG'; value = $preconditionsText })
+    if ($AreaPath) { $ops.Add(@{ op = 'add'; path = '/fields/System.AreaPath'; value = $AreaPath }) }
     if ($IterationPath) { $ops.Add(@{ op = 'add'; path = '/fields/System.IterationPath'; value = $IterationPath }) }
     if ($TestCase.Tags -and $TestCase.Tags.Count -gt 0) {
         $ops.Add(@{ op = 'add'; path = '/fields/System.Tags'; value = ($TestCase.Tags -join '; ') })
@@ -474,24 +474,24 @@ function Update-AdoTestCase {
         [Parameter(Mandatory)] [pscustomobject]$TestCase,
         [string]$AreaPath,
         [string]$IterationPath,
-        [string]$OrgUrl     = $script:DefaultOrgUrl,
-        [string]$Project    = $script:DefaultProject,
+        [string]$OrgUrl = $script:DefaultOrgUrl,
+        [string]$Project = $script:DefaultProject,
         [string]$ApiVersion = $script:DefaultApiVersion
     )
 
     $stepsXml = ConvertTo-AdoStepsXml -Steps $TestCase.Steps -Preconditions $TestCase.Preconditions
     $descHtml = ConvertTo-DescriptionHtml `
-                    -Requirement     $TestCase.Requirement `
-                    -Preconditions   $TestCase.Preconditions `
-                    -ExpectedOutcome $TestCase.ExpectedOutcome
+        -Requirement     $TestCase.Requirement `
+        -Preconditions   $TestCase.Preconditions `
+        -ExpectedOutcome $TestCase.ExpectedOutcome
     $preconditionsText = ConvertTo-PreconditionsText -Preconditions $TestCase.Preconditions
 
     $ops = New-Object System.Collections.Generic.List[object]
-    $ops.Add(@{ op = 'add'; path = '/fields/System.Title';                  value = $TestCase.Title })
-    $ops.Add(@{ op = 'add'; path = '/fields/System.Description';            value = $descHtml })
-    $ops.Add(@{ op = 'add'; path = '/fields/Microsoft.VSTS.TCM.Steps';      value = $stepsXml })
-    $ops.Add(@{ op = 'add'; path = '/fields/Custom.PreconditionsPG';         value = $preconditionsText })
-    if ($AreaPath)      { $ops.Add(@{ op = 'add'; path = '/fields/System.AreaPath';      value = $AreaPath }) }
+    $ops.Add(@{ op = 'add'; path = '/fields/System.Title'; value = $TestCase.Title })
+    $ops.Add(@{ op = 'add'; path = '/fields/System.Description'; value = $descHtml })
+    $ops.Add(@{ op = 'add'; path = '/fields/Microsoft.VSTS.TCM.Steps'; value = $stepsXml })
+    $ops.Add(@{ op = 'add'; path = '/fields/Custom.PreconditionsPG'; value = $preconditionsText })
+    if ($AreaPath) { $ops.Add(@{ op = 'add'; path = '/fields/System.AreaPath'; value = $AreaPath }) }
     if ($IterationPath) { $ops.Add(@{ op = 'add'; path = '/fields/System.IterationPath'; value = $IterationPath }) }
     if ($TestCase.Tags -and $TestCase.Tags.Count -gt 0) {
         $ops.Add(@{ op = 'add'; path = '/fields/System.Tags'; value = ($TestCase.Tags -join '; ') })
@@ -507,8 +507,8 @@ function Add-AdoTestCaseToSuite {
         [Parameter(Mandatory)] [int]$PlanId,
         [Parameter(Mandatory)] [int]$SuiteId,
         [Parameter(Mandatory)] [int]$TestCaseId,
-        [string]$OrgUrl     = $script:DefaultOrgUrl,
-        [string]$Project    = $script:DefaultProject,
+        [string]$OrgUrl = $script:DefaultOrgUrl,
+        [string]$Project = $script:DefaultProject,
         [string]$ApiVersion = $script:DefaultApiVersion
     )
 
@@ -538,6 +538,18 @@ function Get-SuiteMap {
 
     $raw = Get-Content -LiteralPath $Path -Raw -Encoding UTF8 | ConvertFrom-Json
 
+    # Support wrapped map documents where the effective suite map is nested
+    # under a top-level "URL" object.
+    if ($raw -and
+        $raw.PSObject.Properties.Name -contains 'URL' -and
+        $raw.URL -and
+        ($raw.URL.PSObject.Properties.Name -contains 'planId' -or
+        $raw.URL.PSObject.Properties.Name -contains 'defaultSuiteId' -or
+        $raw.URL.PSObject.Properties.Name -contains 'crSuiteIds' -or
+        $raw.URL.PSObject.Properties.Name -contains 'requirementSuiteIds')) {
+        $raw = $raw.URL
+    }
+
     # Normalize crSuiteIds into a hashtable<string,int?>
     $map = @{}
     if ($raw.PSObject.Properties.Name -contains 'crSuiteIds' -and $raw.crSuiteIds) {
@@ -546,7 +558,7 @@ function Get-SuiteMap {
         }
     }
 
-    $planId         = if ($raw.PSObject.Properties.Name -contains 'planId'         -and $raw.planId)         { [int]$raw.planId }         else { $script:DefaultPlanId }
+    $planId = if ($raw.PSObject.Properties.Name -contains 'planId' -and $raw.planId) { [int]$raw.planId }         else { $script:DefaultPlanId }
     $defaultSuiteId = if ($raw.PSObject.Properties.Name -contains 'defaultSuiteId' -and $raw.defaultSuiteId) { [int]$raw.defaultSuiteId } else { $script:DefaultSuiteId }
 
     # requirementSuiteIds (optional section)
@@ -558,9 +570,9 @@ function Get-SuiteMap {
     }
 
     [pscustomobject]@{
-        planId             = $planId
-        defaultSuiteId     = $defaultSuiteId
-        crSuiteIds         = $map
+        planId              = $planId
+        defaultSuiteId      = $defaultSuiteId
+        crSuiteIds          = $map
         requirementSuiteIds = $reqMap
     }
 }
@@ -616,9 +628,9 @@ function Publish-AdoTestCaseFromMarkdown {
         [int]$SuiteId,
         [string]$AreaPath,
         [string]$IterationPath,
-        [string]$OrgUrl         = $script:DefaultOrgUrl,
-        [string]$Project        = $script:DefaultProject,
-        [string]$ApiVersion     = $script:DefaultApiVersion,
+        [string]$OrgUrl = $script:DefaultOrgUrl,
+        [string]$Project = $script:DefaultProject,
+        [string]$ApiVersion = $script:DefaultApiVersion,
         [string]$SuiteMapPath,
         # When set, warnings are emitted but BLOCKER validation failures do not
         # abort the publish. Use only for bulk re-publish of pre-validated suites.
@@ -654,7 +666,7 @@ function Publish-AdoTestCaseFromMarkdown {
         $mapArgs = @{}
         if ($SuiteMapPath) { $mapArgs.Path = $SuiteMapPath }
         $map = Get-SuiteMap @mapArgs
-        if (-not $PlanId)  { $PlanId  = $map.planId }
+        if (-not $PlanId) { $PlanId = $map.planId }
         if (-not $SuiteId) { $SuiteId = Resolve-SuiteIdForRequirement -RequirementId $tc.RequirementId -CrId $tc.CrId -SuiteMap $map }
     }
 
@@ -678,14 +690,14 @@ function Publish-AdoTestCaseFromMarkdown {
         $null = Update-AdoTestCase -Id $existingId -TestCase $tc `
             -AreaPath $AreaPath -IterationPath $IterationPath `
             -OrgUrl $OrgUrl -Project $Project -ApiVersion $ApiVersion
-        $id     = $existingId
+        $id = $existingId
         $status = 'Updated'
     }
     else {
         $created = New-AdoTestCase -TestCase $tc `
             -AreaPath $AreaPath -IterationPath $IterationPath `
             -OrgUrl $OrgUrl -Project $Project -ApiVersion $ApiVersion
-        $id     = [int]$created.id
+        $id = [int]$created.id
         $status = 'Created'
     }
 

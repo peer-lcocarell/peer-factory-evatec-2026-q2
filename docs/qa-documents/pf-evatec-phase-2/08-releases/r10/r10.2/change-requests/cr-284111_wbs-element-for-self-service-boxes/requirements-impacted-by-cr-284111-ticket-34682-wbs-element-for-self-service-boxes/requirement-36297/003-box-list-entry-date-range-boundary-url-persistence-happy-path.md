@@ -1,0 +1,27 @@
+# R10.2 284111 Self-Service Box - Boxes List Entry Date Range Boundary and URL Persistence (Happy Path)
+
+## Requirement
+- CR: 284111
+- Ticket: 34682
+- Requirement ID: 36297
+- Requirement: Entry Date filter supports start/end range with boundary behavior and URL persistence.
+
+## Preconditions
+
+- User is signed in with `Boxes_View` permission.
+- Data includes records before, on, within, and after a known target date range.
+- User is on the `Boxes` list page.
+
+| Step | Action | Expected Result |
+|------|----------|----------------|
+| 1 | Enter range start and end dates in Entry Date filter. | Filter controls accept valid range values. |
+| 2 | Apply the filter. | Only records within the selected range are shown. |
+| 3 | Validate boundary dates. | Records exactly on start and end date are included. |
+| 4 | Validate out-of-range records. | Records before start or after end are excluded. |
+| 5 | Verify URL parameters. | URL includes start and end date filter values. |
+| 6 | Refresh the browser page. | Same date range remains applied and result set remains consistent. |
+| 7 | Clear Entry Date range. | Default list is restored and date parameters are removed/reset. |
+
+## Expected Outcome
+
+Entry Date range filtering handles boundaries correctly and persists through URL/refresh behavior.
