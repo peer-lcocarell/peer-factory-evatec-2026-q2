@@ -1,0 +1,184 @@
+﻿# Requirement 217766 - Test Case Audit
+## CR 286067 - Tracking of Magnet Systems in Evatec Fabric
+
+## Status
+
+Pending
+
+---
+
+## Coverage Assessment
+
+### Existing Test Cases
+
+_To be completed._
+
+### Coverage Gaps
+
+_To be completed._
+
+### Recommendations
+
+_To be completed._
+
+---
+
+## Notes
+
+_To be completed._
+
+---
+
+Using your QA audit format, here's the review for 13.6.7 – Export Hardware Configuration.
+
+Requirement Coverage Audit
+Test Case ID	Coverage Status	Gaps/Issues	Recommended Improvements	Overlap NotesR10.1 CR 34217 - Replace BPS Number with Article Number	Partial	Only validates one formatting change. Does not validate export functionality, rewind exports, target formatting rules, magnet system formatting rules, timestamps, dates, tool/module information, or role data.	Expand to verify all Article # formatting rules for ERP Targets, User Defined Targets, Standard Magnet Systems, and Prototype Magnet Systems.	No major overlap. Focused on CR 34217 terminology change.
+R10.2 Export Hardware Configuration: Verify hardware configuration can be exported successfully (Happy Path)	Partial	Only verifies file generation and download. Does not validate export content. Does not verify allowed export states (Latest without pending changes and Rewind).	Add validation that export is available only when requirement conditions are met. Verify downloaded file structure.	Overlaps with Validation test but covers export initiation.
+R10.2 Export Hardware Configuration: Verify exported file contains expected hardware configuration data	Partial	Strong content validation but missing Tool Name, Module Name, Module Type, Selected Date, Last Modified Timestamp, Rewind-specific values, Category values, Serial # values, and Target formatting rules.	Add explicit verification of every exported field defined in requirement.	Overlaps with Prototype Magnet System validation.
+R10.2 Export Hardware Configuration: Attempt to export hardware configuration without required permission	Partial	Requirement does not specify a security permission for export. Test may be valid but is not traceable to this requirement. Also assumes Edit permission is required.	Verify security requirement exists elsewhere. If not, remove from traceability matrix for 13.6.7.	No overlap.
+R10.2 Export Hardware Configuration: Verify Prototype Magnet System format	Yes	Good traceability to prototype magnet system formatting requirement.	Add verification of exact format including Article # and Variant Code.	Some overlap with general data validation test.
+Requirement-by-Requirement Coverage
+Export Available From Latest Configuration
+
+Requirement
+
+The hardware configuration can be exported when displaying latest without pending changes.
+
+Coverage	StatusExport from latest configuration	Partial
+Export with pending changes restriction	Not Covered
+Missing Test
+
+Verify export unavailable when pending changes exist
+
+Step	Expected ResultOpen Hardware Configuration	Configuration loads
+Make unsaved changes	Configuration contains pending changes
+Review Export option	Export is unavailable or blocked
+Export Available From Rewind Configuration
+
+Requirement
+
+The hardware configuration can be exported when displaying the rewind for a hardware configuration.
+
+Coverage	StatusRewind export	Not Covered
+Missing Test
+
+Verify export from rewind configuration
+
+Step	Expected ResultOpen Hardware Configuration Rewind view	Historical configuration loads
+Export configuration	Export succeeds
+Open export	Rewind-specific data is present
+Tool Name
+
+Requirement
+
+Export contains Tool Name
+
+Coverage	StatusTool Name validation	Not Covered
+Module Name and Type
+
+Requirement
+
+Export contains Module Name and Module Type if applicable
+
+Coverage	StatusModule Name	Not Covered
+Module Type	Not Covered
+Selected Dates
+
+Requirement
+
+Export contains selected date and rewind dates
+
+Coverage	StatusLatest selected date	Not Covered
+Rewind current date	Not Covered
+Rewind original date	Not Covered
+Last Modified Timestamps
+
+Requirement
+
+Export contains last modified timestamps
+
+Coverage	StatusCurrent timestamp	Not Covered
+Rewind timestamp	Not Covered
+Role Data
+
+Requirement
+
+Export contains role category, Article #, name/value, serial #
+
+Coverage	StatusCategory	Not Covered
+Article #	Partial
+Name/Value	Partial
+Serial #	Not Covered
+Target Formatting Rules
+
+ERP Target
+
+Format:
+
+[Target #] ([Target Type Article #])
+
+Coverage	StatusERP Target format	Not Covered
+User Defined Target
+
+Format:
+
+[Target #]
+
+Coverage	StatusUser Defined Target format	Not Covered
+Magnet System Formatting Rules
+
+Standard Magnet System
+
+Format:
+
+[Magnet System #] ([Magnet System Type Article #])
+
+Coverage	StatusStandard Magnet System format	Covered
+
+Prototype Magnet System
+
+Format:
+
+[Magnet System #] ([Magnet System Type Article #] [Variant Code])
+
+Coverage	StatusPrototype Magnet System format	Covered
+Recommended Additional Test Cases
+Export Rewind Hardware Configuration
+
+Coverage: Missing
+
+Validates:
+
+Original selected date
+Rewind selected date
+Current timestamp
+Rewind timestamp
+Current and rewind Article # values
+Verify ERP Target Export Format
+Step	Expected ResultExport configuration containing ERP target	Export completes
+Locate target entry	Entry format is [Target #] ([Target Type Article #])
+Verify User Defined Target Export Format
+Step	Expected ResultExport configuration containing user-defined target	Export completes
+Locate target entry	Entry format is [Target #]
+Verify Export Includes Required Metadata
+Step	Expected ResultExport hardware configuration	Export completes
+Open export	Tool Name is displayed
+Review module information	Module Name and Type are displayed when applicable
+Review timestamps	Required timestamps are displayed
+Review selected dates	Required dates are displayed
+Overall Assessment
+Area	CoverageExport Execution	Covered
+Hardware Data Validation	Partial
+Tool Metadata	Not Covered
+Module Metadata	Not Covered
+Selected Dates	Not Covered
+Rewind Export	Not Covered
+ERP Target Formatting	Not Covered
+User Defined Target Formatting	Not Covered
+Standard Magnet System Formatting	Covered
+Prototype Magnet System Formatting	Covered
+Pending Changes Restriction	Not Covered
+
+Overall Requirement Coverage: ~50-60% (Partial)
+
+The strongest area is magnet system export formatting, especially the prototype validation. The biggest gaps are rewind exports, required metadata fields, target formatting rules, and export eligibility rules (latest without pending changes vs rewind view).=
