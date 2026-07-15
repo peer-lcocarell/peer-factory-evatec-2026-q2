@@ -1,0 +1,25 @@
+# R10.2 Update for CR 286836 - Load BOM from File: Verify BOM parsing remains consistent after import framework changes (Regression)
+
+## Requirement
+CR: 286836
+Ticket: 34948
+Requirement ID: 264373
+Requirement: Load BOM from File (Import Hardware Configuration)
+
+## Preconditions
+- User is signed in with permission to access BOM import.
+- A baseline BOM file and expected tree output are available.
+- A second BOM file with known edge records is available.
+- Environment contains existing baseline BOM import results for comparison.
+
+| Step | Action | Expected Result |
+|------|----------|----------------|
+| 1 | Import baseline BOM file with default format. | Import succeeds and tree output is generated. |
+| 2 | Compare generated tree with baseline expected structure. | Hierarchy, node count, and mapped fields match baseline expectation. |
+| 3 | Import edge-case BOM file using valid custom format. | Import succeeds without framework-related errors. |
+| 4 | Validate parsing of edge-case records in generated tree. | Edge records are parsed and displayed correctly. |
+| 5 | Re-import baseline file. | Repeat import produces consistent results with no unexpected drift. |
+| 6 | Verify related import flows remain operational. | ERP and Work Order import pages remain accessible and functional after BOM imports. |
+
+## Expected Outcome
+The tester verifies that BOM import parsing remains stable and consistent across baseline and edge-case files after framework updates and that related import workflows remain unaffected.

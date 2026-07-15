@@ -13,11 +13,10 @@ Requirement: Tool Overview (Tool Overview)
 
 | Step | Action | Expected Result |
 |------|--------|-----------------|
-| 1 | Note the known tool name, tool type, and ECL location for a tool with an installed hardware component. | Baseline tool data is captured. |
-| 2 | Open 'Hardware Search' and search using criteria that match the installed hardware component. | The search returns at least one result for the known component. |
-| 3 | Review the Tool column in the result row for the matching component. | The Tool name in the search result matches the known tool name from Step 1. |
-| 4 | Review the Module column in the result row. | The Module location in the search result matches the known module location on that tool. |
-| 5 | Navigate to the Tool Overview via the Tool link. | The 'Tool Overview' page loads and displays the same tool name, type, and ECL location captured in Step 1. |
+| 1 | Record baseline tool values (tool name, tool type, ECL location) for a known installed component. | Baseline values are captured for comparison. |
+| 2 | Run 'Hardware Search' with criteria matching that component. | A matching row is returned. |
+| 3 | Verify Tool and Module values in the matching row. | Tool name and module location match known installation data. |
+| 4 | Open 'Tool Overview' using the Tool link in that row. | The page shows the same tool name, type, and ECL location as baseline. |
 
 ## Expected Outcome
-The Tool name and Module location displayed in Hardware Search results match the actual tool and module where the hardware is installed. Navigating to the Tool Overview confirms the tool identity. No mismatched or stale tool data is presented in the search results.
+Tool and module values returned by Hardware Search match known installation data, and Tool link navigation opens the correct tool identity.

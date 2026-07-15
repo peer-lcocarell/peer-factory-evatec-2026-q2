@@ -1,30 +1,40 @@
-Search for Installed Hardware Components (Common Hardware Configuration)
+# Audit - Requirement 272565
 
-https://ops1.peergroup.com/DefaultCollection/PFEvatec/_testPlans/define?planId=291616&suiteId=292244
+## Requirement Reference
 
-13.8.1REQUIREMENT: Search for Installed Hardware Components
-At times the user needs to search to find out where hardware components are currently or have been installed in both tools and modules.
+- CR: 286836
+- Ticket: 34948
+- Requirement ID: 272565
+- Requirement: Import work orders from file
 
-The search criteria includes
+## Requirement Summary
 
-Article # (external ID of the hardware component, can be a partial match)
+- Work Orders import supports multiple file formats.
+- User selects format and file for import.
+- Required mappings are `Project #` and `Name`.
+- Optional mappings include `Project Type`, `Status`, and additional fields.
+- Closed and Locked statuses are normalized to Closed.
+- Import summary displays added, updated, and skipped counts.
+- User must have `ERP_View` and `ERP_Edit` rights.
 
-Article Name (English name of the hardware component, can be a partial match)
+## Existing Test Coverage
 
-Serial # (specified during hardware component installation, can be partial match)
+- 001-import-work-orders-valid-file-happy-path.md
+- 002-import-work-orders-missing-mandatory-fields-unhappy-path.md
+- 003-import-work-orders-regression-availability.md
+- 004-import-work-orders-closed-locked-status-normalization-validation.md
 
-For modules select whether to include all or only dockable
+## Coverage Assessment
 
-A date range for when hardware component was installed (defaulted to the current date)
+- Happy path coverage: Present.
+- Mandatory field unhappy path coverage: Present.
+- Downstream availability regression coverage: Present.
+- Closed and Locked normalization coverage: Present.
+- Permission matrix coverage: Missing.
+- Custom format management coverage: Missing.
 
-Once the user searches PF will display the matches found including
+## Recommendations
 
-Article (# and name)
+- Add permission tests for missing `ERP_View` or `ERP_Edit`.
+- Add custom format creation and validation tests.
 
-Location (tool and/or module)
-
-The location will be a link to the appropriate hardware configuration page.
-
-The user can reset and search again if desired.
-
-Users must have the HardwareConfiguration_View security right to access this feature.

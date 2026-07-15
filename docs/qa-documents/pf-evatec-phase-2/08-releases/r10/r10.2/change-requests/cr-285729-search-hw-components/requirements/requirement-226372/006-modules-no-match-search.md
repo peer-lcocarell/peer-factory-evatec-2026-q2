@@ -13,11 +13,11 @@ Requirement: Modules (Modules)
 
 | Step | Action | Expected Result |
 |------|--------|-----------------|
-| 1 | Open the 'Modules' page and open the Hardware Search dialog. | The Hardware Search dialog opens. All search fields are empty. |
-| 2 | Enter a part number that does not match any installed hardware component (e.g., `ZZNOTEXIST-9999`). | The part number is accepted in the search field without error. |
-| 3 | Submit the search. | The search executes without error. A no-results message is displayed. No hardware component rows are returned in the results list. |
-| 4 | Clear the search criteria and enter a serial number that does not exist in the system. Submit the search. | The search executes without error. A no-results message is displayed. No hardware component rows are returned in the results list. |
-| 5 | Verify that the no-results state does not display navigation links, tool names, or module names. | No navigation links, tool names, or module location data appear in the results area when zero matches are found. |
+| 1 | Open 'Hardware Search' from the 'Modules' page. | Search dialog opens with empty criteria fields. |
+| 2 | Search using a known non-existent part number. | Search completes with a no-results message and no result rows. |
+| 3 | Search using a known non-existent serial number. | Search completes with a no-results message and no result rows. |
+| 4 | Review the results area in no-results state. | No navigation links, tool names, or module location values are shown. |
+| 5 | Modify criteria after no-results state and keep dialog open. | Criteria fields remain editable without page reload. |
 
 ## Expected Outcome
-When the tester submits Hardware Search criteria that match no installed hardware components, the system displays a clear no-results message. No partial results, placeholder rows, or navigation links are rendered. The search field remains editable so the tester can revise the criteria without reloading the page.
+When search criteria produce zero matches, the dialog shows a clear no-results state with no data rows or links, and criteria remain editable for immediate retry.

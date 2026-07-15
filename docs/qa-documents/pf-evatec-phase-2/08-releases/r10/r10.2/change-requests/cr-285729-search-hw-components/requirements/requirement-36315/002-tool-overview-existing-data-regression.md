@@ -13,10 +13,10 @@ Requirement: Tool Overview (Tool Overview)
 
 | Step | Action | Expected Result |
 |------|--------|-----------------|
-| 1 | Open the 'Tool Overview' page for a known tool without using Hardware Search. | The 'Tool Overview' page loads. The tool name, type, owner, ECL location, live status, and E10 state are displayed. The 'Hardware', 'Search Hardware', and 'Logbook' buttons are visible for the selected tool. |
-| 2 | Verify displayed columns and sections against the pre-CR baseline. | No unexpected UI changes, missing columns, or removed sections are present. The existing tool data is unaffected. |
-| 3 | Open Hardware Search and search for the same tool by locating its installed hardware component. | The Hardware Search result identifies the same tool correctly with its Tool name and Module location. |
-| 4 | Navigate to the 'Tool Overview' via the search result link. | The 'Tool Overview' data displayed matches the data observed in Step 1 with no discrepancy. |
+| 1 | Open the 'Tool Overview' page for a known tool without using Hardware Search. | Tool identity fields and action buttons are displayed as expected for the selected tool. |
+| 2 | Compare visible sections and columns to baseline expectations. | No baseline fields are missing and no unexpected sections are introduced. |
+| 3 | Open 'Search Hardware' and locate the same tool through a known installed component. | A result row is returned for the same tool with Tool and Module information. |
+| 4 | Navigate to 'Tool Overview' from the result link. | Displayed tool data matches the data observed in Step 1. |
 
 ## Expected Outcome
-The 'Tool Overview' page displays all expected columns and tool data after the Hardware Search feature is introduced. Navigating to the same tool via a search result produces identical data to direct navigation.
+Existing 'Tool Overview' information remains unchanged after enabling Hardware Search, and navigation through search returns the same tool data as direct navigation.

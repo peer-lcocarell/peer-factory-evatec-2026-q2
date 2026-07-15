@@ -1,30 +1,37 @@
-Search for Installed Hardware Components (Common Hardware Configuration)
+# Audit - Requirement 75372
 
-https://ops1.peergroup.com/DefaultCollection/PFEvatec/_testPlans/define?planId=291616&suiteId=292244
+## Requirement Reference
 
-13.8.1REQUIREMENT: Search for Installed Hardware Components
-At times the user needs to search to find out where hardware components are currently or have been installed in both tools and modules.
+- CR: 286836
+- Ticket: 34948
+- Requirement ID: 75372
+- Requirement: Edit ERP hardware component
 
-The search criteria includes
+## Requirement Summary
 
-Article # (external ID of the hardware component, can be a partial match)
+- User can edit imported ERP comments.
+- Save persists updates.
+- Cancel closes without saving.
+- User must have `ERP_Edit` right.
+- User with `ERP_Edit` can toggle the `Deleted` state for one or more hardware components.
 
-Article Name (English name of the hardware component, can be a partial match)
+## Existing Test Coverage
 
-Serial # (specified during hardware component installation, can be partial match)
+- 001-edit-erp-hardware-component-happy-path.md
+- 002-edit-erp-hardware-component-unhappy-path-required-fields.md
+- 003-edit-erp-hardware-component-regression-persistence.md
+- 004-edit-erp-hardware-component-bulk-deleted-toggle-validation.md
 
-For modules select whether to include all or only dockable
+## Coverage Assessment
 
-A date range for when hardware component was installed (defaulted to the current date)
+- Happy path coverage: Present.
+- Unhappy path validation coverage: Present.
+- Regression persistence coverage: Present.
+- Bulk toggle behavior coverage for multiple selected records: Present.
+- Permission-focused unhappy path coverage: Missing.
 
-Once the user searches PF will display the matches found including
+## Recommendations
 
-Article (# and name)
+- Add a permissions unhappy path test for missing `ERP_Edit`.
 
-Location (tool and/or module)
 
-The location will be a link to the appropriate hardware configuration page.
-
-The user can reset and search again if desired.
-
-Users must have the HardwareConfiguration_View security right to access this feature.

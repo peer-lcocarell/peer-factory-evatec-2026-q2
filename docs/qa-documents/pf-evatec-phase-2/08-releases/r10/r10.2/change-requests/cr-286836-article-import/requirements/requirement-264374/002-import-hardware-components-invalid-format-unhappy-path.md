@@ -1,0 +1,24 @@
+# R10.2 Update for CR 286836 - Import Hardware Components from File: Verify import fails when file format is invalid (Unhappy Path)
+
+## Requirement
+CR: 286836
+Ticket: 34948
+Requirement ID: 264374
+Requirement: Import hardware components from file (Hardware Components)
+
+## Preconditions
+- User is signed in with permissions to import and view Hardware Components.
+- An invalid file is available (unsupported format or malformed structure).
+- Existing hardware component data is present for regression check.
+- A valid file is also available for post-failure recovery check.
+
+| Step | Action | Expected Result |
+|------|----------|----------------|
+| 1 | Open Hardware Components import screen. | Import controls are visible and enabled. |
+| 2 | Select the invalid file and start import. | Import is rejected with clear error messaging. |
+| 3 | Review import summary/log output. | Error details indicate specific format/structure issue and no success count is reported. |
+| 4 | Verify existing hardware component list. | Existing data remains unchanged by failed import. |
+| 5 | Run import again using a valid file. | Valid import succeeds, confirming import feature remains operational after failure. |
+
+## Expected Outcome
+The tester verifies that the system blocks invalid format imports, reports actionable errors, avoids partial invalid commits, and preserves existing hardware component records.

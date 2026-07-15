@@ -13,11 +13,10 @@ Requirement: Modules (Modules)
 
 | Step | Action | Expected Result |
 |------|--------|-----------------|
-| 1 | Open 'Hardware Search' with no scope filter applied. | Results include hardware installed on both docked and undocked modules. |
-| 2 | Apply the Docked module scope filter. | The scope filter is applied. |
-| 3 | Review the results. | All returned results show modules that are docked to a tool. No undocked module results are present. |
-| 4 | Verify the location field for each result. | Each result displays a tool and module location, confirming the module is docked. |
-| 5 | Clear the scope filter. | Results return to the unfiltered set and include both docked and undocked module installations. |
+| 1 | Open 'Hardware Search' without a module scope filter. | The baseline result set is displayed. |
+| 2 | Apply the Docked module scope filter. | Only docked module results remain; undocked module results are excluded. |
+| 3 | Verify location values in filtered rows. | Each row shows tool and module information consistent with docked state. |
+| 4 | Clear the scope filter. | Baseline unfiltered results are restored. |
 
 ## Expected Outcome
-Applying the Docked scope filter returns only hardware installed on docked modules. Hardware on undocked modules is excluded. Clearing the filter restores the full result set.
+Docked scope filtering returns only docked module installations and clearing the filter restores the baseline result set.

@@ -1,0 +1,25 @@
+# R10.2 Update for CR 286836 - Load BOM from File: Verify BOM file is parsed and displayed correctly using valid mapping (Happy Path)
+
+## Requirement
+CR: 286836
+Ticket: 34948
+Requirement ID: 264373
+Requirement: Load BOM from File (Import Hardware Configuration)
+
+## Preconditions
+- User is signed in with permission to access BOM import.
+- A valid BOM file is available with required columns and valid values.
+- Default or valid custom format mapping is available.
+- BOM import page is accessible.
+
+| Step | Action | Expected Result |
+|------|----------|----------------|
+| 1 | Open the BOM import page. | BOM import controls are visible and enabled. |
+| 2 | Select a valid import format and valid BOM file. | File and format are accepted without validation errors. |
+| 3 | Start import and wait for completion. | Import completes without processing errors. |
+| 4 | Open the generated BOM tree view. | BOM tree is displayed and hierarchy structure is rendered. |
+| 5 | Validate sample nodes for Article #, Name, Level, Quantity, and Units. | Displayed values match the source file mappings. |
+| 6 | Verify Product Group values for sample records. | Product Group values are populated as expected. |
+
+## Expected Outcome
+The tester verifies that a valid BOM file import completes successfully and that mapped fields are parsed correctly into the BOM tree structure.

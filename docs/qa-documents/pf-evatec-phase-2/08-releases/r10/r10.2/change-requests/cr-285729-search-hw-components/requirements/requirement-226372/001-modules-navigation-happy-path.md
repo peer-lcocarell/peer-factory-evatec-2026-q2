@@ -13,10 +13,10 @@ Requirement: Modules (Modules)
 
 | Step | Action | Expected Result |
 |------|--------|-----------------|
-| 1 | Open the 'Modules' page and select a module that has a logbook configured. | The 'Search Hardware' action becomes available in the toolbar or context actions. |
-| 2 | Open Hardware Search and enter criteria matching an installed hardware component on this module. | Matching results are displayed. Each result shows the Tool name and the Module location. |
-| 3 | Click the Module navigation link in a matching result. | The user is navigated to the correct 'Module' detail page for the identified module. |
-| 4 | Verify the hardware component appears in the module's hardware configuration. | The component is listed in the module's current hardware configuration. Module name and tool linkage match the search result. |
+| 1 | Open the 'Modules' page and select a module with a logbook configured. | The 'Search Hardware' action is available. |
+| 2 | Search for a known installed component on that module. | A matching result is returned with Tool and Module values. |
+| 3 | Open the Module link from the matching result. | The correct module detail page opens. |
+| 4 | Verify the component in module hardware configuration. | Component, module identity, and tool linkage match the search result. |
 
 ## Expected Outcome
-Hardware Search results correctly identify the module where the hardware is installed. Clicking the Module navigation link opens the correct module detail page. The module identity (name and tool linkage) matches the information shown in the search result.
+Hardware Search identifies the correct module for an installed component, and the Module link opens the matching module detail with consistent identity data.

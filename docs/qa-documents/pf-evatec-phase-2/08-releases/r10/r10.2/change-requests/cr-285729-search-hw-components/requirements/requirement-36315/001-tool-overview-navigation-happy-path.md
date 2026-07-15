@@ -13,10 +13,10 @@ Requirement: Tool Overview (Tool Overview)
 
 | Step | Action | Expected Result |
 |------|--------|-----------------|
-| 1 | Open the 'Tool Overview' page and select a tool that has a logbook configured. | The 'Hardware' and 'Search Hardware' buttons are visible in the toolbar. |
-| 2 | Click the 'Search Hardware' button and enter criteria matching a known installed hardware component. | The Hardware Search dialog opens. Matching results are displayed showing Tool name and Module location. |
-| 3 | Click the Tool navigation link in a matching result. | The user is navigated to the 'Tool Overview' page for the identified tool. |
-| 4 | Verify Tool Overview contents. | The Tool Overview displays the expected tool. The installed hardware component is reflected in the current hardware configuration. |
+| 1 | Open the 'Tool Overview' page and select a tool with a logbook configured. | The 'Hardware' and 'Search Hardware' buttons are visible. |
+| 2 | Open 'Search Hardware' and search for a known installed hardware component. | At least one result is returned with Tool and Module columns populated. |
+| 3 | Select the Tool link for the matching result. | The 'Tool Overview' page opens for that exact tool. |
+| 4 | Verify the tool identity and installed component. | Tool name matches the result, and the component appears in current hardware configuration. |
 
 ## Expected Outcome
-The 'Search Hardware' button on the 'Tool Overview' page opens the Hardware Search dialog. Search results include the Tool name and Module location. Clicking the Tool navigation link opens the correct 'Tool Overview' page for the identified tool.
+The tester can open 'Search Hardware' from 'Tool Overview', find a known component, and navigate to the correct tool using the Tool link.

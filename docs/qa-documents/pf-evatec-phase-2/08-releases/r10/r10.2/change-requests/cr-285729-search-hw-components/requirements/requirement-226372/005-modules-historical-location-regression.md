@@ -14,10 +14,10 @@ Requirement: Modules (Modules)
 
 | Step | Action | Expected Result |
 |------|--------|-----------------|
-| 1 | Open 'Hardware Search' and search for the hardware component with a date range that covers the historical installation period. | The historical installation record is returned in the results. |
-| 2 | Review the Module location in the historical result. | The Module location shown matches the module where the hardware was installed during the historical period — not the current location. |
-| 3 | Compare with a current search for the same component (no date range). | The current result shows the current module location. The historical result shows the historical module location. The two locations differ as expected. |
-| 4 | Click the Module navigation link on the historical result. | The correct historical module opens or a relevant reference is displayed. No navigation error occurs. |
+| 1 | Search for a known moved component using a date range that includes its earlier installation period. | A historical result is returned. |
+| 2 | Verify the historical Module location value. | Location matches the known historical module, not the current module. |
+| 3 | Run a current-date search for the same component. | Current and historical locations are different and both are displayed correctly for their contexts. |
+| 4 | Open the Module link from the historical result. | Navigation succeeds and resolves to the expected module reference for that record. |
 
 ## Expected Outcome
-Historical installation records in Hardware Search report the module location at the time of installation, not the current location. Historical and current results for the same component show different module locations when the hardware has been moved. Historical module location data is not overwritten by current configuration.
+Historical results show module location at installation time, current results show current location, and location history is not overwritten.

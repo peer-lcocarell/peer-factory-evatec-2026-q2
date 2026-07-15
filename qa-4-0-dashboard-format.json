@@ -1,0 +1,1089 @@
+﻿{
+    "dashboard":  {
+                      "id":  "16e77c72-f74b-4279-8816-51ea0ecf6c08",
+                      "name":  "QA - 4.0 Dashboard",
+                      "description":  "",
+                      "refreshInterval":  0,
+                      "position":  2,
+                      "eTag":  "438",
+                      "groupId":  "4dd58560-0ed8-43a7-a01d-e68210f88f9b",
+                      "ownerId":  "4dd58560-0ed8-43a7-a01d-e68210f88f9b",
+                      "dashboardScope":  "project_Team",
+                      "modifiedDate":  "2026-03-20T20:51:14.403Z",
+                      "modifiedBy":  "dba92d45-762e-40ba-a660-bcbc9be88d91",
+                      "lastAccessedDate":  "2026-07-15T00:00:00Z",
+                      "url":  "https://ops1.peergroup.com/DefaultCollection/PTOIntelTester/Skyline%204.0/_apis/Dashboard/Dashboards/16e77c72-f74b-4279-8816-51ea0ecf6c08",
+                      "_links":  {
+                                     "self":  {
+                                                  "href":  "https://ops1.peergroup.com/DefaultCollection/PTOIntelTester/Skyline%204.0/_apis/Dashboard/Dashboards/16e77c72-f74b-4279-8816-51ea0ecf6c08"
+                                              },
+                                     "group":  {
+                                                   "href":  "https://ops1.peergroup.com/DefaultCollection/PTOIntelTester/Skyline%204.0/_apis/Dashboard/Dashboards"
+                                               }
+                                 }
+                  },
+    "widgets":  [
+                    {
+                        "id":  "b1c91381-22c7-4a15-b3b9-06546fdd38b5",
+                        "eTag":  "84",
+                        "name":  "SORT - Backlog Bugs",
+                        "position":  {
+                                         "row":  6,
+                                         "column":  6
+                                     },
+                        "size":  {
+                                     "rowSpan":  1,
+                                     "columnSpan":  1
+                                 },
+                        "settings":  "{\"defaultBackgroundColor\":\"#e60017\",\"queryId\":\"c8d937dc-fe74-419c-8266-c759cbd35628\",\"queryName\":\"PTO Intel Test - Horizon - SORT - Bugs\",\"colorRules\":[],\"lastArtifactName\":\"PTO Intel Test - Horizon - SORT - Bugs\"}",
+                        "settingsVersion":  {
+                                                "major":  1,
+                                                "minor":  0,
+                                                "patch":  0
+                                            },
+                        "artifactId":  "",
+                        "isEnabled":  true,
+                        "contentUri":  null,
+                        "contributionId":  "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget",
+                        "typeId":  "Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget",
+                        "configurationContributionId":  "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget.Configuration",
+                        "configurationContributionRelativeId":  "Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget.Configuration",
+                        "isNameConfigurable":  true,
+                        "loadingImageUrl":  "https://ops1.peergroup.com/_static/Widgets/scalarLoading.png"
+                    },
+                    {
+                        "id":  "8827631c-7abd-4b00-937f-0979bee7c1c8",
+                        "eTag":  "27",
+                        "name":  "Res. Reqs.",
+                        "position":  {
+                                         "row":  6,
+                                         "column":  1
+                                     },
+                        "size":  {
+                                     "rowSpan":  1,
+                                     "columnSpan":  1
+                                 },
+                        "settings":  "{\"defaultBackgroundColor\":\"#fbbc3d\",\"queryId\":\"9d86f7bf-c40c-4b10-8843-5491034774bf\",\"queryName\":\"PTO TC - WW2025 - Requirements -\",\"colorRules\":[],\"lastArtifactName\":\"PTO TC - WW2025 - Requirements -\"}",
+                        "settingsVersion":  {
+                                                "major":  1,
+                                                "minor":  0,
+                                                "patch":  0
+                                            },
+                        "artifactId":  "",
+                        "isEnabled":  true,
+                        "contentUri":  null,
+                        "contributionId":  "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget",
+                        "typeId":  "Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget",
+                        "configurationContributionId":  "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget.Configuration",
+                        "configurationContributionRelativeId":  "Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget.Configuration",
+                        "isNameConfigurable":  true,
+                        "loadingImageUrl":  "https://ops1.peergroup.com/_static/Widgets/scalarLoading.png"
+                    },
+                    {
+                        "id":  "a4247fd5-f328-41c9-b0a3-0d277fdc995b",
+                        "eTag":  "98",
+                        "name":  "PTO Intel Test - Horizon - SORT - Requirements",
+                        "position":  {
+                                         "row":  18,
+                                         "column":  1
+                                     },
+                        "size":  {
+                                     "rowSpan":  2,
+                                     "columnSpan":  10
+                                 },
+                        "settings":  "{\"query\":{\"queryId\":\"c402fb4e-8778-4a37-8ff7-d637a51afe1f\",\"queryName\":\"PTO Intel Test - Horizon - SORT - Requirements\"},\"selectedColumns\":[{\"name\":\"ID\",\"referenceName\":\"System.Id\"},{\"name\":\"Work Item Type\",\"referenceName\":\"System.WorkItemType\"},{\"name\":\"Title\",\"referenceName\":\"System.Title\"},{\"name\":\"Assigned To\",\"referenceName\":\"System.AssignedTo\"},{\"name\":\"State\",\"referenceName\":\"System.State\"},{\"name\":\"Tags\",\"referenceName\":\"System.Tags\"}],\"lastArtifactName\":\"PTO Intel Test - Horizon - SORT - Requirements\"}",
+                        "settingsVersion":  {
+                                                "major":  1,
+                                                "minor":  0,
+                                                "patch":  0
+                                            },
+                        "artifactId":  "",
+                        "isEnabled":  true,
+                        "contentUri":  null,
+                        "contributionId":  "ms.vss-mywork-web.Microsoft.VisualStudioOnline.MyWork.WitViewWidget",
+                        "typeId":  "Microsoft.VisualStudioOnline.MyWork.WitViewWidget",
+                        "configurationContributionId":  "ms.vss-mywork-web.Microsoft.VisualStudioOnline.MyWork.WitViewWidget.Configuration",
+                        "configurationContributionRelativeId":  "Microsoft.VisualStudioOnline.MyWork.WitViewWidget.Configuration",
+                        "isNameConfigurable":  true,
+                        "loadingImageUrl":  "https://ops1.peergroup.com/_static/MyWork/queryResultsLoading.png",
+                        "lightboxOptions":  {
+                                                "width":  900,
+                                                "height":  700,
+                                                "resizable":  true
+                                            }
+                    },
+                    {
+                        "id":  "27118b9a-f639-4d04-aabe-0d70b417adaf",
+                        "eTag":  "71",
+                        "name":  "TC - 4.0 - Bugs [External - Not Closed]",
+                        "position":  {
+                                         "row":  8,
+                                         "column":  1
+                                     },
+                        "size":  {
+                                     "rowSpan":  2,
+                                     "columnSpan":  10
+                                 },
+                        "settings":  "{\"query\":{\"queryId\":\"dcb1eae8-9288-4118-952a-3044ce489704\",\"queryName\":\"PTO TC - WW19  - Bugs [External - Not Closed]-\"},\"selectedColumns\":[{\"name\":\"ID\",\"referenceName\":\"System.Id\"},{\"name\":\"Work Item Type\",\"referenceName\":\"System.WorkItemType\"},{\"name\":\"Title\",\"referenceName\":\"System.Title\"},{\"name\":\"Assigned To\",\"referenceName\":\"System.AssignedTo\"},{\"name\":\"State\",\"referenceName\":\"System.State\"},{\"name\":\"Requires Hardware PG\",\"referenceName\":\"Custom.RequiresHardwarePG\"},{\"name\":\"Severity\",\"referenceName\":\"Microsoft.VSTS.Common.Severity\"},{\"name\":\"Priority\",\"referenceName\":\"Microsoft.VSTS.Common.Priority\"},{\"name\":\"Created Date\",\"referenceName\":\"System.CreatedDate\"},{\"name\":\"Iteration Path\",\"referenceName\":\"System.IterationPath\"},{\"name\":\"Area Path\",\"referenceName\":\"System.AreaPath\"},{\"name\":\"Tags\",\"referenceName\":\"System.Tags\"},{\"name\":\"Resolved Date\",\"referenceName\":\"Microsoft.VSTS.Common.ResolvedDate\"}],\"lastArtifactName\":\"PTO TC - WW19  - Bugs [External - Not Closed]-\"}",
+                        "settingsVersion":  {
+                                                "major":  1,
+                                                "minor":  0,
+                                                "patch":  0
+                                            },
+                        "artifactId":  "",
+                        "isEnabled":  true,
+                        "contentUri":  null,
+                        "contributionId":  "ms.vss-mywork-web.Microsoft.VisualStudioOnline.MyWork.WitViewWidget",
+                        "typeId":  "Microsoft.VisualStudioOnline.MyWork.WitViewWidget",
+                        "configurationContributionId":  "ms.vss-mywork-web.Microsoft.VisualStudioOnline.MyWork.WitViewWidget.Configuration",
+                        "configurationContributionRelativeId":  "Microsoft.VisualStudioOnline.MyWork.WitViewWidget.Configuration",
+                        "isNameConfigurable":  true,
+                        "loadingImageUrl":  "https://ops1.peergroup.com/_static/MyWork/queryResultsLoading.png",
+                        "lightboxOptions":  {
+                                                "width":  900,
+                                                "height":  700,
+                                                "resizable":  true
+                                            }
+                    },
+                    {
+                        "id":  "31e0a1ea-7295-4cb1-82e3-10ae221a88f6",
+                        "eTag":  "77",
+                        "name":  "TC - 4.0 - Bugs [Internal - Not Closed]",
+                        "position":  {
+                                         "row":  10,
+                                         "column":  1
+                                     },
+                        "size":  {
+                                     "rowSpan":  2,
+                                     "columnSpan":  10
+                                 },
+                        "settings":  "{\"query\":{\"queryId\":\"75e85ec7-c03b-468f-9337-b6be9c41d662\",\"queryName\":\"PTO TC - WW15  - Bugs [Internal] -\"},\"selectedColumns\":[{\"name\":\"ID\",\"referenceName\":\"System.Id\"},{\"name\":\"Work Item Type\",\"referenceName\":\"System.WorkItemType\"},{\"name\":\"Title\",\"referenceName\":\"System.Title\"},{\"name\":\"Requires Hardware PG\",\"referenceName\":\"Custom.RequiresHardwarePG\"},{\"name\":\"Assigned To\",\"referenceName\":\"System.AssignedTo\"},{\"name\":\"State\",\"referenceName\":\"System.State\"},{\"name\":\"Tags\",\"referenceName\":\"System.Tags\"},{\"name\":\"Priority\",\"referenceName\":\"Microsoft.VSTS.Common.Priority\"},{\"name\":\"Severity\",\"referenceName\":\"Microsoft.VSTS.Common.Severity\"},{\"name\":\"Iteration Path\",\"referenceName\":\"System.IterationPath\"},{\"name\":\"Area Path\",\"referenceName\":\"System.AreaPath\"},{\"name\":\"Timekeeping PG\",\"referenceName\":\"Custom.TimekeepingPG\"},{\"name\":\"Created Date\",\"referenceName\":\"System.CreatedDate\"}],\"lastArtifactName\":\"PTO TC - WW15  - Bugs [Internal] -\"}",
+                        "settingsVersion":  {
+                                                "major":  1,
+                                                "minor":  0,
+                                                "patch":  0
+                                            },
+                        "artifactId":  "",
+                        "isEnabled":  true,
+                        "contentUri":  null,
+                        "contributionId":  "ms.vss-mywork-web.Microsoft.VisualStudioOnline.MyWork.WitViewWidget",
+                        "typeId":  "Microsoft.VisualStudioOnline.MyWork.WitViewWidget",
+                        "configurationContributionId":  "ms.vss-mywork-web.Microsoft.VisualStudioOnline.MyWork.WitViewWidget.Configuration",
+                        "configurationContributionRelativeId":  "Microsoft.VisualStudioOnline.MyWork.WitViewWidget.Configuration",
+                        "isNameConfigurable":  true,
+                        "loadingImageUrl":  "https://ops1.peergroup.com/_static/MyWork/queryResultsLoading.png",
+                        "lightboxOptions":  {
+                                                "width":  900,
+                                                "height":  700,
+                                                "resizable":  true
+                                            }
+                    },
+                    {
+                        "id":  "4b6f01a9-84cd-49c6-aabc-138f82e1838f",
+                        "eTag":  "27",
+                        "name":  "Res. CRs.",
+                        "position":  {
+                                         "row":  5,
+                                         "column":  2
+                                     },
+                        "size":  {
+                                     "rowSpan":  1,
+                                     "columnSpan":  1
+                                 },
+                        "settings":  "{\"defaultBackgroundColor\":\"#fbbc3d\",\"queryId\":\"596d2891-a1b5-4251-89ec-17fa118aa1b3\",\"queryName\":\"TC - CRS - WW23\",\"colorRules\":[],\"lastArtifactName\":\"TC - CRS - WW23\"}",
+                        "settingsVersion":  {
+                                                "major":  1,
+                                                "minor":  0,
+                                                "patch":  0
+                                            },
+                        "artifactId":  "",
+                        "isEnabled":  true,
+                        "contentUri":  null,
+                        "contributionId":  "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget",
+                        "typeId":  "Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget",
+                        "configurationContributionId":  "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget.Configuration",
+                        "configurationContributionRelativeId":  "Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget.Configuration",
+                        "isNameConfigurable":  true,
+                        "loadingImageUrl":  "https://ops1.peergroup.com/_static/Widgets/scalarLoading.png"
+                    },
+                    {
+                        "id":  "63402f87-d684-42f9-b497-15d9e078a377",
+                        "eTag":  "3",
+                        "name":  "Team Members",
+                        "position":  {
+                                         "row":  4,
+                                         "column":  1
+                                     },
+                        "size":  {
+                                     "rowSpan":  1,
+                                     "columnSpan":  2
+                                 },
+                        "settings":  null,
+                        "settingsVersion":  {
+                                                "major":  1,
+                                                "minor":  0,
+                                                "patch":  0
+                                            },
+                        "artifactId":  "",
+                        "isEnabled":  true,
+                        "contentUri":  null,
+                        "contributionId":  "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.TeamMembersWidget",
+                        "typeId":  "Microsoft.VisualStudioOnline.Dashboards.TeamMembersWidget",
+                        "configurationContributionId":  null,
+                        "configurationContributionRelativeId":  null,
+                        "isNameConfigurable":  false,
+                        "loadingImageUrl":  "https://ops1.peergroup.com/_static/Widgets/teamMembersLoading.png"
+                    },
+                    {
+                        "id":  "b6ca8811-3a7b-4b8a-9012-2158f0528916",
+                        "eTag":  "70",
+                        "name":  "TC Int. Bugs Proposed",
+                        "position":  {
+                                         "row":  7,
+                                         "column":  1
+                                     },
+                        "size":  {
+                                     "rowSpan":  1,
+                                     "columnSpan":  1
+                                 },
+                        "settings":  "{\"defaultBackgroundColor\":\"#cccccc\",\"queryId\":\"45ea878a-dccf-404a-b9c6-b6428d73fe98\",\"queryName\":\"PTO Internal ALL bugs\",\"colorRules\":[],\"lastArtifactName\":\"PTO Internal ALL bugs\"}",
+                        "settingsVersion":  {
+                                                "major":  1,
+                                                "minor":  0,
+                                                "patch":  0
+                                            },
+                        "artifactId":  "",
+                        "isEnabled":  true,
+                        "contentUri":  null,
+                        "contributionId":  "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget",
+                        "typeId":  "Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget",
+                        "configurationContributionId":  "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget.Configuration",
+                        "configurationContributionRelativeId":  "Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget.Configuration",
+                        "isNameConfigurable":  true,
+                        "loadingImageUrl":  "https://ops1.peergroup.com/_static/Widgets/scalarLoading.png"
+                    },
+                    {
+                        "id":  "7b7a17de-c9b4-426d-bc14-266192fe516a",
+                        "eTag":  "7",
+                        "name":  "Welcome",
+                        "position":  {
+                                         "row":  2,
+                                         "column":  1
+                                     },
+                        "size":  {
+                                     "rowSpan":  2,
+                                     "columnSpan":  2
+                                 },
+                        "settings":  null,
+                        "settingsVersion":  {
+                                                "major":  1,
+                                                "minor":  0,
+                                                "patch":  0
+                                            },
+                        "artifactId":  "",
+                        "isEnabled":  true,
+                        "contentUri":  null,
+                        "contributionId":  "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.HowToLinksWidget",
+                        "typeId":  "Microsoft.VisualStudioOnline.Dashboards.HowToLinksWidget",
+                        "configurationContributionId":  null,
+                        "configurationContributionRelativeId":  null,
+                        "isNameConfigurable":  false,
+                        "loadingImageUrl":  "https://ops1.peergroup.com/_static/Widgets/howToLinksLoading.png"
+                    },
+                    {
+                        "id":  "c725d88e-c416-4ea5-a641-28ac28dc6fe0",
+                        "eTag":  "25",
+                        "name":  "Work Links",
+                        "position":  {
+                                         "row":  2,
+                                         "column":  5
+                                     },
+                        "size":  {
+                                     "rowSpan":  1,
+                                     "columnSpan":  2
+                                 },
+                        "settings":  null,
+                        "settingsVersion":  {
+                                                "major":  1,
+                                                "minor":  0,
+                                                "patch":  0
+                                            },
+                        "artifactId":  "",
+                        "isEnabled":  true,
+                        "contentUri":  null,
+                        "contributionId":  "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.WorkLinksWidget",
+                        "typeId":  "Microsoft.VisualStudioOnline.Dashboards.WorkLinksWidget",
+                        "configurationContributionId":  null,
+                        "configurationContributionRelativeId":  null,
+                        "isNameConfigurable":  false,
+                        "loadingImageUrl":  "https://ops1.peergroup.com/_static/Widgets/newWorkItem-workLinksLoading.png"
+                    },
+                    {
+                        "id":  "7e9bf54b-aa5e-4026-8e84-29c478e3fe10",
+                        "eTag":  "35",
+                        "name":  "Q2 - TC - Manual Regression",
+                        "position":  {
+                                         "row":  6,
+                                         "column":  7
+                                     },
+                        "size":  {
+                                     "rowSpan":  2,
+                                     "columnSpan":  4
+                                 },
+                        "settings":  "{\"chartType\":\"PivotTable\",\"groupKey\":\"288814\",\"scope\":\"TestManagement.Reports\",\"title\":\"Q2 - TC - Manual Regression\",\"transformOptions\":{\"filter\":\"planId=288803\u0026suiteId=288814\u0026chartDataSource=execution\",\"groupBy\":\"Outcome\",\"orderBy\":{\"direction\":\"descending\",\"propertyName\":\"value\"},\"measure\":{\"aggregation\":\"count\",\"propertyName\":\"\"},\"historyRange\":null,\"series\":\"RunBy\",\"groupByTags\":false},\"userColors\":[],\"lastArtifactName\":\"Manual Tests - Charts\"}",
+                        "settingsVersion":  {
+                                                "major":  3,
+                                                "minor":  0,
+                                                "patch":  0
+                                            },
+                        "artifactId":  "",
+                        "isEnabled":  true,
+                        "contentUri":  null,
+                        "contributionId":  "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.TcmChartWidget",
+                        "typeId":  "Microsoft.VisualStudioOnline.Dashboards.TcmChartWidget",
+                        "configurationContributionId":  "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.TcmChartWidget.Configuration",
+                        "configurationContributionRelativeId":  "Microsoft.VisualStudioOnline.Dashboards.TcmChartWidget.Configuration",
+                        "isNameConfigurable":  true,
+                        "loadingImageUrl":  "https://ops1.peergroup.com/_static/Widgets/ChartLoading.png",
+                        "lightboxOptions":  {
+                                                "width":  900,
+                                                "height":  700,
+                                                "resizable":  true
+                                            }
+                    },
+                    {
+                        "id":  "9daa6c63-fba4-4e63-89bd-348ed2a61b1b",
+                        "eTag":  "102",
+                        "name":  "PTO Intel Test - Horizon - SORT - Change Requests",
+                        "position":  {
+                                         "row":  16,
+                                         "column":  1
+                                     },
+                        "size":  {
+                                     "rowSpan":  2,
+                                     "columnSpan":  10
+                                 },
+                        "settings":  "{\"query\":{\"queryId\":\"80e94f1e-4b60-4238-9909-6aeb3bbb63c4\",\"queryName\":\"PTO Intel Test - Horizon - SORT - Change Requests\"},\"selectedColumns\":[{\"name\":\"ID\",\"referenceName\":\"System.Id\"},{\"name\":\"Work Item Type\",\"referenceName\":\"System.WorkItemType\"},{\"name\":\"Title\",\"referenceName\":\"System.Title\"},{\"name\":\"Assigned To\",\"referenceName\":\"System.AssignedTo\"},{\"name\":\"State\",\"referenceName\":\"System.State\"},{\"name\":\"Tags\",\"referenceName\":\"System.Tags\"},{\"name\":\"Source PG\",\"referenceName\":\"Custom.SourcePG\"},{\"name\":\"Area Path\",\"referenceName\":\"System.AreaPath\"},{\"name\":\"Iteration Path\",\"referenceName\":\"System.IterationPath\"}],\"lastArtifactName\":\"PTO Intel Test - Horizon - SORT - Change Requests\"}",
+                        "settingsVersion":  {
+                                                "major":  1,
+                                                "minor":  0,
+                                                "patch":  0
+                                            },
+                        "artifactId":  "",
+                        "isEnabled":  true,
+                        "contentUri":  null,
+                        "contributionId":  "ms.vss-mywork-web.Microsoft.VisualStudioOnline.MyWork.WitViewWidget",
+                        "typeId":  "Microsoft.VisualStudioOnline.MyWork.WitViewWidget",
+                        "configurationContributionId":  "ms.vss-mywork-web.Microsoft.VisualStudioOnline.MyWork.WitViewWidget.Configuration",
+                        "configurationContributionRelativeId":  "Microsoft.VisualStudioOnline.MyWork.WitViewWidget.Configuration",
+                        "isNameConfigurable":  true,
+                        "loadingImageUrl":  "https://ops1.peergroup.com/_static/MyWork/queryResultsLoading.png",
+                        "lightboxOptions":  {
+                                                "width":  900,
+                                                "height":  700,
+                                                "resizable":  true
+                                            }
+                    },
+                    {
+                        "id":  "ec46192c-f9da-4e08-94c9-34d962dbdfd8",
+                        "eTag":  "35",
+                        "name":  "Closed Reqs.",
+                        "position":  {
+                                         "row":  6,
+                                         "column":  4
+                                     },
+                        "size":  {
+                                     "rowSpan":  1,
+                                     "columnSpan":  1
+                                 },
+                        "settings":  "{\"defaultBackgroundColor\":\"#339947\",\"queryId\":\"72762a13-1706-4cca-ba87-1c31454f0048\",\"queryName\":\"WW15  closed reqs\",\"colorRules\":[],\"lastArtifactName\":\"WW15  closed reqs\"}",
+                        "settingsVersion":  {
+                                                "major":  1,
+                                                "minor":  0,
+                                                "patch":  0
+                                            },
+                        "artifactId":  "",
+                        "isEnabled":  true,
+                        "contentUri":  null,
+                        "contributionId":  "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget",
+                        "typeId":  "Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget",
+                        "configurationContributionId":  "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget.Configuration",
+                        "configurationContributionRelativeId":  "Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget.Configuration",
+                        "isNameConfigurable":  true,
+                        "loadingImageUrl":  "https://ops1.peergroup.com/_static/Widgets/scalarLoading.png"
+                    },
+                    {
+                        "id":  "665abada-22fb-44af-9188-3863c3837367",
+                        "eTag":  "82",
+                        "name":  "TC Ext. Bugs Active",
+                        "position":  {
+                                         "row":  7,
+                                         "column":  4
+                                     },
+                        "size":  {
+                                     "rowSpan":  1,
+                                     "columnSpan":  1
+                                 },
+                        "settings":  "{\"defaultBackgroundColor\":\"#009ccc\",\"queryId\":\"02acc8c2-4344-4f17-8d95-4a6202c8e740\",\"queryName\":\"TC - External Bugs Active Skyline\",\"colorRules\":[],\"lastArtifactName\":\"TC - External Bugs Active Skyline\"}",
+                        "settingsVersion":  {
+                                                "major":  1,
+                                                "minor":  0,
+                                                "patch":  0
+                                            },
+                        "artifactId":  "",
+                        "isEnabled":  true,
+                        "contentUri":  null,
+                        "contributionId":  "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget",
+                        "typeId":  "Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget",
+                        "configurationContributionId":  "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget.Configuration",
+                        "configurationContributionRelativeId":  "Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget.Configuration",
+                        "isNameConfigurable":  true,
+                        "loadingImageUrl":  "https://ops1.peergroup.com/_static/Widgets/scalarLoading.png"
+                    },
+                    {
+                        "id":  "3727e674-5631-4f87-98d0-387cc7c4625c",
+                        "eTag":  "30",
+                        "name":  "Res. Bugs EXT",
+                        "position":  {
+                                         "row":  5,
+                                         "column":  1
+                                     },
+                        "size":  {
+                                     "rowSpan":  1,
+                                     "columnSpan":  1
+                                 },
+                        "settings":  "{\"defaultBackgroundColor\":\"#fbbc3d\",\"queryId\":\"dcb1eae8-9288-4118-952a-3044ce489704\",\"queryName\":\"PTO TC - WW23  - Bugs [External - Not Closed]-\",\"colorRules\":[],\"lastArtifactName\":\"PTO TC - WW23  - Bugs [External - Not Closed]-\"}",
+                        "settingsVersion":  {
+                                                "major":  1,
+                                                "minor":  0,
+                                                "patch":  0
+                                            },
+                        "artifactId":  "",
+                        "isEnabled":  true,
+                        "contentUri":  null,
+                        "contributionId":  "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget",
+                        "typeId":  "Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget",
+                        "configurationContributionId":  "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget.Configuration",
+                        "configurationContributionRelativeId":  "Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget.Configuration",
+                        "isNameConfigurable":  true,
+                        "loadingImageUrl":  "https://ops1.peergroup.com/_static/Widgets/scalarLoading.png"
+                    },
+                    {
+                        "id":  "fe243403-6d14-4bdb-ab91-39475da35596",
+                        "eTag":  "19",
+                        "name":  "Markdown",
+                        "position":  {
+                                         "row":  4,
+                                         "column":  3
+                                     },
+                        "size":  {
+                                     "rowSpan":  1,
+                                     "columnSpan":  2
+                                 },
+                        "settings":  "##### SkyCoordinator\nWeekly checks on sky coordinator should be confirmed by QA.\n- [SkyCoordinator](https://skycoordinator.azurewebsites.net/pipeline)\n",
+                        "settingsVersion":  {
+                                                "major":  1,
+                                                "minor":  0,
+                                                "patch":  0
+                                            },
+                        "artifactId":  "",
+                        "isEnabled":  true,
+                        "contentUri":  null,
+                        "contributionId":  "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.MarkdownWidget",
+                        "typeId":  "Microsoft.VisualStudioOnline.Dashboards.MarkdownWidget",
+                        "configurationContributionId":  "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.MarkdownWidget.Configuration",
+                        "configurationContributionRelativeId":  "Microsoft.VisualStudioOnline.Dashboards.MarkdownWidget.Configuration",
+                        "isNameConfigurable":  false,
+                        "loadingImageUrl":  "https://ops1.peergroup.com/_static/Widgets/markdownLoading.png",
+                        "lightboxOptions":  {
+                                                "width":  600,
+                                                "height":  500,
+                                                "resizable":  true
+                                            }
+                    },
+                    {
+                        "id":  "f1d0f028-5334-46fa-bde0-44fe1c46edfc",
+                        "eTag":  "47",
+                        "name":  "Q2 - All TC SkyRunner Automated Tests Results - Smoke and Regression",
+                        "position":  {
+                                         "row":  4,
+                                         "column":  5
+                                     },
+                        "size":  {
+                                     "rowSpan":  2,
+                                     "columnSpan":  2
+                                 },
+                        "settings":  "{\"chartType\":\"PivotTable\",\"groupKey\":\"288826\",\"scope\":\"TestManagement.Reports\",\"title\":\"Q2 - All TC SkyRunner Automated Tests Results - Smoke and Regression\",\"transformOptions\":{\"filter\":\"planId=288803\u0026suiteId=288826\u0026chartDataSource=execution\",\"groupBy\":\"Outcome\",\"orderBy\":{\"propertyName\":\"value\",\"direction\":\"ascending\"},\"measure\":{\"aggregation\":\"count\",\"propertyName\":\"\"},\"historyRange\":null,\"series\":\"Outcome\",\"groupByTags\":false},\"userColors\":[{\"value\":\"Failed\",\"backgroundColor\":\"#e60017\"},{\"value\":\"In progress\",\"backgroundColor\":\"#fbbc3d\"},{\"value\":\"None\",\"backgroundColor\":\"#fcfea8\"},{\"value\":\"Passed\",\"backgroundColor\":\"#60af49\"}],\"lastArtifactName\":\"Automated Tests - Charts\"}",
+                        "settingsVersion":  {
+                                                "major":  3,
+                                                "minor":  0,
+                                                "patch":  0
+                                            },
+                        "artifactId":  "",
+                        "isEnabled":  true,
+                        "contentUri":  null,
+                        "contributionId":  "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.TcmChartWidget",
+                        "typeId":  "Microsoft.VisualStudioOnline.Dashboards.TcmChartWidget",
+                        "configurationContributionId":  "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.TcmChartWidget.Configuration",
+                        "configurationContributionRelativeId":  "Microsoft.VisualStudioOnline.Dashboards.TcmChartWidget.Configuration",
+                        "isNameConfigurable":  true,
+                        "loadingImageUrl":  "https://ops1.peergroup.com/_static/Widgets/ChartLoading.png",
+                        "lightboxOptions":  {
+                                                "width":  900,
+                                                "height":  700,
+                                                "resizable":  true
+                                            }
+                    },
+                    {
+                        "id":  "c54d31e6-e6da-4768-ae15-51158684bdc8",
+                        "eTag":  "40",
+                        "name":  "Closed Bugs External",
+                        "position":  {
+                                         "row":  6,
+                                         "column":  3
+                                     },
+                        "size":  {
+                                     "rowSpan":  1,
+                                     "columnSpan":  1
+                                 },
+                        "settings":  "{\"defaultBackgroundColor\":\"#339947\",\"queryId\":\"0a5747d1-72f3-43f4-8fe2-16c37d965dd3\",\"queryName\":\"PTO TC - WW19 - Bugs [ Closed ] - int\",\"colorRules\":[],\"lastArtifactName\":\"PTO TC - WW19 - Bugs [ Closed ] - int\"}",
+                        "settingsVersion":  {
+                                                "major":  1,
+                                                "minor":  0,
+                                                "patch":  0
+                                            },
+                        "artifactId":  "",
+                        "isEnabled":  true,
+                        "contentUri":  null,
+                        "contributionId":  "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget",
+                        "typeId":  "Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget",
+                        "configurationContributionId":  "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget.Configuration",
+                        "configurationContributionRelativeId":  "Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget.Configuration",
+                        "isNameConfigurable":  true,
+                        "loadingImageUrl":  "https://ops1.peergroup.com/_static/Widgets/scalarLoading.png"
+                    },
+                    {
+                        "id":  "1dd6dbc7-b2ae-487c-9718-5bcd826cbf2d",
+                        "eTag":  "10",
+                        "name":  "TC Mono Repo - Release (Customer) Build ",
+                        "position":  {
+                                         "row":  3,
+                                         "column":  7
+                                     },
+                        "size":  {
+                                     "rowSpan":  1,
+                                     "columnSpan":  2
+                                 },
+                        "settings":  "{\"buildDefinition\":{\"name\":\"TC/TC - Release (Customer) Build\",\"id\":1767,\"type\":2,\"uri\":\"vstfs:///Build/Definition/1767\",\"projectId\":\"236279ca-200f-43f0-b3f8-cae1ea1f4c36\"},\"fullBranchName\":\"refs/heads/main\"}",
+                        "settingsVersion":  {
+                                                "major":  1,
+                                                "minor":  0,
+                                                "patch":  0
+                                            },
+                        "artifactId":  "",
+                        "isEnabled":  true,
+                        "contentUri":  null,
+                        "contributionId":  "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.BuildHistogramWidget",
+                        "typeId":  "Microsoft.VisualStudioOnline.Dashboards.BuildHistogramWidget",
+                        "configurationContributionId":  "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.BuildHistogramWidget.Configuration",
+                        "configurationContributionRelativeId":  "Microsoft.VisualStudioOnline.Dashboards.BuildHistogramWidget.Configuration",
+                        "isNameConfigurable":  true,
+                        "loadingImageUrl":  "https://ops1.peergroup.com/_static/Widgets/sprintBurndown-buildChartLoading.png"
+                    },
+                    {
+                        "id":  "6efaf3f5-f6dc-49d8-a00a-66e5b5a75ce0",
+                        "eTag":  "36",
+                        "name":  "Bugs Since Year start External - TC ",
+                        "position":  {
+                                         "row":  2,
+                                         "column":  9
+                                     },
+                        "size":  {
+                                     "rowSpan":  2,
+                                     "columnSpan":  2
+                                 },
+                        "settings":  "{\"chartType\":\"StackAreaChart\",\"groupKey\":\"9bd011d0-2678-4ab3-98e9-af161fbe5562\",\"scope\":\"WorkitemTracking.Queries\",\"title\":\"Bugs Since Year start External - TC \",\"transformOptions\":{\"filter\":\"9bd011d0-2678-4ab3-98e9-af161fbe5562\",\"groupBy\":\"System.IterationPath\",\"orderBy\":{\"direction\":\"descending\",\"propertyName\":\"value\"},\"measure\":{\"aggregation\":\"count\",\"propertyName\":\"\"},\"historyRange\":\"last4Weeks\",\"groupByTags\":true,\"FilteredGroups\":[]},\"userColors\":[],\"lastArtifactName\":\"Audit - Bugs Since Year start External- PTO Intel Tester by Iteration Path\"}",
+                        "settingsVersion":  {
+                                                "major":  3,
+                                                "minor":  0,
+                                                "patch":  0
+                                            },
+                        "artifactId":  "",
+                        "isEnabled":  true,
+                        "contentUri":  null,
+                        "contributionId":  "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.WitChartWidget",
+                        "typeId":  "Microsoft.VisualStudioOnline.Dashboards.WitChartWidget",
+                        "configurationContributionId":  "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.WitChartWidget.Configuration",
+                        "configurationContributionRelativeId":  "Microsoft.VisualStudioOnline.Dashboards.WitChartWidget.Configuration",
+                        "isNameConfigurable":  true,
+                        "loadingImageUrl":  "https://ops1.peergroup.com/_static/Widgets/ChartLoading.png",
+                        "lightboxOptions":  {
+                                                "width":  900,
+                                                "height":  700,
+                                                "resizable":  true
+                                            }
+                    },
+                    {
+                        "id":  "50660a3f-bf12-48d2-99a6-72bf9aaf03ff",
+                        "eTag":  "10",
+                        "name":  "TC Mono Repo - QA (Release) Build ",
+                        "position":  {
+                                         "row":  2,
+                                         "column":  7
+                                     },
+                        "size":  {
+                                     "rowSpan":  1,
+                                     "columnSpan":  2
+                                 },
+                        "settings":  "{\"buildDefinition\":{\"name\":\"TC/TC - QA (Release) Build\",\"id\":1766,\"type\":2,\"uri\":\"vstfs:///Build/Definition/1766\",\"projectId\":\"236279ca-200f-43f0-b3f8-cae1ea1f4c36\"},\"fullBranchName\":\"refs/heads/main\"}",
+                        "settingsVersion":  {
+                                                "major":  1,
+                                                "minor":  0,
+                                                "patch":  0
+                                            },
+                        "artifactId":  "",
+                        "isEnabled":  true,
+                        "contentUri":  null,
+                        "contributionId":  "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.BuildHistogramWidget",
+                        "typeId":  "Microsoft.VisualStudioOnline.Dashboards.BuildHistogramWidget",
+                        "configurationContributionId":  "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.BuildHistogramWidget.Configuration",
+                        "configurationContributionRelativeId":  "Microsoft.VisualStudioOnline.Dashboards.BuildHistogramWidget.Configuration",
+                        "isNameConfigurable":  true,
+                        "loadingImageUrl":  "https://ops1.peergroup.com/_static/Widgets/sprintBurndown-buildChartLoading.png"
+                    },
+                    {
+                        "id":  "e4ee7648-28a9-45b4-b04f-72cacc49e518",
+                        "eTag":  "6",
+                        "name":  "New Work Item",
+                        "position":  {
+                                         "row":  3,
+                                         "column":  5
+                                     },
+                        "size":  {
+                                     "rowSpan":  1,
+                                     "columnSpan":  2
+                                 },
+                        "settings":  null,
+                        "settingsVersion":  {
+                                                "major":  1,
+                                                "minor":  0,
+                                                "patch":  0
+                                            },
+                        "artifactId":  "",
+                        "isEnabled":  true,
+                        "contentUri":  null,
+                        "contributionId":  "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.NewWorkItemWidget",
+                        "typeId":  "Microsoft.VisualStudioOnline.Dashboards.NewWorkItemWidget",
+                        "configurationContributionId":  "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.NewWorkItemWidget.Configuration",
+                        "configurationContributionRelativeId":  "Microsoft.VisualStudioOnline.Dashboards.NewWorkItemWidget.Configuration",
+                        "isNameConfigurable":  false,
+                        "loadingImageUrl":  "https://ops1.peergroup.com/_static/Widgets/newWorkItem-workLinksLoading.png"
+                    },
+                    {
+                        "id":  "a5cdded8-8584-47a4-9c67-791da8c9d7fb",
+                        "eTag":  "41",
+                        "name":  "Closed Bugs - Int (No SkyRunner)",
+                        "position":  {
+                                         "row":  5,
+                                         "column":  3
+                                     },
+                        "size":  {
+                                     "rowSpan":  1,
+                                     "columnSpan":  1
+                                 },
+                        "settings":  "{\"defaultBackgroundColor\":\"#339947\",\"queryId\":\"993ca31c-0cfa-4958-affe-382212e51312\",\"queryName\":\"PTO TC - WW23 - Bugs [ Closed ] - int\",\"colorRules\":[],\"lastArtifactName\":\"PTO TC - WW23 - Bugs [ Closed ] - int\"}",
+                        "settingsVersion":  {
+                                                "major":  1,
+                                                "minor":  0,
+                                                "patch":  0
+                                            },
+                        "artifactId":  "",
+                        "isEnabled":  true,
+                        "contentUri":  null,
+                        "contributionId":  "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget",
+                        "typeId":  "Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget",
+                        "configurationContributionId":  "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget.Configuration",
+                        "configurationContributionRelativeId":  "Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget.Configuration",
+                        "isNameConfigurable":  true,
+                        "loadingImageUrl":  "https://ops1.peergroup.com/_static/Widgets/scalarLoading.png"
+                    },
+                    {
+                        "id":  "51725bf5-6d7c-4999-ad67-86f83e228cd1",
+                        "eTag":  "7",
+                        "name":  "Markdown",
+                        "position":  {
+                                         "row":  1,
+                                         "column":  1
+                                     },
+                        "size":  {
+                                     "rowSpan":  1,
+                                     "columnSpan":  10
+                                 },
+                        "settings":  "# PTOIntelTester - QA Specific- 4.0 - Dashboard\nNote: QA will update these queries after each release cycle to next iteration",
+                        "settingsVersion":  {
+                                                "major":  1,
+                                                "minor":  0,
+                                                "patch":  0
+                                            },
+                        "artifactId":  "",
+                        "isEnabled":  true,
+                        "contentUri":  null,
+                        "contributionId":  "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.MarkdownWidget",
+                        "typeId":  "Microsoft.VisualStudioOnline.Dashboards.MarkdownWidget",
+                        "configurationContributionId":  "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.MarkdownWidget.Configuration",
+                        "configurationContributionRelativeId":  "Microsoft.VisualStudioOnline.Dashboards.MarkdownWidget.Configuration",
+                        "isNameConfigurable":  false,
+                        "loadingImageUrl":  "https://ops1.peergroup.com/_static/Widgets/markdownLoading.png",
+                        "lightboxOptions":  {
+                                                "width":  600,
+                                                "height":  500,
+                                                "resizable":  true
+                                            }
+                    },
+                    {
+                        "id":  "a87371ff-f4ef-42da-b947-9a09cd2d84c7",
+                        "eTag":  "56",
+                        "name":  "SR Issues",
+                        "position":  {
+                                         "row":  6,
+                                         "column":  5
+                                     },
+                        "size":  {
+                                     "rowSpan":  1,
+                                     "columnSpan":  1
+                                 },
+                        "settings":  "{\"defaultBackgroundColor\":\"#5c197b\",\"queryId\":\"16d1ca0f-edc2-4ee8-aa22-94952ade24e1\",\"queryName\":\"SkyRunner Issues - SDX - 2025\",\"colorRules\":[],\"lastArtifactName\":\"SkyRunner Issues - SDX - 2025\"}",
+                        "settingsVersion":  {
+                                                "major":  1,
+                                                "minor":  0,
+                                                "patch":  0
+                                            },
+                        "artifactId":  "",
+                        "isEnabled":  true,
+                        "contentUri":  null,
+                        "contributionId":  "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget",
+                        "typeId":  "Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget",
+                        "configurationContributionId":  "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget.Configuration",
+                        "configurationContributionRelativeId":  "Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget.Configuration",
+                        "isNameConfigurable":  true,
+                        "loadingImageUrl":  "https://ops1.peergroup.com/_static/Widgets/scalarLoading.png"
+                    },
+                    {
+                        "id":  "8237f1a8-eb11-49fc-8e6f-9a2d1d7f4da6",
+                        "eTag":  "77",
+                        "name":  "TC - 4.0 - Requirements [Not Closed]",
+                        "position":  {
+                                         "row":  12,
+                                         "column":  1
+                                     },
+                        "size":  {
+                                     "rowSpan":  2,
+                                     "columnSpan":  10
+                                 },
+                        "settings":  "{\"query\":{\"queryId\":\"a82521c7-2ff4-4502-b182-de2a4153ba10\",\"queryName\":\"PTO TC - WW15 - Requirements -\"},\"selectedColumns\":[{\"name\":\"ID\",\"referenceName\":\"System.Id\"},{\"name\":\"Work Item Type\",\"referenceName\":\"System.WorkItemType\"},{\"name\":\"Title\",\"referenceName\":\"System.Title\"},{\"name\":\"Assigned To\",\"referenceName\":\"System.AssignedTo\"},{\"name\":\"State\",\"referenceName\":\"System.State\"},{\"name\":\"Timekeeping PG\",\"referenceName\":\"Custom.TimekeepingPG\"},{\"name\":\"Original Estimate\",\"referenceName\":\"Microsoft.VSTS.Scheduling.OriginalEstimate\"},{\"name\":\"Remaining Work\",\"referenceName\":\"Microsoft.VSTS.Scheduling.RemainingWork\"},{\"name\":\"Tags\",\"referenceName\":\"System.Tags\"},{\"name\":\"Priority\",\"referenceName\":\"Microsoft.VSTS.Common.Priority\"},{\"name\":\"Created Date\",\"referenceName\":\"System.CreatedDate\"},{\"name\":\"Iteration Path\",\"referenceName\":\"System.IterationPath\"},{\"name\":\"Area Path\",\"referenceName\":\"System.AreaPath\"}],\"lastArtifactName\":\"PTO TC - WW15 - Requirements -\"}",
+                        "settingsVersion":  {
+                                                "major":  1,
+                                                "minor":  0,
+                                                "patch":  0
+                                            },
+                        "artifactId":  "",
+                        "isEnabled":  true,
+                        "contentUri":  null,
+                        "contributionId":  "ms.vss-mywork-web.Microsoft.VisualStudioOnline.MyWork.WitViewWidget",
+                        "typeId":  "Microsoft.VisualStudioOnline.MyWork.WitViewWidget",
+                        "configurationContributionId":  "ms.vss-mywork-web.Microsoft.VisualStudioOnline.MyWork.WitViewWidget.Configuration",
+                        "configurationContributionRelativeId":  "Microsoft.VisualStudioOnline.MyWork.WitViewWidget.Configuration",
+                        "isNameConfigurable":  true,
+                        "loadingImageUrl":  "https://ops1.peergroup.com/_static/MyWork/queryResultsLoading.png",
+                        "lightboxOptions":  {
+                                                "width":  900,
+                                                "height":  700,
+                                                "resizable":  true
+                                            }
+                    },
+                    {
+                        "id":  "079c819f-91b7-4415-a805-a1f0feeac29a",
+                        "eTag":  "39",
+                        "name":  "Bugs Since Year start Internal - TC",
+                        "position":  {
+                                         "row":  4,
+                                         "column":  9
+                                     },
+                        "size":  {
+                                     "rowSpan":  2,
+                                     "columnSpan":  2
+                                 },
+                        "settings":  "{\"chartType\":\"StackAreaChart\",\"groupKey\":\"745dceb3-ce85-4a8e-a0be-1eac3c0ce6ff\",\"scope\":\"WorkitemTracking.Queries\",\"title\":\"Bugs Since Year start Internal - TC\",\"transformOptions\":{\"filter\":\"745dceb3-ce85-4a8e-a0be-1eac3c0ce6ff\",\"groupBy\":\"System.IterationPath\",\"orderBy\":{\"direction\":\"descending\",\"propertyName\":\"value\"},\"measure\":{\"aggregation\":\"count\",\"propertyName\":\"\"},\"historyRange\":\"last12Weeks\",\"groupByTags\":true,\"FilteredGroups\":[]},\"userColors\":[],\"lastArtifactName\":\"Audit - Bugs Since Year start Internal - PTO Intel Tester by Iteration Path\"}",
+                        "settingsVersion":  {
+                                                "major":  3,
+                                                "minor":  0,
+                                                "patch":  0
+                                            },
+                        "artifactId":  "",
+                        "isEnabled":  true,
+                        "contentUri":  null,
+                        "contributionId":  "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.WitChartWidget",
+                        "typeId":  "Microsoft.VisualStudioOnline.Dashboards.WitChartWidget",
+                        "configurationContributionId":  "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.WitChartWidget.Configuration",
+                        "configurationContributionRelativeId":  "Microsoft.VisualStudioOnline.Dashboards.WitChartWidget.Configuration",
+                        "isNameConfigurable":  true,
+                        "loadingImageUrl":  "https://ops1.peergroup.com/_static/Widgets/ChartLoading.png",
+                        "lightboxOptions":  {
+                                                "width":  900,
+                                                "height":  700,
+                                                "resizable":  true
+                                            }
+                    },
+                    {
+                        "id":  "1964e7eb-78f4-41a2-b914-c43cf19df0cf",
+                        "eTag":  "11",
+                        "name":  "Markdown",
+                        "position":  {
+                                         "row":  2,
+                                         "column":  3
+                                     },
+                        "size":  {
+                                     "rowSpan":  2,
+                                     "columnSpan":  2
+                                 },
+                        "settings":  "##### SkyLine Links\n- [SkyLine TC Resources](https://ops1.peergroup.com/DefaultCollection/PTOIntelTester/_wiki/wikis/PTOIntelTester.wiki/1942/QA-SkyLine-Resources-PTOIntelTester)\n- [SkyCoordinator](https://skycoordinator.azurewebsites.net/pipeline)\n- [Zendesk Support Tickets for Skyline](https://peergroup.zendesk.com/agent/filters/5034937864724)\n- [Kubernetes Dashboard](https://dashboard.skyrunner.nip.io/#/login)\n- [Kubernetes Info - Login and Resources](onenote:http://tfs/sites/PTO%20Intel%20Tester/OneNote/Container%20Research/SkyRunner.one#SkyRunner%20Cluster%20(STTD-QA)\u0026section-id=%7BB1A536F4-D62D-4D75-B9FB-99993A597DA7%7D\u0026page-id=%7BF0C105BD-3325-4020-B154-78A5AAFB6BCE%7D\u0026end)\n- [Azure Queue for SkyRunner - Service Bus - Azure Portal](https://portal.azure.com/#@peergroup.com/resource/subscriptions/d9c34ef0-93d5-47d0-87bf-34daf66f715c/resourceGroups/pg-test-sky-rg/providers/Microsoft.ServiceBus/namespaces/pg-test-sky/queues/test-run-4.0-sttd-qa/explorer)\n- [Dependency Tracker](http://dependencytrack:8080/login)\n\n##### Dashboard Links\n\n- [PTOAEM - 3.0 - Dashboard](https://ops1.peergroup.com/DefaultCollection/PTOAEM/_dashboards/dashboard/abe4af97-4ed6-4f20-845e-38fe0894f0ef)\n- [PTOIntelTester - 3.0 - Dashboard](https://ops1.peergroup.com/DefaultCollection/PTOIntelTester/_dashboards/dashboard/62a17098-cab6-413a-8514-c2e44bc71a9c) \n- [PTOAEM - 4.0 - Team Dashboard](https://ops1.peergroup.com/DefaultCollection/PTOAEM/_dashboards/dashboard/1b3cfdf0-5396-43e5-b0ac-8c5cd2ddcc32)\n- [SkyRunner Dashboard](https://ops1.peergroup.com/DefaultCollection/PTOIntelTester/_dashboards/dashboard/57dbdc95-c5b6-4296-a3ab-5d5d362459f0)\n\n",
+                        "settingsVersion":  {
+                                                "major":  1,
+                                                "minor":  0,
+                                                "patch":  0
+                                            },
+                        "artifactId":  "",
+                        "isEnabled":  true,
+                        "contentUri":  null,
+                        "contributionId":  "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.MarkdownWidget",
+                        "typeId":  "Microsoft.VisualStudioOnline.Dashboards.MarkdownWidget",
+                        "configurationContributionId":  "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.MarkdownWidget.Configuration",
+                        "configurationContributionRelativeId":  "Microsoft.VisualStudioOnline.Dashboards.MarkdownWidget.Configuration",
+                        "isNameConfigurable":  false,
+                        "loadingImageUrl":  "https://ops1.peergroup.com/_static/Widgets/markdownLoading.png",
+                        "lightboxOptions":  {
+                                                "width":  600,
+                                                "height":  500,
+                                                "resizable":  true
+                                            }
+                    },
+                    {
+                        "id":  "70abcaeb-5fb2-447e-9a3a-c48f99faf319",
+                        "eTag":  "33",
+                        "name":  "Closed CRs",
+                        "position":  {
+                                         "row":  5,
+                                         "column":  4
+                                     },
+                        "size":  {
+                                     "rowSpan":  1,
+                                     "columnSpan":  1
+                                 },
+                        "settings":  "{\"defaultBackgroundColor\":\"#339947\",\"queryId\":\"5f1ddeab-d0e5-4f02-8e44-2a6d26d07fe3\",\"queryName\":\"WW23 - Closed CRs\",\"colorRules\":[],\"lastArtifactName\":\"WW23 - Closed CRs\"}",
+                        "settingsVersion":  {
+                                                "major":  1,
+                                                "minor":  0,
+                                                "patch":  0
+                                            },
+                        "artifactId":  "",
+                        "isEnabled":  true,
+                        "contentUri":  null,
+                        "contributionId":  "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget",
+                        "typeId":  "Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget",
+                        "configurationContributionId":  "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget.Configuration",
+                        "configurationContributionRelativeId":  "Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget.Configuration",
+                        "isNameConfigurable":  true,
+                        "loadingImageUrl":  "https://ops1.peergroup.com/_static/Widgets/scalarLoading.png"
+                    },
+                    {
+                        "id":  "29b2d898-c757-47d3-9a21-c8cf6be681eb",
+                        "eTag":  "40",
+                        "name":  "Res. Bugs Int.",
+                        "position":  {
+                                         "row":  6,
+                                         "column":  2
+                                     },
+                        "size":  {
+                                     "rowSpan":  1,
+                                     "columnSpan":  1
+                                 },
+                        "settings":  "{\"defaultBackgroundColor\":\"#fbbc3d\",\"queryId\":\"cce82b2d-d8ba-4444-8d7b-8c7d332e2190\",\"queryName\":\"WW15 Resolved Bugs  - INT\",\"colorRules\":[],\"lastArtifactName\":\"WW15 Resolved Bugs  - INT\"}",
+                        "settingsVersion":  {
+                                                "major":  1,
+                                                "minor":  0,
+                                                "patch":  0
+                                            },
+                        "artifactId":  "",
+                        "isEnabled":  true,
+                        "contentUri":  null,
+                        "contributionId":  "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget",
+                        "typeId":  "Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget",
+                        "configurationContributionId":  "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget.Configuration",
+                        "configurationContributionRelativeId":  "Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget.Configuration",
+                        "isNameConfigurable":  true,
+                        "loadingImageUrl":  "https://ops1.peergroup.com/_static/Widgets/scalarLoading.png"
+                    },
+                    {
+                        "id":  "a256488d-4b73-44d4-9d49-cac844b5ad5f",
+                        "eTag":  "77",
+                        "name":  "TC Ext. Bugs Proposed",
+                        "position":  {
+                                         "row":  7,
+                                         "column":  2
+                                     },
+                        "size":  {
+                                     "rowSpan":  1,
+                                     "columnSpan":  1
+                                 },
+                        "settings":  "{\"defaultBackgroundColor\":\"#cccccc\",\"queryId\":\"e9e4ea45-db49-4fdd-857b-4324b5764828\",\"queryName\":\"PTO TC External Proposed Bugs [All]\",\"colorRules\":[],\"lastArtifactName\":\"PTO TC External Proposed Bugs [All]\"}",
+                        "settingsVersion":  {
+                                                "major":  1,
+                                                "minor":  0,
+                                                "patch":  0
+                                            },
+                        "artifactId":  "",
+                        "isEnabled":  true,
+                        "contentUri":  null,
+                        "contributionId":  "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget",
+                        "typeId":  "Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget",
+                        "configurationContributionId":  "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget.Configuration",
+                        "configurationContributionRelativeId":  "Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget.Configuration",
+                        "isNameConfigurable":  true,
+                        "loadingImageUrl":  "https://ops1.peergroup.com/_static/Widgets/scalarLoading.png"
+                    },
+                    {
+                        "id":  "cf49b6d3-bddc-474e-ad02-dc36fbe29ee7",
+                        "eTag":  "77",
+                        "name":  "TC - 4.0 - Change Requests",
+                        "position":  {
+                                         "row":  14,
+                                         "column":  1
+                                     },
+                        "size":  {
+                                     "rowSpan":  2,
+                                     "columnSpan":  10
+                                 },
+                        "settings":  "{\"query\":{\"queryId\":\"596d2891-a1b5-4251-89ec-17fa118aa1b3\",\"queryName\":\"TC - CRS - WW23\"},\"selectedColumns\":[{\"name\":\"ID\",\"referenceName\":\"System.Id\"},{\"name\":\"Title\",\"referenceName\":\"System.Title\"},{\"name\":\"Assigned To\",\"referenceName\":\"System.AssignedTo\"},{\"name\":\"State\",\"referenceName\":\"System.State\"},{\"name\":\"Tags\",\"referenceName\":\"System.Tags\"},{\"name\":\"Area Path\",\"referenceName\":\"System.AreaPath\"},{\"name\":\"Iteration Path\",\"referenceName\":\"System.IterationPath\"},{\"name\":\"Source PG\",\"referenceName\":\"Custom.SourcePG\"},{\"name\":\"Created Date\",\"referenceName\":\"System.CreatedDate\"},{\"name\":\"Requires Hardware PG\",\"referenceName\":\"Custom.RequiresHardwarePG\"}],\"lastArtifactName\":\"TC - CRS - WW23\"}",
+                        "settingsVersion":  {
+                                                "major":  1,
+                                                "minor":  0,
+                                                "patch":  0
+                                            },
+                        "artifactId":  "",
+                        "isEnabled":  true,
+                        "contentUri":  null,
+                        "contributionId":  "ms.vss-mywork-web.Microsoft.VisualStudioOnline.MyWork.WitViewWidget",
+                        "typeId":  "Microsoft.VisualStudioOnline.MyWork.WitViewWidget",
+                        "configurationContributionId":  "ms.vss-mywork-web.Microsoft.VisualStudioOnline.MyWork.WitViewWidget.Configuration",
+                        "configurationContributionRelativeId":  "Microsoft.VisualStudioOnline.MyWork.WitViewWidget.Configuration",
+                        "isNameConfigurable":  true,
+                        "loadingImageUrl":  "https://ops1.peergroup.com/_static/MyWork/queryResultsLoading.png",
+                        "lightboxOptions":  {
+                                                "width":  900,
+                                                "height":  700,
+                                                "resizable":  true
+                                            }
+                    },
+                    {
+                        "id":  "d96422d1-c591-4b81-a912-e28fe8311562",
+                        "eTag":  "98",
+                        "name":  "PTO Intel Test - Horizon - SORT - Bugs",
+                        "position":  {
+                                         "row":  20,
+                                         "column":  1
+                                     },
+                        "size":  {
+                                     "rowSpan":  2,
+                                     "columnSpan":  10
+                                 },
+                        "settings":  "{\"query\":{\"queryId\":\"c8d937dc-fe74-419c-8266-c759cbd35628\",\"queryName\":\"PTO Intel Test - Horizon - SORT - Bugs\"},\"selectedColumns\":[{\"name\":\"ID\",\"referenceName\":\"System.Id\"},{\"name\":\"Work Item Type\",\"referenceName\":\"System.WorkItemType\"},{\"name\":\"Title\",\"referenceName\":\"System.Title\"},{\"name\":\"Assigned To\",\"referenceName\":\"System.AssignedTo\"},{\"name\":\"State\",\"referenceName\":\"System.State\"},{\"name\":\"Tags\",\"referenceName\":\"System.Tags\"},{\"name\":\"Source PG\",\"referenceName\":\"Custom.SourcePG\"},{\"name\":\"Iteration Path\",\"referenceName\":\"System.IterationPath\"},{\"name\":\"Area Path\",\"referenceName\":\"System.AreaPath\"}],\"lastArtifactName\":\"PTO Intel Test - Horizon - SORT - Bugs\"}",
+                        "settingsVersion":  {
+                                                "major":  1,
+                                                "minor":  0,
+                                                "patch":  0
+                                            },
+                        "artifactId":  "",
+                        "isEnabled":  true,
+                        "contentUri":  null,
+                        "contributionId":  "ms.vss-mywork-web.Microsoft.VisualStudioOnline.MyWork.WitViewWidget",
+                        "typeId":  "Microsoft.VisualStudioOnline.MyWork.WitViewWidget",
+                        "configurationContributionId":  "ms.vss-mywork-web.Microsoft.VisualStudioOnline.MyWork.WitViewWidget.Configuration",
+                        "configurationContributionRelativeId":  "Microsoft.VisualStudioOnline.MyWork.WitViewWidget.Configuration",
+                        "isNameConfigurable":  true,
+                        "loadingImageUrl":  "https://ops1.peergroup.com/_static/MyWork/queryResultsLoading.png",
+                        "lightboxOptions":  {
+                                                "width":  900,
+                                                "height":  700,
+                                                "resizable":  true
+                                            }
+                    },
+                    {
+                        "id":  "ca444644-4711-4c5f-a133-e90e2404096e",
+                        "eTag":  "16",
+                        "name":  "Markdown",
+                        "position":  {
+                                         "row":  4,
+                                         "column":  7
+                                     },
+                        "size":  {
+                                     "rowSpan":  2,
+                                     "columnSpan":  2
+                                 },
+                        "settings":  "##### Latest Test Suite - Horizon 4.0 - 2026 - Q2 General\n\n- **Upcoming Expected Release Date:** TBD\n- **Desired Code Freeze Date:** TBD\n- **Tools**: HDMx TC, HDBI TC, HST TC, SORT, GLP, SDX, HOP \n- **[TC - Horizon 4.0 - 2026 - Q2 - Test Plan](https://ops1.peergroup.com/DefaultCollection/PTOIntelTester/_testPlans/define?planId=288803\u0026suiteId=288804)** \n- [Sprint One Note](https://peergroupinc.sharepoint.com/sites/SkylineTeam/_layouts/15/Doc.aspx?sourcedoc={6465f190-6536-42e0-93d9-2dd4dfd5785f}\u0026action=edit\u0026wd=target%28Project%20Information.one%7C2e9708d9-09ff-4f40-95b2-696ee79a1374%2FSprint%20Y25WW15%7Ca3af0ce6-346c-49cd-9c2f-fa89353b09a5%2F%29\u0026wdorigin=703) \n- [Release Email](https://peergroupinc.sharepoint.com/sites/SkylineTeam/_layouts/15/Doc.aspx?sourcedoc={6465f190-6536-42e0-93d9-2dd4dfd5785f}\u0026action=edit\u0026wd=target%28Project%20Information.one%7C2e9708d9-09ff-4f40-95b2-696ee79a1374%2FY25WW15%20SkyLine%20Release%20Draft%7Ce679fda9-8fa0-4e10-8ef9-6928ff90287f%2F%29\u0026wdorigin=703) \n- [Release Checklist](https://peergroupinc.sharepoint.com/sites/SkylineTeam/_layouts/15/Doc.aspx?sourcedoc={6465f190-6536-42e0-93d9-2dd4dfd5785f}\u0026action=edit\u0026wd=target%28Development.one%7C2323f475-3033-43f1-bb74-17abc424563f%2FCreate%20Release%20Candidate%20%28Skyline%204.0%5C%29%7C528f43fa-c49e-4ba3-80bc-51dbea665140%2F%29\u0026wdorigin=703)\n##### RCs\n- PTOI 0.0.0.0\n- TCFW 0.0.0.0\n- Sky  0.0.0.0\n- TA RC: 0.0.0.0\n- TC RC: 0.0.0.0",
+                        "settingsVersion":  {
+                                                "major":  1,
+                                                "minor":  0,
+                                                "patch":  0
+                                            },
+                        "artifactId":  "",
+                        "isEnabled":  true,
+                        "contentUri":  null,
+                        "contributionId":  "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.MarkdownWidget",
+                        "typeId":  "Microsoft.VisualStudioOnline.Dashboards.MarkdownWidget",
+                        "configurationContributionId":  "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.MarkdownWidget.Configuration",
+                        "configurationContributionRelativeId":  "Microsoft.VisualStudioOnline.Dashboards.MarkdownWidget.Configuration",
+                        "isNameConfigurable":  false,
+                        "loadingImageUrl":  "https://ops1.peergroup.com/_static/Widgets/markdownLoading.png",
+                        "lightboxOptions":  {
+                                                "width":  600,
+                                                "height":  500,
+                                                "resizable":  true
+                                            }
+                    },
+                    {
+                        "id":  "f6dcac05-fd39-4208-b563-f819dca5d5f6",
+                        "eTag":  "85",
+                        "name":  "TC Int. Bugs Active",
+                        "position":  {
+                                         "row":  7,
+                                         "column":  3
+                                     },
+                        "size":  {
+                                     "rowSpan":  1,
+                                     "columnSpan":  1
+                                 },
+                        "settings":  "{\"defaultBackgroundColor\":\"#009ccc\",\"queryId\":\"9c5b4521-4cc8-459a-b229-b20fdf26e1a0\",\"queryName\":\"TC - Internal Bugs Active Skyline\",\"colorRules\":[],\"lastArtifactName\":\"TC - Internal Bugs Active Skyline\"}",
+                        "settingsVersion":  {
+                                                "major":  1,
+                                                "minor":  0,
+                                                "patch":  0
+                                            },
+                        "artifactId":  "",
+                        "isEnabled":  true,
+                        "contentUri":  null,
+                        "contributionId":  "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget",
+                        "typeId":  "Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget",
+                        "configurationContributionId":  "ms.vss-dashboards-web.Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget.Configuration",
+                        "configurationContributionRelativeId":  "Microsoft.VisualStudioOnline.Dashboards.QueryScalarWidget.Configuration",
+                        "isNameConfigurable":  true,
+                        "loadingImageUrl":  "https://ops1.peergroup.com/_static/Widgets/scalarLoading.png"
+                    }
+                ],
+    "widgetCount":  35,
+    "exportedAt":  "2026-07-15T13:42:42",
+    "source":  {
+                   "project":  "PTOIntelTester",
+                   "team":  "Skyline 4.0",
+                   "dashboardId":  "16e77c72-f74b-4279-8816-51ea0ecf6c08"
+               }
+}
