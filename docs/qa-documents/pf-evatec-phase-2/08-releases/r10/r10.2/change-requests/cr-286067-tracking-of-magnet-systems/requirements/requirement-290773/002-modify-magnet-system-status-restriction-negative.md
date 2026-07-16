@@ -8,16 +8,18 @@ Requirement: Modify Magnet System (Magnet Systems)
 
 ## Preconditions
 - User is signed in with `MagnetSystem_View` and `MagnetSystem_Edit` permissions.
+- At least one Magnet System with status `Checked Out` exists.
+- At least one Magnet System with status `In Stock` exists.
 - At least one Magnet System with status `In Use` exists (currently installed in a tool).
 - At least one Magnet System with status `Retired` exists.
 - The 'Magnet Systems' page is accessible.
 
 | Step | Action | Expected Result |
 |------|--------|-----------------|
-| 1 | Open the 'Magnet Systems' page and locate a Magnet System with status `In Use`. | The Magnet System is visible in the list. |
-| 2 | Select the `In Use` Magnet System and review available actions. | The 'Modify' action is not available for a Magnet System with status `In Use`. |
-| 3 | Locate a Magnet System with status `Retired` in the list. | The Retired Magnet System is visible. |
-| 4 | Select the `Retired` Magnet System and review available actions. | The 'Modify' action is not available for a Magnet System with status `Retired`. |
+| 1 | Open the 'Magnet Systems' page. Locate a Magnet System with status `Checked Out` and review available actions. | The 'Modify' action is available for a Magnet System with status `Checked Out`. |
+| 2 | Locate a Magnet System with status `In Stock` and review available actions. | The 'Modify' action is not available for a Magnet System with status `In Stock`. |
+| 3 | Locate a Magnet System with status `In Use` and review available actions. | The 'Modify' action is not available for a Magnet System with status `In Use`. |
+| 4 | Locate a Magnet System with status `Retired` and review available actions. | The 'Modify' action is not available for a Magnet System with status `Retired`. |
 
 ## Expected Outcome
-The Modify action is not available for Magnet Systems in `In Use` or `Retired` status. Modification can only be triggered from permissible statuses. `In Use` and `Retired` Magnet Systems display no Modify action.
+The Modify action is available only for Magnet Systems with status `Checked Out`. Magnet Systems in `In Stock`, `In Use`, or `Retired` status do not show the Modify action.

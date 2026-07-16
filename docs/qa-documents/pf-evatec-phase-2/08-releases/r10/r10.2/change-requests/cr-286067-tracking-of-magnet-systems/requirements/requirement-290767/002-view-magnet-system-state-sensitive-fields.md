@@ -13,10 +13,10 @@ Requirement: View Magnet System (Magnet Systems)
 
 | Step | Action | Expected Result |
 |------|--------|-----------------|
-| 1 | Open the View page for a Magnet System with status `In Stock`. | The Location field is empty. Status displays `In Stock`. |
-| 2 | Open the View page for a Magnet System with status `In Use`. | The Location field displays the name of the tool where the Magnet System is installed. Status displays `In Use`. |
-| 3 | Open the View page for a Magnet System with status `In Inspection`. | The Location field is empty. Status displays `In Inspection`. |
-| 4 | Open the View page for a Magnet System with status `Retired`. | The Location field is empty. Status displays `Retired`. |
+| 1 | Open the View page for a Magnet System with status `In Stock`. | The Location field is empty. Status displays `In Stock`. The Checked Out To, Checked Out At, Retire Date, and Reason fields are not displayed. |
+| 2 | Open the View page for a Magnet System with status `In Use` (checked out). | The Location field displays the name of the tool where the Magnet System is installed. Status displays `In Use`. The Checked Out To field displays the name of the user who checked it out. The Checked Out At field displays the checkout timestamp. |
+| 3 | Open the View page for a Magnet System with status `In Inspection`. | The Location field is empty. Status displays `In Inspection`. The Checked Out To, Checked Out At, Retire Date, and Reason fields are not displayed. |
+| 4 | Open the View page for a Magnet System with status `Retired`. | The Location field is empty. Status displays `Retired`. The Retire Date field displays the date of retirement. The Reason field displays the retirement reason. |
 
 ## Expected Outcome
-The Location field on the Magnet System View screen is populated only when the Magnet System is `In Use`. For all other statuses (`In Stock`, `In Inspection`, `Retired`) the Location field is empty. The Status field accurately reflects the current lifecycle status for all four states.
+The Location field is populated only when the Magnet System is `In Use`. Checked Out To and Checked Out At fields are displayed only when the status is `In Use`. Retire Date and Reason are displayed only when the status is `Retired`. No conditional fields appear for statuses where they are not applicable.

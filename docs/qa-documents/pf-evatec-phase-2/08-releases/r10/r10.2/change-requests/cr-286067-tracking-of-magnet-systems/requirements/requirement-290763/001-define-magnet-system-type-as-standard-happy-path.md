@@ -7,17 +7,19 @@ Requirement ID: 290763
 Requirement: Define Magnet System Type as Standard (Magnet System Types)
 
 ## Preconditions
-- User is signed in with `MagnetSystemType_View` and `MagnetSystemType_Edit` permissions.
-- Multiple Magnet System Types exist.
+- User is signed in with `MagnetSystemType_View`, `MagnetSystemType_Edit`, `MagnetSystem_View`, and `MagnetSystems_Modify` permissions.
+- A Prototype Magnet System Type exists with a predecessor reference and variant code (for example `V01`).
+- At least one Magnet System is assigned to the Prototype Magnet System Type.
 - The 'Define as Standard' action is accessible from the 'Magnet System Types' area.
 
 | Step | Action | Expected Result |
 |------|--------|-----------------|
-| 1 | Open the 'Magnet System Types' list. | Records are displayed. |
-| 2 | Select a Magnet System Type. | The 'Define as Standard' action is available. |
-| 3 | Trigger the 'Define as Standard' action and confirm. | The action completes. |
-| 4 | Refresh the list. | The selected record is marked as Standard. |
-| 5 | Open the Magnet System Type History view. | A history entry is present for the Define as Standard event with the current user and timestamp. |
+| 1 | Open the 'Magnet System Types' list and select the Prototype Magnet System Type. | The record is displayed as Prototype and the 'Define as Standard' action is available. |
+| 2 | Trigger the 'Define as Standard' action. | An ERP article selection prompt is displayed. |
+| 3 | Select an article number from ERP and confirm. | The action completes successfully and the selected ERP article number is applied to the type. |
+| 4 | Refresh and reopen the updated Magnet System Type record. | The type is now Standard. The predecessor is removed and the variant code is cleared. |
+| 5 | Open the Magnet System Type History view and locate the define as standard entry. | A history entry is present with timestamp, user, and summary text in the format Defined as standard with article # [value] and [count] magnet systems. |
+| 6 | Open the details of that history entry. | The details include the list of all Magnet Systems currently assigned to the type. |
 
 ## Expected Outcome
-The selected Magnet System Type is marked as Standard after the action completes. The Standard flag is visible in the list. A history entry is written for the event.
+The selected Prototype Magnet System Type is redefined as Standard after confirmation. The article number is updated from ERP, predecessor is removed, and variant code is cleared. A correctly formatted type history entry is recorded with timestamp, user, article number, and assigned magnet systems count, and the details list all assigned Magnet Systems.

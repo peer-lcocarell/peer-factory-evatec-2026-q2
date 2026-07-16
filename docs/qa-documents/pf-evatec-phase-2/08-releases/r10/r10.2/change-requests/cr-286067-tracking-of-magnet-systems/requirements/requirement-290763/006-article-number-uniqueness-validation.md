@@ -1,4 +1,4 @@
-# R10.2 Update for CR 286067 - Define Magnet System Type as Standard: Verify the Prototype Article Number must be unique and cannot match an existing Hardware Component Article Number (Validation)
+# R10.2 Update for CR 286067 - Define Magnet System Type as Standard: Verify access requires MagnetSystems_Modify security right (Authorization)
 
 ## Requirement
 CR: 286067
@@ -7,18 +7,17 @@ Requirement ID: 290763
 Requirement: Define Magnet System Type as Standard (Magnet System Types)
 
 ## Preconditions
-- User is signed in with `MagnetSystemType_View` and `MagnetSystemType_Edit` permissions.
-- A Standard Magnet System Type exists from which a Prototype can be created.
-- A Hardware Component exists in the system with a known Article Number.
-- Another Prototype Magnet System Type exists with a known Article Number.
+- User A exists with `MagnetSystemType_View` and `MagnetSystemType_Edit` permissions but without `MagnetSystems_Modify`.
+- User B exists with `MagnetSystemType_View`, `MagnetSystemType_Edit`, and `MagnetSystems_Modify` permissions.
+- A Prototype Magnet System Type exists for test execution.
 - The 'Magnet System Types' page is accessible.
 
 | Step | Action | Expected Result |
 |------|--------|-----------------|
-| 1 | Open the 'Magnet System Types' page and select a Standard Magnet System Type. Trigger the action to create a Prototype. | The Prototype creation dialog opens with an Article Number entry field. |
-| 2 | Enter an Article Number that matches an existing Hardware Component Article Number. Confirm. | The system rejects the entry. A validation error is displayed stating the Article Number already exists as a Hardware Component. |
-| 3 | Clear the field and enter an Article Number that matches an existing Prototype Magnet System Type Article Number. Confirm. | The system rejects the entry. A validation error is displayed stating the Article Number is already in use by another Magnet System Type. |
-| 4 | Clear the field and enter a unique Article Number that does not match any Hardware Component or Magnet System Type. Confirm. | Validation passes. The Prototype Magnet System Type is created with variant code `V01` and the provided Article Number. |
+| 1 | Sign in as User A and open a Prototype Magnet System Type. | The record is visible but 'Define as Standard' is hidden, disabled, or blocked for execution. |
+| 2 | Attempt to trigger redefine as standard through available UI entry points. | Access is denied and no redefine action is performed. |
+| 3 | Sign out and sign in as User B. Open the same Prototype Magnet System Type. | 'Define as Standard' is available for User B. |
+| 4 | Trigger 'Define as Standard' and cancel the dialog. | User B can access the function. Cancel exits without committing changes. |
 
 ## Expected Outcome
-The Prototype Article Number field enforces two uniqueness rules: it cannot match an existing Hardware Component Article Number, and it cannot match an Article Number already assigned to another Magnet System Type. A specific validation message is displayed for each violation. A valid unique Article Number allows the Prototype to be created.
+Access to define as standard is restricted to users with `MagnetSystems_Modify`. Users without this right cannot execute the workflow. Users with the right can access the workflow successfully.

@@ -17,8 +17,10 @@ Requirement: Change Magnet System (Tool Hardware Configuration)
 | 2 | Perform a Change Magnet System action within the 'Hardware Configuration' page. | Change completes. Hardware Configuration version increments by one. |
 | 3 | Open the Hardware Configuration History for the tool. | A new history entry is present for the Magnet System change. The entry shows the previous Magnet System and the replacement Magnet System. |
 | 4 | Open the 'Logbook' for the tool and apply the Magnet System filter. | A Logbook entry for the Magnet System change event is visible. The entry includes both Magnet System identifiers and the event timestamp. |
-| 5 | Open the Magnet System History for the newly installed Magnet System. | An Install history entry is present for this tool and the current timestamp. |
-| 6 | Open the Magnet System History for the previously installed Magnet System. | An Uninstall history entry is present for this tool and the current timestamp. |
+| 5 | Remove the Magnet System filter. | All Logbook entries are displayed again, including both Magnet System and non-Magnet System entries. |
+| 6 | Apply a non-Magnet System filter category. | Magnet System events are hidden. Other entry types appear as expected. |
+| 7 | Open the Magnet System History for the newly installed Magnet System. | An Install history entry is present for this tool and the current timestamp. |
+| 8 | Open the Magnet System History for the previously installed Magnet System. | An Uninstall history entry is present for this tool and the current timestamp. |
 
 ## Expected Outcome
-After a Magnet System change, the Hardware Configuration version increments. Hardware Configuration History shows a change entry with before and after Magnet System identifiers. The tool Logbook contains a corresponding Magnet System change entry. Both affected Magnet Systems have matching Install and Uninstall history entries.
+After a Magnet System change, the Hardware Configuration version increments. Hardware Configuration History shows a change entry with before and after Magnet System identifiers. The tool Logbook contains a corresponding Magnet System change entry. The Magnet System filter category shows only Magnet System events and can be toggled on and off without affecting other entry types. Both affected Magnet Systems have matching Install and Uninstall history entries.

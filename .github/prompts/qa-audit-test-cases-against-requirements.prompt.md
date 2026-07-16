@@ -1,7 +1,7 @@
 ﻿---
 mode: ask
-name: qa-audit-test-cases-against-requirements
-description: "Audit test cases against requirements for coverage, gaps, quality, and redundancy."
+name: qa-requirement-coverage-audit
+description: "Audit requirements against test cases for coverage, traceability, gaps, orphaned tests, redundancy, and consolidation opportunities while minimizing unnecessary test suite growth."
 ---
 
 <!-- #
@@ -13,134 +13,442 @@ description: "Audit test cases against requirements for coverage, gaps, quality,
  * otherwise, without the prior written consent of The PEER Group Inc.
 # -->
 
-# QA - Audit Test Cases Against Requirements
+# QA Requirement Coverage Audit
 
 ## Metadata
-- **Difficulty**: Intermediate
-- **Estimated Time**: 15-30min
-- **Prerequisites**: Requirement IDs and test case IDs are available
-**Tags:** #intermediate #qa #test-cases #traceability #analysis #copilot
-- **Last Updated**: 2026-07-10
-- **Version**: 1.0
 
-## Objective
-Review test cases against requirements and return deterministic, actionable findings on coverage, gaps, clarity, and overlap.
-
-## Prompt Template
-
-```text
-You are acting as an experienced QA lead auditing test cases for alignment with stated requirements.
-
-Task:
-For each test case, evaluate and document:
-1. Coverage Status (Yes/Partial/No)
-2. Identified Gaps (missing conditions, edge cases, unclear steps)
-3. Improvement Actions (specific recommendations)
-4. Overlap Notes (duplicate or significant overlap with another test)
-
-Inputs:
-Requirements:
-[INSERT_REQUIREMENTS_HERE]
-
-Test Cases:
-[INSERT_TEST_CASES_HERE]
-
-Optional Context:
-[INSERT_CONTEXT_HERE]
-
-Constraints:
-- Be explicit and deterministic.
-- Do not assume missing facts.
-- If a requirement has no mapped test case, report it explicitly as uncovered.
-- If a test case has no mapped requirement, report it as orphaned.
-- Keep findings concise, specific, and actionable.
-
-Output format:
-1. Coverage Audit Table
-Columns: Test Case ID | Requirement ID(s) | Coverage Status (Yes/Partial/No) | Gaps/Issues | Recommended Improvements | Overlap Notes
-
-2. Uncovered Requirements
-- List requirement IDs that have no sufficient test coverage.
-
-3. Orphaned Test Cases
-- List test case IDs that do not map to any requirement.
-
-4. Summary Metrics
-- Total requirements
-- Total test cases
-- Covered requirements
-- Uncovered requirements
-- Redundant test cases
-```
-
-## Ready-To-Use Table Template
-
-```md
-| Test Case ID | Requirement ID(s) | Coverage Status (Yes/Partial/No) | Gaps/Issues | Recommended Improvements | Overlap Notes |
-| --- | --- | --- | --- | --- | --- |
-| TC-001 | REQ-001 | Yes | None | None | None |
-| TC-002 | REQ-002 | Partial | Missing boundary validation for invalid input | Add boundary-focused negative test with explicit expected error | Overlaps with TC-005 setup |
-```
-
-## Customization Guide
-
-### Placeholders Explained
-- **[INSERT_REQUIREMENTS_HERE]**: Source requirements with stable IDs.
-  - Example: REQ-101, REQ-102 with acceptance criteria
-  - Tips: Include business rules and boundary constraints.
-
-- **[INSERT_TEST_CASES_HERE]**: Test cases with IDs, preconditions, steps, and expected results.
-  - Example: TC-101 through TC-130 from test management export
-  - Tips: Include both manual and automated cases.
-
-### Optional Parameters
-- **[STRICT_MODE]**: If enabled, mark Coverage as No unless every acceptance criterion is directly validated.
-
-## Example Usage
-
-### Scenario
-A QA lead wants to verify if a sprint test suite accurately covers all acceptance criteria without duplication.
-
-### Filled Prompt
-```text
-Requirements:
-REQ-201: User can reset password with valid email.
-REQ-202: Invalid email format is rejected with validation error.
-
-Test Cases:
-TC-901: Reset password using valid email and verify confirmation message.
-TC-902: Submit malformed email and verify inline validation.
-TC-903: Repeat malformed email flow with same preconditions as TC-902.
-```
-
-### Expected AI Response
-```text
-Returns:
-- A row-by-row coverage table with Yes/No coverage,
-- gap and improvement notes per test case,
-- uncovered and orphaned items,
-- summary metrics.
-```
-
-## Expected Output
-
-The AI should provide:
-1. A structured coverage table for each test case.
-2. A clear list of uncovered requirements and orphaned tests.
-3. Actionable remediation suggestions.
-
-**Quality Indicators**:
-- [ ] Every test case is mapped to one or more requirements or flagged orphaned.
-- [ ] Every requirement is reported as covered or uncovered.
-- [ ] Gaps and suggestions are specific and testable.
-- [ ] Redundancy findings identify overlap rationale.
-
-## Related Prompts
-
-- [qa-test-case-and-repository-standards-assistant.prompt.md](qa-test-case-and-repository-standards-assistant.prompt.md) - Standards-aligned test case generation and review.
-- [ado-test-case-formatting.prompt.md](ado-test-case-formatting.prompt.md) - Format and normalize ADO test cases.
-- [breakdown-test.prompt.md](breakdown-test.prompt.md) - Build broader QA planning artifacts.
+- **Difficulty:** Intermediate
+- **Estimated Time:** 15–30 min
+- **Prerequisites:** Requirement IDs and test case IDs are available
+- **Tags:** #qa #requirements #coverage #traceability #test-cases #audit
+- **Version:** 2.0
+- **Focus:** Coverage accuracy, coverage efficiency, risk identification, and controlled test suite growth
 
 ---
 
-**Note**: Always review and validate AI-generated content before using in production environments.
+# Objective
+
+Review requirements against existing test cases and provide a deterministic audit of:
+
+- Requirement coverage
+- Coverage gaps
+- Traceability
+- Test quality
+- Redundancy
+- Consolidation opportunities
+- Risk-based coverage gaps
+
+The goal is to maximize coverage while minimizing unnecessary test suite growth.
+
+---
+
+# Core Audit Principles
+
+## Traceability First
+
+- Every requirement must be decomposed into testable clauses.
+- Every clause must be assessed independently.
+- Every test case must map to one or more requirement clauses or be flagged as orphaned.
+- Do not assume coverage.
+- Coverage must be supported by explicit test actions and expected results.
+
+---
+
+## Test Suite Growth Control
+
+Default assumption:
+
+- Existing tests should be updated before new tests are recommended.
+- Consolidation should be preferred over creating additional tests.
+- New tests should be recommended only when coverage cannot reasonably be added to existing tests.
+
+Before recommending a new test:
+
+1. Review all mapped test cases.
+2. Determine whether the gap can be addressed within an existing test.
+3. Determine whether overlap exists with another test.
+4. Determine whether consolidation is possible.
+
+Only recommend a new test when:
+
+- Workflow differs significantly.
+- Permissions differ significantly.
+- Lifecycle behavior differs significantly.
+- Risk profile differs significantly.
+- Adding coverage would make an existing test excessively complex.
+
+Every recommended new test must include justification.
+
+---
+
+## Deterministic Assessment Rules
+
+- Be explicit.
+- Be evidence-based.
+- Do not infer missing behavior.
+- Do not assume hidden validations.
+- Report findings concisely.
+- Focus on actionable recommendations.
+
+---
+
+# Requirement Decomposition Rules
+
+Before performing the audit:
+
+1. Break each requirement into discrete testable clauses.
+2. Number each clause.
+3. Evaluate coverage at the clause level.
+
+Example:
+
+Requirement:
+
+```text
+A user can upload one or more documents, view uploaded documents,
+and remove them without confirmation.
+```
+
+Audit Clauses:
+
+```text
+1. Upload single document.
+2. Upload multiple documents.
+3. View uploaded documents.
+4. Remove uploaded documents.
+5. Remove uploaded documents without confirmation.
+```
+
+Do not assess broad requirements as a single item.
+
+---
+
+# Coverage Status Definitions
+
+## Yes
+
+Use only when:
+
+- All clauses and acceptance criteria are validated.
+- Expected results verify the behavior.
+- No significant gaps remain.
+
+## Partial
+
+Use when:
+
+- Some clauses are covered.
+- One or more clauses remain untested.
+- One or more validations are missing.
+
+## No
+
+Use when:
+
+- No test directly validates the behavior.
+- Coverage is assumed rather than demonstrated.
+- No mapped test exists.
+
+---
+
+# Requirement-Level Status Rules
+
+## Covered
+
+- All clauses are covered.
+
+## Partially Covered
+
+- At least one clause is covered.
+- At least one clause is partially covered or uncovered.
+
+## Not Covered
+
+- No clauses are covered.
+
+---
+
+# Coverage Gap Analysis
+
+For every Partial or No finding identify:
+
+- Missing functionality
+- Missing workflow coverage
+- Missing validation
+- Missing negative testing
+- Missing error handling
+- Missing boundary testing
+- Missing permissions testing
+- Missing state-dependent testing
+- Missing persistence validation
+- Missing navigation validation
+- Missing audit/history validation
+
+For every gap:
+
+- Reference the clause.
+- Explain what is missing.
+- State whether an existing test can be updated.
+- Recommend a new test only when necessary.
+
+---
+
+# Coverage Efficiency Review
+
+For every uncovered clause classify the preferred remediation:
+
+## Existing Test Can Be Updated
+
+Use when:
+
+- Workflow already exists.
+- Only additional validation is required.
+- Preconditions are already present.
+
+## Existing Tests Can Be Consolidated
+
+Use when:
+
+- Coverage exists across overlapping tests.
+- Duplicate setup or validation is present.
+
+## New Test Required
+
+Use only when:
+
+- Workflow differs materially.
+- User role differs materially.
+- Application state differs materially.
+- Risk area differs materially.
+
+---
+
+# Overlap and Redundancy Analysis
+
+For every test case:
+
+Identify:
+
+- Duplicate setup
+- Duplicate workflow
+- Duplicate validation
+- Significant overlap
+
+Recommendations:
+
+- Consolidate where practical.
+- Do not classify complementary positive and negative tests as duplicates.
+- Explain overlap rationale briefly.
+
+---
+
+# Risk-Based Review
+
+Evaluate coverage for:
+
+- Security and authorization
+- Permission-based behavior
+- Role-based visibility
+- State-dependent behavior
+- Lifecycle transitions
+- Navigation behavior
+- Create/Edit/Delete operations
+- Data persistence
+- Audit/history tracking
+- Error handling
+- Boundary conditions
+
+Only report uncovered risks.
+
+---
+
+# Inputs
+
+## Requirements
+
+```text
+[INSERT_REQUIREMENTS_HERE]
+```
+
+## Test Cases
+
+```text
+[INSERT_TEST_CASES_HERE]
+```
+
+## Optional Context
+
+```text
+[INSERT_CONTEXT_HERE]
+```
+
+## Optional Settings
+
+```text
+STRICT_MODE = ON | OFF
+```
+
+When STRICT_MODE is ON:
+
+- All acceptance criteria must be explicitly validated.
+- Do not infer coverage from similar workflows.
+- Mark coverage as Partial or No if any clause lacks validation.
+
+---
+
+# Output Rules
+
+Keep output concise.
+
+Focus on findings, not documentation.
+
+Do not:
+
+- Repeat requirement text unnecessarily.
+- Explain fully covered functionality.
+- Produce requirement-by-requirement essays.
+
+Prioritize:
+
+1. Uncovered requirements
+2. Partial coverage
+3. High-risk gaps
+4. Orphaned tests
+5. Redundancy
+
+Maximum Output:
+
+- One row per test case
+- One row per uncovered clause
+- Maximum 3 recommendation bullets per requirement
+- Maximum 5 next-step bullets
+- Report overlap only when meaningful
+
+---
+
+# Required Output
+
+## Requirement Audit Summary
+
+### Status
+
+- Covered
+- Partially Covered
+- Not Covered
+
+---
+
+## Coverage Assessment
+
+### Existing Test Cases
+
+| Test Case | Coverage Status | Covered Clauses |
+| --- | --- | --- |
+
+---
+
+### Coverage Gaps
+
+| Clause | Coverage Status | Gap Description |
+| --- | --- | --- |
+
+Only include Partial and No findings.
+
+---
+
+### Recommendations
+
+Maximum 3 bullets.
+
+Preference order:
+
+1. Update existing tests
+2. Consolidate tests
+3. Create new tests
+
+For new tests provide justification.
+
+---
+
+## Notes
+
+### Overlap Findings
+
+Only report meaningful overlap.
+
+### Risk-Based Gaps
+
+Only report uncovered risks.
+
+### Summary Metrics
+
+- Total Requirement Clauses:
+- Covered Clauses:
+- Partially Covered Clauses:
+- Uncovered Clauses:
+- Existing Tests Reviewed:
+- Existing Tests Recommended for Update:
+- New Tests Recommended:
+- Consolidation Opportunities:
+
+---
+
+## Next Steps
+
+### Priority 1
+
+Highest-risk uncovered functionality.
+
+### Priority 2
+
+Recommended updates to existing tests.
+
+### Priority 3
+
+New tests only when justified.
+
+Include:
+
+```text
+Current Test Case Count:
+Recommended New Test Count:
+```
+
+Provide rationale.
+
+---
+
+## Final Audit Verdict
+
+### Coverage Health
+
+- Good
+- Moderate Risk
+- High Risk
+
+### Reason
+
+Maximum 3 concise bullets.
+
+### Release Recommendation
+
+- Ready for QA Signoff
+- Additional Coverage Recommended
+- Significant Coverage Gaps Remain
+
+---
+
+# Quality Checklist
+
+Verify:
+
+- [ ] Every requirement was decomposed into clauses.
+- [ ] Every clause was assessed.
+- [ ] Every test case was mapped or flagged orphaned.
+- [ ] Coverage decisions are evidence-based.
+- [ ] Existing test updates were prioritized.
+- [ ] Consolidation opportunities were considered.
+- [ ] New test recommendations were justified.
+- [ ] Risk-based review was completed.
+- [ ] Output remains concise.
+- [ ] Summary metrics are internally consistent.

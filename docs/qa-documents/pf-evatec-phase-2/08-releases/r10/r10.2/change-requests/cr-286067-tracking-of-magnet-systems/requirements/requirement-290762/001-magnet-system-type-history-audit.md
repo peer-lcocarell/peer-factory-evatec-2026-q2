@@ -8,15 +8,18 @@ Requirement: Magnet System Type History (Magnet System Types)
 
 ## Preconditions
 - User is signed in with `MagnetSystemType_View` and `MagnetSystemType_Edit` permissions.
-- A Magnet System Type exists that can be edited.
+- A Standard Magnet System Type exists with a known Article Number.
+- At least one Magnet System is currently assigned to the type.
 - The 'Magnet System Type History' view is accessible.
 
 | Step | Action | Expected Result |
 |------|--------|-----------------|
-| 1 | Open the Magnet System Type and navigate to the History view. | The History view loads. A creation history entry is present with the original user and timestamp. |
-| 2 | Return to the Magnet System Type and open it in Edit mode. Update an editable field (for example Applications or Description) and save. | Save completes. |
-| 3 | Re-open the History view. | A new history entry is present for the edit event. The entry includes the current user, the timestamp, and a description of the change. |
-| 4 | Verify the history entries are in chronological order. | The Create entry precedes the Edit entry. All entries display the correct user and timestamp. |
+| 1 | Open the Magnet System Type details view and navigate to the History area. | The History view loads and the currently assigned Magnet Systems are visible in the same details context. A creation history entry is present. |
+| 2 | Review the creation history entry for the Standard type. | The entry includes timestamp, creating user, and a short summary that includes the Standard Article Number. |
+| 3 | Open the Magnet System Type in Edit mode and keep the History view visible or accessible from the edit context. | The currently assigned Magnet Systems are visible in edit context and history remains available. |
+| 4 | Update an editable field such as Applications or Description and save. | Save completes successfully. |
+| 5 | Re-open or refresh the History view. | A new edit history entry is present. The entry includes timestamp, editing user, and a short summary of what changed. |
+| 6 | Verify the order of entries in history. | The Create entry appears before the Edit entry and all displayed timestamps and users are correct. |
 
 ## Expected Outcome
-Each change to a Magnet System Type generates a distinct history entry. History entries include the acting user and timestamp. Entries are in chronological order. The History view provides a complete audit trail of all changes to the record.
+The Magnet System Type history is available from details and edit contexts and shows both assigned Magnet Systems and lifetime changes. Standard create entries include Article Number in the summary. Edit entries include user, timestamp, and short change summary. The full audit trail remains in chronological order.

@@ -1,4 +1,4 @@
-# R10.2 Update for CR 286067 - Magnet System History: Verify distinct history entries are generated for every lifecycle event (Audit)
+# R10.2 Update for CR 286067 - Magnet System History: Verify distinct history entries are generated for every lifecycle event (Happy Path)
 
 ## Requirement
 CR: 286067

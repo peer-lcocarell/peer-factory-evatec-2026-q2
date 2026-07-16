@@ -1,4 +1,4 @@
-# R10.2 Update for CR 286067 - Magnet System History: Verify history records are generated when Magnet System information changes (Audit)
+# R10.2 Update for CR 286067 - Magnet System History: Verify history records are generated when Magnet System information changes (Happy Path)
 
 ## Requirement
 CR: 286067

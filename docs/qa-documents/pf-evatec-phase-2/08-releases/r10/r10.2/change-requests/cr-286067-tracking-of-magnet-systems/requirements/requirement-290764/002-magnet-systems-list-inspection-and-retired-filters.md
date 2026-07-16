@@ -7,19 +7,21 @@ Requirement ID: 290764
 Requirement: Magnet Systems (Magnet Systems)
 
 ## Preconditions
-- User is signed in with `MagnetSystem_View` permission.
+- User is signed in with `MagnetSystems_View` permission.
 - Magnet Systems with Inspection Required flag set to `Yes` and `No` both exist.
-- Magnet Systems in both active statuses (`In Stock`, `In Use`, `In Inspection`) and `Retired` status exist.
+- One Magnet System has last inspection older than one year.
+- One Magnet System has last inspection equal to one year or newer.
+- Magnet Systems in active statuses `In Stock`, `In Use`, `In Inspection` and `Retired` status exist.
 - The 'Magnet Systems' page is accessible.
 
 | Step | Action | Expected Result |
 |------|--------|-----------------|
-| 1 | Open the 'Magnet Systems' page with no filters applied. | All Magnet Systems including Retired ones are displayed (or the default view shows active records — note the default behavior). |
-| 2 | Apply the Inspection Required filter to show only Magnet Systems with Inspection Required = `Yes`. | Only records with the Inspection Required flag set to `Yes` are displayed. |
-| 3 | Remove the Inspection Required filter. | All records are displayed again (within the active/all filter). |
-| 4 | Apply a filter to show only `Retired` Magnet Systems. | Only Magnet Systems with status `Retired` are displayed. Active records are hidden. |
-| 5 | Apply a filter to show only active Magnet Systems (non-Retired). | Only Magnet Systems with status `In Stock`, `In Use`, or `In Inspection` are displayed. `Retired` records are hidden. |
-| 6 | Combine the Inspection Required filter with the active status filter. | Only records matching both criteria (Inspection Required = Yes AND active status) are displayed. |
+| 1 | Open the 'Magnet Systems' page and set the list toggle to show All Magnet Systems including retired. | Active and retired records are visible in one list view. |
+| 2 | Verify Inspection Required flags for prepared inspection-date records. | The record with last inspection older than one year is flagged Inspection Required = `Yes`. The record inspected at one year or newer is not flagged. |
+| 3 | Apply Inspection Required filter for `Yes`. | Only records flagged Inspection Required = `Yes` are displayed. |
+| 4 | Switch toggle to Active Magnet Systems only while keeping Inspection Required filter active. | Only active records that are also Inspection Required = `Yes` remain visible. |
+| 5 | Capture current list URL with active toggle and filters applied, then refresh or open the copied URL in a new tab. | Sorting and filtering state is preserved from the URL and the same dataset is restored. |
+| 6 | Return to All Magnet Systems and filter status to `Retired`. Select a retired record and open available actions. | Retired record can be viewed. Measure or retire operations are not available for retired records. |
 
 ## Expected Outcome
-The 'Magnet Systems' list supports filtering by Inspection Required flag and by Retired/active status. Each filter correctly reduces the visible records to only those matching the criteria. Combined filters apply both conditions simultaneously.
+Inspection Required flag behavior follows the one-year rule. Active and all toggles work with filters and preserve state in URL. Retired records remain view-only and do not expose measure or retire operations.

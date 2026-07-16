@@ -7,17 +7,20 @@ Requirement ID: 290765
 Requirement: New Magnet System (Magnet Systems)
 
 ## Preconditions
-- User is signed in with `MagnetSystem_View` and `MagnetSystem_Edit` permissions.
+- User A is signed in with `MagnetSystems_View` but without `MagnetSystems_Create`.
+- User B is signed in with `MagnetSystems_View` and `MagnetSystems_Create`.
 - A valid Magnet System Type exists for selection.
 - The 'Magnet Systems' page is accessible.
 
 | Step | Action | Expected Result |
 |------|--------|-----------------|
-| 1 | Open the 'Magnet Systems' page and select the 'New' action. | The 'New Magnet System' creation screen loads. |
-| 2 | Leave the Serial Number field empty. Leave the Magnet System Type unselected. Attempt to save. | Save is blocked. Required field validation is displayed for the Serial Number field and the Magnet System Type field. |
-| 3 | Enter a unique Serial Number but leave Magnet System Type unselected. Attempt to save. | Save remains blocked. The Magnet System Type required field validation remains. Serial Number validation clears. |
-| 4 | Select a valid Magnet System Type and leave the Serial Number empty. Attempt to save. | Save remains blocked. The Serial Number required field validation is displayed. Magnet System Type validation clears. |
-| 5 | Enter a valid Serial Number and select a valid Magnet System Type. Save. | Validation clears. The new Magnet System is created with status `In Stock`. The record appears in the 'Magnet Systems' list. |
+| 1 | Sign in as User A and open the 'Magnet Systems' page. Attempt to access the 'New' action. | Access is blocked or action is hidden because `MagnetSystems_Create` is required. |
+| 2 | Sign out and sign in as User B. Open 'New Magnet System'. | The creation screen loads for User B. |
+| 3 | Leave Serial Number empty and Magnet System Type unselected. Attempt to save. | Save is blocked. Required validation appears for Serial Number and Magnet System Type. |
+| 4 | Enter a unique Serial Number but leave Magnet System Type unselected. Attempt to save. | Save remains blocked. Magnet System Type required validation remains. Serial Number validation clears. |
+| 5 | Select a valid Magnet System Type and clear Serial Number. Attempt to save. | Save remains blocked. Serial Number required validation appears. |
+| 6 | Enter values in fields and select Cancel. In confirmation dialog choose No. | Creation form remains open and entered values are preserved so user can continue creating. |
+| 7 | Select Cancel again and choose Yes in confirmation dialog. | User is redirected to Magnet Systems screen and no new Magnet System is created. |
 
 ## Expected Outcome
-Both Serial Number and Magnet System Type are required fields for new Magnet System creation. Attempting to save with either field empty displays a per-field required validation message. Providing valid values for all required fields allows the save to complete.
+Access to New Magnet System requires `MagnetSystems_Create`. Required field validation blocks save when mandatory fields are empty. Cancel confirmation behaves correctly where No continues creation and Yes exits without creating a record.

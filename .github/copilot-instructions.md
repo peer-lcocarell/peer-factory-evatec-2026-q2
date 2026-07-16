@@ -294,6 +294,39 @@ For CR 284111 generate coverage for:
 
 ## Copilot Behavior
 
+Code only, no explanation.
+
+## Response Style
+
+- Do not explain your reasoning.
+- Do not think out loud.
+- Do not describe your approach unless requested.
+- Give the final answer first.
+- Use concise responses.
+- Avoid generic best-practice advice.
+- Avoid introductory and closing remarks.
+- Do not repeat the prompt.
+- For code reviews, report only actionable findings.
+- For code changes, output only the required diff or code.
+- Keep responses under 100 words unless explicitly requested.
+
+## Prompt Prefixes
+
+- Answer only. No reasoning. No analysis. No explanation.
+- Provide the result only.
+- Return code only.
+- Show changed lines only.
+- Minimal diff.
+
+## Token Efficient Default
+
+- Be concise.
+- No reasoning.
+- No preamble.
+- No summary.
+- Final answer only.
+- Code only when applicable.
+
 When asked to create tests:
 
 1. Identify the CR.
@@ -654,3 +687,32 @@ Do not:
 - Derive defect root causes from executive release context.
 - Include release metadata in defect statistics.
 - Introduce product assumptions without bug evidence.
+
+---
+
+## AI Analysis Policy
+
+Before performing any task:
+
+1. Recommend the best model using this preference order:
+    - Local / VS Code
+    - MAI-Code-1 Flash
+    - GPT-5.3-Codex
+    - Claude Sonnet 5
+    - Claude Opus 4.6
+
+2. Provide a concise pre-execution estimate:
+    - Total tokens
+    - Files likely searched
+    - Files likely opened
+    - Credit impact
+
+3. Suggest cost reductions of 30 percent or more.
+
+4. If estimated credit usage exceeds 100 credits, present the estimate and wait before continuing execution.
+
+Response style:
+
+- Be concise.
+- Use bullet points.
+- No unnecessary explanations.
