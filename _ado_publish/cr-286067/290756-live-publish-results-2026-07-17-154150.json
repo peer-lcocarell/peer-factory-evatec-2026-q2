@@ -1,0 +1,47 @@
+﻿[
+    {
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290756\\001-magnet-system-types-list-happy-path.md",
+        "Title":  "R10.2 Update for CR 286067 - Magnet System Types: Verify tester can view the list of Magnet System Types (Happy Path)",
+        "CrId":  "286067",
+        "Status":  "Updated",
+        "TestCaseId":  293115,
+        "PlanId":  291616,
+        "SuiteId":  292263
+    },
+    {
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290756\\002-magnet-system-types-list-permission-denied-negative.md",
+        "Title":  "R10.2 Update for CR 286067 - Magnet System Types: Attempt to view the Magnet System Types page without the required permission (Negative)",
+        "CrId":  "286067",
+        "Status":  "Updated",
+        "TestCaseId":  293888,
+        "PlanId":  291616,
+        "SuiteId":  292263
+    },
+    {
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290756\\003-create-magnet-system-type-happy-path.md",
+        "Title":  "R10.2 Update for CR 286067 - Magnet System Types: Create New Magnet System Type",
+        "CrId":  "286067",
+        "Status":  "Updated",
+        "TestCaseId":  293889,
+        "PlanId":  291616,
+        "SuiteId":  292263
+    },
+    {
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290756\\004-edit-magnet-system-type-happy-path.md",
+        "Title":  "R10.2 Update for CR 286067 - Magnet System Types: Edit Existing Magnet System Type and Read-Only View",
+        "CrId":  "286067",
+        "Status":  "Updated",
+        "TestCaseId":  293468,
+        "PlanId":  291616,
+        "SuiteId":  292263
+    },
+    {
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290756\\006-promote-prototype-to-standard-from-list.md",
+        "Title":  "R10.2 Update for CR 286067 - Magnet System Types: Verify tester can promote a Prototype Magnet System Type to Standard from the list page (Happy Path)",
+        "CrId":  "286067",
+        "Status":  "Created",
+        "TestCaseId":  293944,
+        "PlanId":  291616,
+        "SuiteId":  292263
+    }
+]

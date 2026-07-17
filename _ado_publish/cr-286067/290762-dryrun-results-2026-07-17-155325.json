@@ -1,0 +1,26 @@
+﻿[
+    {
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290762\\001-magnet-system-type-history-audit.md",
+        "Title":  "R10.2 Update for CR 286067 - Magnet System Type History: Verify history records are created when Magnet System Type changes occur (Audit)",
+        "Status":  "WhatIf",
+        "TestCaseId":  293128,
+        "PlanId":  291616,
+        "SuiteId":  292269
+    },
+    {
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290762\\002-magnet-system-type-prototype-lineage-history.md",
+        "Title":  "R10.2 Update for CR 286067 - Magnet System Type History: Verify history records prototype lineage from Standard through Prototype creation and promotion (Audit)",
+        "Status":  "WhatIf",
+        "TestCaseId":  293129,
+        "PlanId":  291616,
+        "SuiteId":  292269
+    },
+    {
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290762\\003-magnet-system-type-prototype-version-chain-history.md",
+        "Title":  "R10.2 Update for CR 286067 - Magnet System Type History: Verify prototype version chain retains all previous created entries (Audit)",
+        "Status":  "WhatIf",
+        "TestCaseId":  293811,
+        "PlanId":  291616,
+        "SuiteId":  292269
+    }
+]

@@ -1,125 +1,50 @@
-﻿These are actually pretty good. I'd rate them significantly better than most of the earlier R10.2 tests because they're tied directly to requirement behavior instead of generic UI validation.
+﻿# QA Audit: Requirement 290757 - New Magnet System Type
 
-QA Audit
-Test Case ID	Coverage Status	Gaps/Issues	Recommended Improvements	Overlap NotesCreate New Magnet System Type with Valid Data	Partial	Does not verify redirect to View Magnet System Type page after save. Does not explicitly verify only one history entry exists. Does not verify Article #, Name, ERP Status, and Successor remain read-only.	Add verification that user is redirected to the View Magnet System Type page after save. Verify only a single history record exists. Verify ERP-derived fields cannot be edited.	Foundation happy-path test.
-Required Field Validation During Creation	Partial	Covers required fields but combines multiple required fields into one scenario. Does not independently validate Source Type, FlexiCat Type, and Applications.	Consider separate validation coverage for each required field or a data-driven approach.	Complements happy-path test.
-Applications Field Accepts Multiple Values Including Custom Entries	Partial	Requirement only states Applications is a predefined type and multiple values can be selected. Requirement does not mention custom values. This may be invalid coverage.	Confirm with developer/BA whether custom Application values are supported. If not, remove custom value validation and verify only multiple predefined values.	Overlaps with happy-path required field coverage.
-Attempt to Create Using Article Already Assigned as a Target Type	Yes	Good coverage of exclusion rule. Requirement states matching hardware components already defined as a Target Type or Magnet System Type should not be available.	Expand to also verify Hardware Components already defined as Magnet System Types cannot be selected.	Minimal overlap with other tests.
-Missing Coverage
-Read-Only Fields
+## Status
 
-Requirement:
+Consolidation completed on 2026-07-17.
 
-Article # is read only
- Name is read only
- ERP Status is read only
- Successor is read only
+The requirement folder now uses one authoritative test case per scenario group with overlap removed.
 
-Current happy path only verifies fields populate.
+## Authoritative Test Cases
 
-You should explicitly validate:
+- 001-new-magnet-system-type-happy-path.md
+- 002-new-magnet-system-type-negative.md
+- 003-new-magnet-system-type-applications-field-multi-value.md
+- 004-new-magnet-system-type-article-used-as-target-type-negative.md
+- 005-new-magnet-system-type-existing-magnet-system-type-negative.md
 
-Missing ValidationArticle # cannot be edited
-Name cannot be edited
-ERP Status cannot be edited
-Successor cannot be edited
-Description Length Validation
+## Merged and Retired Files
 
-Requirement:
+- Merged into 003: 004-applications-field-multiple-selections.md
+- Merged into 004: 005-erp-article-used-as-target-type-excluded.md
+- Merged into 005: 006-erp-article-used-as-magnet-system-type-excluded.md
 
-Description is optional and a maximum of 500 characters
+## Coverage Summary
 
-No current coverage.
+### Covered
 
-Recommended test:
+- Valid creation flow from ERP article selection.
+- Required field validation for Source Type, FlexiCat Type, and Applications.
+- Multi-selection behavior for predefined Application values.
+- Exclusion rule when ERP article is already used as Target Type.
+- Exclusion rule when ERP article is already used as Magnet System Type.
+- Positive continuation path with eligible ERP article after blocked selection.
 
-Verify Description Maximum Length
+### Remaining Gaps
 
-Enter 500 characters.
-Save succeeds.
-Enter 501 characters.
-Validation is displayed or save is blocked.
-Cancel Workflow
+- Explicit deterministic read-only checks for ERP-derived fields:
+	- Article #
+	- Name
+	- ERP Status
+	- Successor
+- Description maximum length boundary validation (500 and 501 characters).
+- Cancel confirmation workflow validation (Yes exits without creation, No continues editing).
+- Explicit security denial for users without `MagnetSystemTypes_Edit`.
 
-Requirement:
+## Recommendation
 
-Cancel prompts for confirmation.
+Keep the current five-file set as authoritative.
 
-Yes = exit without creation.
+If further expansion is needed, add only targeted non-overlapping tests for the listed remaining gaps.
 
-No = continue editing.
-
-No current coverage.
-
-This should be a dedicated test because it's a fairly detailed workflow.
-
-Magnet System Type Exclusion
-
-You have:
-
-Already assigned as Target Type
-
-But requirement also says:
-
-already been defined as a magnet system type
-
-Missing test:
-
-Attempt to create a Magnet System Type using an article already assigned to another Magnet System Type
-
-Expected:
-
-Article is unavailable for selection.
-Validation/message displayed.
-Security
-
-Requirement:
-
-Users must have the MagnetSystemTypes_Edit security right.
-
-Missing:
-
-Attempt to create Magnet System Type without MagnetSystemTypes_Edit
-
-Expected:
-
-New action unavailable.
-Direct URL access denied.
-Biggest Concern
-
-This test:
-
-Verify the Applications field accepts multiple values including custom entries
-
-is potentially a spec issue.
-
-Requirement says:
-
-Applications is required (predefined type of Magnet System Type: Application however multiple can be selected)
-
-That tells me:
-
-Multiple selections = yes
-Custom values = not specified
-
-I would flag this during review and ask whether custom values are actually supported before approving that test.
-
-Overall Assessment
-Test Case	RatingHappy Path Create	Good
-Required Field Validation	Good
-Applications Multi-Select	Needs clarification
-Target Type Exclusion	Strong
-
-Overall coverage for 13.4.2 with these tests: ~65-70%.
-
-Still missing:
-
-Read-only field validation
-Description max length validation
-Cancel confirmation workflow
-Existing Magnet System Type exclusion
-Security permissions
-Redirect verification after save
-Single history entry verification
-
-Those additions would bring coverage close to complete.

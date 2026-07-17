@@ -1,0 +1,47 @@
+﻿[
+    {
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290765\\001-new-magnet-system-happy-path.md",
+        "Title":  "R10.2 Update for CR 286067 - New Magnet System: Verify tester can create a new Magnet System using a valid Magnet System Type (Happy Path)",
+        "CrId":  "286067",
+        "Status":  "Updated",
+        "TestCaseId":  293138,
+        "PlanId":  291616,
+        "SuiteId":  292272
+    },
+    {
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290765\\002-new-magnet-system-duplicate-serial-negative.md",
+        "Title":  "R10.2 Update for CR 286067 - New Magnet System: Attempt to create a Magnet System with a duplicate serial number (Negative)",
+        "CrId":  "286067",
+        "Status":  "Updated",
+        "TestCaseId":  293903,
+        "PlanId":  291616,
+        "SuiteId":  292272
+    },
+    {
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290765\\003-duplicate-serial-number-rejected.md",
+        "Title":  "R10.2 Update for CR 286067 - New Magnet System: Verify a magnet system cannot be created with a serial number already in use (Unhappy Path)",
+        "CrId":  "286067",
+        "Status":  "Created",
+        "TestCaseId":  293956,
+        "PlanId":  291616,
+        "SuiteId":  292272
+    },
+    {
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290765\\003-new-magnet-system-required-field-validation.md",
+        "Title":  "R10.2 Update for CR 286067 - New Magnet System: Verify required field validation is displayed when mandatory fields are empty during creation (Validation)",
+        "CrId":  "286067",
+        "Status":  "Updated",
+        "TestCaseId":  293904,
+        "PlanId":  291616,
+        "SuiteId":  292272
+    },
+    {
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290765\\004-required-fields-enforced-on-new-magnet-system.md",
+        "Title":  "R10.2 Update for CR 286067 - New Magnet System: Verify required fields are enforced before a new magnet system can be saved (Validation)",
+        "CrId":  "286067",
+        "Status":  "Created",
+        "TestCaseId":  293957,
+        "PlanId":  291616,
+        "SuiteId":  292272
+    }
+]

@@ -1,57 +1,29 @@
 # Requirement 290769 - Test Case Audit
 ## CR 286067 - Tracking of Magnet Systems in Evatec Fabric
 
-## Coverage Audit Table
+## Status
 
-| Test Case ID | Requirement ID(s) | Coverage (Yes/Partial/No) | Key Gap(s) | Recommended Action |
-| --- | --- | --- | --- | --- |
-| 001-edit-magnet-system-happy-path | 290769 | Yes | None. | None. |
-| 002-edit-magnet-system-immutable-field-negative | 290769 | Yes | None. | None. |
-| 003-edit-retired-magnet-system-comment-only | 290769 | Yes | None. | None. |
-| 004-edit-magnet-system-inspection-notification | 290769 | Yes | None. | None. |
+Consolidation completed on 2026-07-17.
 
-## Uncovered Requirements
+---
 
-- None.
+## Authoritative Test Cases
 
-## Orphaned Test Cases
+- 001-edit-magnet-system-happy-path.md
+- 002-edit-magnet-system-immutable-field-negative.md
+- 003-edit-retired-magnet-system-comment-only.md
+- 004-edit-magnet-system-inspection-notification.md
 
-- None.
+## Merged and Retired Files
 
-## Consolidation Opportunities
+- Merged into 002: 003-serial-number-and-ms-number-immutable.md
+- Merged into 004: 005-inspection-required-notification-visible-on-edit.md
+- Merged into 004: 004-only-comment-editable-on-retired.md
 
-- Implemented: `005` through `009` merged into `003` and `004` to reduce suite size while preserving requirement coverage.
+## Coverage Gaps
 
-## High-Risk Gaps
+- None identified for requirement clauses currently defined in this folder.
 
-- None.
+## Recommendation
 
-## Summary Metrics
-
-- Total Requirements: 1
-
-- Total Requirement Clauses: 17
-
-- Total Test Cases: 4
-
-- Covered Clauses: 17
-
-- Partial Clauses: 0
-
-- Uncovered Clauses: 0
-
-- Orphaned Test Cases: 0
-
-- Consolidation Opportunities: 0
-
-Final Audit Verdict
-
-Coverage Health:
-- Good
-
-Reason:
-- Core edit, state-based, navigation, and security workflows are explicitly covered.
-
-- Required negative paths are covered for immutability, cancel confirmation, and validation enforcement.
-
-- No uncovered clauses or orphaned tests remain after consolidation.
+- Keep the current four-file authoritative set and use it for safe publish.

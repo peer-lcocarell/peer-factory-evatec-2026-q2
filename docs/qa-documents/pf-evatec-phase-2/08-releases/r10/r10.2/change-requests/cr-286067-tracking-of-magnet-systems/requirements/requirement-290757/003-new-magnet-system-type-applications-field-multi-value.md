@@ -8,6 +8,7 @@
 
 ## Preconditions
 - Tester is signed in with `MagnetSystemTypes_View` and `MagnetSystemTypes_Edit` security rights.
+- Predefined Application values exist in the system.
 - A valid Hardware Component (ERP article) is available for Magnet System Type creation.
 - The Magnet System Types page is accessible.
 
@@ -15,14 +16,16 @@
 |--------|--------|--------|
 | 1 | Open the Magnet System Types page and select New. Select a valid ERP article. | The New Magnet System Type form is displayed. The ERP-derived fields are populated. |
 | 2 | Navigate to the Applications field. | The Applications field is displayed and contains predefined Application values. |
-| 3 | Select two or more Application values. | Multiple Application values can be selected simultaneously. |
+| 3 | Select two or more predefined Application values. | Multiple predefined Application values can be selected simultaneously. |
 | 4 | Complete all required fields and save the Magnet System Type. | Save completes without validation errors. The tester is redirected to the View Magnet System Type page. |
 | 5 | Reopen the Magnet System Type record. | All selected Application values are displayed. |
-| 6 | Open the Magnet System Type History view. | A single creation history entry is displayed for the newly created Magnet System Type. |
+| 6 | Attempt to enter a custom Application value that is not in the predefined list. | If free text is not supported, only predefined values are accepted and custom entry is blocked. If free text is supported, the entered value is retained after save. |
+| 7 | Open the Magnet System Type History view. | A single creation history entry is displayed for the newly created Magnet System Type. |
 
 ## Expected Outcome
 - The Applications field supports selecting multiple predefined Application values.
 - Multiple selected Application values are saved successfully.
 - Selected Application values persist after save.
+- Behavior for custom values is explicit and verified according to system behavior.
 - The tester is redirected to the View Magnet System Type page after saving.
 - A single creation history entry is created for the new Magnet System Type.

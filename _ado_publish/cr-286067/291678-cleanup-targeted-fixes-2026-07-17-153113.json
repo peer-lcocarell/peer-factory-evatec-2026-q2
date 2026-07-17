@@ -1,0 +1,338 @@
+﻿[
+    {
+        "TestCaseId":  293163,
+        "ExpectedRequirement":  290776,
+        "Status":  "Updated",
+        "Actions":  "AddedExpectedRequirementLink",
+        "Error":  null
+    },
+    {
+        "TestCaseId":  293824,
+        "ExpectedRequirement":  290768,
+        "Status":  "Updated",
+        "Actions":  "IterationPath-\u003eR10.2;AddedExpectedRequirementLink",
+        "Error":  null
+    },
+    {
+        "TestCaseId":  293827,
+        "ExpectedRequirement":  290770,
+        "Status":  "Updated",
+        "Actions":  "IterationPath-\u003eR10.2;AddedExpectedRequirementLink",
+        "Error":  null
+    },
+    {
+        "TestCaseId":  293828,
+        "ExpectedRequirement":  290770,
+        "Status":  "Updated",
+        "Actions":  "IterationPath-\u003eR10.2;AddedExpectedRequirementLink",
+        "Error":  null
+    },
+    {
+        "TestCaseId":  293832,
+        "ExpectedRequirement":  290771,
+        "Status":  "Updated",
+        "Actions":  "IterationPath-\u003eR10.2;AddedExpectedRequirementLink",
+        "Error":  null
+    },
+    {
+        "TestCaseId":  293833,
+        "ExpectedRequirement":  290771,
+        "Status":  "Updated",
+        "Actions":  "IterationPath-\u003eR10.2;AddedExpectedRequirementLink",
+        "Error":  null
+    },
+    {
+        "TestCaseId":  293834,
+        "ExpectedRequirement":  290771,
+        "Status":  "Updated",
+        "Actions":  "IterationPath-\u003eR10.2;AddedExpectedRequirementLink",
+        "Error":  null
+    },
+    {
+        "TestCaseId":  293835,
+        "ExpectedRequirement":  290771,
+        "Status":  "Updated",
+        "Actions":  "IterationPath-\u003eR10.2;AddedExpectedRequirementLink",
+        "Error":  null
+    },
+    {
+        "TestCaseId":  293868,
+        "ExpectedRequirement":  174279,
+        "Status":  "Updated",
+        "Actions":  "IterationPath-\u003eR10.2;AddedExpectedRequirementLink",
+        "Error":  null
+    },
+    {
+        "TestCaseId":  293869,
+        "ExpectedRequirement":  174279,
+        "Status":  "Updated",
+        "Actions":  "IterationPath-\u003eR10.2;AddedExpectedRequirementLink",
+        "Error":  null
+    },
+    {
+        "TestCaseId":  293870,
+        "ExpectedRequirement":  174279,
+        "Status":  "Updated",
+        "Actions":  "IterationPath-\u003eR10.2;AddedExpectedRequirementLink",
+        "Error":  null
+    },
+    {
+        "TestCaseId":  293871,
+        "ExpectedRequirement":  205378,
+        "Status":  "Updated",
+        "Actions":  "IterationPath-\u003eR10.2;AddedExpectedRequirementLink",
+        "Error":  null
+    },
+    {
+        "TestCaseId":  293872,
+        "ExpectedRequirement":  205378,
+        "Status":  "Updated",
+        "Actions":  "IterationPath-\u003eR10.2;AddedExpectedRequirementLink",
+        "Error":  null
+    },
+    {
+        "TestCaseId":  293873,
+        "ExpectedRequirement":  205378,
+        "Status":  "Updated",
+        "Actions":  "IterationPath-\u003eR10.2;AddedExpectedRequirementLink",
+        "Error":  null
+    },
+    {
+        "TestCaseId":  293874,
+        "ExpectedRequirement":  205378,
+        "Status":  "Updated",
+        "Actions":  "IterationPath-\u003eR10.2;AddedExpectedRequirementLink",
+        "Error":  null
+    },
+    {
+        "TestCaseId":  293875,
+        "ExpectedRequirement":  205379,
+        "Status":  "Updated",
+        "Actions":  "IterationPath-\u003eR10.2;AddedExpectedRequirementLink",
+        "Error":  null
+    },
+    {
+        "TestCaseId":  293876,
+        "ExpectedRequirement":  205379,
+        "Status":  "Updated",
+        "Actions":  "IterationPath-\u003eR10.2;AddedExpectedRequirementLink",
+        "Error":  null
+    },
+    {
+        "TestCaseId":  293877,
+        "ExpectedRequirement":  205380,
+        "Status":  "Updated",
+        "Actions":  "IterationPath-\u003eR10.2;AddedExpectedRequirementLink",
+        "Error":  null
+    },
+    {
+        "TestCaseId":  293903,
+        "ExpectedRequirement":  290765,
+        "Status":  "Updated",
+        "Actions":  "IterationPath-\u003eR10.2;AddedExpectedRequirementLink",
+        "Error":  null
+    },
+    {
+        "TestCaseId":  293904,
+        "ExpectedRequirement":  290765,
+        "Status":  "Updated",
+        "Actions":  "IterationPath-\u003eR10.2;AddedExpectedRequirementLink",
+        "Error":  null
+    },
+    {
+        "TestCaseId":  293905,
+        "ExpectedRequirement":  290766,
+        "Status":  "Updated",
+        "Actions":  "IterationPath-\u003eR10.2;AddedExpectedRequirementLink",
+        "Error":  null
+    },
+    {
+        "TestCaseId":  293906,
+        "ExpectedRequirement":  290766,
+        "Status":  "Updated",
+        "Actions":  "IterationPath-\u003eR10.2;AddedExpectedRequirementLink",
+        "Error":  null
+    },
+    {
+        "TestCaseId":  293907,
+        "ExpectedRequirement":  290767,
+        "Status":  "Updated",
+        "Actions":  "IterationPath-\u003eR10.2;AddedExpectedRequirementLink",
+        "Error":  null
+    },
+    {
+        "TestCaseId":  293908,
+        "ExpectedRequirement":  290767,
+        "Status":  "Updated",
+        "Actions":  "IterationPath-\u003eR10.2;AddedExpectedRequirementLink",
+        "Error":  null
+    },
+    {
+        "TestCaseId":  293909,
+        "ExpectedRequirement":  290769,
+        "Status":  "Updated",
+        "Actions":  "IterationPath-\u003eR10.2;AddedExpectedRequirementLink",
+        "Error":  null
+    },
+    {
+        "TestCaseId":  293910,
+        "ExpectedRequirement":  290769,
+        "Status":  "Updated",
+        "Actions":  "IterationPath-\u003eR10.2;AddedExpectedRequirementLink",
+        "Error":  null
+    },
+    {
+        "TestCaseId":  293911,
+        "ExpectedRequirement":  290769,
+        "Status":  "Updated",
+        "Actions":  "IterationPath-\u003eR10.2;AddedExpectedRequirementLink",
+        "Error":  null
+    },
+    {
+        "TestCaseId":  293912,
+        "ExpectedRequirement":  290770,
+        "Status":  "Updated",
+        "Actions":  "IterationPath-\u003eR10.2;AddedExpectedRequirementLink",
+        "Error":  null
+    },
+    {
+        "TestCaseId":  293913,
+        "ExpectedRequirement":  290772,
+        "Status":  "Updated",
+        "Actions":  "IterationPath-\u003eR10.2;AddedExpectedRequirementLink",
+        "Error":  null
+    },
+    {
+        "TestCaseId":  293914,
+        "ExpectedRequirement":  290772,
+        "Status":  "Updated",
+        "Actions":  "IterationPath-\u003eR10.2;AddedExpectedRequirementLink",
+        "Error":  null
+    },
+    {
+        "TestCaseId":  293915,
+        "ExpectedRequirement":  290772,
+        "Status":  "Updated",
+        "Actions":  "IterationPath-\u003eR10.2;AddedExpectedRequirementLink",
+        "Error":  null
+    },
+    {
+        "TestCaseId":  293916,
+        "ExpectedRequirement":  290772,
+        "Status":  "Updated",
+        "Actions":  "IterationPath-\u003eR10.2;AddedExpectedRequirementLink",
+        "Error":  null
+    },
+    {
+        "TestCaseId":  293917,
+        "ExpectedRequirement":  290773,
+        "Status":  "Updated",
+        "Actions":  "IterationPath-\u003eR10.2;AddedExpectedRequirementLink",
+        "Error":  null
+    },
+    {
+        "TestCaseId":  293919,
+        "ExpectedRequirement":  290773,
+        "Status":  "Updated",
+        "Actions":  "IterationPath-\u003eR10.2;AddedExpectedRequirementLink",
+        "Error":  null
+    },
+    {
+        "TestCaseId":  293920,
+        "ExpectedRequirement":  290773,
+        "Status":  "Updated",
+        "Actions":  "IterationPath-\u003eR10.2;AddedExpectedRequirementLink",
+        "Error":  null
+    },
+    {
+        "TestCaseId":  293921,
+        "ExpectedRequirement":  290773,
+        "Status":  "Updated",
+        "Actions":  "IterationPath-\u003eR10.2;AddedExpectedRequirementLink",
+        "Error":  null
+    },
+    {
+        "TestCaseId":  293922,
+        "ExpectedRequirement":  290775,
+        "Status":  "Updated",
+        "Actions":  "IterationPath-\u003eR10.2;RemovedWrongRequirementLink;AddedExpectedRequirementLink",
+        "Error":  null
+    },
+    {
+        "TestCaseId":  293923,
+        "ExpectedRequirement":  290775,
+        "Status":  "Updated",
+        "Actions":  "IterationPath-\u003eR10.2;RemovedWrongRequirementLink;AddedExpectedRequirementLink",
+        "Error":  null
+    },
+    {
+        "TestCaseId":  293924,
+        "ExpectedRequirement":  290776,
+        "Status":  "Updated",
+        "Actions":  "IterationPath-\u003eR10.2;AddedExpectedRequirementLink",
+        "Error":  null
+    },
+    {
+        "TestCaseId":  293925,
+        "ExpectedRequirement":  290777,
+        "Status":  "Updated",
+        "Actions":  "IterationPath-\u003eR10.2;AddedExpectedRequirementLink",
+        "Error":  null
+    },
+    {
+        "TestCaseId":  293926,
+        "ExpectedRequirement":  290777,
+        "Status":  "Updated",
+        "Actions":  "IterationPath-\u003eR10.2;AddedExpectedRequirementLink",
+        "Error":  null
+    },
+    {
+        "TestCaseId":  293927,
+        "ExpectedRequirement":  290777,
+        "Status":  "Updated",
+        "Actions":  "IterationPath-\u003eR10.2;AddedExpectedRequirementLink",
+        "Error":  null
+    },
+    {
+        "TestCaseId":  293928,
+        "ExpectedRequirement":  290777,
+        "Status":  "Updated",
+        "Actions":  "IterationPath-\u003eR10.2;AddedExpectedRequirementLink",
+        "Error":  null
+    },
+    {
+        "TestCaseId":  293929,
+        "ExpectedRequirement":  290777,
+        "Status":  "Updated",
+        "Actions":  "IterationPath-\u003eR10.2;AddedExpectedRequirementLink",
+        "Error":  null
+    },
+    {
+        "TestCaseId":  293930,
+        "ExpectedRequirement":  73354,
+        "Status":  "Updated",
+        "Actions":  "IterationPath-\u003eR10.2;AddedExpectedRequirementLink",
+        "Error":  null
+    },
+    {
+        "TestCaseId":  293931,
+        "ExpectedRequirement":  73354,
+        "Status":  "Updated",
+        "Actions":  "IterationPath-\u003eR10.2;AddedExpectedRequirementLink",
+        "Error":  null
+    },
+    {
+        "TestCaseId":  293932,
+        "ExpectedRequirement":  73375,
+        "Status":  "Updated",
+        "Actions":  "IterationPath-\u003eR10.2;AddedExpectedRequirementLink",
+        "Error":  null
+    },
+    {
+        "TestCaseId":  293933,
+        "ExpectedRequirement":  73375,
+        "Status":  "Updated",
+        "Actions":  "IterationPath-\u003eR10.2;AddedExpectedRequirementLink",
+        "Error":  null
+    }
+]

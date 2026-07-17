@@ -1,0 +1,34 @@
+﻿[
+    {
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290769\\001-edit-magnet-system-happy-path.md",
+        "Title":  "R10.2 Update for CR 286067 - Edit Magnet System: Verify tester can update Magnet System attributes (Happy Path)",
+        "Status":  "WhatIf",
+        "TestCaseId":  293146,
+        "PlanId":  291616,
+        "SuiteId":  292276
+    },
+    {
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290769\\002-edit-magnet-system-immutable-field-negative.md",
+        "Title":  "R10.2 Update for CR 286067 - Edit Magnet System: Attempt to edit the Serial Number or Magnet System Number on an existing Magnet System (Negative)",
+        "Status":  "WhatIf",
+        "TestCaseId":  293909,
+        "PlanId":  291616,
+        "SuiteId":  292276
+    },
+    {
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290769\\003-edit-retired-magnet-system-comment-only.md",
+        "Title":  "R10.2 Update for CR 286067 - Edit Magnet System: Verify access control and navigation behavior for Edit Magnet System (Negative)",
+        "Status":  "WhatIf",
+        "TestCaseId":  293910,
+        "PlanId":  291616,
+        "SuiteId":  292276
+    },
+    {
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290769\\004-edit-magnet-system-inspection-notification.md",
+        "Title":  "R10.2 Update for CR 286067 - Edit Magnet System: Verify retired-state restrictions and edit validation behavior (Negative)",
+        "Status":  "WhatIf",
+        "TestCaseId":  293911,
+        "PlanId":  291616,
+        "SuiteId":  292276
+    }
+]

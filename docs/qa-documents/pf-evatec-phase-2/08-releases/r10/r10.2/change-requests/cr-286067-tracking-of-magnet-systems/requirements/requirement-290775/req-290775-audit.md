@@ -3,141 +3,71 @@
 
 ## Status
 
-Pending
+Consolidation completed on 2026-07-17.
 
 ---
 
-## Coverage Assessment
+## Authoritative Test Cases
 
-### Existing Test Cases
+- 001-return-magnet-system-happy-path.md
+- 002-return-magnet-system-from-in-stock-negative.md
 
-_To be completed._
+## Merged and Retired Files
 
-### Coverage Gaps
+- Merged into 002: 003-return-blocked-when-in-stock.md
+- Merged into 001: 003-return-magnet-system-cleanup-validation.md
+- Merged into 001: 004-location-cleared-and-status-in-stock-after-return.md
 
-_To be completed._
+## Coverage Audit Table
 
-### Recommendations
+| Test Case ID | Requirement ID(s) | Coverage (Yes/Partial/No) | Key Gap(s) | Recommended Action |
+| --- | --- | --- | --- | --- |
+| 001-return-magnet-system-happy-path | 290775 | Partial | Cancellation path and security permission boundary are not covered. | Add one cancellation validation test and one security permission test. |
+| 002-return-magnet-system-from-in-stock-negative | 290775 | Partial | Permission boundary is not covered. | Add one security permission test for `MagnetSystems_Process`. |
 
-_To be completed._
+## Uncovered Requirements
 
----
+- Confirm and cancel behavior for Return dialog is not explicitly validated.
+- `MagnetSystems_Process` security right enforcement is not explicitly validated.
 
-## Notes
+## Orphaned Test Cases
 
-_To be completed._
-13.5.9REQUIREMENT: Return Magnet System
-When a magnet system is checked out it can be returned if the status is ‘Checked Out’ or ‘In Inspection’.
+- None.
 
-The user will be prompted for confirmation allowing them to cancel the ‘return’ without any changes to the magnet system.
+## Consolidation Opportunities
 
-Upon confirmation PF will
+- None.
 
-1.Update the status to ‘In Stock’
+## High-Risk Gaps
 
-2.Clear the location
+- Return permission enforcement is not covered.
 
-3.Clear the checked out by and timestamp
+## Summary Metrics
 
-4.Add a ‘returned by [user]’ entry to the history
+- Total Requirements: 1
 
-Users must have the MagnetSystems_Process security right to access this functionality.
+- Total Requirement Clauses: 6
 
+- Total Test Cases: 2
 
-## Recommended Actions for Requirement 290775
+- Covered Clauses: 4
 
-### 1. Delete This Test Case
+- Partial Clauses: 2
 
-Remove:
+- Uncovered Clauses: 0
 
-```text
-R10.2 Update for CR 286067 - Return Magnet System: Verify Location is cleared and status returns to In Stock after return from Checked Out (Validation)
+- Orphaned Test Cases: 0
 
+- Consolidation Opportunities: 0
+
+Final Audit Verdict
+
+Coverage Health:
+- Fair
 
 Reason:
+- Core return behavior and data cleanup are covered in the consolidated happy path.
 
-It does not test a separate workflow.
-It only validates requirement outcomes that belong to the core Return workflow.
-Maintaining a separate test adds duplication without increasing coverage.
-2. Update the Existing Happy Path Test
+- Status boundary behavior is covered including direct-access denial for `In Stock`.
 
-File:
-
-R10.2 Update for CR 286067 - Return Magnet System: Verify tester can return a Magnet System to available inventory (Happy Path)
-
-
-Add the following validation steps:
-
-Step	Action	Expected Result5	Review the checkout information on the returned Magnet System.	The Checked Out By field is empty. The Checked Out Timestamp field is empty.
-6	Verify the Location field.	The Location field is empty.
-7	Open the Magnet System History view.	A "Returned By" history entry is present containing the acting user and timestamp.
-
-Update the Expected Outcome to include:
-
-A Checked Out Magnet System can be returned to inventory. After return, the status changes to In Stock, the Location field is cleared, the Checked Out By field is cleared, and the Checked Out Timestamp field is cleared. A Return history entry is written containing the acting user and timestamp.
-
-3. Add a Return Cancellation Test
-
-Create:
-
-R10.2 Update for CR 286067 - Return Magnet System: Verify tester can cancel a return operation (Validation)
-
-
-Purpose:
-
-Cover the confirmation dialog cancellation path.
-Verify no changes are made when Cancel is selected.
-
-This covers a requirement clause that is currently untested.
-
-4. Add a Security Test
-
-Create:
-
-R10.2 Update for CR 286067 - Return Magnet System: Verify return security permissions are enforced (Security)
-
-
-Purpose:
-
-Validate the MagnetSystems_Process security requirement.
-Verify users without permission cannot perform Return.
-5. Expand the Existing Negative Test
-
-File:
-
-R10.2 Update for CR 286067 - Return Magnet System: Attempt to return a Magnet System that is already In Stock (Negative)
-
-
-Add validation that:
-
-Return is available for Checked Out.
-Return is available for In Inspection.
-Return is unavailable for In Stock.
-
-This fully validates the status rule.
-
-Final Suite
-
-Keep:
-
-Return Magnet System Happy Path (expanded)
-Return Magnet System Invalid Status (expanded)
-Return Cancellation (new)
-Return Security Permissions (new)
-
-Remove:
-
-Return Location Cleared Validation
-Net Result
-
-Current Tests: 3
-
-Recommended Tests: 4
-
-New Tests Added: 2
-
-Tests Removed: 1
-
-Net Growth: +1
-
-This achieves full requirement coverage with minimal suite growth.
+- Cancellation and permission enforcement remain as explicit gaps.

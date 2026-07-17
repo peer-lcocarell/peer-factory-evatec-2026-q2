@@ -1,0 +1,331 @@
+﻿[
+    {
+        "TestCaseId":  293878,
+        "ToSuite":  292258,
+        "AddStatus":  "Added",
+        "RemoveStatus":  "NotInParent",
+        "Notes":  ""
+    },
+    {
+        "TestCaseId":  293879,
+        "ToSuite":  292259,
+        "AddStatus":  "Added",
+        "RemoveStatus":  "RemovedFromParent",
+        "Notes":  ""
+    },
+    {
+        "TestCaseId":  293880,
+        "ToSuite":  292259,
+        "AddStatus":  "Added",
+        "RemoveStatus":  "RemovedFromParent",
+        "Notes":  ""
+    },
+    {
+        "TestCaseId":  293446,
+        "ToSuite":  292259,
+        "AddStatus":  "AlreadyInDestination",
+        "RemoveStatus":  "RemovedFromParent",
+        "Notes":  ""
+    },
+    {
+        "TestCaseId":  293881,
+        "ToSuite":  292260,
+        "AddStatus":  "Added",
+        "RemoveStatus":  "RemovedFromParent",
+        "Notes":  ""
+    },
+    {
+        "TestCaseId":  293882,
+        "ToSuite":  292260,
+        "AddStatus":  "Added",
+        "RemoveStatus":  "RemovedFromParent",
+        "Notes":  ""
+    },
+    {
+        "TestCaseId":  293883,
+        "ToSuite":  292260,
+        "AddStatus":  "Added",
+        "RemoveStatus":  "RemovedFromParent",
+        "Notes":  ""
+    },
+    {
+        "TestCaseId":  293110,
+        "ToSuite":  292261,
+        "AddStatus":  "AlreadyInDestination",
+        "RemoveStatus":  "RemovedFromParent",
+        "Notes":  ""
+    },
+    {
+        "TestCaseId":  293884,
+        "ToSuite":  292261,
+        "AddStatus":  "Added",
+        "RemoveStatus":  "RemovedFromParent",
+        "Notes":  ""
+    },
+    {
+        "TestCaseId":  293885,
+        "ToSuite":  292261,
+        "AddStatus":  "Added",
+        "RemoveStatus":  "RemovedFromParent",
+        "Notes":  ""
+    },
+    {
+        "TestCaseId":  293460,
+        "ToSuite":  292242,
+        "AddStatus":  "AlreadyInDestination",
+        "RemoveStatus":  "RemovedFromParent",
+        "Notes":  ""
+    },
+    {
+        "TestCaseId":  293886,
+        "ToSuite":  292242,
+        "AddStatus":  "Added",
+        "RemoveStatus":  "RemovedFromParent",
+        "Notes":  ""
+    },
+    {
+        "TestCaseId":  293887,
+        "ToSuite":  292242,
+        "AddStatus":  "Added",
+        "RemoveStatus":  "RemovedFromParent",
+        "Notes":  ""
+    },
+    {
+        "TestCaseId":  293115,
+        "ToSuite":  292263,
+        "AddStatus":  "AlreadyInDestination",
+        "RemoveStatus":  "RemovedFromParent",
+        "Notes":  ""
+    },
+    {
+        "TestCaseId":  293888,
+        "ToSuite":  292263,
+        "AddStatus":  "Added",
+        "RemoveStatus":  "RemovedFromParent",
+        "Notes":  ""
+    },
+    {
+        "TestCaseId":  293889,
+        "ToSuite":  292263,
+        "AddStatus":  "Added",
+        "RemoveStatus":  "RemovedFromParent",
+        "Notes":  ""
+    },
+    {
+        "TestCaseId":  293468,
+        "ToSuite":  292263,
+        "AddStatus":  "AlreadyInDestination",
+        "RemoveStatus":  "RemovedFromParent",
+        "Notes":  ""
+    },
+    {
+        "TestCaseId":  293890,
+        "ToSuite":  292263,
+        "AddStatus":  "Added",
+        "RemoveStatus":  "RemovedFromParent",
+        "Notes":  ""
+    },
+    {
+        "TestCaseId":  293470,
+        "ToSuite":  292264,
+        "AddStatus":  "AlreadyInDestination",
+        "RemoveStatus":  "RemovedFromParent",
+        "Notes":  ""
+    },
+    {
+        "TestCaseId":  293471,
+        "ToSuite":  292264,
+        "AddStatus":  "AlreadyInDestination",
+        "RemoveStatus":  "RemovedFromParent",
+        "Notes":  ""
+    },
+    {
+        "TestCaseId":  293472,
+        "ToSuite":  292264,
+        "AddStatus":  "AlreadyInDestination",
+        "RemoveStatus":  "RemovedFromParent",
+        "Notes":  ""
+    },
+    {
+        "TestCaseId":  293473,
+        "ToSuite":  292264,
+        "AddStatus":  "AlreadyInDestination",
+        "RemoveStatus":  "RemovedFromParent",
+        "Notes":  ""
+    },
+    {
+        "TestCaseId":  293474,
+        "ToSuite":  292264,
+        "AddStatus":  "AlreadyInDestination",
+        "RemoveStatus":  "RemovedFromParent",
+        "Notes":  ""
+    },
+    {
+        "TestCaseId":  293891,
+        "ToSuite":  292266,
+        "AddStatus":  "Added",
+        "RemoveStatus":  "RemovedFromParent",
+        "Notes":  ""
+    },
+    {
+        "TestCaseId":  293892,
+        "ToSuite":  292266,
+        "AddStatus":  "Added",
+        "RemoveStatus":  "RemovedFromParent",
+        "Notes":  ""
+    },
+    {
+        "TestCaseId":  293893,
+        "ToSuite":  292267,
+        "AddStatus":  "Added",
+        "RemoveStatus":  "RemovedFromParent",
+        "Notes":  ""
+    },
+    {
+        "TestCaseId":  293894,
+        "ToSuite":  292267,
+        "AddStatus":  "Added",
+        "RemoveStatus":  "RemovedFromParent",
+        "Notes":  ""
+    },
+    {
+        "TestCaseId":  293895,
+        "ToSuite":  292267,
+        "AddStatus":  "Added",
+        "RemoveStatus":  "RemovedFromParent",
+        "Notes":  ""
+    },
+    {
+        "TestCaseId":  293896,
+        "ToSuite":  292267,
+        "AddStatus":  "Added",
+        "RemoveStatus":  "RemovedFromParent",
+        "Notes":  ""
+    },
+    {
+        "TestCaseId":  293897,
+        "ToSuite":  292267,
+        "AddStatus":  "Added",
+        "RemoveStatus":  "RemovedFromParent",
+        "Notes":  ""
+    },
+    {
+        "TestCaseId":  293898,
+        "ToSuite":  292267,
+        "AddStatus":  "Added",
+        "RemoveStatus":  "RemovedFromParent",
+        "Notes":  ""
+    },
+    {
+        "TestCaseId":  293126,
+        "ToSuite":  292268,
+        "AddStatus":  "AlreadyInDestination",
+        "RemoveStatus":  "RemovedFromParent",
+        "Notes":  ""
+    },
+    {
+        "TestCaseId":  293806,
+        "ToSuite":  292268,
+        "AddStatus":  "AlreadyInDestination",
+        "RemoveStatus":  "RemovedFromParent",
+        "Notes":  ""
+    },
+    {
+        "TestCaseId":  293807,
+        "ToSuite":  292268,
+        "AddStatus":  "AlreadyInDestination",
+        "RemoveStatus":  "RemovedFromParent",
+        "Notes":  ""
+    },
+    {
+        "TestCaseId":  293128,
+        "ToSuite":  292269,
+        "AddStatus":  "AlreadyInDestination",
+        "RemoveStatus":  "RemovedFromParent",
+        "Notes":  ""
+    },
+    {
+        "TestCaseId":  293129,
+        "ToSuite":  292269,
+        "AddStatus":  "AlreadyInDestination",
+        "RemoveStatus":  "RemovedFromParent",
+        "Notes":  ""
+    },
+    {
+        "TestCaseId":  293811,
+        "ToSuite":  292269,
+        "AddStatus":  "AlreadyInDestination",
+        "RemoveStatus":  "RemovedFromParent",
+        "Notes":  ""
+    },
+    {
+        "TestCaseId":  293130,
+        "ToSuite":  292270,
+        "AddStatus":  "AlreadyInDestination",
+        "RemoveStatus":  "RemovedFromParent",
+        "Notes":  ""
+    },
+    {
+        "TestCaseId":  293899,
+        "ToSuite":  292270,
+        "AddStatus":  "Added",
+        "RemoveStatus":  "RemovedFromParent",
+        "Notes":  ""
+    },
+    {
+        "TestCaseId":  293900,
+        "ToSuite":  292270,
+        "AddStatus":  "Added",
+        "RemoveStatus":  "RemovedFromParent",
+        "Notes":  ""
+    },
+    {
+        "TestCaseId":  293901,
+        "ToSuite":  292270,
+        "AddStatus":  "Added",
+        "RemoveStatus":  "RemovedFromParent",
+        "Notes":  ""
+    },
+    {
+        "TestCaseId":  293134,
+        "ToSuite":  292270,
+        "AddStatus":  "AlreadyInDestination",
+        "RemoveStatus":  "RemovedFromParent",
+        "Notes":  ""
+    },
+    {
+        "TestCaseId":  293817,
+        "ToSuite":  292270,
+        "AddStatus":  "AlreadyInDestination",
+        "RemoveStatus":  "RemovedFromParent",
+        "Notes":  ""
+    },
+    {
+        "TestCaseId":  293136,
+        "ToSuite":  292271,
+        "AddStatus":  "AlreadyInDestination",
+        "RemoveStatus":  "RemovedFromParent",
+        "Notes":  ""
+    },
+    {
+        "TestCaseId":  293902,
+        "ToSuite":  292271,
+        "AddStatus":  "Added",
+        "RemoveStatus":  "RemovedFromParent",
+        "Notes":  ""
+    },
+    {
+        "TestCaseId":  293818,
+        "ToSuite":  292271,
+        "AddStatus":  "AlreadyInDestination",
+        "RemoveStatus":  "RemovedFromParent",
+        "Notes":  ""
+    },
+    {
+        "TestCaseId":  293918,
+        "ToSuite":  292280,
+        "AddStatus":  "AlreadyInDestination",
+        "RemoveStatus":  "RemovedFromParent",
+        "Notes":  ""
+    }
+]

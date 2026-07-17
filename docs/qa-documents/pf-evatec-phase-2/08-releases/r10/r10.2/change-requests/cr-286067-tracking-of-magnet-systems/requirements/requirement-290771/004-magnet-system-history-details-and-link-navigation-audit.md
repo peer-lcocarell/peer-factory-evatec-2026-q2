@@ -17,8 +17,11 @@ Requirement: Magnet System History (Magnet Systems)
 | 2 | Open the same record in Edit mode and navigate to History. | History is accessible from Edit context and entries are displayed. |
 | 3 | Edit one tracked field (for example Last Inspection Date) and save. | Save completes successfully. |
 | 4 | Re-open History and inspect the new Edit entry. | The Edit entry includes acting user, timestamp, meaningful summary, and full change detail including changed field and old and new values when available. |
-| 5 | Open any history entry that exposes additional details or a link. | Additional details or linked content opens successfully and corresponds to the selected event. |
-| 6 | Review entry order after refresh. | Entries remain in chronological order with no merge or loss of prior entries. |
+| 5 | Locate an Install history entry and inspect displayed details. | Install entry includes module name, tool name, timestamp, and actor. |
+| 6 | Open the tool or module link from the Install entry when available. | Linked tool or module opens successfully and matches the referenced history item. |
+| 7 | Locate a Checkout history entry and inspect displayed details. | Checkout entry includes checked-out user name, tool name, timestamp, and actor. |
+| 8 | Locate a Return history entry and inspect displayed details. | Return entry includes timestamp and actor. No tool or checked-out user detail is displayed for Return. |
+| 9 | Review entry order after refresh. | Entries remain in chronological order with no merge or loss of prior entries. |
 
 ## Expected Outcome
-History is available from both View and Edit contexts. Edit entries contain detailed change information and meaningful summaries. Links and additional details open correctly. Chronological ordering is preserved.
+History is available from both View and Edit contexts. Edit entries contain detailed change information and meaningful summaries. Install and Checkout entries show expected contextual details and links open the referenced records. Return entries show timestamp and actor without unrelated context. Chronological ordering is preserved.

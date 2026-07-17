@@ -1,0 +1,16 @@
+﻿{
+    "GeneratedAt":  "2026-07-17T15:26:12",
+    "ParentSuite":  291678,
+    "ParentSuiteCount":  0,
+    "ChildSuiteCount":  31,
+    "TotalMemberships":  220,
+    "UniqueCases":  220,
+    "MultiSuiteCaseIds":  {
+
+                          },
+    "DuplicateTitleWorkItems":  {
+                                    "Title":  "R10.2 Update for CR 286836 - Import Hardware Components from File: Verify import fails when file format is invalid (Unhappy Path)",
+                                    "Count":  2,
+                                    "TestCaseIds":  "292747,293649"
+                                }
+}

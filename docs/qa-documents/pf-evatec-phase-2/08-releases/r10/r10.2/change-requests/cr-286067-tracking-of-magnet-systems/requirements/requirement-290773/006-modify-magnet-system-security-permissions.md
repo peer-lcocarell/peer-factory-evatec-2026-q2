@@ -16,7 +16,7 @@ Requirement: Modify Magnet System (Magnet Systems)
 |------|--------|-----------------|
 | 1 | Sign in as a user with `MagnetSystems_Modify` permission. Open the 'Magnet Systems' page and select a Magnet System with status `Checked Out`. | The 'Modify' action is available. |
 | 2 | Sign out and sign in as a user without `MagnetSystems_Modify` permission. Open the 'Magnet Systems' page and select a Magnet System with status `Checked Out`. | The 'Modify' action is not visible or is disabled. |
-| 3 | Attempt to access the Modify functionality directly (e.g., via direct URL or API call). | Access is denied. Modification cannot be performed without the required permission. |
+| 3 | Attempt to access the Modify functionality directly (e.g., via direct URL or API call). | Access is denied. Modification cannot be performed without the required permission. No modification is persisted. |
 
 ## Expected Outcome
 Only users with `MagnetSystems_Modify` permission can access and execute the Modify action. Users without the permission cannot access or trigger modification functionality by any means.

@@ -1,0 +1,86 @@
+﻿[
+    {
+        "TestCaseId":  293932,
+        "RequirementId":  73375,
+        "KeepSuiteId":  292254,
+        "RemovedFromSuiteId":  292253,
+        "Status":  "RemovedMembership"
+    },
+    {
+        "TestCaseId":  293933,
+        "RequirementId":  73375,
+        "KeepSuiteId":  292254,
+        "RemovedFromSuiteId":  292253,
+        "Status":  "RemovedMembership"
+    },
+    {
+        "TestCaseId":  293913,
+        "RequirementId":  290772,
+        "KeepSuiteId":  292279,
+        "RemovedFromSuiteId":  292274,
+        "Status":  "RemovedMembership"
+    },
+    {
+        "TestCaseId":  293914,
+        "RequirementId":  290772,
+        "KeepSuiteId":  292279,
+        "RemovedFromSuiteId":  292274,
+        "Status":  "RemovedMembership"
+    },
+    {
+        "TestCaseId":  293915,
+        "RequirementId":  290772,
+        "KeepSuiteId":  292279,
+        "RemovedFromSuiteId":  292274,
+        "Status":  "RemovedMembership"
+    },
+    {
+        "TestCaseId":  293916,
+        "RequirementId":  290772,
+        "KeepSuiteId":  292279,
+        "RemovedFromSuiteId":  292274,
+        "Status":  "RemovedMembership"
+    },
+    {
+        "TestCaseId":  293145,
+        "RequirementId":  290768,
+        "KeepSuiteId":  292275,
+        "RemovedFromSuiteId":  292277,
+        "Status":  "RemovedMembership"
+    },
+    {
+        "TestCaseId":  293824,
+        "RequirementId":  290768,
+        "KeepSuiteId":  292275,
+        "RemovedFromSuiteId":  292277,
+        "Status":  "RemovedMembership"
+    },
+    {
+        "TestCaseId":  293832,
+        "RequirementId":  290771,
+        "KeepSuiteId":  292278,
+        "RemovedFromSuiteId":  292277,
+        "Status":  "RemovedMembership"
+    },
+    {
+        "TestCaseId":  293165,
+        "RequirementId":  290777,
+        "KeepSuiteId":  292283,
+        "RemovedFromSuiteId":  292281,
+        "Status":  "RemovedMembership"
+    },
+    {
+        "TestCaseId":  293168,
+        "RequirementId":  290777,
+        "KeepSuiteId":  292283,
+        "RemovedFromSuiteId":  292281,
+        "Status":  "RemovedMembership"
+    },
+    {
+        "TestCaseId":  293169,
+        "RequirementId":  290777,
+        "KeepSuiteId":  292283,
+        "RemovedFromSuiteId":  292281,
+        "Status":  "RemovedMembership"
+    }
+]

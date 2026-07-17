@@ -1,0 +1,293 @@
+﻿{
+    "TotalChecked":  114,
+    "IssueCount":  57,
+    "Issues":  [
+                   {
+                       "TestCaseId":  293163,
+                       "Issue":  "MissingTestedByReverseLink",
+                       "ExpectedRequirement":  290776
+                   },
+                   {
+                       "TestCaseId":  293824,
+                       "Issue":  "IterationMismatch",
+                       "IterationPath":  "PFEvatec"
+                   },
+                   {
+                       "TestCaseId":  293827,
+                       "Issue":  "IterationMismatch",
+                       "IterationPath":  "PFEvatec"
+                   },
+                   {
+                       "TestCaseId":  293828,
+                       "Issue":  "IterationMismatch",
+                       "IterationPath":  "PFEvatec"
+                   },
+                   {
+                       "TestCaseId":  293832,
+                       "Issue":  "IterationMismatch",
+                       "IterationPath":  "PFEvatec"
+                   },
+                   {
+                       "TestCaseId":  293833,
+                       "Issue":  "IterationMismatch",
+                       "IterationPath":  "PFEvatec"
+                   },
+                   {
+                       "TestCaseId":  293834,
+                       "Issue":  "IterationMismatch",
+                       "IterationPath":  "PFEvatec"
+                   },
+                   {
+                       "TestCaseId":  293835,
+                       "Issue":  "IterationMismatch",
+                       "IterationPath":  "PFEvatec"
+                   },
+                   {
+                       "TestCaseId":  293868,
+                       "Issue":  "IterationMismatch",
+                       "IterationPath":  "PFEvatec"
+                   },
+                   {
+                       "TestCaseId":  293869,
+                       "Issue":  "IterationMismatch",
+                       "IterationPath":  "PFEvatec"
+                   },
+                   {
+                       "TestCaseId":  293870,
+                       "Issue":  "IterationMismatch",
+                       "IterationPath":  "PFEvatec"
+                   },
+                   {
+                       "TestCaseId":  293871,
+                       "Issue":  "IterationMismatch",
+                       "IterationPath":  "PFEvatec"
+                   },
+                   {
+                       "TestCaseId":  293872,
+                       "Issue":  "IterationMismatch",
+                       "IterationPath":  "PFEvatec"
+                   },
+                   {
+                       "TestCaseId":  293873,
+                       "Issue":  "IterationMismatch",
+                       "IterationPath":  "PFEvatec"
+                   },
+                   {
+                       "TestCaseId":  293874,
+                       "Issue":  "IterationMismatch",
+                       "IterationPath":  "PFEvatec"
+                   },
+                   {
+                       "TestCaseId":  293875,
+                       "Issue":  "IterationMismatch",
+                       "IterationPath":  "PFEvatec"
+                   },
+                   {
+                       "TestCaseId":  293876,
+                       "Issue":  "IterationMismatch",
+                       "IterationPath":  "PFEvatec"
+                   },
+                   {
+                       "TestCaseId":  293877,
+                       "Issue":  "IterationMismatch",
+                       "IterationPath":  "PFEvatec"
+                   },
+                   {
+                       "TestCaseId":  293903,
+                       "Issue":  "IterationMismatch",
+                       "IterationPath":  "PFEvatec"
+                   },
+                   {
+                       "TestCaseId":  293904,
+                       "Issue":  "IterationMismatch",
+                       "IterationPath":  "PFEvatec"
+                   },
+                   {
+                       "TestCaseId":  293905,
+                       "Issue":  "IterationMismatch",
+                       "IterationPath":  "PFEvatec"
+                   },
+                   {
+                       "TestCaseId":  293906,
+                       "Issue":  "IterationMismatch",
+                       "IterationPath":  "PFEvatec"
+                   },
+                   {
+                       "TestCaseId":  293907,
+                       "Issue":  "IterationMismatch",
+                       "IterationPath":  "PFEvatec"
+                   },
+                   {
+                       "TestCaseId":  293908,
+                       "Issue":  "IterationMismatch",
+                       "IterationPath":  "PFEvatec"
+                   },
+                   {
+                       "TestCaseId":  293909,
+                       "Issue":  "IterationMismatch",
+                       "IterationPath":  "PFEvatec"
+                   },
+                   {
+                       "TestCaseId":  293910,
+                       "Issue":  "IterationMismatch",
+                       "IterationPath":  "PFEvatec"
+                   },
+                   {
+                       "TestCaseId":  293911,
+                       "Issue":  "IterationMismatch",
+                       "IterationPath":  "PFEvatec"
+                   },
+                   {
+                       "TestCaseId":  293912,
+                       "Issue":  "IterationMismatch",
+                       "IterationPath":  "PFEvatec"
+                   },
+                   {
+                       "TestCaseId":  293913,
+                       "Issue":  "IterationMismatch",
+                       "IterationPath":  "PFEvatec"
+                   },
+                   {
+                       "TestCaseId":  293914,
+                       "Issue":  "IterationMismatch",
+                       "IterationPath":  "PFEvatec"
+                   },
+                   {
+                       "TestCaseId":  293915,
+                       "Issue":  "IterationMismatch",
+                       "IterationPath":  "PFEvatec"
+                   },
+                   {
+                       "TestCaseId":  293916,
+                       "Issue":  "IterationMismatch",
+                       "IterationPath":  "PFEvatec"
+                   },
+                   {
+                       "TestCaseId":  293917,
+                       "Issue":  "IterationMismatch",
+                       "IterationPath":  "PFEvatec"
+                   },
+                   {
+                       "TestCaseId":  293917,
+                       "Issue":  "MissingTestedByReverseLink",
+                       "ExpectedRequirement":  290773
+                   },
+                   {
+                       "TestCaseId":  293919,
+                       "Issue":  "IterationMismatch",
+                       "IterationPath":  "PFEvatec"
+                   },
+                   {
+                       "TestCaseId":  293920,
+                       "Issue":  "IterationMismatch",
+                       "IterationPath":  "PFEvatec"
+                   },
+                   {
+                       "TestCaseId":  293921,
+                       "Issue":  "IterationMismatch",
+                       "IterationPath":  "PFEvatec"
+                   },
+                   {
+                       "TestCaseId":  293922,
+                       "Issue":  "IterationMismatch",
+                       "IterationPath":  "PFEvatec"
+                   },
+                   {
+                       "TestCaseId":  293922,
+                       "Issue":  "RequirementTraceMismatch",
+                       "ExpectedRequirement":  290775,
+                       "ActualLinkedRequirements":  "290772"
+                   },
+                   {
+                       "TestCaseId":  293923,
+                       "Issue":  "IterationMismatch",
+                       "IterationPath":  "PFEvatec"
+                   },
+                   {
+                       "TestCaseId":  293923,
+                       "Issue":  "RequirementTraceMismatch",
+                       "ExpectedRequirement":  290775,
+                       "ActualLinkedRequirements":  "290772"
+                   },
+                   {
+                       "TestCaseId":  293924,
+                       "Issue":  "IterationMismatch",
+                       "IterationPath":  "PFEvatec"
+                   },
+                   {
+                       "TestCaseId":  293924,
+                       "Issue":  "MissingTestedByReverseLink",
+                       "ExpectedRequirement":  290776
+                   },
+                   {
+                       "TestCaseId":  293925,
+                       "Issue":  "IterationMismatch",
+                       "IterationPath":  "PFEvatec"
+                   },
+                   {
+                       "TestCaseId":  293925,
+                       "Issue":  "MissingTestedByReverseLink",
+                       "ExpectedRequirement":  290777
+                   },
+                   {
+                       "TestCaseId":  293926,
+                       "Issue":  "IterationMismatch",
+                       "IterationPath":  "PFEvatec"
+                   },
+                   {
+                       "TestCaseId":  293926,
+                       "Issue":  "MissingTestedByReverseLink",
+                       "ExpectedRequirement":  290777
+                   },
+                   {
+                       "TestCaseId":  293927,
+                       "Issue":  "IterationMismatch",
+                       "IterationPath":  "PFEvatec"
+                   },
+                   {
+                       "TestCaseId":  293927,
+                       "Issue":  "MissingTestedByReverseLink",
+                       "ExpectedRequirement":  290777
+                   },
+                   {
+                       "TestCaseId":  293928,
+                       "Issue":  "IterationMismatch",
+                       "IterationPath":  "PFEvatec"
+                   },
+                   {
+                       "TestCaseId":  293928,
+                       "Issue":  "MissingTestedByReverseLink",
+                       "ExpectedRequirement":  290777
+                   },
+                   {
+                       "TestCaseId":  293929,
+                       "Issue":  "IterationMismatch",
+                       "IterationPath":  "PFEvatec"
+                   },
+                   {
+                       "TestCaseId":  293929,
+                       "Issue":  "MissingTestedByReverseLink",
+                       "ExpectedRequirement":  290777
+                   },
+                   {
+                       "TestCaseId":  293930,
+                       "Issue":  "IterationMismatch",
+                       "IterationPath":  "PFEvatec"
+                   },
+                   {
+                       "TestCaseId":  293931,
+                       "Issue":  "IterationMismatch",
+                       "IterationPath":  "PFEvatec"
+                   },
+                   {
+                       "TestCaseId":  293932,
+                       "Issue":  "IterationMismatch",
+                       "IterationPath":  "PFEvatec"
+                   },
+                   {
+                       "TestCaseId":  293933,
+                       "Issue":  "IterationMismatch",
+                       "IterationPath":  "PFEvatec"
+                   }
+               ]
+}

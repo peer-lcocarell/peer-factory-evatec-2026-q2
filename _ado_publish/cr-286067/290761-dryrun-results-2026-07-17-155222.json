@@ -1,0 +1,50 @@
+﻿[
+    {
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290761\\001-view-and-manage-magnet-system-type-documents-happy-path.md",
+        "Title":  "R10.2 Update for CR 286067 - View and Manage Magnet System Type Documents: Verify tester can replace an existing Magnet System Type document (Happy Path)",
+        "Status":  "WhatIf",
+        "TestCaseId":  293126,
+        "PlanId":  291616,
+        "SuiteId":  292268
+    },
+    {
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290761\\003-remove-document-from-magnet-system-type.md",
+        "Title":  "R10.2 Update for CR 286067 - View and Manage Magnet System Type Documents: Verify tester can remove a document from a Magnet System Type in edit mode (Happy Path)",
+        "Status":  "WhatIf",
+        "TestCaseId":  293127,
+        "PlanId":  291616,
+        "SuiteId":  292268
+    },
+    {
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290761\\004-invalid-file-types-rejected-on-upload.md",
+        "Title":  "R10.2 Update for CR 286067 - View and Manage Magnet System Type Documents: Verify invalid file types are rejected on upload (Unhappy Path)",
+        "Status":  "WhatIf",
+        "TestCaseId":  293946,
+        "PlanId":  291616,
+        "SuiteId":  292268
+    },
+    {
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290761\\004-view-manage-magnet-system-type-documents-reject-invalid-upload.md",
+        "Title":  "R10.2 Update for CR 286067 - View and Manage Magnet System Type Documents: Verify tester cannot upload unsupported or oversized document files in Edit mode (Unhappy Path)",
+        "Status":  "WhatIf",
+        "TestCaseId":  293806,
+        "PlanId":  291616,
+        "SuiteId":  292268
+    },
+    {
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290761\\005-upload-remove-not-available-without-permission.md",
+        "Title":  "R10.2 Update for CR 286067 - View and Manage Magnet System Type Documents: Verify upload and remove actions are not available without edit permission (Security)",
+        "Status":  "WhatIf",
+        "TestCaseId":  293947,
+        "PlanId":  291616,
+        "SuiteId":  292268
+    },
+    {
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290761\\005-view-manage-magnet-system-type-documents-permission-boundaries.md",
+        "Title":  "R10.2 Update for CR 286067 - View and Manage Magnet System Type Documents: Verify permissions with document upload process",
+        "Status":  "WhatIf",
+        "TestCaseId":  293807,
+        "PlanId":  291616,
+        "SuiteId":  292268
+    }
+]

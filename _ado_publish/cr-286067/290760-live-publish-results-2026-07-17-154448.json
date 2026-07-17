@@ -1,0 +1,56 @@
+﻿[
+    {
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290760\\001-edit-magnet-system-type-happy-path.md",
+        "Title":  "286067 Magnet System Types - Edit Magnet System Type (Happy Path)",
+        "CrId":  "286067",
+        "Status":  "Updated",
+        "TestCaseId":  293893,
+        "PlanId":  291616,
+        "SuiteId":  292267
+    },
+    {
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290760\\002-edit-magnet-system-type-prototype-readonly-fields.md",
+        "Title":  "286067 Magnet System Types - Edit Prototype Magnet System Type Read-Only Field Constraints",
+        "CrId":  "286067",
+        "Status":  "Updated",
+        "TestCaseId":  293894,
+        "PlanId":  291616,
+        "SuiteId":  292267
+    },
+    {
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290760\\003-edit-magnet-system-type-cancel-with-unsaved-changes.md",
+        "Title":  "286067 Magnet System Types - Edit Magnet System Type Cancel With Unsaved Changes (Negative Path)",
+        "CrId":  "286067",
+        "Status":  "Updated",
+        "TestCaseId":  293895,
+        "PlanId":  291616,
+        "SuiteId":  292267
+    },
+    {
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290760\\004-edit-magnet-system-type-back-button-behavior.md",
+        "Title":  "286067 Magnet System Types - Edit Magnet System Type Back Button Behavior (Validation)",
+        "CrId":  "286067",
+        "Status":  "Updated",
+        "TestCaseId":  293896,
+        "PlanId":  291616,
+        "SuiteId":  292267
+    },
+    {
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290760\\005-edit-magnet-system-type-save-button-availability.md",
+        "Title":  "286067 Magnet System Types - Edit Magnet System Type Save Button Availability (Validation)",
+        "CrId":  "286067",
+        "Status":  "Updated",
+        "TestCaseId":  293897,
+        "PlanId":  291616,
+        "SuiteId":  292267
+    },
+    {
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290760\\006-edit-magnet-system-type-prevent-access-without-edit-permission.md",
+        "Title":  "286067 Magnet System Types - Edit Magnet System Type Prevent Access Without Edit Permission (Negative Path)",
+        "CrId":  "286067",
+        "Status":  "Updated",
+        "TestCaseId":  293898,
+        "PlanId":  291616,
+        "SuiteId":  292267
+    }
+]

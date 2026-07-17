@@ -3,13 +3,13 @@
 
 ## Status
 
-Coverage Updated
+Consolidation completed on 2026-07-17.
 
 ---
 
 ## Coverage Assessment
 
-### Existing Test Cases
+### Authoritative Test Cases
 
 - 001-define-magnet-system-type-as-standard-happy-path.md
 	- Covers core prototype to standard happy path with ERP article selection.
@@ -37,6 +37,13 @@ Coverage Updated
 - 006-article-number-uniqueness-validation.md
 	- Repurposed to authorization validation.
 	- Verifies access requires MagnetSystems_Modify right.
+
+### Merged and Retired Files
+
+- Merged into 003: 003-create-prototype-from-standard-type.md
+- Merged into 004: 004-variant-code-increments-to-v02.md
+- Merged into 005: 005-magnet-systems-remain-linked-after-prototype-promotion.md
+- Merged into 006: 006-prototype-article-number-rejected-matching-hardware-component.md
 
 ### Requirement Clause Mapping
 

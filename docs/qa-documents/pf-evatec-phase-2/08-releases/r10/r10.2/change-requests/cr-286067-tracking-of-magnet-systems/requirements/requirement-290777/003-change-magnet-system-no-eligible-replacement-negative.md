@@ -19,7 +19,9 @@ Requirement: Change Magnet System (Tool Hardware Configuration)
 | 3 | Close the dialog without making a selection. | The dialog closes. The installed Magnet System in Tool A remains unchanged. |
 | 4 | Open the 'Hardware Configuration' page for Tool B and trigger the 'Install Magnet System' action on the empty role slot. | The Magnet System selection dialog opens. |
 | 5 | Attempt to locate a Magnet System with status `In Stock` in the selection list. | Magnet Systems with `In Stock` status are not listed. The selection list contains only `Checked Out` Magnet Systems. Since none exist, the list is empty. |
-| 6 | Close the dialog without making a selection. | The dialog closes. The role slot in Tool B remains empty and the Hardware Configuration is unchanged. |
+| 6 | Attempt to confirm install with no candidate selected. | Install is blocked. A validation or informational message indicates no eligible `Checked Out` Magnet System is available. |
+| 7 | Close the dialog without making a selection. | The dialog closes. The role slot in Tool B remains empty and the Hardware Configuration is unchanged. |
+| 8 | Open Magnet System History and the tool Logbook for Tool B. | No new install or change entries were added. |
 
 ## Expected Outcome
 When no Magnet System with status `Checked Out` exists, both the Change and Install selection dialogs display an empty list. Magnet Systems in `In Stock`, `In Use`, `In Inspection`, and `Retired` status are not presented as eligible options in either dialog.

@@ -20,6 +20,7 @@ Requirement: Modify Magnet System (Magnet Systems)
 | 2 | Locate a Magnet System with status `In Stock` and review available actions. | The 'Modify' action is not available for a Magnet System with status `In Stock`. |
 | 3 | Locate a Magnet System with status `In Use` and review available actions. | The 'Modify' action is not available for a Magnet System with status `In Use`. |
 | 4 | Locate a Magnet System with status `Retired` and review available actions. | The 'Modify' action is not available for a Magnet System with status `Retired`. |
+| 5 | Attempt direct navigation to modification functionality for an `In Use` Magnet System. | Access is denied. No modification is persisted. No history entry is created. |
 
 ## Expected Outcome
-The Modify action is available only for Magnet Systems with status `Checked Out`. Magnet Systems in `In Stock`, `In Use`, or `Retired` status do not show the Modify action.
+The Modify action is available only for Magnet Systems with status `Checked Out`. Magnet Systems in `In Stock`, `In Use`, or `Retired` status do not show the Modify action. Direct access to modification functionality is denied for disallowed states.

@@ -1,6 +1,25 @@
 # Requirement 290771 - Test Case Audit
 ## CR 286067 - Tracking of Magnet Systems in Evatec Fabric
 
+## Status
+
+Consolidation completed on 2026-07-17.
+
+---
+
+## Authoritative Test Cases
+
+- 001-magnet-system-history-audit.md
+- 002-magnet-system-history-full-lifecycle-audit.md
+- 003-magnet-system-history-prototype-and-standard-audit.md
+- 004-magnet-system-history-details-and-link-navigation-audit.md
+
+## Merged and Retired Files
+
+- Merged into 002: 003-distinct-history-entries-per-lifecycle-event.md
+- Merged into 003: 004-history-records-type-change-on-modify.md
+- Merged into 004: 005-history-entries-full-details-and-navigation.md
+
 ## Coverage Audit Table
 
 | Test Case ID | Requirement ID(s) | Coverage (Yes/Partial/No) | Key Gap(s) | Recommended Action |

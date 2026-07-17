@@ -16,7 +16,7 @@ Requirement: Retire Magnet System (Magnet Systems)
 |------|--------|-----------------|
 | 1 | Sign in as a user with `MagnetSystems_Remove` permission. Open the 'Magnet Systems' page and select a Magnet System with status `In Stock`. | The Retire action is available for eligible Magnet Systems. |
 | 2 | Sign out and sign in as a user without `MagnetSystems_Remove` permission. Open the 'Magnet Systems' page. | The Retire action is not visible or is disabled for all Magnet Systems. |
-| 3 | Attempt to access retirement functionality directly (e.g., via direct URL or API call). | Access is denied. Retirement cannot be performed without the required permission. |
+| 3 | Attempt to access retirement functionality directly (e.g., via direct URL or API call). | Access is denied. Retirement cannot be performed without the required permission. No retirement change is persisted. |
 
 ## Expected Outcome
 Only users with `MagnetSystems_Remove` permission can access and execute the Retire action. Users without the permission cannot access or trigger retirement functionality by any means.

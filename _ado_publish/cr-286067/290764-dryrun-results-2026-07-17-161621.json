@@ -1,0 +1,66 @@
+﻿[
+    {
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290764\\001-magnet-systems-list-happy-path.md",
+        "Title":  "R10.2 Update for CR 286067 - Magnet Systems: Verify tester can view available Magnet Systems (Happy Path)",
+        "Status":  "WhatIf",
+        "TestCaseId":  293136,
+        "PlanId":  291616,
+        "SuiteId":  292271
+    },
+    {
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290764\\002-magnet-systems-list-inspection-and-retired-filters.md",
+        "Title":  "R10.2 Update for CR 286067 - Magnet Systems: Verify the Inspection Required filter and Retired status filter function correctly in the Magnet Systems list (Validation)",
+        "Status":  "WhatIf",
+        "TestCaseId":  293902,
+        "PlanId":  291616,
+        "SuiteId":  292271
+    },
+    {
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290764\\003-checkout-happy-path.md",
+        "Title":  "R10.2 Update for CR 286067 - Magnet Systems: Verify tester can check out an In Stock magnet system and a checkout history entry is recorded (Happy Path)",
+        "Status":  "WhatIf",
+        "TestCaseId":  null,
+        "PlanId":  291616,
+        "SuiteId":  292271
+    },
+    {
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290764\\003-magnet-systems-selected-actions-and-permissions.md",
+        "Title":  "R10.2 Update for CR 286067 - Magnet Systems: Verify selected Magnet System actions are controlled by status and security rights (Authorization)",
+        "Status":  "WhatIf",
+        "TestCaseId":  293818,
+        "PlanId":  291616,
+        "SuiteId":  292271
+    },
+    {
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290764\\004-checkout-blocked-invalid-status.md",
+        "Title":  "R10.2 Update for CR 286067 - Magnet Systems: Verify checkout is blocked for magnet systems not in In Stock status (Unhappy Path)",
+        "Status":  "WhatIf",
+        "TestCaseId":  null,
+        "PlanId":  291616,
+        "SuiteId":  292271
+    },
+    {
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290764\\005-checkout-not-available-without-permission.md",
+        "Title":  "R10.2 Update for CR 286067 - Magnet Systems: Verify checkout action is not available without edit permission (Security)",
+        "Status":  "WhatIf",
+        "TestCaseId":  null,
+        "PlanId":  291616,
+        "SuiteId":  292271
+    },
+    {
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290764\\006-inspection-required-and-retired-filters.md",
+        "Title":  "R10.2 Update for CR 286067 - Magnet Systems: Verify the Inspection Required and Retired filters function on the Magnet Systems list (Validation)",
+        "Status":  "WhatIf",
+        "TestCaseId":  null,
+        "PlanId":  291616,
+        "SuiteId":  292271
+    },
+    {
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290764\\007-list-actions-based-on-permissions.md",
+        "Title":  "R10.2 Update for CR 286067 - Magnet Systems: Verify list-level actions are available based on tester permissions (Security)",
+        "Status":  "WhatIf",
+        "TestCaseId":  null,
+        "PlanId":  291616,
+        "SuiteId":  292271
+    }
+]

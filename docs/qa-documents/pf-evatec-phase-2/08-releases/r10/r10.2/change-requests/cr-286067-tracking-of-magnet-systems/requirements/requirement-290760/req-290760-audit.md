@@ -1,88 +1,48 @@
-﻿# Requirement 290760 - Test Case Audit
-## CR 286067 - Tracking of Magnet Systems in Evatec Fabric
+﻿# QA Audit: Requirement 290760 - Edit Magnet System Type
 
 ## Status
 
-In Progress - Partially Covered
+Consolidation completed on 2026-07-17.
 
----
+The requirement folder now uses one authoritative test case per scenario group with overlap removed.
 
-## Coverage Assessment
-
-### Existing Test Cases
+## Authoritative Test Cases
 
 - 001-edit-magnet-system-type-happy-path.md
-	- Covers successful edit and persistence for Standard Magnet System Type records.
 - 002-edit-magnet-system-type-prototype-readonly-fields.md
-	- Covers prototype edit behavior and read-only constraints for Variant Code, Predecessor, Source Type, and FlexiCat Type.
 - 003-edit-magnet-system-type-cancel-with-unsaved-changes.md
-	- Covers unsaved-change confirmation flow and discard behavior for Cancel.
 - 004-edit-magnet-system-type-back-button-behavior.md
-	- Covers Back availability with no changes and Back-to-Cancel transition after edits.
 - 005-edit-magnet-system-type-save-button-availability.md
-	- Covers Save availability only when changes exist and form state is valid/original.
 - 006-edit-magnet-system-type-prevent-access-without-edit-permission.md
-	- Covers missing MagnetSystemTypes_Edit security right for UI action and direct URL access.
 
-Requirement rule-to-coverage mapping:
-- Edit page allows view and edit of magnet system type information: Covered by 001.
-- Prototype exclusions and read-only fields: Covered by 002.
-- Save availability only when changes are made and rules are valid: Covered by 005 and partially by 001.
-- Back available only while no changes are made and redirects to list: Covered by 004.
-- Cancel available when changes are made, redirects without saving, prompts confirmation, allows return to editing: Covered by 003 and partially by 004.
-- MagnetSystemTypes_Edit required for access: Covered by 006.
+## Merged and Retired Files
 
-### Coverage Gaps
+- Merged into 002: 004-erp-sourced-fields-readonly-on-prototype-edit.md
+- Merged into 003: 005-cancel-edit-does-not-persist-changes.md
+- Merged into 004: 006-back-button-returns-to-detail-page.md
+- Merged into 005: 007-save-button-enabled-only-on-valid-change.md
+- Merged into 006: 008-edit-action-not-available-without-permission.md
 
-- Missing negative validation coverage for invalid edits on fields governed by "same rules as create".
-	- No explicit test for required-field violations, format violations, or invalid combinations on edit.
-- Missing explicit proof that Save is blocked when rules are invalid after a change.
-	- Current tests verify Save enablement for changed and restored states, but not changed-invalid states.
-- Missing permission boundary scenario for user with neither view nor edit rights.
-	- Current security test validates no-edit only.
-- Missing concurrency/update conflict behavior.
-	- No test for stale record edits, overlapping edits, or backend reject handling.
-- Missing audit/history side-effect validation for edit operations.
-	- Requirement set for CR 286067 emphasizes history and traceability risk areas.
+## Coverage Summary
 
-### Recommendations
+### Covered
 
-- Add 3 focused test cases to close requirement risk:
-	- Edit Magnet System Type - Invalid Required Field Prevents Save.
-	- Edit Magnet System Type - Invalid Format/Business Rule Prevents Save.
-	- Edit Magnet System Type - Concurrent Update Conflict Handling.
-- Add 1 security hardening case:
-	- Edit Magnet System Type - Prevent Access Without View and Edit Permissions.
-- Add 1 traceability case:
-	- Edit Magnet System Type - Verify History/Audit Entry After Successful Edit.
-- Keep existing six cases as baseline regression set.
+- Standard edit happy path and persistence verification.
+- Prototype edit read-only constraints including Variant Code, Predecessor, Source Type, FlexiCat Type, and ERP-sourced fields.
+- Cancel with unsaved changes confirmation behavior, return-to-edit option, and no-persist confirmation path.
+- Back button behavior in no-change state and transition to Cancel after modifications.
+- Save button enablement only when valid changes are present and disablement when values revert.
+- Security enforcement for users without `MagnetSystemTypes_Edit`, including blocked direct URL edit access.
 
----
+### Remaining Gaps
 
-## Notes
+- Explicit invalid-edit rule checks inherited from create rules:
+  - changed-invalid state keeps Save unavailable
+  - required-field and format validation in edit mode
+- Explicit conflict-handling scenario for concurrent edits.
+- Explicit post-edit history entry verification.
 
-- Audit scope: Requirement 290760 only.
-- Result: Core requirement behavior is well covered by the six authored test cases.
-- Residual risk: Validation and conflict-handling gaps remain for production-grade release confidence.
-- Proposed coverage status: 85% functional requirement coverage, pending negative validation and conflict tests.
+## Recommendation
 
-13.4.4 REQUIREMENT: Edit Magnet System Type
-The Edit magnet system type page will allow users to view & edit the magnet system type information.
+Keep the current six-file set as authoritative and add only targeted non-overlapping tests for the listed remaining gaps.
 
-Editing a magnet system type contains all the same rules as creating a new magnet system type with some additions and exclusions if the magnet system type is a prototype
-
-- Variant Code displayed (read only, formatted as V##)
-
-- Predecessor displayed (read only, contains the original article #)
-
-- Source Type is read only
-
-- FlexiCat Type is read only
-
-Save is available if changes are made and all rules are valid.
-
-Back will be available while there are no changes and will redirect to the magnet system types screen.
-
-Cancel will be available if changes are made and will redirect to the magnet system types screen without saving changes to the magnet system type. If changes have been made to the magnet system type then the user will be prompted for confirmation before redirecting allowing them to return to editing the magnet system type.
-
-Users must have the MagnetSystemTypes_Edit security right to access this functionality.

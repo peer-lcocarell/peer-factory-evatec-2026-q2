@@ -9,6 +9,7 @@ Requirement: Magnet System History (Magnet Systems)
 ## Preconditions
 - User is signed in with `MagnetSystem_View` and `MagnetSystem_Edit` permissions.
 - A Magnet System exists in a state that supports creating a Prototype version.
+- The Magnet System is linked to a Standard Magnet System Type before conversion.
 - The user can perform Define as Standard action from the Prototype version.
 - The 'Magnet System History' view is accessible.
 
@@ -21,6 +22,7 @@ Requirement: Magnet System History (Magnet Systems)
 | 5 | Execute the action to Define as Standard from the Prototype version. | Define as Standard completes successfully. |
 | 6 | Re-open the History view. | A Define as Standard history entry is present with acting user, timestamp, summary text, and a link to the Magnet System Type. |
 | 7 | Select the Magnet System Type link in the Define as Standard entry. | The related Magnet System Type details open successfully. |
+| 8 | Open the Magnet System Type history for the Prototype version. | A type history entry confirms predecessor relationship to the prior Standard type and shows the Prototype variant identifier. |
 
 ## Expected Outcome
-Prototype creation and Define as Standard actions generate distinct history entries. Each entry includes acting user, timestamp, meaningful summary, and a working link to the Magnet System Type.
+Prototype creation and Define as Standard actions generate distinct history entries. Each entry includes acting user, timestamp, meaningful summary, and a working link to the Magnet System Type. Magnet System Type history confirms predecessor linkage from Standard to the Prototype variant.

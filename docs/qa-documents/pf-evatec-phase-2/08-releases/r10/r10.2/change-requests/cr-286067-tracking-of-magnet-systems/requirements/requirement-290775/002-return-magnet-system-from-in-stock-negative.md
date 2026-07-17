@@ -8,13 +8,18 @@ Requirement: Return Magnet System (Magnet Systems)
 
 ## Preconditions
 - User is signed in with `MagnetSystem_View` and `MagnetSystem_Edit` permissions.
+- At least one Magnet System with status `Checked Out` exists.
+- At least one Magnet System with status `In Inspection` exists.
 - At least one Magnet System with status `In Stock` exists.
 - The 'Magnet Systems' page is accessible.
 
 | Step | Action | Expected Result |
 |------|--------|-----------------|
-| 1 | Open the 'Magnet Systems' page and locate a Magnet System with status `In Stock`. | The Magnet System is displayed in the list with status `In Stock`. |
-| 2 | Select the `In Stock` Magnet System and review available actions. | The 'Return' action is not available for a Magnet System with status `In Stock`. |
+| 1 | Open the 'Magnet Systems' page and locate a Magnet System with status `Checked Out`. | The 'Return' action is available. |
+| 2 | Locate a Magnet System with status `In Inspection`. | The 'Return' action is available. |
+| 3 | Locate a Magnet System with status `In Stock`. | The Magnet System is displayed in the list with status `In Stock`. |
+| 4 | Select the `In Stock` Magnet System and review available actions. | The 'Return' action is not available for a Magnet System with status `In Stock`. |
+| 5 | Attempt direct navigation to return functionality for the `In Stock` Magnet System. | Access is denied. No return change is persisted. No history entry is created. |
 
 ## Expected Outcome
-The Return action is not available for Magnet Systems already in `In Stock` status. Only Magnet Systems in `Checked Out` or `In Inspection` status support the Return action.
+The Return action is available for Magnet Systems in `Checked Out` and `In Inspection` status. The Return action is not available for Magnet Systems already in `In Stock` status. Direct access to return functionality is denied for `In Stock` Magnet Systems.

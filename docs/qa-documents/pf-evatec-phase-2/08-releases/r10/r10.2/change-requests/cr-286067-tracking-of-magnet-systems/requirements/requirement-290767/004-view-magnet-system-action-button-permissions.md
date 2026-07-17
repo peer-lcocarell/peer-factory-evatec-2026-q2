@@ -21,6 +21,7 @@ Requirement: View Magnet System (Magnet Systems)
 | 5 | Sign in with `MagnetSystem_View` and `MagnetSystem_Process`. Open the View page for an active Magnet System with status `In Stock`. | The Checkout action button is displayed. The Return action is not displayed. |
 | 6 | Sign in with `MagnetSystem_View` and `MagnetSystem_Process`. Open the View page for an active Magnet System with status `In Use` (checked out). | The Return action button is displayed. The Checkout action is not displayed. |
 | 7 | Sign in with `MagnetSystem_View` and `MagnetSystem_Remove`. Open the View page for an active Magnet System. | The Retire action button is displayed. |
+| 8 | Sign in with all relevant rights and open the View page for a Magnet System with status `Retired`. | No lifecycle action buttons are available for execution on the retired record. |
 
 ## Expected Outcome
-Action buttons on the View screen are shown only to users with the corresponding permission. Users with View-only permission see no action buttons other than Copy URL and Print Label. Each permission grants visibility of its associated action only. Checkout and Return are mutually exclusive based on checked-out status.
+Action buttons on the View screen are shown only to users with the corresponding permission. Users with View-only permission see no action buttons other than Copy URL and Print Label. Each permission grants visibility of its associated action only. Checkout and Return are mutually exclusive based on checked-out status. Retired records do not expose lifecycle actions for execution.

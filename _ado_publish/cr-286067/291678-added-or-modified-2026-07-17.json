@@ -1,0 +1,800 @@
+﻿[
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-174279\\002-new-target-type-from-erp-duplicate-validation.md",
+        "TestCaseId":  293868,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-174279\\003-new-target-type-article-already-used-negative.md",
+        "TestCaseId":  293869,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-174279\\004-new-target-type-dialog-name-generation-validation.md",
+        "TestCaseId":  293870,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-205378\\001-learned-associations-happy-path.md",
+        "TestCaseId":  293871,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-205378\\002-learned-associations-no-associations-unhappy-path.md",
+        "TestCaseId":  293872,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-205378\\003-learned-associations-multiple-magnet-system-types.md",
+        "TestCaseId":  293873,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-205378\\004-learned-associations-unsaved-role-changes-and-url-preservation.md",
+        "TestCaseId":  293874,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-205379\\001-add-associations-happy-path.md",
+        "TestCaseId":  293875,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-205379\\002-add-associations-prototype-type-excluded-unhappy-path.md",
+        "TestCaseId":  293876,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-205380\\002-remove-association-magnet-system-types.md",
+        "TestCaseId":  293877,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-205380\\003-remove-last-magnet-system-association.md",
+        "TestCaseId":  293878,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-217766\\001-export-hardware-configuration-happy-path.md",
+        "TestCaseId":  293879,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-217766\\002-export-hardware-configuration-content-validation.md",
+        "TestCaseId":  293880,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-226384\\001-hardware-configuration-for-real-module-happy-path.md",
+        "TestCaseId":  293881,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-226384\\002-change-magnet-system-active-module-happy-path.md",
+        "TestCaseId":  293882,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-226384\\003-change-magnet-system-retired-module-negative.md",
+        "TestCaseId":  293883,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-226385\\002-copy-module-incompatible-target-negative.md",
+        "TestCaseId":  293884,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-226385\\003-copy-module-real-to-abstract-conversion.md",
+        "TestCaseId":  293885,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-264374\\002-import-hardware-components-invalid-file-negative.md",
+        "TestCaseId":  293886,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-264374\\003-import-hardware-components-updates-linked-magnet-type-metadata.md",
+        "TestCaseId":  293887,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290756\\002-magnet-system-types-list-permission-denied-negative.md",
+        "TestCaseId":  293888,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290756\\003-create-magnet-system-type-happy-path.md",
+        "TestCaseId":  293889,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290756\\005-define-prototype-as-standard-happy-path.md",
+        "TestCaseId":  293890,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290759\\001-view-magnet-system-type-happy-path.md",
+        "TestCaseId":  293891,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290759\\002-view-magnet-system-type-prevent-edit-without-edit-premission.md",
+        "TestCaseId":  293892,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290760\\001-edit-magnet-system-type-happy-path.md",
+        "TestCaseId":  293893,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290760\\002-edit-magnet-system-type-prototype-readonly-fields.md",
+        "TestCaseId":  293894,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290760\\003-edit-magnet-system-type-cancel-with-unsaved-changes.md",
+        "TestCaseId":  293895,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290760\\004-edit-magnet-system-type-back-button-behavior.md",
+        "TestCaseId":  293896,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290760\\005-edit-magnet-system-type-save-button-availability.md",
+        "TestCaseId":  293897,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290760\\006-edit-magnet-system-type-prevent-access-without-edit-permission.md",
+        "TestCaseId":  293898,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290763\\002-define-magnet-system-type-as-standard-uniqueness-validation.md",
+        "TestCaseId":  293899,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290763\\003-standard-to-prototype-happy-path.md",
+        "TestCaseId":  293900,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290763\\004-prototype-to-prototype-variant-increment.md",
+        "TestCaseId":  293901,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290764\\002-magnet-systems-list-inspection-and-retired-filters.md",
+        "TestCaseId":  293902,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290765\\002-new-magnet-system-duplicate-serial-negative.md",
+        "TestCaseId":  293903,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290765\\003-new-magnet-system-required-field-validation.md",
+        "TestCaseId":  293904,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290766\\002-upload-documents-invalid-file-type-negative.md",
+        "TestCaseId":  293905,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290766\\004-remove-uploaded-document-before-save.md",
+        "TestCaseId":  293906,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290767\\002-view-magnet-system-state-sensitive-fields.md",
+        "TestCaseId":  293907,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290767\\004-view-magnet-system-action-button-permissions.md",
+        "TestCaseId":  293908,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290769\\002-edit-magnet-system-immutable-field-negative.md",
+        "TestCaseId":  293909,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290769\\003-edit-retired-magnet-system-comment-only.md",
+        "TestCaseId":  293910,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290769\\004-edit-magnet-system-inspection-notification.md",
+        "TestCaseId":  293911,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290770\\003-invalidDocumentOperations_Negative.md.md",
+        "TestCaseId":  293912,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290772\\002-retire-magnet-system-not-selectable-validation.md",
+        "TestCaseId":  293913,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290772\\003-retire-magnet-system-in-use-negative.md",
+        "TestCaseId":  293914,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290772\\004-retire-magnet-system-mandatory-reason-validation.md",
+        "TestCaseId":  293915,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290772\\005-retire-magnet-system-security-permissions.md",
+        "TestCaseId":  293916,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290773\\002-modify-magnet-system-status-restriction-negative.md",
+        "TestCaseId":  293917,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290773\\003-modify-magnet-system-variant-code-increment.md",
+        "TestCaseId":  293918,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290773\\004-modify-magnet-system-use-existing-prototype.md",
+        "TestCaseId":  293919,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290773\\005-modify-magnet-system-prototype-creation-rules-and-cancellation.md",
+        "TestCaseId":  293920,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290773\\006-modify-magnet-system-security-permissions.md",
+        "TestCaseId":  293921,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290775\\002-return-magnet-system-from-in-stock-negative.md",
+        "TestCaseId":  293922,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290775\\003-return-magnet-system-cleanup-validation.md",
+        "TestCaseId":  293923,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290776\\003-print-magnet-system-label-prototype-variant.md",
+        "TestCaseId":  293924,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290777\\002-change-magnet-system-history-regression.md",
+        "TestCaseId":  293925,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290777\\003-change-magnet-system-no-eligible-replacement-negative.md",
+        "TestCaseId":  293926,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290777\\006-change-magnet-system-cancellation.md",
+        "TestCaseId":  293927,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290777\\007-change-magnet-system-search-and-filtering.md",
+        "TestCaseId":  293928,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290777\\008-change-magnet-system-security-permissions.md",
+        "TestCaseId":  293929,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-73354\\003-add-role-serial-number-lock-magnet-system-regression.md",
+        "TestCaseId":  293930,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-73354\\004-add-role-duplicate-role-name-validation.md",
+        "TestCaseId":  293931,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-73375\\003-remove-logbook-entry-non-removable-negative.md",
+        "TestCaseId":  293932,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Created",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-73375\\004-logbook-removal-permissions-matrix.md",
+        "TestCaseId":  293933,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Updated",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-174279\\001-new-target-type-from-erp-happy-path.md",
+        "TestCaseId":  293097,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Updated",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-205380\\001-remove-association-happy-path.md",
+        "TestCaseId":  293104,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Updated",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-217766\\003-export-hardware-configuration-permission-denied-negative.md",
+        "TestCaseId":  293446,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Updated",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-226385\\001-copy-module-hardware-configuration-happy-path.md",
+        "TestCaseId":  293110,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Updated",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-264374\\001-import-hardware-components-valid-file-happy-path.md",
+        "TestCaseId":  293460,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Updated",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290756\\001-magnet-system-types-list-happy-path.md",
+        "TestCaseId":  293115,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Updated",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290756\\004-edit-magnet-system-type-happy-path.md",
+        "TestCaseId":  293468,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Updated",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290757\\001-new-magnet-system-type-happy-path.md",
+        "TestCaseId":  293470,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Updated",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290757\\002-new-magnet-system-type-negative.md",
+        "TestCaseId":  293471,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Updated",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290757\\003-new-magnet-system-type-applications-field-multi-value.md",
+        "TestCaseId":  293472,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Updated",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290757\\004-new-magnet-system-type-article-used-as-target-type-negative.md",
+        "TestCaseId":  293473,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Updated",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290757\\005-new-magnet-system-type-existing-magnet-system-type-negative.md",
+        "TestCaseId":  293474,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Updated",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290761\\001-view-and-manage-magnet-system-type-documents-happy-path.md",
+        "TestCaseId":  293126,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Updated",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290761\\004-view-manage-magnet-system-type-documents-reject-invalid-upload.md",
+        "TestCaseId":  293806,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Updated",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290761\\005-view-manage-magnet-system-type-documents-permission-boundaries.md",
+        "TestCaseId":  293807,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Updated",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290762\\001-magnet-system-type-history-audit.md",
+        "TestCaseId":  293128,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Updated",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290762\\002-magnet-system-type-prototype-lineage-history.md",
+        "TestCaseId":  293129,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Updated",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290762\\003-magnet-system-type-prototype-version-chain-history.md",
+        "TestCaseId":  293811,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Updated",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290763\\001-define-magnet-system-type-as-standard-happy-path.md",
+        "TestCaseId":  293130,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Updated",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290763\\005-promote-prototype-propagates-to-existing-magnet-systems.md",
+        "TestCaseId":  293134,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Updated",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290763\\006-article-number-uniqueness-validation.md",
+        "TestCaseId":  293817,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Updated",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290764\\001-magnet-systems-list-happy-path.md",
+        "TestCaseId":  293136,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Updated",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290764\\003-magnet-systems-selected-actions-and-permissions.md",
+        "TestCaseId":  293818,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Updated",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290765\\001-new-magnet-system-happy-path.md",
+        "TestCaseId":  293138,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Updated",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290766\\001-view-and-upload-documents-for-new-magnet-system-happy-path.md",
+        "TestCaseId":  293141,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Updated",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290766\\003-upload-multiple-documents-happy-path.md",
+        "TestCaseId":  293820,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Updated",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290767\\001-view-magnet-system-happy-path.md",
+        "TestCaseId":  293143,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Updated",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290767\\003-view-magnet-system-inspection-notification.md",
+        "TestCaseId":  293822,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Updated",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290768\\001-view-magnet-system-documents-happy-path.md",
+        "TestCaseId":  293145,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Updated",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290768\\002-view-magnet-system-documents-unhappy-path.md",
+        "TestCaseId":  293824,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Updated",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290769\\001-edit-magnet-system-happy-path.md",
+        "TestCaseId":  293146,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Updated",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290770\\001-view-and-manage-magnet-system-documents-happy-path.md",
+        "TestCaseId":  293827,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Updated",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290770\\002-manage-magnet-system-documents-upload-and-replace.md",
+        "TestCaseId":  293828,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Updated",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290771\\001-magnet-system-history-audit.md",
+        "TestCaseId":  293832,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Updated",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290771\\002-magnet-system-history-full-lifecycle-audit.md",
+        "TestCaseId":  293833,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Updated",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290771\\003-magnet-system-history-prototype-and-standard-audit.md",
+        "TestCaseId":  293834,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Updated",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290771\\004-magnet-system-history-details-and-link-navigation-audit.md",
+        "TestCaseId":  293835,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Updated",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290772\\001-retire-magnet-system-happy-path.md",
+        "TestCaseId":  293152,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Updated",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290773\\001-modify-magnet-system-happy-path.md",
+        "TestCaseId":  293156,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Updated",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290775\\001-return-magnet-system-happy-path.md",
+        "TestCaseId":  293159,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Updated",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290776\\001-print-magnet-system-label-happy-path.md",
+        "TestCaseId":  293162,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Updated",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290776\\002-print-magnet-system-label-content-validation.md",
+        "TestCaseId":  293163,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Updated",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290777\\001-change-magnet-system-happy-path.md",
+        "TestCaseId":  293165,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Updated",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290777\\004-install-magnet-system-happy-path.md",
+        "TestCaseId":  293168,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Updated",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290777\\005-uninstall-magnet-system-happy-path.md",
+        "TestCaseId":  293169,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Updated",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-73354\\001-add-role-to-logbook-configuration-happy-path.md",
+        "TestCaseId":  293089,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Updated",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-73354\\002-add-role-to-logbook-configuration-negative.md",
+        "TestCaseId":  293090,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    },
+    {
+        "Status":  "Updated",
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-73354\\005-add-role-managehardware-edit-permission-required.md",
+        "TestCaseId":  293418,
+        "PlanId":  291616,
+        "SuiteId":  291678
+    }
+]

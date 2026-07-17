@@ -3,7 +3,7 @@
 
 ## Status
 
-Complete
+Consolidation completed on 2026-07-17.
 
 ---
 
@@ -16,6 +16,20 @@ Complete
 - 003 - Retire Magnet System: Attempt to retire a system currently In Use (Negative)
 - 004 - Retire Magnet System: Retirement blocked when no reason is provided (Validation)
 - 005 - Retire Magnet System: Security permissions enforced (Security)
+
+### Authoritative Files
+
+- 001-retire-magnet-system-happy-path.md
+- 002-retire-magnet-system-not-selectable-validation.md
+- 003-retire-magnet-system-in-use-negative.md
+- 004-retire-magnet-system-mandatory-reason-validation.md
+- 005-retire-magnet-system-security-permissions.md
+
+### Merged and Retired Files
+
+- Merged into 003: 003-retire-blocked-when-in-use.md
+- Merged into 004: 004-retirement-reason-mandatory.md
+- Merged into 005: 005-retire-action-not-available-without-permission.md
 
 ### Coverage Gaps
 

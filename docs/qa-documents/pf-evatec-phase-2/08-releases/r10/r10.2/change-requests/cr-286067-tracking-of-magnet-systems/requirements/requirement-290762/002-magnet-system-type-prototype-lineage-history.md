@@ -21,6 +21,7 @@ Requirement: Magnet System Type History (Magnet System Types)
 | 5 | Review Prototype History after save. | A new edit history entry is present with timestamp, user, and short summary of the edit. |
 | 6 | Promote the Prototype to Standard using the `Define as Standard` action. | Promotion completes successfully. |
 | 7 | Open History for the now Standard Magnet System Type. | A promotion entry is present with timestamp, user, and summary. The full trail Create Standard -> Create Prototype V01 -> Edit -> Promote to Standard is visible in chronological order. |
+| 8 | Open History for the original source Standard type used to create the prototype. | The original Standard type history remains unchanged by prototype promotion and still shows its own creation lineage correctly. |
 
 ## Expected Outcome
-The Magnet System Type History view shows complete lineage across create, prototype create, edit, and promote events. Standard and prototype creation summaries include required identifiers such as Article Number and modified Magnet System. Each entry includes timestamp, user, and short summary. The history of a promoted type remains complete.
+The Magnet System Type History view shows complete lineage across create, prototype create, edit, and promote events. Standard and prototype creation summaries include required identifiers such as Article Number and modified Magnet System. Each entry includes timestamp, user, and short summary. The history of a promoted type remains complete. Promotion traceability includes predecessor prototype context while preserving original source Standard history integrity.

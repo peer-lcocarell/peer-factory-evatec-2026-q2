@@ -20,8 +20,8 @@ Requirement: Edit Magnet System Type (Magnet System Types)
 | 2 | Modify an editable field (for example Description). | The field accepts the new input. The Cancel button becomes available. |
 | 3 | Click Cancel without saving. | A confirmation prompt is displayed asking the user to confirm discarding unsaved changes. |
 | 4 | Select the option to return to editing. | The confirmation prompt closes. The Edit page remains open with the unsaved changes intact. |
-| 5 | Click Cancel again and confirm the discard action. | The user is redirected to the Magnet System Types list. No changes are saved. |
-| 6 | Re-open the same Magnet System Type record. | The field values match the original pre-edit values. The unsaved changes are not persisted. |
+| 5 | Click Cancel again and confirm the discard action. | The user is redirected out of Edit mode to the configured non-edit destination. No changes are saved. |
+| 6 | Open the same Magnet System Type detail and edit pages again. | The field values match the original pre-edit values. The unsaved changes are not persisted. |
 
 ## Expected Outcome
-When a user modifies a Magnet System Type and clicks Cancel, a confirmation prompt is displayed before redirecting. If the user cancels the discard, they are returned to editing with changes intact. If the user confirms the discard, they are redirected to the list and no changes are saved to the record.
+When a user modifies a Magnet System Type and clicks Cancel, a confirmation prompt is displayed before redirecting. If the user cancels the discard, they are returned to editing with changes intact. If the user confirms the discard, they are redirected out of Edit mode and no changes are saved to the record.

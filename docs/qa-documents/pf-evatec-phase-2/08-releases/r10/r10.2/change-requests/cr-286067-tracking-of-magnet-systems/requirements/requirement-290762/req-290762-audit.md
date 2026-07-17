@@ -3,13 +3,13 @@
 
 ## Status
 
-Coverage Updated
+Consolidation completed on 2026-07-17.
 
 ---
 
 ## Coverage Assessment
 
-### Existing Test Cases
+### Authoritative Test Cases
 
 - 001-magnet-system-type-history-audit.md
 	- Covers details and edit context visibility for history and assigned Magnet Systems.
@@ -27,6 +27,11 @@ Coverage Updated
 	- Covers multi-version prototype lineage V01 to V03.
 	- Verifies history on latest version includes created entries for all previous versions.
 	- Verifies required lineage summary patterns and chronological order.
+
+### Merged and Retired Files
+
+- Merged into 003: 003-prototype-creation-history-source-and-variant.md
+- Merged into 002: 004-promotion-history-predecessor-prototype.md
 
 ### Requirement Clause Mapping
 
@@ -67,6 +72,8 @@ Coverage Updated
 - Execute updated tests in SIT and capture evidence screenshots for summary fields and lineage entries.
 
 - If actual UI summary wording differs from expected examples, update expected text tokens while preserving required identifiers and audit semantics.
+
+- Keep the current three-file authoritative set for requirement coverage and maintain strict risk separation by scenario type.
 
 ---
 

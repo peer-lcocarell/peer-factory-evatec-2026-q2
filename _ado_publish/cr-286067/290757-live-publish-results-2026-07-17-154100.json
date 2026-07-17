@@ -1,0 +1,47 @@
+﻿[
+    {
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290757\\001-new-magnet-system-type-happy-path.md",
+        "Title":  "R10.2 Update for CR 286067 - New Magnet System Type: Verify tester can create a new Magnet System Type with valid data",
+        "CrId":  "286067",
+        "Status":  "Updated",
+        "TestCaseId":  293470,
+        "PlanId":  291616,
+        "SuiteId":  292264
+    },
+    {
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290757\\002-new-magnet-system-type-negative.md",
+        "Title":  "R10.2 Update for CR 286067 - New Magnet System Type: Verify required field validation is displayed during creation",
+        "CrId":  "286067",
+        "Status":  "Updated",
+        "TestCaseId":  293471,
+        "PlanId":  291616,
+        "SuiteId":  292264
+    },
+    {
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290757\\003-new-magnet-system-type-applications-field-multi-value.md",
+        "Title":  "R10.2 Update for CR 286067 - New Magnet System Type: Verify the Applications field accepts multiple predefined values",
+        "CrId":  "286067",
+        "Status":  "Updated",
+        "TestCaseId":  293472,
+        "PlanId":  291616,
+        "SuiteId":  292264
+    },
+    {
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290757\\004-new-magnet-system-type-article-used-as-target-type-negative.md",
+        "Title":  "R10.2 Update for CR 286067 - New Magnet System Type: Attempt to create a Magnet System Type using an article already assigned as a Target Type",
+        "CrId":  "286067",
+        "Status":  "Updated",
+        "TestCaseId":  293473,
+        "PlanId":  291616,
+        "SuiteId":  292264
+    },
+    {
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290757\\005-new-magnet-system-type-existing-magnet-system-type-negative.md",
+        "Title":  "R10.2 Update for CR 286067 - New Magnet System Type: Attempt to create a Magnet System Type using an article already assigned as a Magnet System Type",
+        "CrId":  "286067",
+        "Status":  "Updated",
+        "TestCaseId":  293474,
+        "PlanId":  291616,
+        "SuiteId":  292264
+    }
+]

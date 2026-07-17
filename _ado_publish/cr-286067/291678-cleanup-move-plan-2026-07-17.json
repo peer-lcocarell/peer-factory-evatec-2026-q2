@@ -1,0 +1,284 @@
+﻿[
+    {
+        "TestCaseId":  293878,
+        "RequirementId":  205380,
+        "DestinationSuiteId":  292258,
+        "Title":  "R10.2 Update for CR 286067 - Remove Association: Verify tester can remove the last learned magnet system association (Edge Case)"
+    },
+    {
+        "TestCaseId":  293879,
+        "RequirementId":  217766,
+        "DestinationSuiteId":  292259,
+        "Title":  "R10.2 Update for CR 286067 - Export Hardware Configuration: Verify export availability from latest configuration and pending-change restriction"
+    },
+    {
+        "TestCaseId":  293880,
+        "RequirementId":  217766,
+        "DestinationSuiteId":  292259,
+        "Title":  "R10.2 Update for CR 286067 - Export Hardware Configuration: Verify exported file content, metadata, and formatting rules (Validation)"
+    },
+    {
+        "TestCaseId":  293446,
+        "RequirementId":  217766,
+        "DestinationSuiteId":  292259,
+        "Title":  "R10.2 Update for CR 286067 - Export Hardware Configuration: Verify export from rewind configuration includes rewind-specific values"
+    },
+    {
+        "TestCaseId":  293881,
+        "RequirementId":  226384,
+        "DestinationSuiteId":  292260,
+        "Title":  "R10.2 Update for CR 286067 - Hardware Configuration for Real Module: Verify hardware configuration is displayed for a real module (Happy Path)"
+    },
+    {
+        "TestCaseId":  293882,
+        "RequirementId":  226384,
+        "DestinationSuiteId":  292260,
+        "Title":  "R10.2 Update for CR 286067 - Hardware Configuration for Real Module: Verify Change Magnet System for an active real module"
+    },
+    {
+        "TestCaseId":  293883,
+        "RequirementId":  226384,
+        "DestinationSuiteId":  292260,
+        "Title":  "R10.2 Update for CR 286067 - Hardware Configuration for Real Module: Verify Change Magnet System is unavailable for retired modules (Negative)"
+    },
+    {
+        "TestCaseId":  293110,
+        "RequirementId":  226385,
+        "DestinationSuiteId":  292261,
+        "Title":  "R10.2 Update for CR 286067 - Copy Module Hardware Configuration: Verify tester can copy hardware configuration from one module to another (Happy Path)"
+    },
+    {
+        "TestCaseId":  293884,
+        "RequirementId":  226385,
+        "DestinationSuiteId":  292261,
+        "Title":  "R10.2 Update for CR 286067 - Copy Module Hardware Configuration: Attempt to copy hardware configuration to an incompatible module type (Negative)"
+    },
+    {
+        "TestCaseId":  293885,
+        "RequirementId":  226385,
+        "DestinationSuiteId":  292261,
+        "Title":  "R10.2 Update for CR 286067 - Copy Module Hardware Configuration: Real to Abstract Conversion Rules"
+    },
+    {
+        "TestCaseId":  293460,
+        "RequirementId":  264374,
+        "DestinationSuiteId":  292242,
+        "Title":  "R10.2 Update for CR 286067 - Import Hardware Components from File: Verify hardware components are imported successfully using the default file format"
+    },
+    {
+        "TestCaseId":  293886,
+        "RequirementId":  264374,
+        "DestinationSuiteId":  292242,
+        "Title":  "R10.2 Update for CR 286067 - Import Hardware Components from File: Verify error message is displayed for an invalid import file"
+    },
+    {
+        "TestCaseId":  293887,
+        "RequirementId":  264374,
+        "DestinationSuiteId":  292242,
+        "Title":  "R10.2 Update for CR 286067 - Import Hardware Components from File: Verify import updates linked Magnet System Type metadata from ERP-derived hardware component data"
+    },
+    {
+        "TestCaseId":  293115,
+        "RequirementId":  290756,
+        "DestinationSuiteId":  292263,
+        "Title":  "R10.2 Update for CR 286067 - Magnet System Types: Verify tester can view the list of Magnet System Types (Happy Path)"
+    },
+    {
+        "TestCaseId":  293888,
+        "RequirementId":  290756,
+        "DestinationSuiteId":  292263,
+        "Title":  "R10.2 Update for CR 286067 - Magnet System Types: Attempt to view the Magnet System Types page without the required permission (Negative)"
+    },
+    {
+        "TestCaseId":  293889,
+        "RequirementId":  290756,
+        "DestinationSuiteId":  292263,
+        "Title":  "R10.2 Update for CR 286067 - Magnet System Types: Create New Magnet System Type"
+    },
+    {
+        "TestCaseId":  293468,
+        "RequirementId":  290756,
+        "DestinationSuiteId":  292263,
+        "Title":  "R10.2 Update for CR 286067 - Magnet System Types: Edit Existing Magnet System Type and Read-Only View"
+    },
+    {
+        "TestCaseId":  293890,
+        "RequirementId":  290756,
+        "DestinationSuiteId":  292263,
+        "Title":  "R10.2 Update for CR 286067 - Magnet System Types: Define Prototype as Standard"
+    },
+    {
+        "TestCaseId":  293470,
+        "RequirementId":  290757,
+        "DestinationSuiteId":  292264,
+        "Title":  "R10.2 Update for CR 286067 - New Magnet System Type: Verify tester can create a new Magnet System Type with valid data"
+    },
+    {
+        "TestCaseId":  293471,
+        "RequirementId":  290757,
+        "DestinationSuiteId":  292264,
+        "Title":  "R10.2 Update for CR 286067 - New Magnet System Type: Verify required field validation is displayed during creation"
+    },
+    {
+        "TestCaseId":  293472,
+        "RequirementId":  290757,
+        "DestinationSuiteId":  292264,
+        "Title":  "R10.2 Update for CR 286067 - New Magnet System Type: Verify the Applications field accepts multiple predefined values"
+    },
+    {
+        "TestCaseId":  293473,
+        "RequirementId":  290757,
+        "DestinationSuiteId":  292264,
+        "Title":  "R10.2 Update for CR 286067 - New Magnet System Type: Attempt to create a Magnet System Type using an article already assigned as a Target Type"
+    },
+    {
+        "TestCaseId":  293474,
+        "RequirementId":  290757,
+        "DestinationSuiteId":  292264,
+        "Title":  "R10.2 Update for CR 286067 - New Magnet System Type: Attempt to create a Magnet System Type using an article already assigned as a Magnet System Type"
+    },
+    {
+        "TestCaseId":  293891,
+        "RequirementId":  290759,
+        "DestinationSuiteId":  292266,
+        "Title":  "286067 Magnet System Types - View Existing Magnet System Type (Happy Path)"
+    },
+    {
+        "TestCaseId":  293892,
+        "RequirementId":  290759,
+        "DestinationSuiteId":  292266,
+        "Title":  "286067 Magnet System Types - Prevent Edit Without Edit Permission"
+    },
+    {
+        "TestCaseId":  293893,
+        "RequirementId":  290760,
+        "DestinationSuiteId":  292267,
+        "Title":  "286067 Magnet System Types - Edit Magnet System Type (Happy Path)"
+    },
+    {
+        "TestCaseId":  293894,
+        "RequirementId":  290760,
+        "DestinationSuiteId":  292267,
+        "Title":  "286067 Magnet System Types - Edit Prototype Magnet System Type Read-Only Field Constraints"
+    },
+    {
+        "TestCaseId":  293895,
+        "RequirementId":  290760,
+        "DestinationSuiteId":  292267,
+        "Title":  "286067 Magnet System Types - Edit Magnet System Type Cancel With Unsaved Changes (Negative Path)"
+    },
+    {
+        "TestCaseId":  293896,
+        "RequirementId":  290760,
+        "DestinationSuiteId":  292267,
+        "Title":  "286067 Magnet System Types - Edit Magnet System Type Back Button Behavior (Validation)"
+    },
+    {
+        "TestCaseId":  293897,
+        "RequirementId":  290760,
+        "DestinationSuiteId":  292267,
+        "Title":  "286067 Magnet System Types - Edit Magnet System Type Save Button Availability (Validation)"
+    },
+    {
+        "TestCaseId":  293898,
+        "RequirementId":  290760,
+        "DestinationSuiteId":  292267,
+        "Title":  "286067 Magnet System Types - Edit Magnet System Type Prevent Access Without Edit Permission (Negative Path)"
+    },
+    {
+        "TestCaseId":  293126,
+        "RequirementId":  290761,
+        "DestinationSuiteId":  292268,
+        "Title":  "R10.2 Update for CR 286067 - View and Manage Magnet System Type Documents: Verify tester can replace an existing Magnet System Type document (Happy Path)"
+    },
+    {
+        "TestCaseId":  293806,
+        "RequirementId":  290761,
+        "DestinationSuiteId":  292268,
+        "Title":  "R10.2 Update for CR 286067 - View and Manage Magnet System Type Documents: Verify tester cannot upload unsupported or oversized document files in Edit mode (Unhappy Path)"
+    },
+    {
+        "TestCaseId":  293807,
+        "RequirementId":  290761,
+        "DestinationSuiteId":  292268,
+        "Title":  "R10.2 Update for CR 286067 - View and Manage Magnet System Type Documents: Verify permissions with document upload process"
+    },
+    {
+        "TestCaseId":  293128,
+        "RequirementId":  290762,
+        "DestinationSuiteId":  292269,
+        "Title":  "R10.2 Update for CR 286067 - Magnet System Type History: Verify history records are created when Magnet System Type changes occur (Audit)"
+    },
+    {
+        "TestCaseId":  293129,
+        "RequirementId":  290762,
+        "DestinationSuiteId":  292269,
+        "Title":  "R10.2 Update for CR 286067 - Magnet System Type History: Verify history records prototype lineage from Standard through Prototype creation and promotion (Audit)"
+    },
+    {
+        "TestCaseId":  293811,
+        "RequirementId":  290762,
+        "DestinationSuiteId":  292269,
+        "Title":  "R10.2 Update for CR 286067 - Magnet System Type History: Verify prototype version chain retains all previous created entries (Audit)"
+    },
+    {
+        "TestCaseId":  293130,
+        "RequirementId":  290763,
+        "DestinationSuiteId":  292270,
+        "Title":  "R10.2 Update for CR 286067 - Define Magnet System Type as Standard: Verify tester can set a Magnet System Type as the standard type (Happy Path)"
+    },
+    {
+        "TestCaseId":  293899,
+        "RequirementId":  290763,
+        "DestinationSuiteId":  292270,
+        "Title":  "R10.2 Update for CR 286067 - Define Magnet System Type as Standard: Verify redefine as standard is limited to Prototype types and results in one Standard designation (Validation)"
+    },
+    {
+        "TestCaseId":  293900,
+        "RequirementId":  290763,
+        "DestinationSuiteId":  292270,
+        "Title":  "R10.2 Update for CR 286067 - Define Magnet System Type as Standard: Verify ERP article selection and default dummy article behavior (Validation)"
+    },
+    {
+        "TestCaseId":  293901,
+        "RequirementId":  290763,
+        "DestinationSuiteId":  292270,
+        "Title":  "R10.2 Update for CR 286067 - Define Magnet System Type as Standard: Verify user can cancel redefine flow without changes (Validation)"
+    },
+    {
+        "TestCaseId":  293134,
+        "RequirementId":  290763,
+        "DestinationSuiteId":  292270,
+        "Title":  "R10.2 Update for CR 286067 - Define Magnet System Type as Standard: Verify existing Magnet Systems remain linked when a Prototype is promoted to Standard (Integration)"
+    },
+    {
+        "TestCaseId":  293817,
+        "RequirementId":  290763,
+        "DestinationSuiteId":  292270,
+        "Title":  "R10.2 Update for CR 286067 - Define Magnet System Type as Standard: Verify access requires MagnetSystems_Modify security right (Authorization)"
+    },
+    {
+        "TestCaseId":  293136,
+        "RequirementId":  290764,
+        "DestinationSuiteId":  292271,
+        "Title":  "R10.2 Update for CR 286067 - Magnet Systems: Verify tester can view available Magnet Systems (Happy Path)"
+    },
+    {
+        "TestCaseId":  293902,
+        "RequirementId":  290764,
+        "DestinationSuiteId":  292271,
+        "Title":  "R10.2 Update for CR 286067 - Magnet Systems: Verify the Inspection Required filter and Retired status filter function correctly in the Magnet Systems list (Validation)"
+    },
+    {
+        "TestCaseId":  293818,
+        "RequirementId":  290764,
+        "DestinationSuiteId":  292271,
+        "Title":  "R10.2 Update for CR 286067 - Magnet Systems: Verify selected Magnet System actions are controlled by status and security rights (Authorization)"
+    },
+    {
+        "TestCaseId":  293918,
+        "RequirementId":  290773,
+        "DestinationSuiteId":  292280,
+        "Title":  "R10.2 Update for CR 286067 - Modify Magnet System: Verify prototype creation validation and variant code generation"
+    }
+]

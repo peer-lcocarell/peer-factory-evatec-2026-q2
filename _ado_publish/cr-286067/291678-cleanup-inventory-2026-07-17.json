@@ -1,0 +1,2633 @@
+﻿{
+    "GeneratedAt":  "2026-07-17T15:22:09",
+    "ParentSuite":  291678,
+    "ChildSuites":  [
+                        {
+                            "id":  292253,
+                            "name":  "73354 : Add Role to Logbook Configuration (Logbook Configuration)"
+                        },
+                        {
+                            "id":  292254,
+                            "name":  "73375 : Remove Comment or Hardware Configuration Change from Logbook (Logbook)"
+                        },
+                        {
+                            "id":  292255,
+                            "name":  "174279 : New Target Type from ERP (New Target Type)"
+                        },
+                        {
+                            "id":  292256,
+                            "name":  "205378 : Learned Associations (Manage Hardware)"
+                        },
+                        {
+                            "id":  292257,
+                            "name":  "205379 : Add associations (Learned Associations)"
+                        },
+                        {
+                            "id":  292258,
+                            "name":  "205380 : Remove association (Learned Associations)"
+                        },
+                        {
+                            "id":  292259,
+                            "name":  "217766 : Export Hardware Configuration (Tool Hardware Configuration)"
+                        },
+                        {
+                            "id":  292260,
+                            "name":  "226384 : Hardware Configuration for Real Module (Module Hardware Configuration)"
+                        },
+                        {
+                            "id":  292261,
+                            "name":  "226385 : Copy Module Hardware Configuration (Module Hardware Configuration)"
+                        },
+                        {
+                            "id":  292262,
+                            "name":  "264374 : Import hardware components from file (Hardware Components)"
+                        },
+                        {
+                            "id":  292263,
+                            "name":  "290756 : Magnet System Types (Magnet System Types)"
+                        },
+                        {
+                            "id":  292264,
+                            "name":  "290757 : New Magnet System Type (Magnet System Types)"
+                        },
+                        {
+                            "id":  292265,
+                            "name":  "290758 : View and upload documents for new magnet system type (New Magnet System Type)"
+                        },
+                        {
+                            "id":  292266,
+                            "name":  "290759 : View Magnet System Type (Magnet System Types)"
+                        },
+                        {
+                            "id":  292267,
+                            "name":  "290760 : Edit Magnet System Type (Magnet System Types)"
+                        },
+                        {
+                            "id":  292268,
+                            "name":  "290761 : View and manage magnet system type documents (Edit Magnet System Type)"
+                        },
+                        {
+                            "id":  292269,
+                            "name":  "290762 : Magnet System Type History (Magnet System Types)"
+                        },
+                        {
+                            "id":  292270,
+                            "name":  "290763 : Define Magnet System Type as Standard (Magnet System Types)"
+                        },
+                        {
+                            "id":  292271,
+                            "name":  "290764 : Magnet Systems (Magnet Systems)"
+                        },
+                        {
+                            "id":  292272,
+                            "name":  "290765 : New Magnet System (Magnet Systems)"
+                        },
+                        {
+                            "id":  292273,
+                            "name":  "290766 : View and upload documents for new magnet system (New Magnet System)"
+                        },
+                        {
+                            "id":  292274,
+                            "name":  "290767 : View Magnet System (Magnet Systems)"
+                        },
+                        {
+                            "id":  292275,
+                            "name":  "290768 : View magnet system documents (View Magnet System)"
+                        },
+                        {
+                            "id":  292276,
+                            "name":  "290769 : Edit Magnet System (Magnet Systems)"
+                        },
+                        {
+                            "id":  292277,
+                            "name":  "290770 : View and manage magnet system documents (Edit Magnet System)"
+                        },
+                        {
+                            "id":  292278,
+                            "name":  "290771 : Magnet System History (Magnet Systems)"
+                        },
+                        {
+                            "id":  292279,
+                            "name":  "290772 : Retire Magnet System (Magnet Systems)"
+                        },
+                        {
+                            "id":  292280,
+                            "name":  "290773 : Modify Magnet System (Magnet Systems)"
+                        },
+                        {
+                            "id":  292281,
+                            "name":  "290775 : Return Magnet System (Magnet Systems)"
+                        },
+                        {
+                            "id":  292282,
+                            "name":  "290776 : Print Magnet System Label (Magnet Systems)"
+                        },
+                        {
+                            "id":  292283,
+                            "name":  "290777 : Change Magnet System (Tool Hardware Configuration)"
+                        }
+                    ],
+    "ParentSuiteCount":  47,
+    "TotalMemberships":  254,
+    "UniqueCases":  220,
+    "Rows":  [
+                 {
+                     "SuiteId":  291678,
+                     "TestCaseId":  293878,
+                     "Title":  "R10.2 Update for CR 286067 - Remove Association: Verify tester can remove the last learned magnet system association (Edge Case)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  291678,
+                     "TestCaseId":  293879,
+                     "Title":  "R10.2 Update for CR 286067 - Export Hardware Configuration: Verify export availability from latest configuration and pending-change restriction",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  291678,
+                     "TestCaseId":  293880,
+                     "Title":  "R10.2 Update for CR 286067 - Export Hardware Configuration: Verify exported file content, metadata, and formatting rules (Validation)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  291678,
+                     "TestCaseId":  293446,
+                     "Title":  "R10.2 Update for CR 286067 - Export Hardware Configuration: Verify export from rewind configuration includes rewind-specific values",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\HW Config",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  291678,
+                     "TestCaseId":  293881,
+                     "Title":  "R10.2 Update for CR 286067 - Hardware Configuration for Real Module: Verify hardware configuration is displayed for a real module (Happy Path)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  291678,
+                     "TestCaseId":  293882,
+                     "Title":  "R10.2 Update for CR 286067 - Hardware Configuration for Real Module: Verify Change Magnet System for an active real module",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  291678,
+                     "TestCaseId":  293883,
+                     "Title":  "R10.2 Update for CR 286067 - Hardware Configuration for Real Module: Verify Change Magnet System is unavailable for retired modules (Negative)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  291678,
+                     "TestCaseId":  293110,
+                     "Title":  "R10.2 Update for CR 286067 - Copy Module Hardware Configuration: Verify tester can copy hardware configuration from one module to another (Happy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\HW Config",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2; Regression",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  291678,
+                     "TestCaseId":  293884,
+                     "Title":  "R10.2 Update for CR 286067 - Copy Module Hardware Configuration: Attempt to copy hardware configuration to an incompatible module type (Negative)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  291678,
+                     "TestCaseId":  293885,
+                     "Title":  "R10.2 Update for CR 286067 - Copy Module Hardware Configuration: Real to Abstract Conversion Rules",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  291678,
+                     "TestCaseId":  293460,
+                     "Title":  "R10.2 Update for CR 286067 - Import Hardware Components from File: Verify hardware components are imported successfully using the default file format",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2; Regression",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  291678,
+                     "TestCaseId":  293886,
+                     "Title":  "R10.2 Update for CR 286067 - Import Hardware Components from File: Verify error message is displayed for an invalid import file",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  291678,
+                     "TestCaseId":  293887,
+                     "Title":  "R10.2 Update for CR 286067 - Import Hardware Components from File: Verify import updates linked Magnet System Type metadata from ERP-derived hardware component data",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  291678,
+                     "TestCaseId":  293115,
+                     "Title":  "R10.2 Update for CR 286067 - Magnet System Types: Verify tester can view the list of Magnet System Types (Happy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2; Regression",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  291678,
+                     "TestCaseId":  293888,
+                     "Title":  "R10.2 Update for CR 286067 - Magnet System Types: Attempt to view the Magnet System Types page without the required permission (Negative)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  291678,
+                     "TestCaseId":  293889,
+                     "Title":  "R10.2 Update for CR 286067 - Magnet System Types: Create New Magnet System Type",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  291678,
+                     "TestCaseId":  293468,
+                     "Title":  "R10.2 Update for CR 286067 - Magnet System Types: Edit Existing Magnet System Type and Read-Only View",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  291678,
+                     "TestCaseId":  293890,
+                     "Title":  "R10.2 Update for CR 286067 - Magnet System Types: Define Prototype as Standard",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  291678,
+                     "TestCaseId":  293470,
+                     "Title":  "R10.2 Update for CR 286067 - New Magnet System Type: Verify tester can create a new Magnet System Type with valid data",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  291678,
+                     "TestCaseId":  293471,
+                     "Title":  "R10.2 Update for CR 286067 - New Magnet System Type: Verify required field validation is displayed during creation",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  291678,
+                     "TestCaseId":  293472,
+                     "Title":  "R10.2 Update for CR 286067 - New Magnet System Type: Verify the Applications field accepts multiple predefined values",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  291678,
+                     "TestCaseId":  293473,
+                     "Title":  "R10.2 Update for CR 286067 - New Magnet System Type: Attempt to create a Magnet System Type using an article already assigned as a Target Type",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  291678,
+                     "TestCaseId":  293474,
+                     "Title":  "R10.2 Update for CR 286067 - New Magnet System Type: Attempt to create a Magnet System Type using an article already assigned as a Magnet System Type",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  291678,
+                     "TestCaseId":  293891,
+                     "Title":  "286067 Magnet System Types - View Existing Magnet System Type (Happy Path)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  291678,
+                     "TestCaseId":  293892,
+                     "Title":  "286067 Magnet System Types - Prevent Edit Without Edit Permission",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  291678,
+                     "TestCaseId":  293893,
+                     "Title":  "286067 Magnet System Types - Edit Magnet System Type (Happy Path)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  291678,
+                     "TestCaseId":  293894,
+                     "Title":  "286067 Magnet System Types - Edit Prototype Magnet System Type Read-Only Field Constraints",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  291678,
+                     "TestCaseId":  293895,
+                     "Title":  "286067 Magnet System Types - Edit Magnet System Type Cancel With Unsaved Changes (Negative Path)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  291678,
+                     "TestCaseId":  293896,
+                     "Title":  "286067 Magnet System Types - Edit Magnet System Type Back Button Behavior (Validation)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  291678,
+                     "TestCaseId":  293897,
+                     "Title":  "286067 Magnet System Types - Edit Magnet System Type Save Button Availability (Validation)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  291678,
+                     "TestCaseId":  293898,
+                     "Title":  "286067 Magnet System Types - Edit Magnet System Type Prevent Access Without Edit Permission (Negative Path)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  291678,
+                     "TestCaseId":  293126,
+                     "Title":  "R10.2 Update for CR 286067 - View and Manage Magnet System Type Documents: Verify tester can replace an existing Magnet System Type document (Happy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2; Regression",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  291678,
+                     "TestCaseId":  293806,
+                     "Title":  "R10.2 Update for CR 286067 - View and Manage Magnet System Type Documents: Verify tester cannot upload unsupported or oversized document files in Edit mode (Unhappy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  291678,
+                     "TestCaseId":  293807,
+                     "Title":  "R10.2 Update for CR 286067 - View and Manage Magnet System Type Documents: Verify permissions with document upload process",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  291678,
+                     "TestCaseId":  293128,
+                     "Title":  "R10.2 Update for CR 286067 - Magnet System Type History: Verify history records are created when Magnet System Type changes occur (Audit)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  291678,
+                     "TestCaseId":  293129,
+                     "Title":  "R10.2 Update for CR 286067 - Magnet System Type History: Verify history records prototype lineage from Standard through Prototype creation and promotion (Audit)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  291678,
+                     "TestCaseId":  293811,
+                     "Title":  "R10.2 Update for CR 286067 - Magnet System Type History: Verify prototype version chain retains all previous created entries (Audit)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  291678,
+                     "TestCaseId":  293130,
+                     "Title":  "R10.2 Update for CR 286067 - Define Magnet System Type as Standard: Verify tester can set a Magnet System Type as the standard type (Happy Path)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  291678,
+                     "TestCaseId":  293899,
+                     "Title":  "R10.2 Update for CR 286067 - Define Magnet System Type as Standard: Verify redefine as standard is limited to Prototype types and results in one Standard designation (Validation)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  291678,
+                     "TestCaseId":  293900,
+                     "Title":  "R10.2 Update for CR 286067 - Define Magnet System Type as Standard: Verify ERP article selection and default dummy article behavior (Validation)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  291678,
+                     "TestCaseId":  293901,
+                     "Title":  "R10.2 Update for CR 286067 - Define Magnet System Type as Standard: Verify user can cancel redefine flow without changes (Validation)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  291678,
+                     "TestCaseId":  293134,
+                     "Title":  "R10.2 Update for CR 286067 - Define Magnet System Type as Standard: Verify existing Magnet Systems remain linked when a Prototype is promoted to Standard (Integration)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  291678,
+                     "TestCaseId":  293817,
+                     "Title":  "R10.2 Update for CR 286067 - Define Magnet System Type as Standard: Verify access requires MagnetSystems_Modify security right (Authorization)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  291678,
+                     "TestCaseId":  293136,
+                     "Title":  "R10.2 Update for CR 286067 - Magnet Systems: Verify tester can view available Magnet Systems (Happy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  291678,
+                     "TestCaseId":  293902,
+                     "Title":  "R10.2 Update for CR 286067 - Magnet Systems: Verify the Inspection Required filter and Retired status filter function correctly in the Magnet Systems list (Validation)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  291678,
+                     "TestCaseId":  293818,
+                     "Title":  "R10.2 Update for CR 286067 - Magnet Systems: Verify selected Magnet System actions are controlled by status and security rights (Authorization)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  291678,
+                     "TestCaseId":  293918,
+                     "Title":  "R10.2 Update for CR 286067 - Modify Magnet System: Verify prototype creation validation and variant code generation",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292253,
+                     "TestCaseId":  73741,
+                     "Title":  "\u0027Happy Path\u0027: Add a new \u0027Hardware Component\u0027 type role to a \u0027Logbook Configuration\u0027",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R5",
+                     "Tags":  "R5",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292253,
+                     "TestCaseId":  73742,
+                     "Title":  "Attempt to add a role to logbook configuration with limited permissions",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R5",
+                     "Tags":  "R5",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292253,
+                     "TestCaseId":  75381,
+                     "Title":  "Verify that role in a logbook configuration can have an optional set of keywords ",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R5",
+                     "Tags":  "R5",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292253,
+                     "TestCaseId":  75439,
+                     "Title":  "\u0027Happy Path\u0027: Add a new \u0027Target\u0027 type role to a \u0027Logbook Configuration\u0027 ",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R5",
+                     "Tags":  "R5",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292253,
+                     "TestCaseId":  75448,
+                     "Title":  "Attempt to add a non-unique role to a category in a module type’s logbook configuration",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R5",
+                     "Tags":  "R5",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292253,
+                     "TestCaseId":  80525,
+                     "Title":  "Confirm that a role type has been added as one of the predefined types ",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R5",
+                     "Tags":  "R5 Extension",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292253,
+                     "TestCaseId":  207839,
+                     "Title":  "\u0027Manage Hardware\u0027 Screen: Verify the processing of adding roles to a logbook configuration has been updated for R8.0 ",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R8\\R8.0",
+                     "Tags":  "R8.0",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292253,
+                     "TestCaseId":  218817,
+                     "Title":  "\u0027Manage Hardware\u0027 \u003e \u0027Logbook Configuration: All role types will have an ‘always active’ flag ",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R8\\R8.2",
+                     "Tags":  "R8.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292253,
+                     "TestCaseId":  293089,
+                     "Title":  "R10.2 Update for CR 286067 - Add Role to Logbook Configuration: Verify tester can assign a role to a logbook configuration and save changes (Happy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2; Regression",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292253,
+                     "TestCaseId":  293090,
+                     "Title":  "R10.2 Update for CR 286067 - Add Role to Logbook Configuration: Verify validation is displayed when no role is selected (Unhappy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292253,
+                     "TestCaseId":  293091,
+                     "Title":  "R10.2 Update for CR 286067 - Add Role to Logbook Configuration: Verify the serial number requirement is locked to Yes and cannot be changed for a Magnet System role type",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292253,
+                     "TestCaseId":  293092,
+                     "Title":  "R10.2 Update for CR 286067 - Add Role to Logbook Configuration: Attempt to add a role with a duplicate role name to a logbook category (Unhappy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292253,
+                     "TestCaseId":  293418,
+                     "Title":  "R10.2 Update for CR 286067 - Add Role to Logbook Configuration: Verify ManageHardware_Edit permission is required",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292253,
+                     "TestCaseId":  293932,
+                     "Title":  "R10.2 Update for CR 286067 - Remove Comment or Hardware Configuration Change from Logbook: Attempt to remove a non-removable Logbook entry (Negative)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292253,
+                     "TestCaseId":  293933,
+                     "Title":  "R10.2 Update for CR 286067 - Remove Comment or Hardware Configuration Change from Logbook: Verify removal permissions matrix (non-edit deny and tool-owner exception)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292253,
+                     "TestCaseId":  293930,
+                     "Title":  "R10.2 Update for CR 286067 - Add Role to Logbook Configuration: Verify the serial number requirement is locked to Yes and cannot be changed for a Magnet System role type (Regression)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292253,
+                     "TestCaseId":  293931,
+                     "Title":  "R10.2 Update for CR 286067 - Add Role to Logbook Configuration: Attempt to add a role with a duplicate role name to a logbook category (Validation)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292254,
+                     "TestCaseId":  75075,
+                     "Title":  "\u0027Happy Path\u0027: Remove a comment from the \u0027Logbook\u0027 page",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R5",
+                     "Tags":  "R5",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292254,
+                     "TestCaseId":  75078,
+                     "Title":  "Attempt to remove a comment or a hardware change from the \u0027Logbook\u0027 page with limited permissions ",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R5",
+                     "Tags":  "R5",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292254,
+                     "TestCaseId":  75102,
+                     "Title":  "\u0027Happy Path\u0027: Remove a hardware change from the \u0027Logbook\u0027 page ",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R5",
+                     "Tags":  "R5",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292254,
+                     "TestCaseId":  79710,
+                     "Title":  " Remove a comment from the \u0027Logbook\u0027 page as Tool owner without Log Book Editing rights.",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R5",
+                     "Tags":  "R5",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292254,
+                     "TestCaseId":  293093,
+                     "Title":  "R10.2 Update for CR 286067 - Remove Comment or Hardware Configuration Change from Logbook: Verify tester can remove a logbook entry comment (Happy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2; Regression",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292254,
+                     "TestCaseId":  293094,
+                     "Title":  "R10.2 Update for CR 286067 - Remove Comment or Hardware Configuration Change from Logbook: Verify removed logbook entry no longer appears in history view ",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292254,
+                     "TestCaseId":  293095,
+                     "Title":  "R10.2 Update for CR 286067 - Remove Comment or Hardware Configuration Change from Logbook: Attempt to remove a non-removable Logbook entry (Unhappy Path) (Unhappy Path)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292254,
+                     "TestCaseId":  293430,
+                     "Title":  "R10.2 Update for CR 286067 - Remove Comment or Hardware Configuration Change from Logbook: Verify removal permissions",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292254,
+                     "TestCaseId":  293932,
+                     "Title":  "R10.2 Update for CR 286067 - Remove Comment or Hardware Configuration Change from Logbook: Attempt to remove a non-removable Logbook entry (Negative)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292254,
+                     "TestCaseId":  293933,
+                     "Title":  "R10.2 Update for CR 286067 - Remove Comment or Hardware Configuration Change from Logbook: Verify removal permissions matrix (non-edit deny and tool-owner exception)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292255,
+                     "TestCaseId":  222221,
+                     "Title":  "Verify updates to \u0027New Target Type\u0027 dialogue for R9.1 (\u0027Change Automatic Input from BPS Name\u0027)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Targets",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R9\\R9.1",
+                     "Tags":  "R9.1",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292255,
+                     "TestCaseId":  283444,
+                     "Title":  "New Target Type from ERP (New Target Type) - Update for R10.1 for CR - Ticket #34217 - Replace BPS Number with Article Number - Happy Path ",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.1",
+                     "Tags":  "R10.1",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292255,
+                     "TestCaseId":  293097,
+                     "Title":  "R10.2 Update for CR 286067 - New Target Type from ERP: Verify target type imported from ERP is available for selection (Happy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2; Regression",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292255,
+                     "TestCaseId":  293098,
+                     "Title":  "R10.2 Update for CR 286067 - New Target Type from ERP: Verify duplicate target type records are handled correctly during import",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292255,
+                     "TestCaseId":  293099,
+                     "Title":  "R10.2 Update for CR 286067 - New Target Type from ERP: Attempt to create a Target Type using an article already assigned as a Magnet System Type (Unhappy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292255,
+                     "TestCaseId":  293432,
+                     "Title":  "R10.2 Update for CR 286067 - New Target Type from ERP: Verify New Target Type dialog field rules, defaults, and naming (Happy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2; Regression",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292255,
+                     "TestCaseId":  293868,
+                     "Title":  "R10.2 Update for CR 286067 - New Target Type from ERP: Verify duplicate target type records are handled correctly during import (Validation)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292255,
+                     "TestCaseId":  293869,
+                     "Title":  "R10.2 Update for CR 286067 - New Target Type from ERP: Attempt to create a Target Type using an article already assigned as a Magnet System Type (Negative)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292255,
+                     "TestCaseId":  293870,
+                     "Title":  "R10.2 Update for CR 286067 - New Target Type from ERP: Verify New Target Type dialog field rules, defaults, and naming",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292256,
+                     "TestCaseId":  206917,
+                     "Title":  "Attempt to view the \u0027Learned Associations\u0027 with limited permissions ",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R8\\R8.0",
+                     "Tags":  "R8.0",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292256,
+                     "TestCaseId":  206918,
+                     "Title":  "\u0027Manage Hardware\u0027: View the list of learned associations for a logbook category role (Hardware Components)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R8\\R8.0",
+                     "Tags":  "R8.0",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292256,
+                     "TestCaseId":  206926,
+                     "Title":  "\u0027Manage Hardware\u0027: Confirm the selected logbook rule will be preserved in the URL ",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R8\\R8.0",
+                     "Tags":  "R8.0",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292256,
+                     "TestCaseId":  206958,
+                     "Title":  "\u0027Manage Hardware\u0027: View the list of learned associations for a logbook category role (Targets)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R8\\R8.0",
+                     "Tags":  "R8.0",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292256,
+                     "TestCaseId":  226807,
+                     "Title":  "\u0027Managed Hardware\u0027 -\u003e \u0027Learned Associations\u0027: Verify updated to \u0027Learned Target Type Associations\u0027 for R9.2 ",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R9\\R9.2",
+                     "Tags":  "R9.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292256,
+                     "TestCaseId":  293433,
+                     "Title":  "R10.2 Update for CR 286067 - \u0027Manage Hardware\u0027 - Learned Associations: Verify standard magnet system exchange creates learned association (Happy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2; Regression",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292256,
+                     "TestCaseId":  293434,
+                     "Title":  "R10.2 Update for CR 286067 - \u0027Manage Hardware\u0027 - Learned Associations: Verify no learned Magnet System association is displayed when none exists (Unhappy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2; Regression",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292256,
+                     "TestCaseId":  293435,
+                     "Title":  "R10.2 Update for CR 286067 - \u0027Manage Hardware\u0027 - Learned Associations: Verify multiple learned magnet system associations are displayed correctly",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2; Regression",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292256,
+                     "TestCaseId":  293436,
+                     "Title":  "R10.2 Update for CR 286067 - \u0027Manage Hardware\u0027 - Learned Associations: Verify unsaved role changes do not persist and selected role is preserved in URL",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292256,
+                     "TestCaseId":  293871,
+                     "Title":  "R10.2 Update for CR 286067 - Learned Associations: Verify standard magnet system exchange creates learned association (Happy Path)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292256,
+                     "TestCaseId":  293872,
+                     "Title":  "R10.2 Update for CR 286067 - Learned Associations: Verify no learned magnet system association is displayed when none exists (Unhappy Path)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292256,
+                     "TestCaseId":  293873,
+                     "Title":  "R10.2 Update for CR 286067 - Learned Associations: Verify multiple learned magnet system associations are displayed correctly",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292256,
+                     "TestCaseId":  293874,
+                     "Title":  "R10.2 Update for CR 286067 - Learned Associations: Verify unsaved role changes do not persist and selected role is preserved in URL",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292257,
+                     "TestCaseId":  206759,
+                     "Title":  "\u0027Manage Hardware\u0027 -\u003e \u0027Add Associations\u0027: Ensure associations can be added for hardware components ",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R8\\R8.0",
+                     "Tags":  "R8.0",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292257,
+                     "TestCaseId":  206977,
+                     "Title":  "\u0027Manage Hardware\u0027: Attempt to add duplicate associations to the same role ",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R8\\R8.0",
+                     "Tags":  "R8.0",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292257,
+                     "TestCaseId":  207129,
+                     "Title":  "\u0027Manage Hardware\u0027 -\u003e \u0027Add Associations\u0027: Ensure associations can be added for targets ",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R8\\R8.0",
+                     "Tags":  "R8.0",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292257,
+                     "TestCaseId":  207133,
+                     "Title":  "\u0027Manage Hardware\u0027: Modify the comments for a hardware component and target",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R8\\R8.0",
+                     "Tags":  "R8.0",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292257,
+                     "TestCaseId":  207147,
+                     "Title":  "\u0027Manage Hardware\u0027: Attempt to add an association with limited permissions",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R8\\R8.0",
+                     "Tags":  "R8.0",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292257,
+                     "TestCaseId":  226799,
+                     "Title":  "\u0027Manage Hardware\u0027 -\u003e \u0027Add Associations\u0027: Updates for R9.2 ",
+                     "AreaPath":  "PFEvatec\\WF01 (Tool Configuration)",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R9\\R9.2",
+                     "Tags":  "R9.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292257,
+                     "TestCaseId":  293102,
+                     "Title":  "R10.2 Update for CR 286067 - \u0027Manage Hardware\u0027 - Add Associations: Verify tester can create a new hardware association (Happy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2; Regression",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292257,
+                     "TestCaseId":  293103,
+                     "Title":  "R10.2 Update for CR 286067 - \u0027Manage Hardware\u0027 - Add Associations: Attempt to add a Magnet System association using a Prototype Magnet System Type (Unhappy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292257,
+                     "TestCaseId":  293438,
+                     "Title":  "R10.2 Update for CR 286067 - \u0027Manage Hardware\u0027 - Add Associations: Verify initial population, keyword filtering, full text search, and multiple selection for Magnet System associations",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292257,
+                     "TestCaseId":  293875,
+                     "Title":  "R10.2 Update for CR 286067 - Add Associations: Verify tester can create a new hardware association (Happy Path)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292257,
+                     "TestCaseId":  293876,
+                     "Title":  "R10.2 Update for CR 286067 - Add Associations: Attempt to add a Magnet System association using a Prototype Magnet System Type (Unhappy Path)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292258,
+                     "TestCaseId":  206915,
+                     "Title":  "Attempt to remove a \u0027Learned Association\u0027 with limited permissions",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R8\\R8.0",
+                     "Tags":  "R8.0",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292258,
+                     "TestCaseId":  206916,
+                     "Title":  "\u0027Manage Hardware\u0027: Remove a \u0027Learned Association\u0027 (Targets) ",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R8\\R8.0",
+                     "Tags":  "R8.0",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292258,
+                     "TestCaseId":  206961,
+                     "Title":  "\u0027Manage Hardware\u0027: Remove a \u0027Learned Association\u0027 (Hardware Components) ",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R8\\R8.0",
+                     "Tags":  "R8.0",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292258,
+                     "TestCaseId":  293104,
+                     "Title":  "R10.2 Update for CR 286067 - Remove Association: Verify tester can remove an existing hardware association (Happy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292258,
+                     "TestCaseId":  293442,
+                     "Title":  "R10.2 Update for CR 286067 - Remove Association: Verify tester can remove a learned Magnet System association (Happy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292258,
+                     "TestCaseId":  293443,
+                     "Title":  "R10.2 Update for CR 286067 - Remove Association: Verify tester can remove the last learned magnet system association",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292258,
+                     "TestCaseId":  293877,
+                     "Title":  "R10.2 Update for CR 286067 - Remove Association: Verify tester can remove a learned magnet system association",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292259,
+                     "TestCaseId":  283429,
+                     "Title":  "Export Hardware Configuration (Tool Hardware Configuration) - Update for R10.1 for CR - Ticket #34217 - Replace BPS Number with Article Number - Happy Path ",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.1",
+                     "Tags":  "R10.1; Req217766",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292259,
+                     "TestCaseId":  293444,
+                     "Title":  "R10.2 Update for CR 286067 - Export Hardware Configuration: Verify export availability from latest configuration and pending-change restriction (Happy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\HW Config",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292259,
+                     "TestCaseId":  293445,
+                     "Title":  "R10.2 Update for CR 286067 - Export Hardware Configuration: Verify exported file content, metadata, and formatting rules",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\HW Config",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292259,
+                     "TestCaseId":  293446,
+                     "Title":  "R10.2 Update for CR 286067 - Export Hardware Configuration: Verify export from rewind configuration includes rewind-specific values",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\HW Config",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292260,
+                     "TestCaseId":  226806,
+                     "Title":  "\u0027Tool Configuration\u0027 \u003e \u0027Module Hardware Configuration\u0027: Hardware Configuration for an active \u0027Real Module\u0027 ",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\HW Config",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R9\\R9.2",
+                     "Tags":  "R9.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292260,
+                     "TestCaseId":  227408,
+                     "Title":  "\u0027Tool Configuration\u0027 \u003e \u0027Module Hardware Configuration\u0027: Hardware Configuration for a retired Module\u0027 ",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\HW Config",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R9\\R9.2",
+                     "Tags":  "R9.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292260,
+                     "TestCaseId":  293109,
+                     "Title":  "R10.2 Update for CR 286067 - Hardware Configuration for Real Module: Verify hardware configuration is displayed for a \u0027real\u0027 module (Happy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\HW Config",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2; Regression",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292260,
+                     "TestCaseId":  293450,
+                     "Title":  "R10.2 Update for CR 286067 - Hardware Configuration for Real Module: Verify Change Magnet System for an active \u0027real\u0027 module (Happy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\HW Config",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2; Regression",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292260,
+                     "TestCaseId":  293451,
+                     "Title":  "R10.2 Update for CR 286067 - Hardware Configuration for Real Module: Verify Change Magnet System is unavailable for retired modules (Unhappy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\HW Config",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292261,
+                     "TestCaseId":  226802,
+                     "Title":  "\u0027Module Hardware Configuration\u0027: Verify a module hardware configuration can be copied (\u0027Real Modules)\u0027",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\HW Config",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R9\\R9.2",
+                     "Tags":  "R9.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292261,
+                     "TestCaseId":  232129,
+                     "Title":  "\u0027Module Hardware Configuration\u0027: Verify a module hardware configuration can be copied to and from (\u0027Abstract Modules)\u0027 [draft]",
+                     "AreaPath":  "PFEvatec\\WF01 (Tool Configuration)\\Tools\\SECS-GEM",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.0",
+                     "Tags":  "R10.0",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292261,
+                     "TestCaseId":  293110,
+                     "Title":  "R10.2 Update for CR 286067 - Copy Module Hardware Configuration: Verify tester can copy hardware configuration from one module to another (Happy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\HW Config",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2; Regression",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292261,
+                     "TestCaseId":  293111,
+                     "Title":  "R10.2 Update for CR 286067 - Copy Module Hardware Configuration: Attempt to copy hardware configuration to an incompatible module type (Unhappy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\HW Config",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292261,
+                     "TestCaseId":  293454,
+                     "Title":  "R10.2 Update for CR 286067 - Copy Module Hardware Configuration: Verify the \u0027Copy Module Hardware Configuration\u0027 process for a \u0027Real-to-Abstract\u0027 conversion",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\HW Config",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2; Regression",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292262,
+                     "TestCaseId":  283422,
+                     "Title":  "Import hardware components from file - Update for R10.1 for CR - Ticket #34217 - Replace BPS Number with Article Number - Happy Path ",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.1",
+                     "Tags":  "R10.1",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292262,
+                     "TestCaseId":  293460,
+                     "Title":  "R10.2 Update for CR 286067 - Import Hardware Components from File: Verify hardware components are imported successfully using the default file format",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2; Regression",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292262,
+                     "TestCaseId":  293462,
+                     "Title":  "R10.2 Update for CR 286067 - Import Hardware Components from File: Verify linked Magnet System Type metadata is updated after hardware component import (via ERP)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2; Regression",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292262,
+                     "TestCaseId":  292746,
+                     "Title":  "R10.2 Update for CR 286836 - Import Hardware Components from File: Verify hardware components are imported from a valid file (Happy Path)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2; Regression",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292262,
+                     "TestCaseId":  292747,
+                     "Title":  "R10.2 Update for CR 286836 - Import Hardware Components from File: Verify import fails when file format is invalid (Unhappy Path)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292262,
+                     "TestCaseId":  292748,
+                     "Title":  "R10.2 Update for CR 286836 - Import Hardware Components from File: Verify duplicate records are handled according to business rules",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292262,
+                     "TestCaseId":  293643,
+                     "Title":  "R10.2 Update for CR 286836 - Import Hardware Components from File: Verify product group filters import only eligible records",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292262,
+                     "TestCaseId":  293649,
+                     "Title":  "R10.2 Update for CR 286836 - Import Hardware Components from File: Verify import fails when file format is invalid (Unhappy Path)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292263,
+                     "TestCaseId":  293115,
+                     "Title":  "R10.2 Update for CR 286067 - Magnet System Types: Verify tester can view the list of Magnet System Types (Happy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2; Regression",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292263,
+                     "TestCaseId":  293116,
+                     "Title":  "R10.2 Update for CR 286067 - Magnet System Types: Attempt to view the Magnet System Types page without the required permission (Unhappy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292263,
+                     "TestCaseId":  293467,
+                     "Title":  "R10.2 Update for CR 286067 - Magnet System Types: Create New Magnet System Type (Happy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292263,
+                     "TestCaseId":  293468,
+                     "Title":  "R10.2 Update for CR 286067 - Magnet System Types: Edit Existing Magnet System Type and Read-Only View",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292263,
+                     "TestCaseId":  293469,
+                     "Title":  "R10.2 Update for CR 286067 - Magnet System Types: Verify process of Defining a Prototype as \u0027Standard\u0027",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292264,
+                     "TestCaseId":  293470,
+                     "Title":  "R10.2 Update for CR 286067 - New Magnet System Type: Verify tester can create a new Magnet System Type with valid data",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292264,
+                     "TestCaseId":  293471,
+                     "Title":  "R10.2 Update for CR 286067 - New Magnet System Type: Verify required field validation is displayed during creation",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292264,
+                     "TestCaseId":  293472,
+                     "Title":  "R10.2 Update for CR 286067 - New Magnet System Type: Verify the Applications field accepts multiple predefined values",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292264,
+                     "TestCaseId":  293473,
+                     "Title":  "R10.2 Update for CR 286067 - New Magnet System Type: Attempt to create a Magnet System Type using an article already assigned as a Target Type",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292264,
+                     "TestCaseId":  293474,
+                     "Title":  "R10.2 Update for CR 286067 - New Magnet System Type: Attempt to create a Magnet System Type using an article already assigned as a Magnet System Type",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292265,
+                     "TestCaseId":  293121,
+                     "Title":  "R10.2 Update for CR 286067 - View and Upload Documents for New Magnet System Type: Upload Single Document During New Magnet System Type Creation (Happy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2; Regression",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292265,
+                     "TestCaseId":  293122,
+                     "Title":  "R10.2 Update for CR 286067 - View and Upload Documents for New Magnet System Type: Document Upload and Removal During Creation (Unhappy Path",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292265,
+                     "TestCaseId":  293508,
+                     "Title":  "R10.2 Update for CR 286067 - View and Upload Documents for New Magnet System Type: Upload Multiple Documents During New Magnet System Type Creation",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292266,
+                     "TestCaseId":  293123,
+                     "Title":  "R10.2 Update for CR 286067 - View Magnet System Type: Verify tester can view details of a Magnet System Type (Happy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2; Regression",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292266,
+                     "TestCaseId":  293760,
+                     "Title":  "R10.2 Update for CR 286067 - View Magnet System Type: Prevent Edit Without Edit Permission (Unhappy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292267,
+                     "TestCaseId":  293124,
+                     "Title":  "R10.2 Update for CR 286067 - Edit Magnet System Type: Verify tester can update Magnet System Type information (Happy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2; Regression",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292267,
+                     "TestCaseId":  293771,
+                     "Title":  "R10.2 Update for CR 286067 - Edit Magnet System Type: Verify read-only field constraints are enforced on a Prototype Magnet System Type ",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2; Regression",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292267,
+                     "TestCaseId":  293776,
+                     "Title":  "R10.2 Update for CR 286067 - Edit Magnet System Type: Read-Only Field Constraints",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2; Regression",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292267,
+                     "TestCaseId":  293773,
+                     "Title":  "R10.2 Update for CR 286067 - Edit Magnet System Type: Edit Magnet System Type - Cancel With Unsaved Changes (Unhappy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292267,
+                     "TestCaseId":  293780,
+                     "Title":  "R10.2 Update for CR 286067 - Edit Magnet System Type: Prevent Access Without Edit Permission (Unhappy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292268,
+                     "TestCaseId":  293126,
+                     "Title":  "R10.2 Update for CR 286067 - View and Manage Magnet System Type Documents: Verify tester can replace an existing Magnet System Type document (Happy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2; Regression",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292268,
+                     "TestCaseId":  293806,
+                     "Title":  "R10.2 Update for CR 286067 - View and Manage Magnet System Type Documents: Verify tester cannot upload unsupported or oversized document files in Edit mode (Unhappy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292268,
+                     "TestCaseId":  293807,
+                     "Title":  "R10.2 Update for CR 286067 - View and Manage Magnet System Type Documents: Verify permissions with document upload process",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292269,
+                     "TestCaseId":  293128,
+                     "Title":  "R10.2 Update for CR 286067 - Magnet System Type History: Verify history records are created when Magnet System Type changes occur (Audit)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292269,
+                     "TestCaseId":  293129,
+                     "Title":  "R10.2 Update for CR 286067 - Magnet System Type History: Verify history records prototype lineage from Standard through Prototype creation and promotion (Audit)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292269,
+                     "TestCaseId":  293811,
+                     "Title":  "R10.2 Update for CR 286067 - Magnet System Type History: Verify prototype version chain retains all previous created entries (Audit)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292270,
+                     "TestCaseId":  293130,
+                     "Title":  "R10.2 Update for CR 286067 - Define Magnet System Type as Standard: Verify tester can set a Magnet System Type as the standard type (Happy Path)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292270,
+                     "TestCaseId":  293131,
+                     "Title":  "R10.2 Update for CR 286067 - Define Magnet System Type as Standard: Verify only one standard Magnet System Type exists after update",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292270,
+                     "TestCaseId":  293132,
+                     "Title":  "R10.2 Update for CR 286067 - Define Magnet System Type as Standard: Verify a Standard Magnet System Type can be converted to a Prototype (Happy Path)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292270,
+                     "TestCaseId":  293133,
+                     "Title":  "R10.2 Update for CR 286067 - Define Magnet System Type as Standard: Verify a Prototype Magnet System Type can be used to create a further Prototype variant with an incremented variant code (Happy Path)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292270,
+                     "TestCaseId":  293134,
+                     "Title":  "R10.2 Update for CR 286067 - Define Magnet System Type as Standard: Verify existing Magnet Systems remain linked when a Prototype is promoted to Standard (Integration)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292270,
+                     "TestCaseId":  293135,
+                     "Title":  "R10.2 Update for CR 286067 - Define Magnet System Type as Standard: Verify the Prototype Article Number must be unique and cannot match an existing Hardware Component Article Number",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292270,
+                     "TestCaseId":  293814,
+                     "Title":  "R10.2 Update for CR 286067 - Define Magnet System Type as Standard: Verify redefine as standard is limited to Prototype types and results in one Standard designation",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292270,
+                     "TestCaseId":  293815,
+                     "Title":  "R10.2 Update for CR 286067 - Define Magnet System Type as Standard: Verify ERP article selection and default dummy article behavior",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292270,
+                     "TestCaseId":  293816,
+                     "Title":  "R10.2 Update for CR 286067 - Define Magnet System Type as Standard: Verify user can cancel redefine flow without changes",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292270,
+                     "TestCaseId":  293817,
+                     "Title":  "R10.2 Update for CR 286067 - Define Magnet System Type as Standard: Verify access requires MagnetSystems_Modify security right (Authorization)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292271,
+                     "TestCaseId":  293136,
+                     "Title":  "R10.2 Update for CR 286067 - Magnet Systems: Verify tester can view available Magnet Systems (Happy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292271,
+                     "TestCaseId":  293137,
+                     "Title":  "R10.2 Update for CR 286067 - Magnet Systems: Verify the Inspection Required filter and Retired status filter function correctly in the Magnet Systems list",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292271,
+                     "TestCaseId":  293818,
+                     "Title":  "R10.2 Update for CR 286067 - Magnet Systems: Verify selected Magnet System actions are controlled by status and security rights (Authorization)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292272,
+                     "TestCaseId":  293138,
+                     "Title":  "R10.2 Update for CR 286067 - New Magnet System: Verify tester can create a new Magnet System using a valid Magnet System Type (Happy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292272,
+                     "TestCaseId":  293139,
+                     "Title":  "R10.2 Update for CR 286067 - New Magnet System: Attempt to create a Magnet System with a duplicate serial number (Unhappy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292272,
+                     "TestCaseId":  293140,
+                     "Title":  "R10.2 Update for CR 286067 - New Magnet System: Verify required field validation is displayed when mandatory fields are empty during creation",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292272,
+                     "TestCaseId":  293904,
+                     "Title":  "R10.2 Update for CR 286067 - New Magnet System: Verify required field validation is displayed when mandatory fields are empty during creation (Validation)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292272,
+                     "TestCaseId":  293903,
+                     "Title":  "R10.2 Update for CR 286067 - New Magnet System: Attempt to create a Magnet System with a duplicate serial number (Negative)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292273,
+                     "TestCaseId":  293141,
+                     "Title":  "R10.2 Update for CR 286067 - View and Upload Documents for New Magnet System: Verify tester can upload documents while creating a Magnet System (Happy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292273,
+                     "TestCaseId":  293142,
+                     "Title":  "R10.2 Update for CR 286067 - View and Upload Documents for New Magnet System: Attempt to upload an invalid file type during Magnet System creation (Unhappy Path)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292273,
+                     "TestCaseId":  293820,
+                     "Title":  "R10.2 Update for CR 286067 - View and Upload Documents for New Magnet System: Upload multiple documents and verify selective removal during Magnet System creation",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292273,
+                     "TestCaseId":  293821,
+                     "Title":  "R10.2 Update for CR 286067 - View and Upload Documents for New Magnet System: Remove an uploaded document before saving and verify no confirmation prompt is displayed (Unhappy Path)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292273,
+                     "TestCaseId":  293906,
+                     "Title":  "R10.2 Update for CR 286067 - View and Upload Documents for New Magnet System: Remove an uploaded document before saving and verify no confirmation prompt is displayed",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292273,
+                     "TestCaseId":  293905,
+                     "Title":  "R10.2 Update for CR 286067 - View and Upload Documents for New Magnet System: Attempt to upload an invalid file type during Magnet System creation (Negative)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292274,
+                     "TestCaseId":  293143,
+                     "Title":  "R10.2 Update for CR 286067 - View Magnet System: Verify tester can view Magnet System details (Happy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292274,
+                     "TestCaseId":  293144,
+                     "Title":  "R10.2 Update for CR 286067 - View Magnet System: Verify state fields display correct values for each lifecycle status",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292274,
+                     "TestCaseId":  293822,
+                     "Title":  "R10.2 Update for CR 286067 - View Magnet System: Verify inspection notification is displayed when a Magnet System requires inspection",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292274,
+                     "TestCaseId":  293823,
+                     "Title":  "R10.2 Update for CR 286067 - View Magnet System: Verify permissions on view screen",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292274,
+                     "TestCaseId":  293913,
+                     "Title":  "R10.2 Update for CR 286067 - Retire Magnet System: Verify retired Magnet Systems cannot be selected for new assignments (Validation)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292274,
+                     "TestCaseId":  293914,
+                     "Title":  "R10.2 Update for CR 286067 - Retire Magnet System: Attempt to retire a Magnet System that is currently In Use (Negative)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292274,
+                     "TestCaseId":  293915,
+                     "Title":  "R10.2 Update for CR 286067 - Retire Magnet System: Verify retirement is blocked when no reason is provided (Validation)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292274,
+                     "TestCaseId":  293916,
+                     "Title":  "R10.2 Update for CR 286067 - Retire Magnet System: Verify retirement security permissions are enforced (Security)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292274,
+                     "TestCaseId":  293908,
+                     "Title":  "R10.2 Update for CR 286067 - View Magnet System: Verify action button visibility on View screen matches user permissions",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292274,
+                     "TestCaseId":  293907,
+                     "Title":  "R10.2 Update for CR 286067 - View Magnet System: Verify state-sensitive fields display correct values for each lifecycle status (Validation)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292275,
+                     "TestCaseId":  293145,
+                     "Title":  "R10.2 Update for CR 286067 - View Magnet System Documents: Verify uploaded Magnet System documents are accessible (Happy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292275,
+                     "TestCaseId":  293824,
+                     "Title":  "R10.2 Update for CR 286067 - View Magnet System Documents: Handle unavailable document access gracefully (Unhappy Path)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292276,
+                     "TestCaseId":  293146,
+                     "Title":  "R10.2 Update for CR 286067 - Edit Magnet System: Verify tester can update Magnet System attributes (Happy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292276,
+                     "TestCaseId":  293147,
+                     "Title":  "R10.2 Update for CR 286067 - Edit Magnet System: Attempt to edit the Serial Number or Magnet System Number on an existing Magnet System (Unhappy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292276,
+                     "TestCaseId":  293826,
+                     "Title":  "R10.2 Update for CR 286067 - Edit Magnet System: Verify retired-state restrictions and edit validation behavior (Unhappy Path)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292276,
+                     "TestCaseId":  293825,
+                     "Title":  "R10.2 Update for CR 286067 - Edit Magnet System: Verify access control and navigation behavior for Edit Magnet System (Unhappy Path)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292276,
+                     "TestCaseId":  293909,
+                     "Title":  "R10.2 Update for CR 286067 - Edit Magnet System: Attempt to edit the Serial Number or Magnet System Number on an existing Magnet System (Negative)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292276,
+                     "TestCaseId":  293910,
+                     "Title":  "R10.2 Update for CR 286067 - Edit Magnet System: Verify access control and navigation behavior for Edit Magnet System (Negative)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292276,
+                     "TestCaseId":  293911,
+                     "Title":  "R10.2 Update for CR 286067 - Edit Magnet System: Verify retired-state restrictions and edit validation behavior (Negative)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292277,
+                     "TestCaseId":  293148,
+                     "Title":  "R10.2 Update for CR 286067 - View and Manage Magnet System Documents: Verify tester can delete a Magnet System document (Happy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2; Regression",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292277,
+                     "TestCaseId":  293149,
+                     "Title":  "R10.2 Update for CR 286067 - View and Manage Magnet System Documents: Verify tester can upload and replace documents on a Magnet System in Edit mode (Happy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2; Regression",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292277,
+                     "TestCaseId":  293829,
+                     "Title":  "R10.2 Update for CR 286067 - View and Manage Magnet System Documents: Verify invalid document operations are rejected (Unhappy Path)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292277,
+                     "TestCaseId":  293828,
+                     "Title":  "R10.2 Update for CR 286067 - View and Manage Magnet System Documents: Verify tester can upload, replace, and access documents on a Magnet System in Edit mode",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292277,
+                     "TestCaseId":  293827,
+                     "Title":  "R10.2 Update for CR 286067 - View and Manage Magnet System Documents: Verify tester can delete a Magnet System document and validate confirmation behavior (Happy Path)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292277,
+                     "TestCaseId":  293824,
+                     "Title":  "R10.2 Update for CR 286067 - View Magnet System Documents: Handle unavailable document access gracefully (Unhappy Path)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292277,
+                     "TestCaseId":  293145,
+                     "Title":  "R10.2 Update for CR 286067 - View Magnet System Documents: Verify uploaded Magnet System documents are accessible (Happy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292277,
+                     "TestCaseId":  293912,
+                     "Title":  "R10.2 Update for CR 286067 - View and Manage Magnet System Documents: Verify invalid document operations are rejected (Negative)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292277,
+                     "TestCaseId":  293832,
+                     "Title":  "R10.2 Update for CR 286067 - Magnet System History: Verify history records are generated when Magnet System information changes (Happy Path)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292278,
+                     "TestCaseId":  293150,
+                     "Title":  "R10.2 Update for CR 286067 - Magnet System History: Verify history records are generated when Magnet System information changes ",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292278,
+                     "TestCaseId":  293151,
+                     "Title":  "R10.2 Update for CR 286067 - Magnet System History: Verify distinct history entries are generated for every lifecycle event",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292278,
+                     "TestCaseId":  293835,
+                     "Title":  "R10.2 Update for CR 286067 - Magnet System History: Verify history entry detail content and link navigation from View and Edit (Happy Path)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292278,
+                     "TestCaseId":  293834,
+                     "Title":  "R10.2 Update for CR 286067 - Magnet System History: Verify Prototype and Define as Standard events are recorded with type links (Happy Path)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292278,
+                     "TestCaseId":  293833,
+                     "Title":  "R10.2 Update for CR 286067 - Magnet System History: Verify distinct history entries are generated for every lifecycle event (Happy Path)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292278,
+                     "TestCaseId":  293832,
+                     "Title":  "R10.2 Update for CR 286067 - Magnet System History: Verify history records are generated when Magnet System information changes (Happy Path)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292278,
+                     "TestCaseId":  293831,
+                     "Title":  "R10.2 Update for CR 286067 - Magnet System History: Verify history entry detail content and link navigation from View and Edit (Audit)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292278,
+                     "TestCaseId":  293830,
+                     "Title":  "R10.2 Update for CR 286067 - Magnet System History: Verify Prototype and Define as Standard events are recorded with type links (Audit)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292279,
+                     "TestCaseId":  293152,
+                     "Title":  "R10.2 Update for CR 286067 - Retire Magnet System: Verify tester can retire an active Magnet System (Happy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2; Regression",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292279,
+                     "TestCaseId":  293153,
+                     "Title":  "R10.2 Update for CR 286067 - Retire Magnet System: Verify retired Magnet Systems cannot be selected for new assignments",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292279,
+                     "TestCaseId":  293154,
+                     "Title":  "R10.2 Update for CR 286067 - Retire Magnet System: Attempt to retire a Magnet System that is currently In Use (Unhappy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292279,
+                     "TestCaseId":  293155,
+                     "Title":  "R10.2 Update for CR 286067 - Retire Magnet System: Verify retirement is blocked when no reason is provided ",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292279,
+                     "TestCaseId":  293922,
+                     "Title":  "R10.2 Update for CR 286067 - Return Magnet System: Attempt to return a Magnet System that is already In Stock (Negative)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292279,
+                     "TestCaseId":  293923,
+                     "Title":  "R10.2 Update for CR 286067 - Return Magnet System: Verify Location is cleared and status returns to In Stock after return from Checked Out (Validation)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292279,
+                     "TestCaseId":  293913,
+                     "Title":  "R10.2 Update for CR 286067 - Retire Magnet System: Verify retired Magnet Systems cannot be selected for new assignments (Validation)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292279,
+                     "TestCaseId":  293914,
+                     "Title":  "R10.2 Update for CR 286067 - Retire Magnet System: Attempt to retire a Magnet System that is currently In Use (Negative)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292279,
+                     "TestCaseId":  293915,
+                     "Title":  "R10.2 Update for CR 286067 - Retire Magnet System: Verify retirement is blocked when no reason is provided (Validation)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292279,
+                     "TestCaseId":  293916,
+                     "Title":  "R10.2 Update for CR 286067 - Retire Magnet System: Verify retirement security permissions are enforced (Security)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292280,
+                     "TestCaseId":  293156,
+                     "Title":  "R10.2 Update for CR 286067 - Modify Magnet System: Verify tester can submit a modification request for a Magnet System (Happy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2; Regression",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292280,
+                     "TestCaseId":  293157,
+                     "Title":  "R10.2 Update for CR 286067 - Modify Magnet System: Attempt to modify a Magnet System that is in a status that does not permit modification (Unhappy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292280,
+                     "TestCaseId":  293158,
+                     "Title":  "R10.2 Update for CR 286067 - Modify Magnet System: Verify variant code increments correctly when creating successive prototype versions ",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292280,
+                     "TestCaseId":  293918,
+                     "Title":  "R10.2 Update for CR 286067 - Modify Magnet System: Verify prototype creation validation and variant code generation",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292280,
+                     "TestCaseId":  293919,
+                     "Title":  "R10.2 Update for CR 286067 - Modify Magnet System: Verify tester can use an existing Prototype Magnet System Type (Happy Path)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292280,
+                     "TestCaseId":  293920,
+                     "Title":  "R10.2 Update for CR 286067 - Modify Magnet System: Verify prototype creation field rules and cancellation behavior (Validation)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292280,
+                     "TestCaseId":  293921,
+                     "Title":  "R10.2 Update for CR 286067 - Modify Magnet System: Verify Modify security permissions are enforced (Security)",
+                     "AreaPath":  "PFEvatec",
+                     "IterationPath":  "PFEvatec",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292281,
+                     "TestCaseId":  293159,
+                     "Title":  "R10.2 Update for CR 286067 - Return Magnet System: Verify tester can return a Magnet System to available inventory (Happy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2; Regression",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292281,
+                     "TestCaseId":  293160,
+                     "Title":  "R10.2 Update for CR 286067 - Return Magnet System: Attempt to return a Magnet System that is already In Stock (Unhappy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292281,
+                     "TestCaseId":  293161,
+                     "Title":  "R10.2 Update for CR 286067 - Return Magnet System: Verify Location is cleared and status returns to In Stock after return from Checked Out",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292281,
+                     "TestCaseId":  293165,
+                     "Title":  "R10.2 Update for CR 286067 - Change Magnet System: Verify tester can replace an installed Magnet System within Tool Hardware Configuration (Happy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2; Regression",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292281,
+                     "TestCaseId":  293168,
+                     "Title":  "R10.2 Update for CR 286067 - Change Magnet System: Verify tester can install a magnet system into an empty role slot in Tool Hardware Configuration (Happy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2; Regression",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292281,
+                     "TestCaseId":  293169,
+                     "Title":  "R10.2 Update for CR 286067 - Change Magnet System: Verify tester can uninstall a magnet system from Tool Hardware Configuration (Happy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2; Skyrunner",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292282,
+                     "TestCaseId":  293162,
+                     "Title":  "R10.2 Update for CR 286067 - Print Magnet System Label: Verify tester can generate and print a Magnet System label (Happy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292283,
+                     "TestCaseId":  293168,
+                     "Title":  "R10.2 Update for CR 286067 - Change Magnet System: Verify tester can install a magnet system into an empty role slot in Tool Hardware Configuration (Happy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2; Regression",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292283,
+                     "TestCaseId":  293165,
+                     "Title":  "R10.2 Update for CR 286067 - Change Magnet System: Verify tester can replace an installed Magnet System within Tool Hardware Configuration (Happy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2; Regression",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292283,
+                     "TestCaseId":  293166,
+                     "Title":  "R10.2 Update for CR 286067 - Change Magnet System: Verify hardware configuration history reflects the Magnet System change ",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2; Regression",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292283,
+                     "TestCaseId":  293169,
+                     "Title":  "R10.2 Update for CR 286067 - Change Magnet System: Verify tester can uninstall a magnet system from Tool Hardware Configuration (Happy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2; Skyrunner",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292283,
+                     "TestCaseId":  293836,
+                     "Title":  "R10.2 Update for CR 286067 - Change Magnet System: Verify only Checked Out Magnet Systems are eligible for installation and replacement (Unhappy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292283,
+                     "TestCaseId":  293837,
+                     "Title":  "R10.2 Update for CR 286067 - Change Magnet System: Verify tester can cancel Change Magnet System without modifying Hardware Configuration (Unhappy Path)",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292283,
+                     "TestCaseId":  293838,
+                     "Title":  "R10.2 Update for CR 286067 - Change Magnet System: Verify Magnet System search and filtering behavior in selection dialog",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 },
+                 {
+                     "SuiteId":  292283,
+                     "TestCaseId":  293839,
+                     "Title":  "R10.2 Update for CR 286067 - Change Magnet System: Verify HardwareConfiguration_Edit security permissions",
+                     "AreaPath":  "PFEvatec\\WF06 (Logbook)\\Magnet Systems",
+                     "IterationPath":  "PFEvatec\\Phase 2\\R10\\R10.2",
+                     "Tags":  "R10.2",
+                     "State":  "Design"
+                 }
+             ],
+    "DuplicateTitles":  [
+                            {
+                                "Title":  "R10.2 Update for CR 286067 - Export Hardware Configuration: Verify export from rewind configuration includes rewind-specific values",
+                                "Count":  2,
+                                "TestCaseIds":  "293446",
+                                "Suites":  "291678,292259"
+                            },
+                            {
+                                "Title":  "R10.2 Update for CR 286067 - Copy Module Hardware Configuration: Verify tester can copy hardware configuration from one module to another (Happy Path)",
+                                "Count":  2,
+                                "TestCaseIds":  "293110",
+                                "Suites":  "291678,292261"
+                            },
+                            {
+                                "Title":  "R10.2 Update for CR 286067 - Import Hardware Components from File: Verify hardware components are imported successfully using the default file format",
+                                "Count":  2,
+                                "TestCaseIds":  "293460",
+                                "Suites":  "291678,292262"
+                            },
+                            {
+                                "Title":  "R10.2 Update for CR 286067 - Magnet System Types: Verify tester can view the list of Magnet System Types (Happy Path)",
+                                "Count":  2,
+                                "TestCaseIds":  "293115",
+                                "Suites":  "291678,292263"
+                            },
+                            {
+                                "Title":  "R10.2 Update for CR 286067 - Magnet System Types: Edit Existing Magnet System Type and Read-Only View",
+                                "Count":  2,
+                                "TestCaseIds":  "293468",
+                                "Suites":  "291678,292263"
+                            },
+                            {
+                                "Title":  "R10.2 Update for CR 286067 - New Magnet System Type: Verify tester can create a new Magnet System Type with valid data",
+                                "Count":  2,
+                                "TestCaseIds":  "293470",
+                                "Suites":  "291678,292264"
+                            },
+                            {
+                                "Title":  "R10.2 Update for CR 286067 - New Magnet System Type: Verify required field validation is displayed during creation",
+                                "Count":  2,
+                                "TestCaseIds":  "293471",
+                                "Suites":  "291678,292264"
+                            },
+                            {
+                                "Title":  "R10.2 Update for CR 286067 - New Magnet System Type: Verify the Applications field accepts multiple predefined values",
+                                "Count":  2,
+                                "TestCaseIds":  "293472",
+                                "Suites":  "291678,292264"
+                            },
+                            {
+                                "Title":  "R10.2 Update for CR 286067 - New Magnet System Type: Attempt to create a Magnet System Type using an article already assigned as a Target Type",
+                                "Count":  2,
+                                "TestCaseIds":  "293473",
+                                "Suites":  "291678,292264"
+                            },
+                            {
+                                "Title":  "R10.2 Update for CR 286067 - New Magnet System Type: Attempt to create a Magnet System Type using an article already assigned as a Magnet System Type",
+                                "Count":  2,
+                                "TestCaseIds":  "293474",
+                                "Suites":  "291678,292264"
+                            },
+                            {
+                                "Title":  "R10.2 Update for CR 286067 - View and Manage Magnet System Type Documents: Verify tester can replace an existing Magnet System Type document (Happy Path)",
+                                "Count":  2,
+                                "TestCaseIds":  "293126",
+                                "Suites":  "291678,292268"
+                            },
+                            {
+                                "Title":  "R10.2 Update for CR 286067 - View and Manage Magnet System Type Documents: Verify tester cannot upload unsupported or oversized document files in Edit mode (Unhappy Path)",
+                                "Count":  2,
+                                "TestCaseIds":  "293806",
+                                "Suites":  "291678,292268"
+                            },
+                            {
+                                "Title":  "R10.2 Update for CR 286067 - View and Manage Magnet System Type Documents: Verify permissions with document upload process",
+                                "Count":  2,
+                                "TestCaseIds":  "293807",
+                                "Suites":  "291678,292268"
+                            },
+                            {
+                                "Title":  "R10.2 Update for CR 286067 - Magnet System Type History: Verify history records are created when Magnet System Type changes occur (Audit)",
+                                "Count":  2,
+                                "TestCaseIds":  "293128",
+                                "Suites":  "291678,292269"
+                            },
+                            {
+                                "Title":  "R10.2 Update for CR 286067 - Magnet System Type History: Verify history records prototype lineage from Standard through Prototype creation and promotion (Audit)",
+                                "Count":  2,
+                                "TestCaseIds":  "293129",
+                                "Suites":  "291678,292269"
+                            },
+                            {
+                                "Title":  "R10.2 Update for CR 286067 - Magnet System Type History: Verify prototype version chain retains all previous created entries (Audit)",
+                                "Count":  2,
+                                "TestCaseIds":  "293811",
+                                "Suites":  "291678,292269"
+                            },
+                            {
+                                "Title":  "R10.2 Update for CR 286067 - Define Magnet System Type as Standard: Verify tester can set a Magnet System Type as the standard type (Happy Path)",
+                                "Count":  2,
+                                "TestCaseIds":  "293130",
+                                "Suites":  "291678,292270"
+                            },
+                            {
+                                "Title":  "R10.2 Update for CR 286067 - Define Magnet System Type as Standard: Verify existing Magnet Systems remain linked when a Prototype is promoted to Standard (Integration)",
+                                "Count":  2,
+                                "TestCaseIds":  "293134",
+                                "Suites":  "291678,292270"
+                            },
+                            {
+                                "Title":  "R10.2 Update for CR 286067 - Define Magnet System Type as Standard: Verify access requires MagnetSystems_Modify security right (Authorization)",
+                                "Count":  2,
+                                "TestCaseIds":  "293817",
+                                "Suites":  "291678,292270"
+                            },
+                            {
+                                "Title":  "R10.2 Update for CR 286067 - Magnet Systems: Verify tester can view available Magnet Systems (Happy Path)",
+                                "Count":  2,
+                                "TestCaseIds":  "293136",
+                                "Suites":  "291678,292271"
+                            },
+                            {
+                                "Title":  "R10.2 Update for CR 286067 - Magnet Systems: Verify selected Magnet System actions are controlled by status and security rights (Authorization)",
+                                "Count":  2,
+                                "TestCaseIds":  "293818",
+                                "Suites":  "291678,292271"
+                            },
+                            {
+                                "Title":  "R10.2 Update for CR 286067 - Modify Magnet System: Verify prototype creation validation and variant code generation",
+                                "Count":  2,
+                                "TestCaseIds":  "293918",
+                                "Suites":  "291678,292280"
+                            },
+                            {
+                                "Title":  "R10.2 Update for CR 286067 - Remove Comment or Hardware Configuration Change from Logbook: Attempt to remove a non-removable Logbook entry (Negative)",
+                                "Count":  2,
+                                "TestCaseIds":  "293932",
+                                "Suites":  "292253,292254"
+                            },
+                            {
+                                "Title":  "R10.2 Update for CR 286067 - Remove Comment or Hardware Configuration Change from Logbook: Verify removal permissions matrix (non-edit deny and tool-owner exception)",
+                                "Count":  2,
+                                "TestCaseIds":  "293933",
+                                "Suites":  "292253,292254"
+                            },
+                            {
+                                "Title":  "R10.2 Update for CR 286836 - Import Hardware Components from File: Verify import fails when file format is invalid (Unhappy Path)",
+                                "Count":  2,
+                                "TestCaseIds":  "292747,293649",
+                                "Suites":  "292262"
+                            },
+                            {
+                                "Title":  "R10.2 Update for CR 286067 - Retire Magnet System: Verify retired Magnet Systems cannot be selected for new assignments (Validation)",
+                                "Count":  2,
+                                "TestCaseIds":  "293913",
+                                "Suites":  "292274,292279"
+                            },
+                            {
+                                "Title":  "R10.2 Update for CR 286067 - Retire Magnet System: Attempt to retire a Magnet System that is currently In Use (Negative)",
+                                "Count":  2,
+                                "TestCaseIds":  "293914",
+                                "Suites":  "292274,292279"
+                            },
+                            {
+                                "Title":  "R10.2 Update for CR 286067 - Retire Magnet System: Verify retirement is blocked when no reason is provided (Validation)",
+                                "Count":  2,
+                                "TestCaseIds":  "293915",
+                                "Suites":  "292274,292279"
+                            },
+                            {
+                                "Title":  "R10.2 Update for CR 286067 - Retire Magnet System: Verify retirement security permissions are enforced (Security)",
+                                "Count":  2,
+                                "TestCaseIds":  "293916",
+                                "Suites":  "292274,292279"
+                            },
+                            {
+                                "Title":  "R10.2 Update for CR 286067 - View Magnet System Documents: Verify uploaded Magnet System documents are accessible (Happy Path)",
+                                "Count":  2,
+                                "TestCaseIds":  "293145",
+                                "Suites":  "292275,292277"
+                            },
+                            {
+                                "Title":  "R10.2 Update for CR 286067 - View Magnet System Documents: Handle unavailable document access gracefully (Unhappy Path)",
+                                "Count":  2,
+                                "TestCaseIds":  "293824",
+                                "Suites":  "292275,292277"
+                            },
+                            {
+                                "Title":  "R10.2 Update for CR 286067 - Magnet System History: Verify history records are generated when Magnet System information changes (Happy Path)",
+                                "Count":  2,
+                                "TestCaseIds":  "293832",
+                                "Suites":  "292277,292278"
+                            },
+                            {
+                                "Title":  "R10.2 Update for CR 286067 - Change Magnet System: Verify tester can replace an installed Magnet System within Tool Hardware Configuration (Happy Path)",
+                                "Count":  2,
+                                "TestCaseIds":  "293165",
+                                "Suites":  "292281,292283"
+                            },
+                            {
+                                "Title":  "R10.2 Update for CR 286067 - Change Magnet System: Verify tester can install a magnet system into an empty role slot in Tool Hardware Configuration (Happy Path)",
+                                "Count":  2,
+                                "TestCaseIds":  "293168",
+                                "Suites":  "292281,292283"
+                            },
+                            {
+                                "Title":  "R10.2 Update for CR 286067 - Change Magnet System: Verify tester can uninstall a magnet system from Tool Hardware Configuration (Happy Path)",
+                                "Count":  2,
+                                "TestCaseIds":  "293169",
+                                "Suites":  "292281,292283"
+                            }
+                        ]
+}

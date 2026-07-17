@@ -14,8 +14,8 @@ Requirement: Print Magnet System Label (Magnet Systems)
 
 | Step | Action | Expected Result |
 |------|--------|-----------------|
-| 1 | Open the Standard Magnet System record and trigger the 'Print Label' action. Generate the label output. | The label is generated. The variant code section of the label is empty or absent (Standard types have no variant code). |
-| 2 | Open the Prototype Magnet System record and trigger the 'Print Label' action. Generate the label output. | The label is generated. The variant code (for example `V01`) is visible on the label. |
+| 1 | Open the Standard Magnet System record and trigger the 'Print Label' action. Generate the label output. | Label preview is displayed. The label is generated. The variant code section of the label is empty or absent (Standard types have no variant code). |
+| 2 | Open the Prototype Magnet System record and trigger the 'Print Label' action. Generate the label output. | Label preview is displayed. The label is generated. The variant code (for example `V01`) is visible on the label. QR code is present. |
 | 3 | Compare the QR code on the Prototype label. | The QR code encodes the Magnet System Number (not the Article Number, not the variant code). |
 
 ## Expected Outcome

@@ -1,0 +1,38 @@
+﻿[
+    {
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290767\\001-view-magnet-system-happy-path.md",
+        "Title":  "R10.2 Update for CR 286067 - View Magnet System: Verify tester can view Magnet System details (Happy Path)",
+        "CrId":  "286067",
+        "Status":  "Updated",
+        "TestCaseId":  293143,
+        "PlanId":  291616,
+        "SuiteId":  292274
+    },
+    {
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290767\\002-view-magnet-system-state-sensitive-fields.md",
+        "Title":  "R10.2 Update for CR 286067 - View Magnet System: Verify state-sensitive fields display correct values for each lifecycle status (Validation)",
+        "CrId":  "286067",
+        "Status":  "Updated",
+        "TestCaseId":  293907,
+        "PlanId":  291616,
+        "SuiteId":  292274
+    },
+    {
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290767\\003-view-magnet-system-inspection-notification.md",
+        "Title":  "R10.2 Update for CR 286067 - View Magnet System: Verify inspection notification is displayed when a Magnet System requires inspection",
+        "CrId":  "286067",
+        "Status":  "Updated",
+        "TestCaseId":  293822,
+        "PlanId":  291616,
+        "SuiteId":  292274
+    },
+    {
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290767\\004-view-magnet-system-action-button-permissions.md",
+        "Title":  "R10.2 Update for CR 286067 - View Magnet System: Verify action button visibility on View screen matches user permissions",
+        "CrId":  "286067",
+        "Status":  "Updated",
+        "TestCaseId":  293908,
+        "PlanId":  291616,
+        "SuiteId":  292274
+    }
+]

@@ -14,8 +14,8 @@
 | Step | Action | Expected Result |
 |--------|--------|--------|
 | 1 | Open the Magnet System Types page and select New. | The ERP article selector is displayed. |
-| 2 | Search for the Hardware Component that is already assigned to a Magnet System Type. | The Hardware Component is displayed in the search results. |
-| 3 | Attempt to select the Hardware Component. | The Hardware Component cannot be used to create a new Magnet System Type. An appropriate validation or informational message is displayed. |
+| 2 | Search for the Hardware Component that is already assigned to a Magnet System Type. | The Hardware Component is not selectable, is marked unavailable, or is not displayed in selection results. |
+| 3 | Attempt to select the Hardware Component or enter the article value directly when free text is supported. | The Hardware Component cannot be used to create a new Magnet System Type. An appropriate validation or informational message is displayed. |
 | 4 | Attempt to continue the creation process using the Hardware Component. | Creation of the Magnet System Type is blocked. |
 | 5 | Select a Hardware Component that is not assigned to a Target Type or Magnet System Type. | The Hardware Component is accepted and the ERP-derived fields are populated. |
 

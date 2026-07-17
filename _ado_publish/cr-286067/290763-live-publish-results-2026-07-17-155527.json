@@ -1,0 +1,56 @@
+﻿[
+    {
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290763\\001-define-magnet-system-type-as-standard-happy-path.md",
+        "Title":  "R10.2 Update for CR 286067 - Define Magnet System Type as Standard: Verify tester can set a Magnet System Type as the standard type (Happy Path)",
+        "CrId":  "286067",
+        "Status":  "Updated",
+        "TestCaseId":  293130,
+        "PlanId":  291616,
+        "SuiteId":  292270
+    },
+    {
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290763\\002-define-magnet-system-type-as-standard-uniqueness-validation.md",
+        "Title":  "R10.2 Update for CR 286067 - Define Magnet System Type as Standard: Verify redefine as standard is limited to Prototype types and results in one Standard designation (Validation)",
+        "CrId":  "286067",
+        "Status":  "Updated",
+        "TestCaseId":  293899,
+        "PlanId":  291616,
+        "SuiteId":  292270
+    },
+    {
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290763\\003-standard-to-prototype-happy-path.md",
+        "Title":  "R10.2 Update for CR 286067 - Define Magnet System Type as Standard: Verify ERP article selection and default dummy article behavior (Validation)",
+        "CrId":  "286067",
+        "Status":  "Updated",
+        "TestCaseId":  293900,
+        "PlanId":  291616,
+        "SuiteId":  292270
+    },
+    {
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290763\\004-prototype-to-prototype-variant-increment.md",
+        "Title":  "R10.2 Update for CR 286067 - Define Magnet System Type as Standard: Verify user can cancel redefine flow without changes (Validation)",
+        "CrId":  "286067",
+        "Status":  "Updated",
+        "TestCaseId":  293901,
+        "PlanId":  291616,
+        "SuiteId":  292270
+    },
+    {
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290763\\005-promote-prototype-propagates-to-existing-magnet-systems.md",
+        "Title":  "R10.2 Update for CR 286067 - Define Magnet System Type as Standard: Verify existing Magnet Systems remain linked when a Prototype is promoted to Standard (Integration)",
+        "CrId":  "286067",
+        "Status":  "Updated",
+        "TestCaseId":  293134,
+        "PlanId":  291616,
+        "SuiteId":  292270
+    },
+    {
+        "SourcePath":  "C:\\repos\\pf-evatec\\peer-factory-evatec-2026-q2\\docs\\qa-documents\\pf-evatec-phase-2\\08-releases\\r10\\r10.2\\change-requests\\cr-286067-tracking-of-magnet-systems\\requirements\\requirement-290763\\006-article-number-uniqueness-validation.md",
+        "Title":  "R10.2 Update for CR 286067 - Define Magnet System Type as Standard: Verify access requires MagnetSystems_Modify security right (Authorization)",
+        "CrId":  "286067",
+        "Status":  "Updated",
+        "TestCaseId":  293817,
+        "PlanId":  291616,
+        "SuiteId":  292270
+    }
+]

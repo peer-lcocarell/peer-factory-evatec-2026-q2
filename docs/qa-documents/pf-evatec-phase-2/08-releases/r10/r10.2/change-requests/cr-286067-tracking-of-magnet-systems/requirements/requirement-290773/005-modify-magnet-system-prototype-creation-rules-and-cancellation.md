@@ -22,6 +22,7 @@ Requirement: Modify Magnet System (Magnet Systems)
 | 6 | Enter a value that exceeds 60 characters in the Article Number field and attempt to confirm. | Input is limited to 60 characters or a validation message is displayed. Confirmation is blocked. |
 | 7 | Enter a value that exceeds 500 characters in the Description field and attempt to confirm. | Input is limited to 500 characters or a validation message is displayed. Confirmation is blocked. |
 | 8 | Enter a valid Article Number (max 60 characters, not a Hardware Component) and a valid Description (max 500 characters). Select Cancel from the creation screen. | The dialog closes. The Magnet System is unchanged. No history entry is created. |
+| 9 | Open the Magnet System Type list and search for the entered Article Number. | No new Prototype Magnet System Type exists for the canceled operation. |
 
 ## Expected Outcome
-If the Magnet System is already a prototype, the existing prototype is pre-selected by default. Cancel at either the selection screen or the creation screen leaves the Magnet System unchanged with no history entry written. Name, Source Type, and FlexiCat Type are read-only on the creation form. Applications is inherited and editable. Article Number is limited to 60 characters. Description is limited to 500 characters.
+If the Magnet System is already a prototype, the existing prototype is pre-selected by default. Cancel at either the selection screen or the creation screen leaves the Magnet System unchanged with no history entry written and no new Prototype type created. Name, Source Type, and FlexiCat Type are read-only on the creation form. Applications is inherited and editable. Article Number is limited to 60 characters. Description is limited to 500 characters.
