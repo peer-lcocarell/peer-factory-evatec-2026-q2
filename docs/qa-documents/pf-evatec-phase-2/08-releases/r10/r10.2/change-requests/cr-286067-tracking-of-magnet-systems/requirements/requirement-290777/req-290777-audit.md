@@ -3,7 +3,7 @@
 
 ## Status
 
-Complete — Suite consolidated to 8 test cases (merged 006→003, 007→004, 008→002).
+Complete — Suite consolidated to 11 test cases. Original 006/007/008 merged into 003/004/002. New tests added as 006 (Cancellation), 007 (Search and Filtering), 008 (Security).
 
 ---
 
@@ -40,9 +40,9 @@ Complete — Suite consolidated to 8 test cases (merged 006→003, 007→004, 00
 ### Recommendations
 
 - **Update 001** — Add confirmation screen validation, optional comment, old MS field validation (status, location, history), new MS field validation (status, location, history), MS link in role slot.
-- **Create 009** — Cancellation: cancel from selection and confirmation screens, verify no changes to config, status, history, or logbook.
-- **Create 010** — Search and Filtering: pre-filtered list by type, keyword filtering, full-text search, status exclusions.
-- **Create 011** — Security: `HardwareConfiguration_Edit` enforced for authorized and unauthorized users.
+- **Create 006** — Cancellation: cancel from selection and confirmation screens, verify no changes to config, status, history, or logbook.
+- **Create 007** — Search and Filtering: pre-filtered list by type, keyword filtering, full-text search, status exclusions.
+- **Create 008** — Security: `HardwareConfiguration_Edit` enforced for authorized and unauthorized users.
 
 ---
 
@@ -51,12 +51,12 @@ Complete — Suite consolidated to 8 test cases (merged 006→003, 007→004, 00
 | Requirement Clause | Test Case | Status |
 |---|---|---|
 | Only Checked Out in selection list | 001, 006 | Covered |
-| Pre-filter by previously-installed type | 010 | Not yet created |
-| Keyword filtering | 010 | Not yet created |
-| Full-text search | 010 | Not yet created |
+| Pre-filter by previously-installed type | 007 | Covered |
+| Keyword filtering | 007 | Covered |
+| Full-text search | 007 | Covered |
 | Uninstall-only option when installed | 005 | Covered |
-| Cancel from selection screen | 009 | Not yet created |
-| Cancel from confirmation screen | 009 | Not yet created |
+| Cancel from selection screen | 006 | Covered |
+| Cancel from confirmation screen | 006 | Covered |
 | Confirmation screen shown | 001 | Gap — update needed |
 | Optional comment (max 250 chars) | 001 | Gap — update needed |
 | Old MS: status Checked Out, location cleared | 001 | Gap — update needed |
@@ -72,7 +72,7 @@ Complete — Suite consolidated to 8 test cases (merged 006→003, 007→004, 00
 | HW config history entry | 002 | Covered |
 | Logbook Magnet System filter | 008 | Covered |
 | No eligible Checked Out MS | 003 | Covered |
-| Security: HardwareConfiguration_Edit | 011 | Not yet created |
+| Security: HardwareConfiguration_Edit | 008 | Covered |
 
 ---
 
@@ -214,16 +214,18 @@ Status transitions
 
 Those should be absorbed into the existing replacement, install, uninstall, and regression tests.
 
-Final Recommended Suite
-Update Existing
-Replace Installed Magnet System (expand)
-Add
-Change Magnet System Cancellation (Negative)
-Change Magnet System Search and Filtering (Validation)
-Change Magnet System Security Permissions (Security)
-Result
-Existing Tests: 8
-Recommended New Tests: 3
-Coverage Health After Updates: Good
-Suite Growth: Minimal
+Final Suite (8 Test Cases)
+
+| # | File | Type |
+|---|------|------|
+| 001 | 001-change-magnet-system-happy-path.md | Happy Path |
+| 002 | 002-change-magnet-system-history-regression.md | Regression |
+| 003 | 003-change-magnet-system-no-eligible-replacement-negative.md | Negative |
+| 004 | 004-install-magnet-system-happy-path.md | Happy Path |
+| 005 | 005-uninstall-magnet-system-happy-path.md | Happy Path |
+| 006 | 006-change-magnet-system-cancellation.md | Negative |
+| 007 | 007-change-magnet-system-search-and-filtering.md | Validation |
+| 008 | 008-change-magnet-system-security-permissions.md | Security |
+
+Coverage Health: Good
 Release Recommendation: Additional Coverage Recommended before signoff.
