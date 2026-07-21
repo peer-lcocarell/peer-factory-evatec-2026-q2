@@ -44,6 +44,7 @@ Thumbs.db
 *.tmp
 *.bak
 *.log
+*.csv
 .tmp-*
 
 
