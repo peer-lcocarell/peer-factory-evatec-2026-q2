@@ -3,7 +3,7 @@
 
 ## Status
 
-Coverage Updated
+Coverage updated and consolidated on 2026-07-20.
 
 ---
 
@@ -25,6 +25,17 @@ Coverage Updated
 - 003-magnet-systems-selected-actions-and-permissions.md
 	- Covers create, details default action, print label, edit, modify, define as standard, checkout, return, and retire.
 	- Covers status and permission-gated action availability including prototype-specific define as standard.
+
+### Merged and Retired Files
+
+- Merged into 002-magnet-systems-list-inspection-and-retired-filters.md:
+	- 006-inspection-required-and-retired-filters.md
+
+### Consolidation Guidance
+
+- Avoid parallel subset tests for the same behavior unless explicitly needed as smoke variants.
+
+- Prefer one authoritative test case per workflow and expand it for deeper validation instead of adding overlapping files.
 
 ### Requirement Clause Mapping
 
@@ -92,6 +103,6 @@ Coverage Updated
 
 - Audit scope was limited to markdown files currently present in requirement-290764.
 
-- Existing test files were expanded first and only one new test case was added because action and permission matrix coverage is a distinct workflow.
+- Consolidation retained 002 as the authoritative inspection and retired filter validation because it includes one-year inspection logic, active/all toggle behavior, URL persistence, and retired action restrictions.
 
 - This is a design-time coverage audit and does not include SIT or UAT execution evidence.

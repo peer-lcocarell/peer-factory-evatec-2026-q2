@@ -5,6 +5,23 @@
 
 Consolidation completed on 2026-07-17.
 
+Clarification updates applied on 2026-07-20.
+
+## NOTES
+adding clarification note per Teams update discussion today (7/20/2026):
+
+Clarification (per Nicola):
+- A unique Article Number is required when creating the first prototype version from a standard Magnet System.
+- Example: Standard MST to Prototype V01 requires a new Article Number.
+- When creating a new version of an existing prototype, the Article Number can remain the same.
+- Example: Prototype V01 to Prototype V02 can use the same Article Number.
+- Article Number uniqueness validation applies when creating the initial prototype, not for subsequent prototype versions.
+
+Applied in test suite:
+- 003 now explicitly validates reuse of the same Article Number for V02 after V01 creation.
+- 001, 002, 003, 004, and 005 preconditions now consistently include `MagnetSystems_Modify` where modify actions are executed.
+- 002 now validates direct-access denial for all disallowed statuses used in the scenario (`In Use`, `In Stock`, and `Retired`).
+
 ---
 
 ## Authoritative Test Cases

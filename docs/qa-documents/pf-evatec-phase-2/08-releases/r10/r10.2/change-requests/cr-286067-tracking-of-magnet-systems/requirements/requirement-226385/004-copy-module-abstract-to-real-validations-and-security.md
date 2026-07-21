@@ -14,13 +14,14 @@ Requirement: Copy Module Hardware Configuration (Module Hardware Configuration)
 
 | Step | Action | Expected Result |
 |------|----------|----------------|
-| 1 | Sign in as User A and copy configuration from abstract source to compatible real target. | Copy completes and pending values are created. |
-| 2 | Review wildcard, target, and magnet system roles on target. | Wildcards, target roles, and magnet system roles from source are not copied. |
-| 3 | Review validation messages after copy. | Multiple-value role shows “Multiple hardware components found”. Missing-serial role shows serial-number validation error. |
-| 4 | Attempt to save target configuration while validation errors exist. | Save is blocked. |
-| 5 | Correct data so each affected role has one value and required serial numbers are present. | Validation errors clear. |
-| 6 | Save target configuration again. | Save succeeds when at least one pending change exists and no validation errors remain. |
-| 7 | Sign in as User B and attempt Copy Hardware Configuration. | Copy action is unavailable or blocked due to missing `HardwareConfiguration_Edit`. No copy is performed. |
+| 1 | Sign in as User A and copy configuration from the Abstract source module to the compatible Real target module. | Copy completes and pending values are created on the target module. |
+| 2 | Review wildcard, target, and magnet system roles on the target module. | Wildcard values, target role values, and magnet system role values from source are not copied to the target. |
+| 3 | Review validation messages on the target module after copy. | The multiple-value role shows "Multiple hardware components found" and the missing-serial role shows a serial number validation error. |
+| 4 | Attempt to save the target configuration while validation errors are present. | Save is blocked. |
+| 5 | Correct the multiple-value role so only one value remains. | The "Multiple hardware components found" validation error is cleared. |
+| 6 | Enter required serial number values for roles that require serial number. | Serial number validation errors are cleared. |
+| 7 | Save the target configuration again. | Save succeeds when at least one pending change exists and no validation errors remain. |
+| 8 | Sign in as User B and attempt 'Copy Hardware Configuration'. | Copy action is not available to User B because `HardwareConfiguration_Edit` is missing and no copy is performed. |
 
 ## Expected Outcome
 Abstract to Real copy enforces exclusion and validation rules, blocks save until errors are resolved, then allows save. Copy actions require `HardwareConfiguration_Edit`.

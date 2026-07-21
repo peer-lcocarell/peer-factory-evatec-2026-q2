@@ -14,10 +14,10 @@ Requirement: Define Magnet System Type as Standard (Magnet System Types)
 
 | Step | Action | Expected Result |
 |------|--------|-----------------|
-| 1 | Sign in as User A and open a Prototype Magnet System Type. | The record is visible but 'Define as Standard' is hidden, disabled, or blocked for execution. |
-| 2 | Attempt to trigger redefine as standard through available UI entry points. | Access is denied and no redefine action is performed. |
+| 1 | Sign in as User A and open a Prototype Magnet System Type. | The record is visible but 'Define as Standard' is not present or is disabled in the UI. |
+| 2 | Attempt to trigger redefine as standard through available UI entry points. | No redefine action is initiated and the Magnet System Type record remains unchanged. |
 | 3 | Sign out and sign in as User B. Open the same Prototype Magnet System Type. | 'Define as Standard' is available for User B. |
-| 4 | Trigger 'Define as Standard' and cancel the dialog. | User B can access the function. Cancel exits without committing changes. |
+| 4 | Trigger 'Define as Standard' and cancel the dialog. | The 'Define as Standard' dialog or ERP article selection prompt opens. The dialog closes and the Magnet System Type record is displayed unchanged. |
 
 ## Expected Outcome
 Access to define as standard is restricted to users with `MagnetSystems_Modify`. Users without this right cannot execute the workflow. Users with the right can access the workflow successfully.

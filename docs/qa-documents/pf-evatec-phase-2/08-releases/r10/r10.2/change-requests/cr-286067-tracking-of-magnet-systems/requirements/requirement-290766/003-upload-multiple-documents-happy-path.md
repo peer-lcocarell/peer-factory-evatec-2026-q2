@@ -16,9 +16,9 @@ Requirement: View and upload documents for new magnet system (New Magnet System)
 | 1 | Open the Documents area on the 'New Magnet System' screen. | The upload control is visible and enabled. |
 | 2 | Select the first valid document from local storage and upload it. | The first file is queued and the filename is displayed in the Documents list. |
 | 3 | Select a second valid document from local storage and upload it. | The second file is queued and both filenames are displayed in the Documents list. |
-| 4 | Verify both documents are listed before saving. | Both document filenames are visible in the Documents section. |
+| 4 | Review the Documents list before saving. | Both document filenames are visible in the Documents section. |
 | 5 | Select the remove action for the first document only. | The first document is removed immediately. No confirmation dialog is displayed. |
-| 6 | Verify the Documents list after removal. | Only the second document remains. The first document is no longer listed. |
+| 6 | Review the Documents list after removal. | Only the second document remains. The first document is no longer listed. |
 | 7 | Save the new Magnet System. | Save completes without error. |
 | 8 | Re-open the Magnet System record. | Only the retained document is listed in the Documents section. The removed document is not present. |
 

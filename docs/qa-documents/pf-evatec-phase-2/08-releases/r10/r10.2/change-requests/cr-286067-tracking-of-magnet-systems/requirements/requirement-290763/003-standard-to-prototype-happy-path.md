@@ -17,8 +17,8 @@ Requirement: Define Magnet System Type as Standard (Magnet System Types)
 |------|--------|-----------------|
 | 1 | Open the 'Magnet System Types' page and select the Prototype Magnet System Type. | The record is displayed and the 'Define as Standard' action is available. |
 | 2 | Trigger the 'Define as Standard' action. | ERP article selection is shown and the current dummy article number is preselected by default. |
-| 3 | Change the ERP selection to a different valid ERP article number and confirm. | Redefine as Standard completes and the type article number is updated to the selected ERP value. |
-| 4 | Reopen the Magnet System Type record and review summary fields. | The persisted article number matches the selected ERP article value and remains stable after refresh. |
+| 3 | Change the ERP selection to a different valid ERP article number and confirm. | The dialog closes and the Magnet System Type record is displayed with the article number updated to the selected ERP value. |
+| 4 | Reopen the Magnet System Type record and review summary fields. | The article number displayed after page refresh matches the ERP article number selected in Step 3. |
 | 5 | Open Magnet System Type history for the redefine event. | The history summary includes the selected article number value and event metadata with timestamp and user. |
 
 ## Expected Outcome

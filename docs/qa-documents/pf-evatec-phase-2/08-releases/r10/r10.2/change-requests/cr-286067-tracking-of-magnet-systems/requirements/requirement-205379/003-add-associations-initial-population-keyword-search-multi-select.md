@@ -1,4 +1,4 @@
-# R10.2 Update for CR 286067 - Add Associations: Verify initial population, keyword filtering, full text search, and multiple selection for Magnet System associations
+# R10.2 Update for CR 286067 - 'Manage Hardware' - Add Associations: Verify initial population, keyword filtering, full text search, and multiple selection for Magnet System associations
 
 ## Requirement
 CR: 286067

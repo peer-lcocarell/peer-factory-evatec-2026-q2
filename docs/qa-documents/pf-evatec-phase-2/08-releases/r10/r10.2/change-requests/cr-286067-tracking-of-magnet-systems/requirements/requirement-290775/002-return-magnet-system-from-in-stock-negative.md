@@ -1,4 +1,4 @@
-# R10.2 Update for CR 286067 - Return Magnet System: Attempt to return a Magnet System that is already In Stock (Negative)
+# R10.2 Update for CR 286067 - Return Magnet System: Attempt to return a Magnet System that is already In Stock (Unhappy Path)
 
 ## Requirement
 CR: 286067

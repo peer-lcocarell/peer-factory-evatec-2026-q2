@@ -39,6 +39,8 @@ None. All requirement clauses are covered.
 
 - 001 was expanded with cancel workflow, retirement metadata validation (reason, user, timestamp), and Inspection Required flag clearing.
 - 005 was added to cover the `MagnetSystems_Remove` security right requirement.
+- 001, 003, and 004 preconditions were aligned to include `MagnetSystems_Remove` because retirement access requires this right.
+- 003 expected outcome was corrected to match the requirement rule that retirement is allowed from `In Stock` status.
 
 ---
 
@@ -59,6 +61,13 @@ None. All requirement clauses are covered.
 ## Notes
 
 _To be completed._
+
+Local consistency updates applied on 2026-07-20:
+
+- Retirement test cases now consistently require `MagnetSystems_Remove` where retirement actions are executed.
+
+- In Use negative-path expectation now aligns with requirement text: retirement eligibility is `In Stock` only.
+
 13.5.6REQUIREMENT: Retire Magnet System
 A magnet system can be retired from active use in PF if its status is ‘In Stock’.
 

@@ -6,6 +6,8 @@
 | Test Case ID | Requirement ID(s) | Coverage (Yes/Partial/No) | Key Gap(s) | Recommended Action |
 | --- | --- | --- | --- | --- |
 | 001-view-magnet-system-documents-happy-path | 290768 | Yes | None. | None. |
+| 002-view-magnet-system-documents-unhappy-path | 290768 | Yes | Limited to single unavailable document scenario. | Keep as focused unhappy-path baseline. |
+| 003-view-magnet-system-documents-multiple-failures-unhappy-path | 290768 | Yes | None. | Use for multi-failure resilience and isolation checks. |
 
 ## Uncovered Requirements
 
@@ -29,7 +31,7 @@
 
 - Total Requirement Clauses: 3
 
-- Total Test Cases: 1
+- Total Test Cases: 3
 
 - Covered Clauses: 3
 
@@ -49,6 +51,10 @@ Coverage Health:
 Reason:
 - Open and download flows are explicitly validated.
 
-- Accessibility checks now apply to every listed uploaded document.
+- Accessibility checks apply to every listed uploaded document in happy path.
+
+- Unhappy-path validation covers single-failure and multi-failure behavior on the same record.
+
+- Available documents remain accessible when other listed documents are unavailable.
 
 - Clause coverage is complete with no uncovered gaps.

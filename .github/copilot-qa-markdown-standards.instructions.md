@@ -111,11 +111,17 @@ Never:
 - Use emojis
 - Use the word "like" when avoidable
 - Use phrases such as "is successful"
+- Append "(Negative)" to test case titles
 - Use ambiguous terms such as:
   - could
   - should
   - might
   - may
+
+Title convention:
+
+- Do not use "(Negative)" in test case titles in this repository.
+- Use "Unhappy Path" or "Validation" wording when needed.
 
 ## Test Case Structure
 

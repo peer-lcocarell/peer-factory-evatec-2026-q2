@@ -7,7 +7,7 @@ Requirement ID: 290773
 Requirement: Modify Magnet System (Magnet Systems)
 
 ## Preconditions
-- User is signed in with `MagnetSystem_View` and `MagnetSystem_Edit` permissions.
+- User is signed in with `MagnetSystem_View`, `MagnetSystem_Edit`, and `MagnetSystems_Modify` permissions.
 - At least one Magnet System with status `Checked Out` exists.
 - At least one Magnet System with status `In Stock` exists.
 - At least one Magnet System with status `In Use` exists (currently installed in a tool).
@@ -21,6 +21,7 @@ Requirement: Modify Magnet System (Magnet Systems)
 | 3 | Locate a Magnet System with status `In Use` and review available actions. | The 'Modify' action is not available for a Magnet System with status `In Use`. |
 | 4 | Locate a Magnet System with status `Retired` and review available actions. | The 'Modify' action is not available for a Magnet System with status `Retired`. |
 | 5 | Attempt direct navigation to modification functionality for an `In Use` Magnet System. | Access is denied. No modification is persisted. No history entry is created. |
+| 6 | Attempt direct navigation to modification functionality for an `In Stock` Magnet System and a `Retired` Magnet System. | Access is denied for both disallowed states. No modification is persisted. No history entry is created. |
 
 ## Expected Outcome
-The Modify action is available only for Magnet Systems with status `Checked Out`. Magnet Systems in `In Stock`, `In Use`, or `Retired` status do not show the Modify action. Direct access to modification functionality is denied for disallowed states.
+The Modify action is available only for Magnet Systems with status `Checked Out`. Magnet Systems in `In Stock`, `In Use`, or `Retired` status do not show the Modify action. Direct access to modification functionality is denied for all disallowed states.

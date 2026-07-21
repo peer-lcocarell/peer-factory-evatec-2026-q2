@@ -8,15 +8,16 @@ Requirement: Copy Module Hardware Configuration (Module Hardware Configuration)
 
 ## Preconditions
 - User is signed in with `HardwareConfiguration_View` and `HardwareConfiguration_Edit` permissions.
-- A source module has a saved hardware configuration including role assignments.
+- A source module has a saved hardware configuration with role assignments and hardware entries.
 - A compatible target module of the same type is available.
 
 | Step | Action | Expected Result |
 |------|--------|-----------------|
-| 1 | Open the source module 'Hardware Configuration' page. | Configuration loads with the existing role assignments. |
-| 2 | Trigger the 'Copy Configuration' action and select the compatible target module. | The copy dialog is displayed. The compatible target module is selectable. |
-| 3 | Confirm the copy action. | The copy completes without validation errors. |
-| 4 | Open the 'Hardware Configuration' page for the target module. | The target module configuration reflects the copied roles and hardware entries from the source module. |
+| 1 | Open the source module 'Hardware Configuration' page. | The page loads and shows the saved source configuration. |
+| 2 | Trigger the 'Copy Configuration' action. | The copy dialog opens and lists compatible target modules of the same module type. |
+| 3 | Select the compatible target module and confirm the copy action. | The copy completes without validation errors. |
+| 4 | Open the target module 'Hardware Configuration' page. | The target shows the copied role assignments and hardware entries, and values match the source configuration used for the copy. |
+| 5 | Reopen the source module 'Hardware Configuration' page. | The source configuration is unchanged after the copy operation. |
 
 ## Expected Outcome
-The hardware configuration from the source module is copied to the compatible target module. The target module configuration displays the same role structure as the source. The source module configuration is unchanged.
+The hardware configuration from the source module is copied to the compatible target module. The target module configuration matches the copied source values for included roles. The source module configuration remains unchanged.

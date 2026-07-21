@@ -13,8 +13,8 @@ Requirement: Define Magnet System Type as Standard (Magnet System Types)
 
 | Step | Action | Expected Result |
 |------|--------|-----------------|
-| 1 | Open the 'Magnet System Types' list and select a record that is already Standard. | The redefine action is not available for execution or the system blocks execution because only Prototype types can be redefined as Standard. |
-| 2 | Select a Prototype Magnet System Type and trigger 'Define as Standard'. Confirm the action. | The action completes successfully for the Prototype record. |
+| 1 | Open the 'Magnet System Types' list and select a record that is already Standard. | The 'Define as Standard' action is not available or is disabled for the Standard record. |
+| 2 | Select a Prototype Magnet System Type and trigger 'Define as Standard'. Confirm the action. | The dialog closes and the Prototype Magnet System Type record is displayed with its type updated to Standard. |
 | 3 | Refresh the 'Magnet System Types' list. | The selected Prototype is now Standard and the previously Standard record is no longer marked as Standard. |
 | 4 | Count records marked as Standard in the list. | Exactly one Magnet System Type is marked as Standard after the update. |
 

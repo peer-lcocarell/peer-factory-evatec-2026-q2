@@ -4,6 +4,7 @@
 ## Status
 
 Consolidation completed on 2026-07-17.
+Coverage update completed on 2026-07-20.
 
 ---
 
@@ -11,6 +12,8 @@ Consolidation completed on 2026-07-17.
 
 - 001-return-magnet-system-happy-path.md
 - 002-return-magnet-system-from-in-stock-negative.md
+- 003-return-magnet-system-cancel-does-not-change-state.md
+- 004-return-magnet-system-permission-boundary.md
 
 ## Merged and Retired Files
 
@@ -22,13 +25,14 @@ Consolidation completed on 2026-07-17.
 
 | Test Case ID | Requirement ID(s) | Coverage (Yes/Partial/No) | Key Gap(s) | Recommended Action |
 | --- | --- | --- | --- | --- |
-| 001-return-magnet-system-happy-path | 290775 | Partial | Cancellation path and security permission boundary are not covered. | Add one cancellation validation test and one security permission test. |
-| 002-return-magnet-system-from-in-stock-negative | 290775 | Partial | Permission boundary is not covered. | Add one security permission test for `MagnetSystems_Process`. |
+| 001-return-magnet-system-happy-path | 290775 | Yes | None. | Keep as authoritative. |
+| 002-return-magnet-system-from-in-stock-negative | 290775 | Yes | None. | Keep as authoritative. |
+| 003-return-magnet-system-cancel-does-not-change-state | 290775 | Yes | None. | Keep as authoritative. |
+| 004-return-magnet-system-permission-boundary | 290775 | Yes | None. | Keep as authoritative. |
 
 ## Uncovered Requirements
 
-- Confirm and cancel behavior for Return dialog is not explicitly validated.
-- `MagnetSystems_Process` security right enforcement is not explicitly validated.
+- None.
 
 ## Orphaned Test Cases
 
@@ -40,7 +44,7 @@ Consolidation completed on 2026-07-17.
 
 ## High-Risk Gaps
 
-- Return permission enforcement is not covered.
+- None identified for requirement-level functional coverage.
 
 ## Summary Metrics
 
@@ -48,11 +52,11 @@ Consolidation completed on 2026-07-17.
 
 - Total Requirement Clauses: 6
 
-- Total Test Cases: 2
+- Total Test Cases: 4
 
-- Covered Clauses: 4
+- Covered Clauses: 6
 
-- Partial Clauses: 2
+- Partial Clauses: 0
 
 - Uncovered Clauses: 0
 
@@ -63,11 +67,58 @@ Consolidation completed on 2026-07-17.
 Final Audit Verdict
 
 Coverage Health:
-- Fair
+- Good
 
 Reason:
 - Core return behavior and data cleanup are covered in the consolidated happy path.
 
 - Status boundary behavior is covered including direct-access denial for `In Stock`.
 
-- Cancellation and permission enforcement remain as explicit gaps.
+- Cancel behavior is validated to confirm no state or history changes when Return is canceled.
+
+- Permission enforcement is validated for users without `MagnetSystems_Process` and for authorized users.
+
+## ADO Suite 292281 Sync Actions
+
+Plan: 291616
+Suite: 292281 (`290775 : Return Magnet System (Magnet Systems)`)
+
+- Keep: `R10.2 Update for CR 286067 - Return Magnet System: Verify tester can return a Magnet System to available inventory (Happy Path)`
+- Keep: `R10.2 Update for CR 286067 - Return Magnet System: Attempt to return a Magnet System that is already In Stock (Unhappy Path)`
+- Remove as duplicate: `R10.2 Update for CR 286067 - Return Magnet System: Verify Location is cleared and status returns to In Stock after return from Checked Out` (duplicate entry in suite)
+- Add: `R10.2 Update for CR 286067 - Return Magnet System: Cancel return keeps Magnet System in Checked Out state (Negative)`
+- Add: `R10.2 Update for CR 286067 - Return Magnet System: User without process permission cannot return Magnet System (Authorization)`
+
+Target authoritative local set after sync:
+
+- 001-return-magnet-system-happy-path.md
+- 002-return-magnet-system-from-in-stock-negative.md
+- 003-return-magnet-system-cancel-does-not-change-state.md
+- 004-return-magnet-system-permission-boundary.md
+
+## ADO Sync Execution Record
+
+Executed on: 2026-07-20
+
+Plan: 291616
+Suite: 292281
+
+Publish results:
+
+- Updated: Test Case 293159 (Happy Path)
+- Updated: Test Case 293160 (In Stock Unhappy Path)
+- Created: Test Case 293998 (Cancel return keeps Checked Out)
+- Created: Test Case 293999 (Permission boundary)
+
+Duplicate cleanup applied in suite:
+
+- Removed duplicate: Test Case 293161 (Location cleared standalone)
+- Removed duplicate: Test Case 293923 (Location cleared standalone)
+- Removed duplicate: Test Case 293922 (In Stock Unhappy Path duplicate)
+
+Verified final suite composition:
+
+- 293159 - Happy Path
+- 293160 - In Stock Unhappy Path
+- 293998 - Cancel return keeps Checked Out
+- 293999 - Permission boundary

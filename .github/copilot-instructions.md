@@ -186,6 +186,9 @@ Use names that begin with:
 
 [CR ID] Feature Name - Scenario
 
+Do not append "(Negative)" to test case titles in this repository.
+Use "Unhappy Path" or "Validation" phrasing instead.
+
 Examples:
 
 286067 Magnet Systems - Create New Magnet

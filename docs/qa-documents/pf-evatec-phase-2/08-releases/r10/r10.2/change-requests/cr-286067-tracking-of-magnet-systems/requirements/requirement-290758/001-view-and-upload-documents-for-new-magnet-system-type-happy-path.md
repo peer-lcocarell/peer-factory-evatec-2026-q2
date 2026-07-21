@@ -1,4 +1,4 @@
-# 286067 Magnet Systems - Upload Single Document During New Magnet System Type Creation
+# R10.2 Update for CR 286067 - View and Upload Documents for New Magnet System Type: Upload Single Document During New Magnet System Type Creation (Happy Path)
 
 ## Requirement
 CR: 286067

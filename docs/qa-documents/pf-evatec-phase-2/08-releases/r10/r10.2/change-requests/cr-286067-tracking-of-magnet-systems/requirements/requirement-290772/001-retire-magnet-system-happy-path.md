@@ -7,7 +7,7 @@ Requirement ID: 290772
 Requirement: Retire Magnet System (Magnet Systems)
 
 ## Preconditions
-- User is signed in with `MagnetSystem_View` and `MagnetSystem_Edit` permissions.
+- User is signed in with `MagnetSystem_View`, `MagnetSystem_Edit`, and `MagnetSystems_Remove` permissions.
 - At least one Magnet System with status `In Stock` exists.
 - The 'Magnet Systems' list is accessible.
 

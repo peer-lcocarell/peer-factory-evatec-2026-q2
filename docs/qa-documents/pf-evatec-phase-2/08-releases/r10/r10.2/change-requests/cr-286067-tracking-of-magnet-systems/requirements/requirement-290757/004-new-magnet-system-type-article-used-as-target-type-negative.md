@@ -1,3 +1,9 @@
+---
+TestCaseId: 293473
+PlanId: 291616
+SuiteId: 292264
+---
+
 # R10.2 Update for CR 286067 - New Magnet System Type: Attempt to create a Magnet System Type using an article already assigned as a Target Type
 
 ## Requirement
@@ -11,15 +17,16 @@
 - A Hardware Component exists that is already assigned as a Target Type.
 - The Magnet System Types page is accessible.
 
+## Test Steps
+
 | Step | Action | Expected Result |
 |--------|--------|--------|
 | 1 | Open the Magnet System Types page and select New. | The ERP article selector is displayed. |
-| 2 | Search for the Hardware Component that is already assigned as a Target Type. | The Hardware Component is not selectable, is marked unavailable, or is not displayed in selection results. |
-| 3 | Attempt to select the Hardware Component or enter the article value directly when free text is supported. | The Hardware Component cannot be used to create a Magnet System Type. An appropriate validation or informational message is displayed. |
-| 4 | Attempt to continue the creation process using the Hardware Component. | Creation of the Magnet System Type is blocked. |
-| 5 | Select a Hardware Component that is not assigned as a Target Type or Magnet System Type. | The Hardware Component is accepted and the ERP-derived fields are populated. |
+| 2 | Search for the Hardware Component that is already assigned as a Target Type. | The Hardware Component is not selectable in the article selector. |
+| 3 | Enter the article number directly in the search field and attempt to confirm the selection. | A message is displayed indicating the article cannot be used. The New Magnet System Type form does not open for that article. |
+| 4 | Search for and select a Hardware Component that is not assigned as a Target Type or Magnet System Type. | The article is accepted. The ERP-derived fields are populated in the New Magnet System Type form. |
 
 ## Expected Outcome
-- Hardware Components already assigned as a Target Type cannot be used to create a new Magnet System Type.
-- Creation is blocked when an ineligible Hardware Component is selected.
-- An eligible Hardware Component can be selected successfully and creation can proceed.
+- Hardware Components already assigned as a Target Type are not selectable in the article selector.
+- Entering the article number directly does not open the creation form. A message is displayed indicating the article cannot be used.
+- An eligible Hardware Component is accepted and populates the ERP-derived fields.

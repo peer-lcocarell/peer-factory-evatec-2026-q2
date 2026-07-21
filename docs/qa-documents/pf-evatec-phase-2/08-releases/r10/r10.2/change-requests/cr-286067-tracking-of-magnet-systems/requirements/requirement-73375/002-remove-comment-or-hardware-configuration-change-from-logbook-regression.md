@@ -1,4 +1,4 @@
-# R10.2 Update for CR 286067 - Remove Comment or Hardware Configuration Change from Logbook: Verify removed logbook entry no longer appears in history view (Regression)
+# R10.2 Update for CR 286067 - Remove Comment or Hardware Configuration Change from Logbook: Verify removed logbook entry no longer appears in history view
 
 ## Requirement
 CR: 286067

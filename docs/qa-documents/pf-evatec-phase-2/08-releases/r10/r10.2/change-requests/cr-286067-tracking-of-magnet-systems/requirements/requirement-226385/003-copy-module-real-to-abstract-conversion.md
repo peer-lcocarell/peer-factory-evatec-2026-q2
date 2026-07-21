@@ -13,12 +13,12 @@ Requirement: Copy Module Hardware Configuration (Module Hardware Configuration)
 
 | Step | Action | Expected Result |
 |------|----------|----------------|
-| 1 | Open source module Hardware Configuration and verify installed target and installed magnet system values exist. | Source contains installed-instance values for both roles. |
-| 2 | Trigger Copy Hardware Configuration and select compatible abstract target module. | Copy dialog is displayed and target is selectable. |
-| 3 | Confirm copy. | Copy completes successfully and pending values are created on target. |
-| 4 | Open target module and review target role value. | Installed target is converted to target type (not copied as installed instance). |
-| 5 | Review magnet system role value on target. | Installed magnet system is converted to magnet system type (not copied as installed instance). |
-| 6 | Save target module configuration. | Save succeeds when no validation errors remain. |
+| 1 | Open the source module 'Hardware Configuration' page. | The page loads and shows installed target and installed magnet system values in the source configuration. |
+| 2 | Trigger 'Copy Hardware Configuration'. | The copy dialog opens and the compatible Abstract target module is selectable. |
+| 3 | Select the compatible Abstract target module and confirm copy. | The copy completes successfully and creates pending values on the target module. |
+| 4 | Open the target module and review the copied target role value. | The installed target from source is converted to a target type value and is not copied as an installed instance. |
+| 5 | Review the copied magnet system role value on the target module. | The installed magnet system from source is converted to a magnet system type value and is not copied as an installed instance. |
+| 6 | Save the target module configuration. | Save succeeds when no validation errors remain. |
 
 ## Expected Outcome
 Real to Abstract copy converts installed target and installed magnet system to type-based values and supports save.

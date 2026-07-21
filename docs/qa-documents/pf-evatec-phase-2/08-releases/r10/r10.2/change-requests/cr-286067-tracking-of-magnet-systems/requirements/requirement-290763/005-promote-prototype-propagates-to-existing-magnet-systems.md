@@ -15,12 +15,11 @@ Requirement: Define Magnet System Type as Standard (Magnet System Types)
 | Step | Action | Expected Result |
 |------|--------|-----------------|
 | 1 | Open the 'Magnet System Types' page and identify the Prototype Magnet System Type. | The Prototype type is visible with its variant code and current Article Number. |
-| 2 | Note the Magnet Systems linked to this Prototype type. | At least two Magnet Systems reference this Prototype type. |
-| 3 | Trigger the 'Define as Standard' action on the Prototype Magnet System Type and confirm using a valid ERP article number. | The promotion dialog is shown and the confirmation completes successfully. |
-| 4 | Reopen the promoted type and verify core field updates. | The type is now Standard, variant code is cleared, predecessor is removed, and no new type record is created. |
-| 5 | Navigate to the 'Magnet Systems' page and open each previously linked Magnet System. | All previously linked Magnet Systems still reference the same type record now marked Standard. No reassignment to a different type occurred. |
-| 6 | Review history on each previously linked Magnet System. | Each linked Magnet System contains a new defined as standard history entry for this operation. |
-| 7 | Open the Magnet System Type History view and inspect the redefine entry details. | A define as standard entry is present with timestamp, user, selected article number, and assigned magnet systems count. Entry details list all linked Magnet Systems from Step 2. |
+| 2 | Trigger the 'Define as Standard' action on the Prototype Magnet System Type and confirm using a valid ERP article number. | The ERP article selection dialog is shown. After confirmation, the dialog closes and the Magnet System Type record is displayed. |
+| 3 | Reopen the promoted type and verify core field updates. | The type is now Standard, variant code is cleared, predecessor is removed, and no new type record is created. |
+| 4 | Navigate to the 'Magnet Systems' page and open each previously linked Magnet System. | All previously linked Magnet Systems still reference the same type record now marked Standard. No reassignment to a different type occurred. |
+| 5 | Review history on each previously linked Magnet System. | Each linked Magnet System contains a new defined as standard history entry for this operation. |
+| 6 | Open the Magnet System Type History view and inspect the redefine entry details. | A define as standard entry is present with timestamp, user, selected article number, and assigned magnet systems count. Entry details list all Magnet Systems that were linked to the Prototype type at the time of the operation. |
 
 ## Expected Outcome
 Promoting a Prototype Magnet System Type to Standard does not create a new type record. Variant code is cleared, predecessor is removed, and all assigned Magnet Systems remain linked to the same type. The type history includes the required define as standard summary and details, and each assigned Magnet System receives its own defined as standard history entry.

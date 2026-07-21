@@ -1,4 +1,4 @@
-# R10.2 Update for CR 286067 - View Magnet System Documents: Handle unavailable document access gracefully (Unhappy Path)
+# R10.2 Update for CR 286067 - View Magnet System Documents: Verify document access when listed as unavailable to open or download (Unhappy Path)
 
 ## Requirement
 CR: 286067

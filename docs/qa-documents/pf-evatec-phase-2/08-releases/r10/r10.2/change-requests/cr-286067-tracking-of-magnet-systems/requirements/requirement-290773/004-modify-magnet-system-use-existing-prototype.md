@@ -7,7 +7,7 @@ Requirement ID: 290773
 Requirement: Modify Magnet System (Magnet Systems)
 
 ## Preconditions
-- User is signed in with `MagnetSystem_View`, `MagnetSystem_Edit`, and `MagnetSystemType_Edit` permissions.
+- User is signed in with `MagnetSystem_View`, `MagnetSystem_Edit`, `MagnetSystemType_Edit`, and `MagnetSystems_Modify` permissions.
 - A Magnet System in `Checked Out` status exists and is linked to a Standard Magnet System Type.
 - At least one Prototype Magnet System Type exists that originates from the same predecessor article number.
 - At least one Prototype Magnet System Type exists that does NOT match the current Magnet System Type.

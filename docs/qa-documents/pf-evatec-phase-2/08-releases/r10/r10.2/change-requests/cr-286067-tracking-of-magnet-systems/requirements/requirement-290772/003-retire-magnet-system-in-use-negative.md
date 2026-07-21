@@ -7,7 +7,7 @@ Requirement ID: 290772
 Requirement: Retire Magnet System (Magnet Systems)
 
 ## Preconditions
-- User is signed in with `MagnetSystem_View` and `MagnetSystem_Edit` permissions.
+- User is signed in with `MagnetSystem_View`, `MagnetSystem_Edit`, and `MagnetSystems_Remove` permissions.
 - At least one Magnet System with status `In Use` exists (currently installed in a tool).
 - The 'Magnet Systems' page is accessible.
 
@@ -19,4 +19,4 @@ Requirement: Retire Magnet System (Magnet Systems)
 | 4 | Attempt direct navigation to retirement functionality for the same `In Use` Magnet System. | Access is denied. No retirement change is persisted. No retirement history entry is created. |
 
 ## Expected Outcome
-The Retire action is not available for Magnet Systems with status `In Use`. Only Magnet Systems in `In Stock` or `In Inspection` status can be retired. Direct access to retirement for an `In Use` Magnet System is denied. The `In Use` Magnet System remains unchanged.
+The Retire action is not available for Magnet Systems with status `In Use`. Only Magnet Systems in `In Stock` status can be retired. Direct access to retirement for an `In Use` Magnet System is denied. The `In Use` Magnet System remains unchanged.
